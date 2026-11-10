@@ -35,7 +35,7 @@ Please don’t open PRs for operator-only analytics or admin tooling.
 
 **Code and interactive demos:** [AGPL-3.0-only](./LICENSE)
 
-**Lessons:** [CC BY-NC-SA 4.0](./LICENSE-CONTENT) — covers `messages/`, `public/lesson2/`, `public/lesson3/`, `public/lessons/` (except `public/lessons/7/audio/`), `src/app/presentation2026malaga/what-is-ai-deck.html`, and lesson wording in `src/lib/lesson*-data.ts`.
+**Lessons:** [CC BY-NC-SA 4.0](./LICENSE-CONTENT) — covers `messages/`, `public/lesson2/`, `public/lesson3/`, `public/lessons/` (except `public/lessons/7/audio/`), and lesson wording in `src/lib/lesson*-data.ts`.
 
 **Third-party (own licenses):**
 - Lesson 7 music (`public/lessons/7/audio/`): [Kevin MacLeod](https://incompetech.com), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) — see [public/lessons/7/CREDITS.md](./public/lessons/7/CREDITS.md)

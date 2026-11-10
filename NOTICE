@@ -7,8 +7,8 @@ Code and interactive demos: AGPL-3.0-only (see LICENSE), except as listed below.
 
 Lessons: CC BY-NC-SA 4.0 (see LICENSE-CONTENT). This covers messages/,
 public/lesson2/, public/lesson3/, public/lessons/ (except public/lessons/7/audio/),
-src/app/presentation2026malaga/what-is-ai-deck.html, and lesson wording in
-src/lib/lesson*-data.ts. The lessons are a separate work loaded by the code as data.
+and lesson wording in src/lib/lesson*-data.ts. The lessons are a separate work
+loaded by the code as data.
 
 Third-party material keeps its own license:
 - Lesson 7 music (public/lessons/7/audio/): by Kevin MacLeod (incompetech.com),
