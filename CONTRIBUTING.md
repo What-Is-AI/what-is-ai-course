@@ -2,7 +2,20 @@
 
 Thanks for helping with **What is AI**.
 
-All contributions to lessons and translations are submitted through **pull requests** on this repository. By opening a PR, you agree a **Contributor License Agreement (CLA)** is required before we can merge — we will send CLA details when you open your first contribution (or reply on the PR if you have not signed yet).
+All contributions to lessons and translations are submitted through **pull requests** on this repository. A signed **[Contributor License Agreement (CLA)](./CLA.md)** is required before we merge.
+
+## CLA (required)
+
+1. Read [CLA.md](./CLA.md).
+2. On your pull request, comment exactly:
+
+   ```text
+   I have read the CLA Document and I hereby sign the CLA
+   ```
+
+3. Wait for the CLA check to pass. Comment `recheck` if it does not update.
+
+If your employer owns the work, do **not** use the comment sign-off — email **info@proaiassistant.com** for the Entity CLA (details in [CLA.md](./CLA.md)).
 
 ## Ways to help
 
@@ -30,14 +43,14 @@ No `.env` needed for local lesson or translation work.
 1. Add or update locale files under `messages/` (same keys as English; keep `{placeholders}`).
 2. Register a new locale in `src/i18n/config.ts` and `src/i18n/translate.ts` if needed.
 3. Open a pull request describing the language and which lessons you covered.
-4. Complete the CLA when asked.
+4. Sign the CLA on the PR (see above).
 
 ## Submitting a lesson PR
 
 1. Open an **issue** first with the learning goal and the probe → interact → teach outline.
 2. Implement the lesson (route + registration in `src/lib/lessons.ts`; keep drafts out of the public nav until ready).
 3. Open a pull request that links the issue and states the three-beat arc.
-4. Complete the CLA when asked.
+4. Sign the CLA on the PR (see above).
 
 ## Before you open a PR
 

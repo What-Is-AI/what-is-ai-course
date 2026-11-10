@@ -7,6 +7,7 @@ import {
   ListeningRoomLine,
   ListeningRoomTitle,
 } from "@/components/lesson7/ListeningRoomFrame";
+import { MusicCredits } from "@/components/lesson7/MusicCredits";
 import {
   useLesson7Chrome,
   useLesson7StepCopy,
@@ -25,6 +26,7 @@ export function Lesson7Closing({ onGate, reducedMotion }: Props) {
   const copy = steps.closing;
   const chrome = useLesson7Chrome();
   const ui = chrome.closing ?? {};
+  const music = chrome.musicCredits ?? {};
   const [phase, setPhase] = useState<Phase>("changed");
 
   useEffect(() => {
@@ -95,6 +97,20 @@ export function Lesson7Closing({ onGate, reducedMotion }: Props) {
               {copy.home}
             </Link>
           </div>
+          <MusicCredits
+            className="mt-10"
+            variant="compact"
+            copy={{
+              title: music.title ?? "Music credits",
+              body:
+                music.body ??
+                "These short clips are by Kevin MacLeod (incompetech.com), licensed under CC BY 3.0.",
+              artistLine:
+                music.artistLine ??
+                "Music by Kevin MacLeod (incompetech.com).",
+              licenseLabel: music.licenseLabel ?? "License:",
+            }}
+          />
         </div>
       ) : null}
     </ListeningRoomFrame>

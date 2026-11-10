@@ -103,6 +103,12 @@
     "meta": {
       "title": "About · What is AI",
       "description": "Understand AI by experiencing it, not just reading about it."
+    },
+    "music": {
+      "title": "Music in Lesson 7",
+      "body": "The short audio clips in Lesson 7 (From Features to Representations) are not covered by the lessons’ CC BY-NC-SA 4.0 license. They are works by Kevin MacLeod (incompetech.com), used under Creative Commons Attribution 3.0.",
+      "artistLine": "Music by Kevin MacLeod (incompetech.com).",
+      "licenseLabel": "License:"
     }
   },
   "home": {

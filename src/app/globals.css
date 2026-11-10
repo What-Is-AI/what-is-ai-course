@@ -503,6 +503,20 @@ button {
   line-height: 1.7;
 }
 
+.about-music-credits {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid color-mix(in oklab, var(--about-ink) 12%, transparent);
+  max-width: 40rem;
+}
+
+.about-music-credits .lr-music-credits-title {
+  font-family: var(--font-about-serif, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--about-ink);
+}
+
 .about-constellation {
   pointer-events: none;
   width: min(100%, 22rem);
@@ -636,6 +650,10 @@ button {
 
 .site-footer-legal-sep {
   opacity: 0.55;
+}
+
+.site-footer-warranty {
+  opacity: 0.9;
 }
 
 .site-footer-legal a {
@@ -13586,6 +13604,61 @@ button {
   gap: 0.75rem;
   margin-top: 1.25rem;
   align-items: center;
+}
+
+.lr-music-credits {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--lr-line);
+  max-width: 36rem;
+}
+
+.lr-music-credits-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--lr-ink);
+}
+
+.lr-music-credits-body,
+.lr-music-credits-artist,
+.lr-music-credits-license {
+  margin: 0.55rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--lr-ink-soft, var(--lr-mute));
+}
+
+.lr-music-credits-license a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.lr-music-credits-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--lr-mute, var(--lr-ink-soft));
+  columns: 1;
+}
+
+.lr-music-credits-full .lr-music-credits-list {
+  columns: 1;
+}
+
+@media (min-width: 640px) {
+  .lr-music-credits-compact .lr-music-credits-list {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+}
+
+.lr-music-credits-track {
+  font-weight: 500;
+  color: var(--lr-ink-soft, var(--lr-ink));
 }
 
 .lr-btn-soon {
