@@ -1,0 +1,390 @@
+{
+  "lesson5": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "Neural Networks",
+      "shortTitle": "Inside the machine that learns",
+      "mystery": "How can a collection of simple units learn something as complicated as recognizing a face?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "chooseOne": "Choose one",
+      "separated": "Separated",
+      "notSeparated": "Not separated",
+      "cat": "Cat",
+      "dog": "Dog"
+    },
+    "shell": {
+      "eyebrow": "The Network",
+      "wordmark": "Neural Networks"
+    },
+    "arrive": {
+      "plaque": "Neural Networks",
+      "title": "What is a neural network?",
+      "body1": "A neural network is made of many simple computing units connected together. Each unit takes in information, performs a small calculation, and passes the result to other units.",
+      "body2": "By connecting many of these units, a network can learn to recognize patterns in things like images, sounds, and language.",
+      "image": "IMAGE",
+      "cat": "CAT",
+      "visualAria": "Image flows through layers of units and becomes Cat",
+      "support": "The idea was inspired by how neurons in the brain connect and pass information. But a neural network is a mathematical model, not a miniature brain.",
+      "cta": "Let’s look inside."
+    },
+    "opening": {
+      "plaque": "Inside the machine",
+      "title": "What changes when AI learns?",
+      "body1": "A neural network learns by adjusting the connections between its units.",
+      "body2": "Each connection has a number that controls how much it influences the result. When the network makes a mistake, it adjusts these numbers a little. After seeing many examples, the network gets better at its task.",
+      "tryChanging": "Try changing one",
+      "tinyExample": "A tiny example",
+      "input": "Input",
+      "prediction": "Prediction",
+      "ask": "The network predicted dog, but the answer was cat. What should it do next?",
+      "askAria": "The network predicted dog, but the answer was cat. What should it do next?",
+      "choices": {
+        "same": "Keep the numbers the same",
+        "adjust": "Adjust some of the weights",
+        "rule": "Add a new rule"
+      },
+      "exactly": "Exactly. The network adjusts its weights so that, next time, this example is more likely to produce the right answer.",
+      "nudgeHint": "Nudge a connection number up or down and watch the prediction change.",
+      "up": "Increase connection {n}",
+      "down": "Decrease connection {n}",
+      "nameIt": "These numbers are called weights.",
+      "scale": "A real neural network may have thousands, millions, or even billions of them.",
+      "nextAsk": "So what can one of these actually do?",
+      "cta": "Continue →",
+      "tryAgain": "Not quite – think about what has to change for the next try to improve.",
+      "diagramAria": "Two inputs connected to one prediction, each connection showing a number"
+    },
+    "prediction": {
+      "plaque": "Prediction",
+      "title": "If you wanted a machine to tell whether a photo has a cat in it, how would you build it?",
+      "aria": "How would you build a cat detector",
+      "choices": {
+        "rules": "Write a rule for every possible cat",
+        "memorize": "Store every cat photo and compare",
+        "detectors": "Build many tiny detectors and connect them",
+        "giant-rule": "Give the machine one giant rule"
+      },
+      "cta": "Continue →"
+    },
+    "impossibleSplit": {
+      "plaque": "One unit",
+      "titleA": "One unit. One straight line.",
+      "subheadA": "Photos become a few measurements – like how pointy the ears look, and how long the snout is. A single unit uses those numbers to draw one straight line and decide: cat on one side, dog on the other.",
+      "feedbackA": "Done. One line was all it took.",
+      "solvedNote": "One unit can solve this simple version of the problem – by drawing a straight line.",
+      "notYetNote": "Not yet – rotate or shift the line so cats and dogs fall on different sides.",
+      "footerHint": "One unit can solve this simple version of the problem by drawing a straight line.",
+      "check": "Check my answer →",
+      "yourTurn": "Your turn",
+      "turnAsk": "Can you draw one line that separates the cats from the dogs?",
+      "tip": "Tip: rotate until the line runs between the two clusters, then shift it across if you need to.",
+      "photo": "Photo",
+      "findFeatures": "Find features",
+      "twoNumbers": "Two numbers",
+      "ear": "Ear pointiness",
+      "snout": "Snout length",
+      "axisEar": "Ear pointiness",
+      "axisSnout": "Snout length",
+      "high": "High",
+      "low": "Low",
+      "short": "Short",
+      "long": "Long",
+      "rotateMinus": "Rotate −",
+      "rotatePlus": "Rotate +",
+      "shiftLeft": "Shift −",
+      "shiftRight": "Shift +",
+      "titleB": "One unit. One straight line.",
+      "bodyB1": "But real-world patterns are rarely this simple.",
+      "bodyB2": "A single unit can only draw one straight boundary. If the data can’t be separated by one line, one unit isn’t enough.",
+      "hardSideAsk": "Try this pattern. Can one straight line separate the two groups?",
+      "frustration": "There’s no line that does it. Try as long as you like – this one really can’t be cut in two with a single straight cut.",
+      "reveal1": "This isn’t you missing something. It’s the limit of one unit. One unit draws one straight line, and some patterns just don’t split that way.",
+      "titleC": "Add a second unit",
+      "bodyC1": "One unit can draw only one simple boundary. But some patterns are too complex for a single boundary.",
+      "bodyC2": "In a neural network, we solve this by connecting multiple units. Each unit makes its own simple calculation, and together they can represent more complex patterns.",
+      "plaqueC": "From one to many",
+      "sideCTitle": "From one unit to many",
+      "sideCBody1": "In technical terms, these units are often called nodes or artificial neurons. When designing a neural network, engineers choose how many units to use and how to connect them.",
+      "sideCBody2": "More units give the network more ways to represent patterns – although simply adding more units doesn’t automatically make a network better.",
+      "sideCFinal": "One unit is simple. Connected units can do much more.",
+      "twoLineTip": "Adjust both lines until every cat and dog lands on the right side of the combined boundary.",
+      "cta": "So what is one unit, exactly?",
+      "statusAria": "Separation status",
+      "lineAria": "Decision boundary. Arrow keys rotate and shift the line.",
+      "fallbackAsk": "Can a straight line separate these?",
+      "fallbackYes": "Yes",
+      "fallbackNo": "No – it can’t →",
+      "tryAdjusting": "Try rotating or shifting the line a couple of times first.",
+      "unlockSecond": "Unlock second unit →",
+      "tryNext": "Try the harder set →",
+      "counts": "Cats correct {redOk}/{redTotal} · Dogs correct {blueOk}/{blueTotal}"
+    },
+    "oneUnit": {
+      "plaque": "One unit",
+      "title": "So what is one of these units?",
+      "body1": "A unit takes several inputs and combines them using weights. The weights determine how much each input matters.",
+      "body2": "The result then passes through an activation function, which determines how strongly the unit responds.",
+      "flowAria": "Inputs flow through weights, a combined result, activation, then output",
+      "anatomyAria": "A unit combines weighted inputs, then applies an activation function to produce an output",
+      "flow": {
+        "inputs": "Inputs",
+        "weights": "Weights",
+        "combined": "Combined result",
+        "activation": "Activation",
+        "output": "Output"
+      },
+      "anatomySum": "Weighted sum",
+      "anatomyAct": "Activation f(·)",
+      "anatomyOut": "Output",
+      "anatomyEq": "z = w₁x₁ + w₂x₂ + w₃x₃",
+      "anatomyEq2": "output = f(z)",
+      "buildingBlock": "This is the basic building block of a neural network. A single unit is simple, but connecting many units lets the network represent much more complex patterns.",
+      "terms": "Unit is the simple name we’ll use here. You may also see these called neurons or nodes.",
+      "beforeLabel": "Without activation",
+      "beforeFlow": "weighted sum only → linear response",
+      "afterLabel": "With activation",
+      "afterFlow": "weighted sum → f(z) → nonlinear response",
+      "activationCaption": "The activation function adds a nonlinear step. This lets connected units represent patterns that a single straight line cannot.",
+      "cta": "Continue →"
+    },
+    "tuneWeights": {
+      "plaque": "Connection strength",
+      "titleA": "Move one connection",
+      "askA": "If you make this one connection stronger, what happens to the confidence?",
+      "confidence": "Cat: {value}%",
+      "weightLabel": "Connection strength",
+      "nameIt": "That strength you were moving has a name: a weight. It sets how much one input counts toward the next unit. A network is full of them.",
+      "titleB": "Tune a small classifier",
+      "body1": "A neural network makes predictions by combining many inputs, each with its own weight. A larger weight gives an input more influence on the result; a smaller weight gives it less.",
+      "body2": "Here, we've given the inputs simple names like pointy ears, whiskers, and leg shape so you can see what each one is doing.",
+      "prompt": "Your turn: move each slider to change a weight. Watch the Cat and Dog scores update under the photos.",
+      "features": {
+        "ears": "Pointy ears",
+        "whiskers": "Whiskers",
+        "legs": "Leg shape"
+      },
+      "photoCat": "Cat photo",
+      "photoDog": "Dog photo",
+      "debrief": "You just adjusted the weights by hand. If increasing the weight for pointy ears makes the cat score rise, you've made that input count more strongly in the prediction.",
+      "training": "Training does something similar automatically: it adjusts the weights based on examples and mistakes, gradually finding values that make the network better at its task.",
+      "clarify": "This example is simplified. Real neural networks don't start with human-labelled features like “whiskers.” They learn useful patterns from the data themselves.",
+      "takeaway": "No one has to write a rule saying “look for whiskers.” The network learns how much different patterns should matter from examples.",
+      "ctaNext": "Continue →",
+      "ctaToB": "Try a small classifier →"
+    },
+    "firstReveal": {
+      "plaque": "Reveal",
+      "title": "So what was actually changing?",
+      "body1": "The numbers you just adjusted are weights – learned parameters of the neural network. Each weight controls how strongly one unit influences another.",
+      "body2": "During training, the network makes predictions on examples and compares them with the correct answers. It measures the error, then adjusts its weights to reduce that error. Repeating this process across many examples gradually changes how the network responds.",
+      "body3": "Those are the numbers you saw changing at the end of Lesson 4 – +0.02, −0.01, and so on. You were watching the network's parameters being adjusted as it learned.",
+      "clarify": "In our example, we gave the inputs names like “pointy ears” and “whiskers” to make the process easier to see. Real neural networks can learn useful representations from the data itself, rather than relying on a person to define features such as “look for whiskers.”",
+      "takeaway": "No one writes a rule for every pattern. The network learns by adjusting its parameters from examples.",
+      "cta": "Continue →"
+    },
+    "overfit": {
+      "plaque": "Surprise",
+      "title": "It learned the examples.",
+      "ask": "But did it learn the pattern?",
+      "body1": "The network adjusted its weights using these 12 training examples – and got all 12 right.",
+      "body2": "But there’s a catch: getting the examples right doesn’t tell us whether the network learned the pattern or simply learned those examples too closely.",
+      "visualIntro": "Here are two possible decision boundaries for the same 12 examples.",
+      "boundaryDef": "A decision boundary is the line the model uses to separate one class from another.",
+      "fitsLabel": "Fits the training examples",
+      "learnsLabel": "Follows the overall pattern",
+      "badgePerfect": "12 / 12 correct",
+      "badgeGeneral": "11 / 12 correct",
+      "prompt": "Now test both. Move the new example around and see how each boundary classifies it.",
+      "newTag": "new",
+      "newAria": "New example never seen in training. Use arrow keys or drag onto the plots.",
+      "dropHint": "Move the new example onto the plot",
+      "predDog": "Prediction: Dog",
+      "predCat": "Prediction: Cat",
+      "actualCat": "Actual: Cat",
+      "flagCorrect": "Correct",
+      "flagMiss": "Miss",
+      "debrief1": "The first boundary bends and twists to get every training example right. The second is simpler: it follows the overall pattern of the two groups.",
+      "debrief2": "The first is perfect on examples it has already seen. The second is less perfect – but may work better on examples it hasn't seen.",
+      "takeaway": "This is the difference between fitting the training examples and learning a pattern that works on new examples.",
+      "cta": "Continue →"
+    },
+    "layers": {
+      "plaque": "Layers",
+      "title": "What layers do",
+      "bridge": "Cats were handy for one unit. To see what layers do, switch to something with clearer parts – handwritten digits.",
+      "layer1": "Layer 1",
+      "layer2": "Layer 2",
+      "layer3": "Layer 3",
+      "layer1Desc": "Simple parts – edges, lines, curves.",
+      "layer2Desc": "Corners, loops, and junctions.",
+      "layer3Desc": "Whole-digit shapes.",
+      "layerOn": "Layer {n}: on",
+      "layerOff": "Layer {n}: off",
+      "togglePrompt": "Tap Layer 1, 2, or 3 to turn it on or off.",
+      "stateOn": "On",
+      "stateOff": "Off",
+      "guess": "Best guess: {digit}",
+      "guessWeak": "Best guess: unclear",
+      "hedge": "Earlier layers tend to respond to simpler patterns; later layers can combine them into more complex ones. The network isn’t given rules like “Layer 1 looks for edges.” These patterns emerge during training.",
+      "capacity": "More layers give a network more ways to represent complex patterns – but more doesn’t automatically mean better.",
+      "cta": "Continue →",
+      "summaryAll": "With all three layers on, simple features can combine into more complex ones – edges and curves can help form loops, which can help form an 8.",
+      "summaryWeak": "With a layer off, the harder digit pattern falls apart."
+    },
+    "vocabulary": {
+      "plaque": "Vocabulary",
+      "title": "Now the plain words for what you already did.",
+      "hint": "Hover or tap a term to see how it showed up earlier in this lesson.",
+      "listAria": "Vocabulary terms",
+      "previews": {
+        "input": "An image signal entering the network",
+        "neuron": "One unit combining several inputs into a single output",
+        "weight": "A connection getting stronger or weaker",
+        "activation": "A bent response curve instead of a straight line",
+        "layer": "Stacked groups of units lighting up in stages",
+        "output": "The network settling on a Cat prediction",
+        "parameters": "Many tiny weight adjustments during training"
+      },
+      "terms": {
+        "input": {
+          "label": "Input",
+          "body": "what enters the network."
+        },
+        "neuron": {
+          "label": "Neuron / unit",
+          "body": "a small piece of math that weights its inputs, adds them, and bends the result."
+        },
+        "weight": {
+          "label": "Weight",
+          "body": "how strongly one input counts toward a unit. The main thing training adjusts."
+        },
+        "activation": {
+          "label": "Activation",
+          "body": "the “bend” each unit applies, so connected units can represent more than straight-line patterns."
+        },
+        "layer": {
+          "label": "Layer",
+          "body": "a group of units working at the same stage."
+        },
+        "output": {
+          "label": "Output",
+          "body": "what the network produces."
+        },
+        "parameters": {
+          "label": "Parameters",
+          "body": "all the adjustable values learned during training (the weights, and also biases)."
+        }
+      },
+      "cta": "Continue →"
+    },
+    "watchLearning": {
+      "plaque": "The loop",
+      "title": "Watch learning happen",
+      "loop": "Prediction → Error → Adjustment → Repeat",
+      "train": "TRAIN",
+      "pause": "Pause",
+      "resume": "Resume",
+      "body1": "The network makes a prediction.",
+      "body2": "Its error provides a learning signal – a direction to nudge the weights.",
+      "body3": "Training adjusts the weights by a little.",
+      "body4": "Then it tries again.",
+      "punchline": "Millions of small adjustments, added up, change what the whole network does. No single nudge teaches it – the learning is in the pile.",
+      "summary": "After 1,000 examples, accuracy {from}% → {to}%",
+      "cta": "Continue →"
+    },
+    "scale": {
+      "plaque": "Scale",
+      "title": "How big can a network get?",
+      "levels": {
+        "10": "10 units",
+        "100": "100",
+        "10000": "10,000",
+        "1000000": "1,000,000",
+        "billion": "1,000,000,000+ parameters"
+      },
+      "body": "The networks behind modern AI hold enormous numbers of adjustable parameters. And once they get big enough, something new starts to happen. Scale starts to matter – not just a little more accuracy, but new kinds of ability.",
+      "ctaZoom": "Zoom out →",
+      "cta": "Continue →"
+    },
+    "history": {
+      "plaque": "History",
+      "title": "Neural networks aren’t new.",
+      "beats": {
+        "1940s": "First mathematical models of an artificial neuron: a unit as a small piece of math, not biology.",
+        "1957": "The perceptron: a machine that adjusts itself to tell simple patterns apart – the same starting point you used in The Impossible Split.",
+        "1969": "A famous result shows a single-layer perceptron can’t solve certain simple problems – exactly the kind of “can’t split with one line” case you just met. Interest and funding collapse for years.",
+        "1980s": "A training method called backpropagation makes it practical to train networks with several layers. The problems one unit couldn’t touch become solvable.",
+        "2000s": "More data and faster computers.",
+        "2010s": "Deep networks make major breakthroughs in image recognition, speech, and more.",
+        "2020s": "Very large networks become the foundation of modern generative AI."
+      },
+      "point": "The basic idea is old. Two things unlocked it – a way to train many layers, and the scale (data and computing power) to run them. Not a smarter idea. A ready world.",
+      "cta": "Continue →"
+    },
+    "reflection": {
+      "plaque": "Reflection",
+      "ask": "Before this lesson, what did you picture happening inside a neural network?",
+      "beforePlaceholder": "What you pictured before…",
+      "prompt": "A neural network learns by…",
+      "placeholder": "adjusting its weights, a little at a time…",
+      "cta": "Continue →"
+    },
+    "finalChallenge": {
+      "plaque": "Final challenge",
+      "title": "Which is the best description of a neural network?",
+      "aria": "Best description of a neural network",
+      "choices": {
+        "a": "A digital copy of a human brain.",
+        "b": "A set of connected computational units whose weights are adjusted through training.",
+        "c": "A system that learns by storing every training example.",
+        "d": "A set of units where each one, by itself, understands a whole concept."
+      },
+      "explain": "Neural networks borrow some words and inspiration from biology, but the units are math, not brain cells (rules out A). Learning changes weights rather than filing away examples – and a network can even ace its training photos yet miss a new one, which memorizing couldn’t explain (rules out C). And no single unit carries a whole concept; the ability comes from many units connected together, as The Impossible Split showed (rules out D).",
+      "tryAgain": "Try again – look for the description that names units and training.",
+      "cta": "Continue →"
+    },
+    "closing": {
+      "takeawaysPlaque": "Key takeaways",
+      "takeawaysTitle": "What to keep",
+      "takeaways": {
+        "1": "Networks are connected computational units. They pass information through connected stages.",
+        "2": "Each unit weights its inputs and bends the result. The bend is what lets units combine into curves and shapes instead of only straight lines.",
+        "3": "Connections have adjustable weights, and training changes them. These weights are the dials from Lesson 4.",
+        "4": "Layers build complexity. Simple parts can combine into richer ones.",
+        "5": "Learning a general pattern is not memorizing the examples. A network can be perfect on its training photos and still miss something new.",
+        "6": "More parameters and layers add capacity, not automatically skill. Training, data, and design still decide the outcome."
+      },
+      "finalPlaque": "Inside the network",
+      "finalTitle": "You just looked inside one of the foundations of modern AI.",
+      "finalBody1": "But there’s a problem.",
+      "finalBody2": "What happens when the network grows to millions, billions, even trillions of parameters? And what happens when we train one on an enormous amount of text?",
+      "sequence": "The → cat → sat → on → the → …",
+      "nextWorld": "The Depth",
+      "nextLabel": "Next: Deep Learning",
+      "nextHint": "When neural networks become deep – and scale changes what they can do.",
+      "home": "Back home →",
+      "ctaTakeaways": "Continue →",
+      "ctaFinal": "Continue →"
+    },
+    "seoSpine": {
+      "h1": "What Is a Neural Network?",
+      "lead": "A neural network is a collection of connected computational units whose adjustable parameters — weights — transform inputs into useful outputs. That is the core idea behind how neural networks learn.",
+      "sections": [
+        {
+          "heading": "What are neural network weights?",
+          "body": "Weights control how strongly one unit influences another. During learning, the network strengthens some connections and weakens others so signals flowing through it produce better predictions."
+        },
+        {
+          "heading": "What do layers do?",
+          "body": "Layers stack simple units. Early structure can respond to simpler patterns; deeper combinations help the network recognize more complex shapes and relationships than a single unit can."
+        },
+        {
+          "heading": "How neural networks recognize patterns",
+          "body": "Pattern recognition emerges from many weighted connections adjusting together — not from a single hand-written rule for every case. You can follow the idea without calculus; the interactive lesson shows the adjustments in action."
+        }
+      ]
+    }
+  }
+}

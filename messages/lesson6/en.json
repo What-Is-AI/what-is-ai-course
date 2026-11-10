@@ -1,0 +1,387 @@
+{
+  "lesson6": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "Deep Learning",
+      "shortTitle": "Deep Learning",
+      "mystery": "What becomes possible when a neural network can build on its own earlier representations?"
+    },
+    "shared": {
+      "continue": "Continue →"
+    },
+    "shell": {
+      "eyebrow": "The Depth",
+      "wordmark": "Deep Learning"
+    },
+    "steps": {
+      "arrive": {
+        "plaque": "Opening",
+        "title": "At what point does a collection of pixels become a \"7\"?",
+        "body1": "A neural network doesn't receive the idea of a “7.” It receives numerical information from the pixels.",
+        "body2": "So how does that information become something the network can use to recognize a 7?",
+        "cta": "Begin →"
+      },
+      "compose": {
+        "plaque": "Step by step",
+        "title": "Each step builds on the last",
+        "body": "This is the same 7 from a moment ago. Stack a couple of changes — like layering one photo filter on top of another — and watch each new one work on the result of the step before it, not the original.",
+        "gateHint": "Add at least two to see it.",
+        "pivot": "You just picked those steps yourself. What if the network could work out its own — and far more useful ones?",
+        "cta": "See what learning looks like →"
+      },
+      "compressHuman": {
+        "plaque": "The 7, in 20 numbers",
+        "title": "Describe this 7 using only 20 numbers",
+        "body": "Imagine describing this 7 to someone over the phone so they can redraw it — but all you're allowed to send is 20 numbers. Set each value to anything you like and watch what gets drawn from them. Then see the 20 numbers the network chose.",
+        "liveHelper": "Drag any slider — the drawing updates as you go.",
+        "panelTarget": "The 7",
+        "panelYours": "Drawn from your 20 numbers",
+        "panelNetwork": "Drawn from the network's 20 numbers",
+        "clueLabel": "Value {n} of {total}",
+        "showNetwork": "Reveal the network's 20 numbers",
+        "tryAgain": "Try again",
+        "takeaway": "Anyone can pick 20 numbers. But these 20 were learned from the image, so they contain enough information for the network to rebuild the 7.",
+        "cta": "Now make it even smaller →"
+      },
+      "compressBottleneck": {
+        "plaque": "The 7, made smaller",
+        "title": "What if you get even fewer numbers?",
+        "body": "A moment ago the network summed up this 7 in 20 numbers. Now change how many numbers it's allowed to use, and watch how much of the 7 still comes back.",
+        "controlLabel": "How many numbers",
+        "scaleHint": "more numbers → more detail · fewer numbers → less detail",
+        "readout": {
+          "5": "5 numbers: only the rough shape of the 7 survives.",
+          "20": "20 numbers: still clearly a 7, some detail lost.",
+          "100": "100 numbers: nearly all the detail comes back."
+        },
+        "takeaway": "The fewer numbers it's allowed, the less of the 7 can survive. It keeps the big shape and drops the fine detail first.",
+        "cta": "What survived? →"
+      },
+      "compressReveal": {
+        "plaque": "Representation",
+        "title": "Those 20 numbers have a name: a representation",
+        "definition": "A representation captures something in a way that keeps the information that’s useful and leaves out the rest.",
+        "analogy": "Like a map captures the important features of a place without showing every detail, or a summary captures the main ideas of a long article.",
+        "recap": "You couldn't sum up the 7 in 20 numbers by hand. The network could — not in words, but as 20 numbers that hold enough to redraw it.",
+        "tease": "So what gets kept, and what gets dropped, when there's very little room?",
+        "cta": "See what survived →"
+      },
+      "deepenCallback": {
+        "plaque": "Depth",
+        "title": "Layers build on one another",
+        "body1": "Each layer takes the representation from the layer before it and transforms it into a new one.",
+        "body2": "Researchers often find that these layers develop increasingly complex patterns after training. But this is something we observe in the trained network — it isn’t a set of rules the network was given.",
+        "cta": "Compare shallow and deep →"
+      },
+      "deepenInspect": {
+        "plaque": "Depth",
+        "title": "What can more steps do?",
+        "body": "Set the 7 aside for one screen — this puzzle shows the idea more clearly. Each dot is one of two colours, and the network has to draw a line that puts one colour on each side.",
+        "shallowLabel": "Shallow",
+        "shallowResult": "Few steps: the line stays straight — and can't separate them. Gets it right {pct}% of the time.",
+        "deeperLabel": "Deeper",
+        "deeperResult": "More steps: the line can bend and wrap around — now it separates them. Right {pct}% of the time.",
+        "takeaway": "This is Lesson 5's Impossible Split again: one straight line can't do it. More steps let the network bend the line into a shape that can. That's what depth buys — not \"smarter,\" just able to handle trickier shapes.",
+        "training": "Training the shallow and deeper nets…",
+        "cta": "Couldn't you just add more units? →"
+      },
+      "deepenWidth": {
+        "plaque": "Depth",
+        "title": "Couldn't you just add more units instead?",
+        "body": "Depth helped on that puzzle. But here's the obvious objection — instead of stacking layers, why not keep one layer and pack in more units? Same number of parts, either way. Lay them out wide, or stack them deep. Try both on the same dots.",
+        "controlLabel": "How to spend your units",
+        "options": {
+          "wide": "One wide layer",
+          "deep": "A few stacked layers"
+        },
+        "layoutAnnounce": {
+          "wide": "Layout: one wide layer",
+          "deep": "Layout: three stacked layers"
+        },
+        "predictLabel": "Your guess: will more units in one layer separate the dots?",
+        "preds": {
+          "yes": "Yes, width is enough",
+          "no": "No, you need layers"
+        },
+        "predictFirst": "Predict first, then try both layouts.",
+        "illustrativeNote": "Illustrative — same {n} units either way (one wide layer vs three stacked).",
+        "training": "Training…",
+        "readout": {
+          "wide": "One wide layer, {n} units: the line still can't bend — {pct}% right. More width didn't buy the bend.",
+          "deep": "The same {n} units in a few layers: the line wraps around the dots — {pct}% right."
+        },
+        "verdict": {
+          "separated": "separated",
+          "notSeparated": "not separated"
+        },
+        "takeaway": "More units in one layer is not the same as more layers. With the same number of parts, stacking them into steps lets each step reshape what the last one did — so the boundary can bend and wrap in ways one wide layer can't. Depth isn't \"more neurons.\" It's parts that build on each other.",
+        "hedge": "A single layer can, in principle, fit almost any shape — if you make it wide enough. The catch is that \"wide enough\" can mean absurdly, impractically wide. Stacking is how you get the same power at a workable size. Depth trades width for order.",
+        "cta": "Does more depth always help? →"
+      },
+      "deepenPlateau": {
+        "plaque": "Depth",
+        "title": "Does more always help?",
+        "body": "You just saw that adding depth helped. So here’s the natural next question: if some depth helps, does adding more and more always make the network better?",
+        "predictLabel": "Your guess:",
+        "preds": {
+          "improve": "Keeps improving",
+          "plateau": "Levels off",
+          "worse": "Gets worse"
+        },
+        "addDepth": "Add more depth →",
+        "chartTitle": "How well it does, by depth",
+        "chartSummaryTemplate": "Rises to depth {peak}, then falls — more depth stopped helping.",
+        "readout": {
+          "rising": "Depth {d}: {pct}% — better.",
+          "peak": "Depth {d}: {pct}% — best so far.",
+          "slip": "Depth {d}: {pct}% — starting to slip.",
+          "worse": "Depth {d}: {pct}% — worse, and harder to train.",
+          "shallow": "Depth {d}: {pct}% — too shallow, can't bend enough."
+        },
+        "reveal": "More depth isn't automatically better. Past a point, extra layers stop helping and start hurting — they get harder to train, and the model does worse. Depth is an opportunity, not a guarantee.",
+        "predictFirst": "Predict first, then add depth.",
+        "cta": "Continue →"
+      },
+      "deepenReveal": {
+        "plaque": "Depth",
+        "title": "Depth is an opportunity, not a guarantee",
+        "body1": "More layers give a network more room to learn — but they also make training harder. Extra depth isn’t automatically better.",
+        "historyCallback": "As you saw in Lesson 5, some patterns are too complex for a single layer. Adding layers makes more transformations possible.",
+        "historyNew": "Stacking alone wasn’t enough. Training methods had to improve too. In 2012, AlexNet showed what was possible when depth met workable training, data, and compute.",
+        "whyLabel": "Why this mattered",
+        "whyBody": "ImageNet was a large benchmark for recognizing objects in images. AlexNet’s breakthrough there helped show that large, deep networks could work remarkably well once the training methods, data, and computing were ready.",
+        "cta": "Continue →"
+      },
+      "budget": {
+        "plaque": "Scale",
+        "title": "You have a fixed compute budget for training",
+        "body": "Should you spend it on making the model larger, or on giving the model more training data?",
+        "helper": "Choose one approach to spend the budget.",
+        "options": {
+          "bigger": {
+            "name": "Bigger model",
+            "label": "Spend most of the budget on a larger model"
+          },
+          "data": {
+            "name": "More data",
+            "label": "Spend most of the budget on more training data"
+          },
+          "balanced": {
+            "name": "Balanced",
+            "label": "Grow model size and training data together"
+          }
+        },
+        "revealTitle": "Compute is a budget",
+        "reveal": "For a fixed training-compute budget, model size and training data should grow together — not model size alone.",
+        "chinchillaLabel": "Chinchilla (2022)",
+        "chinchillaBody": "70B parameters + more data, with roughly the same compute as the much larger 280B Gopher — and better results when size and tokens grow together.",
+        "cta": "Continue →"
+      },
+      "challenge": {
+        "plaque": "Final challenge",
+        "title": "Deep learning is useful because...",
+        "cta": "Continue →"
+      },
+      "reflection": {
+        "plaque": "Reflection",
+        "title": "Sit with these",
+        "sub": "Write as much or as little as you like — then continue.",
+        "beforeLabel": "Before this lesson I thought deep learning is…",
+        "beforePlaceholder": "just stacking more layers… making models bigger…",
+        "afterLabel": "Now I think deep learning is…",
+        "afterPlaceholder": "composing learned transformations to build useful representations — and depth is an opportunity, not a guarantee…",
+        "cta": "Continue →"
+      },
+      "tracker": {
+        "plaque": "Mental model",
+        "title": "Before and after",
+        "before": "Neural networks have layers and adjustable parameters.",
+        "after": "Deep learning uses multiple layers of learned transformations to construct useful representations from data.",
+        "cta": "Continue →"
+      },
+      "closing": {
+        "plaque": "Next",
+        "title": "You just saw what happens when a network can build on one transformation after another.",
+        "question": "But what does the network actually learn to represent?",
+        "nextWorld": "The Listening Room",
+        "hint": "Data and a task — without being told which features to look for. So where do those useful features come from?",
+        "nextLabel": "Next: From Features to Representations",
+        "home": "Back home →"
+      }
+    },
+    "data": {
+      "reconstructionVerdicts": {
+        "5": {
+          "network": "Drawn from the network's numbers: broken apart — not enough room to keep the 7.",
+          "humanGarbage": "Drawn from your numbers: not a recognizable 7."
+        },
+        "20": {
+          "network": "Drawn from the network's numbers: still looks like the 7; some detail lost.",
+          "humanGarbage": "Drawn from your numbers: not a recognizable 7."
+        },
+        "100": {
+          "network": "Drawn from the network's numbers: fairly detailed; still looks like the 7.",
+          "humanGarbage": "Drawn from your numbers: not a recognizable 7."
+        }
+      },
+      "deepenVerdicts": {
+        "shallowFail": "Shallow net: not separated — boundary stays too simple.",
+        "deeperWraps": "Deeper net: boundary bends and wraps around the data.",
+        "plateaued": "Training curve plateaued — more depth did not keep helping.",
+        "overfit": "Training improved on the toy set, but the curve shows overfit / unstable training."
+      },
+      "featureVizCaption": "Researchers observe patterns like these after training — not a rule the network was given.",
+      "finalChallenge": {
+        "prompt": "Deep learning is useful because...",
+        "options": [
+          {
+            "id": "A",
+            "label": "It makes computers think more deeply."
+          },
+          {
+            "id": "B",
+            "label": "It simply adds more neurons."
+          },
+          {
+            "id": "C",
+            "label": "It allows neural networks to compose many learned transformations and construct useful representations from data."
+          }
+        ],
+        "correctId": "C"
+      },
+      "transformations": [
+        "brighten",
+        "blur",
+        "sharpen",
+        "contrast",
+        "invert",
+        "reduce detail"
+      ],
+      "budgetChoices": [
+        "bigger",
+        "data",
+        "balanced"
+      ]
+    },
+    "chrome": {
+      "arrive": {
+        "pixels": "Pixels",
+        "earlyTransform": "Early transform",
+        "deeperRepresentation": "Deeper representation",
+        "descentComplete": "Descent complete.",
+        "watchingStages": "Watching the image move through translucent stages…"
+      },
+      "compose": {
+        "originalToResult": "Original → Result",
+        "originalArrow": "Original → ",
+        "arrowResult": " → Result",
+        "stackedChanges": "{n} changes stacked — each works on the last, not the original.",
+        "transforms": {
+          "brighten": "brighten",
+          "blur": "blur",
+          "sharpen": "sharpen",
+          "contrast": "contrast",
+          "invert": "invert",
+          "reduce detail": "reduce detail"
+        }
+      },
+      "compressHuman": {
+        "couldNotLoadTools": "Could not load the drawing tools.",
+        "couldNotLoadNetwork": "Could not load the network's numbers.",
+        "networkValues": "The network's 20 values",
+        "yourValues": "Your 20 values",
+        "originalAndDrawings": "Original and drawings",
+        "originalHandwritten7": "Original handwritten 7",
+        "yourAttemptLocked": "Your attempt (locked)",
+        "fromYourValues": "From your 20 values",
+        "fromNetwork20": "From the network’s 20",
+        "original": "Original",
+        "finding": "Finding"
+      },
+      "compressBottleneck": {
+        "couldNotLoadDrawings": "Could not load the drawings.",
+        "drawingFailed": "Drawing failed.",
+        "originalAndDrawing": "Original and drawing",
+        "originalHandwritten7": "Original handwritten 7",
+        "original": "Original",
+        "the7": "The 7",
+        "fromNNumbers": "From {n} numbers",
+        "whatComesBack": "What comes back"
+      },
+      "compressReveal": {
+        "whatJustHappened": "What just happened",
+        "highlightedTerm": "a representation"
+      },
+      "deepenPlateau": {
+        "noDepthsMeasured": "No depths measured yet.",
+        "depthsSoFar": "Depth points so far: {points}."
+      },
+      "depthOpportunity": {
+        "fewLayers": "Few layers",
+        "fewLayersNote": "Some patterns are out of reach.",
+        "moreLayers": "More layers",
+        "moreLayersNote": "More transformations become possible.",
+        "tooMuch": "Too much?",
+        "tooMuchNote": "More depth can also make training harder.",
+        "alexNet": "2012 — AlexNet",
+        "alexNetNote": "Deep networks + better training",
+        "deepTrainable": "Deep + trainable",
+        "theArc": "The arc",
+        "input": "Input",
+        "output": "Output",
+        "asideTooMuch": "More layers give the network more room to learn — but they also make training harder.",
+        "asideAlexNet": "AlexNet showed that large, deep networks could work when the training methods, data, and computing were ready.",
+        "layerOne": "{n} layer",
+        "layerMany": "{n} layers"
+      },
+      "layerStack": {
+        "inputRepresentation": "Input representation",
+        "nextLayerTransforms": "Next layer transforms it",
+        "deeperRepresentation": "Deeper representation",
+        "caption": "What one layer produces becomes the next layer’s starting point."
+      },
+      "budget": {
+        "fixedBudget": "Fixed budget",
+        "modelSize": "Model size",
+        "trainingData": "Training data",
+        "afterChoice": "Your choice shifts how the fixed budget is spent.",
+        "beforeChoice": "Pick an option — then see what research found.",
+        "finding": "Finding"
+      },
+      "challenge": {
+        "correct": "Correct — composed transformations and useful representations.",
+        "wrong": "Not quite. Remember wide vs deep — more units in one layer couldn't bend the line; stacking the same units could. Depth is composed transformations, not more neurons or “thinking harder.” Try again."
+      },
+      "tracker": {
+        "before": "Before Lesson 6",
+        "after": "After Lesson 6"
+      },
+      "closing": {
+        "edges": "Edges",
+        "shape": "Shape",
+        "pattern": "Pattern",
+        "features": "Features",
+        "representation": "Representation",
+        "usefulStructure": "Useful structure, kept compact"
+      },
+      "deepenWidth": {
+        "finding": "Finding",
+        "verdictSuffix": "Verdict: {verdict}."
+      }
+    },
+    "seoSpine": {
+      "h1": "What Is Deep Learning?",
+      "lead": "Deep learning uses neural networks with many layers so the system can build richer internal representations — from simple patterns to more abstract ones — by stacking transformations.",
+      "sections": [
+        {
+          "heading": "Why are neural networks deep?",
+          "body": "Depth lets each stage reuse what earlier layers already computed. A shallow model often hits a wall; a deeper stack can compose many small computations into more flexible behavior."
+        },
+        {
+          "heading": "What do layers learn in deep learning?",
+          "body": "Earlier layers often latch onto simpler structure. Later layers combine those responses into higher-level features. That progression is a big part of what “deep learning explained” really means."
+        }
+      ]
+    }
+  }
+}

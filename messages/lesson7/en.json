@@ -1,0 +1,353 @@
+{
+  "lesson7": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "From Features to Representations",
+      "shortTitle": "Where features come from",
+      "mystery": "What information actually matters?"
+    },
+    "shared": {
+      "continue": "Continue →"
+    },
+    "shell": {
+      "eyebrow": "The Listening Room",
+      "wordmark": "From Features to Representations"
+    },
+    "steps": {
+      "arrive": {
+        "plaque": "The studio",
+        "title": "Where do useful features come from?",
+        "body1": "Lesson 6 left you with a question. A model can be given examples and a task without being told which features to look for – so where do those useful features come from?",
+        "body2": "To answer it, we'll work with something you already have opinions about: music. No production tools, no theory. Just a booth to listen in, and a board where tracks that belong together can sit side by side.",
+        "cta": "Start with a playlist"
+      },
+      "predictPick": {
+        "title": "Which of these belongs in a workout playlist?",
+        "subhead": "Listen to a few seconds of each song, then choose the ones you'd want to hear during a workout. There's no right answer yet – we'll use your choices to explore what makes one song feel like a good fit.",
+        "cta": "Continue →"
+      },
+      "predictName": {
+        "title": "What made you pick them?",
+        "subhead": "What did you notice about the songs you chose?",
+        "hold": "Hold onto that list. Next you'll try to turn it into a system that picks workout songs for you.",
+        "options": {
+          "tempo": "Fast tempo",
+          "beat": "Strong beat",
+          "loud": "Loud",
+          "bass": "Lots of bass",
+          "rhythm": "Repeating rhythm",
+          "vocals": "Vocals",
+          "unnamed": "Something I can't quite name"
+        },
+        "cta": "Turn your list into a detector"
+      },
+      "handRules": {
+        "plaque": "Build a detector",
+        "title": "Turn your list into a rule for 'workout song'",
+        "body": "Here are the measurements you picked, as sliders. Set a threshold for each – how fast, how loud, how much bass a song needs before your detector calls it a workout song.",
+        "cta": "Test it on new songs"
+      },
+      "handTest": {
+        "subhead": "A fresh batch plays. You judge first – belongs or doesn't – while the detector's guess stays hidden. Then we reveal what your detector said and the true answer. The score is how often the detector was actually right.",
+        "promptLine": "Judge each song – belongs or doesn't. The detector stays hidden until you do.",
+        "hiddenPrompt": "Your call first – detector hidden.",
+        "revealLine": "your detector said {det} · answer: {truth} · detector {detHit}",
+        "youRight": "you were right",
+        "youWrong": "you missed",
+        "detectorTally": "Detector: {hits} of {n} correct.",
+        "learnerTally": "You: {hits} of {n}.",
+        "adjustReadout": "With these thresholds: {hits} of {n} correct against the true labels.",
+        "feedback": "your detector said {yes/no} · answer: {belongs/doesn't} · detector {hit/miss}",
+        "cta": "Continue →"
+      },
+      "handWall": {
+        "plaque": "The wall",
+        "title": "You can keep changing the thresholds, but you run into a problem.",
+        "contrastA": "A song can have a fast tempo and a strong beat and still not belong in the playlist.",
+        "contrastB": "Another song can break the rules you chose and still feel like a good match.",
+        "body2": "The measurements give you useful information, but they don't tell you which combinations will matter.",
+        "body3": "For a long time, one way of dealing with this was to have people choose the features for the system. But with something as complicated as music, there can be far too many possibilities to work out by hand.",
+        "pivot": "What if we gave the system examples and let it learn which patterns are useful?",
+        "cta": "See the other way →"
+      },
+      "twoPaths": {
+        "plaque": "Two ways to do it",
+        "title": "You just tried the first path. Here's the second.",
+        "path1": "Hand-designed: You choose what to measure → you set the rules → result. (This was Step 3, and for years it was the only path.)",
+        "path2": "Learned: You give examples → training → a learned arrangement → result.",
+        "body": "On the second path you don't pick the measurements at all. You give examples of what belongs and what doesn't, and let training work out what's worth noting.",
+        "cta": "Give it examples"
+      },
+      "labelTrain": {
+        "title": "Mark a few. Then press train.",
+        "status": "Rearranging by what the examples have in common…",
+        "drawingCaption": "This board is our way of drawing what the model learned. The model isn't building a map inside – we are, so you can see it.",
+        "cta": "See what happened"
+      },
+      "repReveal": {
+        "plaque": "Representation",
+        "title": "You never told the model which features to use. You just gave it examples.",
+        "tieBack": "The model changed its weights as it trained, just as you saw earlier. But now those changes are doing something different: they're helping the model find a useful way of representing the songs.",
+        "term": "We call this a learned representation.",
+        "body2": "It doesn't have to be something simple like \"fast\" or \"loud.\" The representation can involve a large number of numbers, and we may not be able to give each one a name.",
+        "body3": "What matters is that the representation contains information that helps with the task.",
+        "cta": "So how good is it, really?"
+      },
+      "headToHead": {
+        "plaque": "Same songs, two systems",
+        "title": "Your rules vs. what it learned",
+        "body": "Here's a fresh set of songs neither system has seen. Your hand-tuned detector scores them. So does the model that learned from your examples. Same songs, same answers to beat.",
+        "predict": "Before you run them – out of {n}, how many do you think each will get right?",
+        "after1": "A hand-picked list of measurements can only take you so far. There are too many possible patterns to decide in advance which ones will matter.",
+        "after2": "The model can learn those patterns from the examples instead.",
+        "callback": "Remember 'something I can't quite name'? That's the part your thresholds couldn't reach – and the part the learned representation could.",
+        "cta": "So what did it catch that you couldn't?"
+      },
+      "hidden": {
+        "plaque": "What the layout caught",
+        "title": "Are these two similar?",
+        "body1": "Things like tempo, volume, and rhythm tell us something about a song, but not everything. Two songs can be similar on those measurements and still sound very different. Two others can be quite different and still sound like they belong together.",
+        "body2": "A useful representation can capture relationships that aren't obvious from any single measurement. That's the part a hand-written list of features can't reach – and the part you felt was missing back when you picked 'something I can't quite name.'",
+        "cta": "But useful for what?"
+      },
+      "taskDep": {
+        "plaque": "Task dependence",
+        "bridge": "That arrangement was built to find workout songs. Keep the exact same songs – but change the job, and watch what starts to matter.",
+        "title": "Useful for what?",
+        "helper": "Open at least two. Notice what information becomes important in each.",
+        "revealTitle": "The same songs. A different 'useful' each time.",
+        "revealBody1": "There isn't one correct representation of these songs. What's worth keeping depends on the task you're training for.",
+        "revealBody2": "A representation that's great for 'make me sweat' can be nearly useless for 'sort by instrument' – the information each job leans on is different.",
+        "clarification": "The model isn't handed a list of what to keep. During training, the task – what counts as a right answer – is what pushes some information to matter and some to fall away.",
+        "foundationNod": "You might be wondering: then how does one AI seem to do everything? Some representations turn out useful for many tasks at once – that's a later story. For now, the point holds: useful depends on the job.",
+        "cta": "So does the model decide everything?"
+      },
+      "whoDecides": {
+        "plaque": "Who's in charge",
+        "title": "So does the model decide everything? No.",
+        "body": "It found a useful arrangement without you naming the features. But it didn't run the whole show. People still made every big call around it:",
+        "keyLine": "What changed isn't that people stopped deciding. It's that we no longer have to specify every useful feature by hand.",
+        "cards": [
+          "The data – which songs it learned from.",
+          "The task – what job it was training for.",
+          "The training objective – what counts as a right answer.",
+          "The design – how the model is built and trained.",
+          "The check – whether the result is actually any good."
+        ],
+        "cta": "One last test"
+      },
+      "challenge": {
+        "plaque": "The playlist problem",
+        "prompt": "From these examples, can you describe exactly what makes a song belong?",
+        "after": "You probably spotted some patterns. But could you write down every useful one – as a fixed list, in advance?",
+        "land": "That's the gap learned representations fill. Instead of making you name every useful pattern up front, training adjusts the model – its weights, as you saw – until its representation is useful for the task.",
+        "cantPin": "I couldn't pin it all down",
+        "cta": "Continue →"
+      },
+      "reflection": {
+        "plaque": "Reflection",
+        "title": "Where do useful features come from?",
+        "beforeLabel": "Before this lesson, I thought the useful features came from…",
+        "beforePlaceholder": "someone measuring the right things… a list you write down…",
+        "afterLabel": "Now I think…",
+        "afterPlaceholder": "the model can learn them from examples and a task – and 'useful' depends on the job…",
+        "cta": "One more thing"
+      },
+      "closing": {
+        "plaque": "What changed",
+        "before": "A person chooses the features – tempo, bass, volume, vocals…",
+        "after": "The model learns a representation – patterns drawn from examples, for a task.",
+        "body": "For years, people designed or picked the features before training. Deep learning made it possible for models to learn useful representations straight from the data. That doesn't mean the model hears music the way you do – it means training can produce internal patterns useful for the job it was trained on.",
+        "bankLine": "I went to the bank.",
+        "bankAsk": "What does bank mean?",
+        "bankRiver": "river bank",
+        "bankFinance": "financial bank",
+        "bankThen": "The word itself isn't enough. What surrounds it matters.",
+        "connective": "You just saw that a useful representation depends on the task. For a word, the job is set by its neighbours – a useful representation of it can't be fixed in advance either. That's the next lesson.",
+        "headline": "What matters can depend on the company it keeps.",
+        "nextLabel": "Next: Lesson 8 – Transformers (The Context)",
+        "home": "Back home"
+      },
+      "drawingCaption": "our drawing, not inside the model"
+    },
+    "data": {
+      "sliderLabels": {
+        "tempo": "Tempo",
+        "beat": "Beat strength",
+        "loud": "Loudness",
+        "bass": "Bass",
+        "rhythm": "Rhythm",
+        "vocals": "Vocals"
+      },
+      "featureOptions": [
+        "tempo",
+        "beat",
+        "loud",
+        "bass",
+        "rhythm",
+        "vocals",
+        "unnamed"
+      ]
+    },
+    "chrome": {
+      "arrive": {
+        "listeningDesk": "Listening desk",
+        "warmingUp": "Warming up the booth…",
+        "playHint": "Play a few seconds. Notice the energy trace beside each track."
+      },
+      "predictPick": {
+        "playlistAudition": "Playlist audition",
+        "tapToAdd": "Tap a box to add it to the playlist.",
+        "loadingClips": "Loading clips…"
+      },
+      "predictName": {
+        "featuresYouWereGoingOn": "Features you were going on"
+      },
+      "clipPlayer": {
+        "play": "Play",
+        "pause": "Pause",
+        "add": "Add",
+        "picked": "Picked",
+        "clipOf": "Clip {n} of {total}",
+        "energyTrace": "Energy and rhythm trace for {title}. Tag: {tag}."
+      },
+      "handRules": {
+        "rule": "Rule: a song must clear every threshold to count as a workout song.",
+        "unnamedHelper": "You flagged something you couldn't name – here are the usual measurements to try anyway.",
+        "detectorThresholds": "Detector thresholds"
+      },
+      "handTest": {
+        "hideThresholds": "Hide thresholds",
+        "adjustThresholds": "Adjust thresholds",
+        "heldOutSongs": "Held-out songs",
+        "clearJudgments": "Clear judgments & retry",
+        "loadingTestSet": "Loading test set…",
+        "belongs": "Belongs",
+        "doesnt": "Doesn't",
+        "detYes": "yes",
+        "detNo": "no",
+        "truthBelongs": "belongs",
+        "truthDoesnt": "doesn't",
+        "detHit": "hit",
+        "detMiss": "miss",
+        "title": "Test, and watch it miss"
+      },
+      "labelTrain": {
+        "done": "Done. Songs that share useful patterns drifted closer; workout songs settled into their own region.",
+        "afterTrain": "After TRAIN – our drawing of what training produced.",
+        "beforeTrainScattered": "Before TRAIN – songs scattered.",
+        "beforeTrainMark": "Before TRAIN – mark examples, then train.",
+        "loadingSongs": "Loading songs…",
+        "showBefore": "Show before",
+        "showAfter": "Show after",
+        "belongs": "Belongs",
+        "doesnt": "Doesn't",
+        "tagHint": "Tag at least one song that belongs and one that doesn't, then press TRAIN.",
+        "train": "TRAIN",
+        "doneReduced": "Done. Workout songs, once scattered, now sit together (average place {avgX} on our drawing)."
+      },
+      "twoPaths": {
+        "path1": "Path 1 – Hand-designed",
+        "path2": "Path 2 – Learned"
+      },
+      "headToHead": {
+        "sameSongs": "Same songs",
+        "yourRules": "Your rules",
+        "theModel": "The model",
+        "runBoth": "Run both →",
+        "trainFirst": "Train a model in the previous steps first (go back if needed).",
+        "loading": "Loading…",
+        "waiting": "waiting…",
+        "guessed": "guessed {n}",
+        "scoringSong": "Scoring song {n} of {total}…",
+        "resultLine": "rules {rules} · model {model}"
+      },
+      "hidden": {
+        "similarMeasurements": " – similar measurements on paper?",
+        "differentMeasurements": " – different measurements, related feel?",
+        "answerFirst": "Answer first – then we show the placement in words and on our drawing.",
+        "pairsMissing": "Hidden pairs missing from the audio bundle.",
+        "similar": "Similar",
+        "notSimilar": "Not similar",
+        "seeWhere": "See where they landed →",
+        "nextPair": "Next pair →",
+        "farApart": "far apart",
+        "closeTogether": "close together",
+        "areTheseSimilar": "Are these similar?",
+        "youSaidSimilar": "similar",
+        "youSaidNotSimilar": "not similar",
+        "youSaidPrefix": "You said",
+        "placedThem": "The representation placed them",
+        "roundOf": "Round {n} of 2",
+        "placementSummary": "Placement: {where}."
+      },
+      "taskDep": {
+        "sweat": "Make me sweat",
+        "sweatMatters": "What matters: drive, pace, energy.",
+        "sleep": "Help me sleep",
+        "sleepMatters": "What matters: calm, softness, space – nearly the opposite of the first.",
+        "instrument": "Sort by instrument",
+        "instrumentMatters": "What matters: timbre and instrumentation; tempo and energy barely count.",
+        "layoutSummary": "Layout: {title} task – our drawing."
+      },
+      "challenge": {
+        "placeholder": "A song belongs when…",
+        "examples": "Examples",
+        "belongs": "belongs",
+        "doesnt": "doesn't",
+        "belongsMark": "✓ belongs",
+        "doesntMark": "✗ doesn't belong",
+        "yourRule": "Your rule",
+        "intro": "A few songs are already marked. Infer the pattern – then try to write the rule.",
+        "submit": "Submit"
+      },
+      "songBoard": {
+        "aria": "Our drawing of the song arrangement",
+        "doesntBelong": "doesn't belong",
+        "legend": "● belongs · ■ doesn't · ▲ unmarked",
+        "markedBelongs": "Marked belongs",
+        "markedDoesnt": "Marked doesn't belong"
+      },
+      "repReveal": {
+        "trebleClef": "Treble clef",
+        "weCallThisA": "We call this a",
+        "learnedRepresentation": "learned representation"
+      },
+      "stepStub": {
+        "testTitle": "Test, and watch it miss",
+        "stubNote": "Step stub – interaction comes in a later phase."
+      },
+      "audio": {
+        "failedToLoad": "Failed to load audio"
+      },
+      "handWall": {
+        "sessionNotes": "Session notes",
+        "finding": "Finding"
+      },
+      "whoDecides": {
+        "humanChoices": "Human choices around the model"
+      },
+      "closing": {
+        "whatChangedTitle": "What changed",
+        "before": "Before",
+        "after": "After",
+        "oneMoreThing": "One more thing",
+        "continue": "Continue →"
+      }
+    },
+    "seoSpine": {
+      "h1": "What Are Learned Representations in AI?",
+      "lead": "A representation is how a system encodes information so later steps can use it. Representation learning means useful encodings are discovered from data — not only chosen by hand.",
+      "sections": [
+        {
+          "heading": "Feature engineering vs representation learning",
+          "body": "Feature engineering is when people decide which measurements matter. Representation learning is when the model adjusts its own encoding during training, capturing patterns that are hard to specify in advance."
+        },
+        {
+          "heading": "How neural networks learn features",
+          "body": "As weights change, the network’s internal features shift toward what helps the task. What information matters can change when the goal changes — the same raw input, different useful encodings."
+        }
+      ]
+    }
+  }
+}

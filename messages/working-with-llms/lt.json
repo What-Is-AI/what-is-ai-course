@@ -1,0 +1,330 @@
+{
+  "workingWithLlms": {
+    "meta": {
+      "badge": "1 praktika",
+      "title": "Darbas su DKM (didžiaisiais kalbos modeliais)",
+      "shortTitle": "Darbas su DKM (didžiaisiais kalbos modeliais)",
+      "mystery": "Kodėl patyrę DI naudotojai, naudodami tą patį modelį, gauna gerokai geresnius rezultatus?"
+    },
+    "shared": {
+      "continue": "Tęsti →"
+    },
+    "shell": {
+      "eyebrow": "DI studija",
+      "wordmark": "Darbas su DKM (didžiaisiais kalbos modeliais)"
+    },
+    "hook": {
+      "arrive": {
+        "plaque": "DI studija · 09:00",
+        "title": "Du dizaineriai. Vienas modelis.",
+        "subhead": "Tas pats DI. Ta pati užklausa. Pažiūrėkime, kas nutiks.",
+        "cta": "Susipažink su jais →"
+      },
+      "predict": {
+        "plaque": "Užduotis",
+        "title": "„Sukurk naują mūsų įmonės puslapį.“",
+        "subhead": "Dizaineris A atidaro visiškai naują pokalbį. Dizaineris B atidaro vieną tvarkingai suorganizuotą projektą – prekės ženklo pastabas, stiliaus pavyzdį, ankstesnius sprendimus ir prisegtas instrukcijas. Abu įveda lygiai tą patį sakinį.",
+        "predictionPrompt": "Kiek skirsis šie du rezultatai?",
+        "cta": "Patvirtink savo spėjimą →"
+      },
+      "slider": {
+        "identical": "Vienodi",
+        "slightly": "Šiek tiek skirtingi",
+        "dramatically": "Labai skirtingi"
+      },
+      "reveal": {
+        "plaque": "Greta",
+        "title": "Tas pats modelis. Tas pats sakinys. Rezultatas – ne tas pats.",
+        "designerA": {
+          "eyebrow": "Naujas pokalbis",
+          "body": "Bendro pobūdžio puslapis. „Sveiki atvykę į mūsų įmonę.“ Šabloninė struktūra. Jis galėtų tikti bet kam."
+        },
+        "designerB": {
+          "eyebrow": "Sutvarkytas projektas",
+          "body": "Prekės ženklą atitinkantis tonas. Aiškiai apibrėžta auditorija. Išdėstymas, atspindintis komandos jau priimtus sprendimus. Skamba taip, lyg tekstą būtų parašęs komandos narys."
+        },
+        "surpriseLine": "Modelis buvo tas pats. Pasikeitė tik tai, kas supo užklausą.",
+        "cta": "Taigi, kas pasikeitė? →"
+      }
+    },
+    "diagnose": {
+      "inspect": {
+        "plaque": "Dvi darbo aplinkos",
+        "title": "Pažvelkime iš arčiau.",
+        "subhead": "Dizainerio B projektas nenaudoja geresnio DI. Tai tas pats DI, tik su daugiau konteksto.",
+        "workspaceAEyebrow": "Darbo aplinka A",
+        "workspaceA": "Tuščias pokalbis – vienas sakinys ir nieko daugiau.",
+        "workspaceBEyebrow": "Darbo aplinka B",
+        "workspaceB": "Tas pats sakinys + prekės ženklo pastabos, auditorija, stiliaus pavyzdys, ankstesni sprendimai, prisegtos gairės, ką daryti ir ko nedaryti.",
+        "cta": "Kas lėmė skirtumą? →"
+      },
+      "pick": {
+        "plaque": "Tavo teorija",
+        "title": "Kas iš tikrųjų sukūrė geresnį puslapį?",
+        "subhead": "Pasirink viską, kas, tavo manymu, padėjo.",
+        "cta": "Patikrinti mano teoriją →"
+      },
+      "causes": {
+        "model-smarter": "Modelis tapo išmanesnis",
+        "brand-document": "Prekės ženklo dokumentas",
+        "longer-prompt": "Ilgesnė užklausa",
+        "luck": "Sėkmė",
+        "style-sample": "Stiliaus pavyzdys",
+        "pinned-instructions": "Prisegtos instrukcijos"
+      },
+      "reveal": {
+        "plaque": "Dėsningumas",
+        "title": "Tai nebuvo modelis. Ir ne gudri formuluotė.",
+        "body1": "Modelis niekada nepasikeitė. Dizaineris B neparašė ilgesnio sakinio – jis parašė tą patį sakinį.",
+        "body2": "Pasikeitė kontekstas: viskas, ką modelis galėjo matyti atsakydamas. Prekės ženklo pastabos, auditorija, pavyzdžiai, ankstesni sprendimai. Štai skirtumas tarp „bet kieno puslapio“ ir „tavo puslapio“.",
+        "punchline": "Pradedantieji tobulina užklausą. Patyrę naudotojai kuria kontekstą.",
+        "cta": "Bet kodėl tai veikia? →"
+      }
+    },
+    "whyContext": {
+      "recall": {
+        "plaque": "Grįžkime prie mašinos",
+        "title": "Prisimink, ką iš tikrųjų daro modelis.",
+        "subhead": "Iš mokymo kambario: jis prognozuoja kitus žodžius – po vieną – remdamasis viskuo, kas yra priešais jį.",
+        "body": "Kontekstas yra tas „viskas, kas yra priešais jį“. Pakeisk tai, ką jis gali matyti, ir pakeisi tai, ką jis prognozuoja. Tu nedarai jo išmanesnio, o tiesiog jį nukreipi tau tinkama linkme.",
+        "cta": "Parodyk →"
+      },
+      "toggle": {
+        "plaque": "Tiesiogiai",
+        "title": "Ta pati užklausa. Keiskime po vieną dalyką.",
+        "subhead": "Įjunk arba išjunk kiekvieną konteksto dalį ir stebėk, kaip keičiasi atsakymas.",
+        "requestEyebrow": "Užklausa",
+        "request": "Sukurk naują mūsų įmonės puslapį.",
+        "answerEyebrow": "Atsakymas",
+        "helperAllOff": "Neturėdamas į ką atsiremti, modelis grįžta prie visko, ko kada nors išmoko, vidurkio. Todėl atsakymas skamba bendro pobūdžio.",
+        "helperAllOn": "Dabar kiekvieną prognozę nukreipia tavo pasaulis, o ne interneto vidurkis.",
+        "genericAnswer": "Sveiki atvykę į mūsų įmonę. Siūlome novatoriškus sprendimus šiuolaikinėms įmonėms.",
+        "cta": "Tęsti →"
+      },
+      "chips": {
+        "audience": {
+          "label": "Auditorija",
+          "effect": "Kalba tavo nurodytiems žmonėms, o ne „visiems“."
+        },
+        "brand-voice": {
+          "label": "Prekės ženklo tonas",
+          "effect": "Skamba kaip tavo prekės ženklas, o ne šablonas."
+        },
+        "past-decision": {
+          "label": "Ankstesnis sprendimas",
+          "effect": "Atsižvelgia į komandos jau priimtą sprendimą."
+        },
+        "worked-example": {
+          "label": "Veikiantis pavyzdys",
+          "effect": "Atspindi jau sėkmingai atlikto darbo struktūrą."
+        }
+      }
+    },
+    "build": {
+      "scenario": {
+        "plaque": "Tavo eilė",
+        "title": "Vadovauji nedidelei kepyklėlei.",
+        "subhead": "DI naudoji beveik kiekvieną savaitę – antraštėms, atsakymams, meniu tekstams. Dabar kiekvieną kartą turi iš naujo paaiškinti, ko reikia. Sutvarkykime tai kartą ir visiems laikams.",
+        "cta": "Atidaryti studiją →"
+      },
+      "assemble": {
+        "plaque": "Sukurk kontekstą",
+        "title": "Pasirink tai, ką DI visada turėtų žinoti.",
+        "subhead": "Nutempk kiekvieną kortelę ant lentos. Tai sąranka, kurią patyrę naudotojai sukuria kartą ir naudoja ištisus mėnesius.",
+        "boardHeader": "Visada žinoti",
+        "pinned": "Prisegta: {count}",
+        "cta": "Paleisti tą pačią užklausą du kartus →"
+      },
+      "cards": {
+        "business": {
+          "label": "Verslas",
+          "body": "Nedidelė kaimynystės kepyklėlė, gyvuojanti šešerius metus, garsėjanti savo receptais."
+        },
+        "audience": {
+          "label": "Auditorija",
+          "body": "Vietiniai nuolatiniai klientai ir savaitgalį užsukantys turistai. Šilta ir jauku, ne korporatyvu."
+        },
+        "tone-sample": {
+          "label": "Tono pavyzdys",
+          "body": "Ramus rytas, kol kepyklėlę užpildo ką tik iškeptos duonos kvapas. Užsuk į svečius – paskanausi šviežių pyragėlių ir, jei pasiseks, paliksime tau vietą prie lango."
+        },
+        "past-decision": {
+          "label": "Ankstesnis sprendimas",
+          "body": "Nuolaidų netaikome. Vietoj jų kuriame papildomą vertę."
+        },
+        "do-dont": {
+          "label": "Daryk / Nedaryk",
+          "body": "Paminėk dienos pasiūlymus. Nenaudok perdėto entuziazmo su šauktukais."
+        }
+      },
+      "compare": {
+        "plaque": "Be konteksto ir su kontekstu",
+        "title": "„Parašyk šios savaitės Instagram antraštę.“",
+        "bare": {
+          "eyebrow": "Be konteksto",
+          "body": "„Užsukite šiandien paragauti šviežių kepinių! 🥐 Laukiame jūsų!“ – bendro pobūdžio, pernelyg reklamiška, galėtų tikti bet kuriai kepyklėlei."
+        },
+        "built": {
+          "eyebrow": "Tavo prisegtas kontekstas",
+          "body": "Yra vietų, į kurias užsuki dėl kavos, o išeini su dar šiltu pyragėliu. Šiandien vitrinoje – mūsų dienos pasiūlymai, keli seni mėgstami receptai ir, kaip visada, vieta prie lango, jei spėsi. Užsuk."
+        },
+        "surpriseLine": "Ta pati užklausa. Tiesiog šįkart tau nereikėjo visko iš naujo aiškinti.",
+        "cta": "Tęsti →"
+      }
+    },
+    "oneShot": {
+      "habit": {
+        "plaque": "Vienu kartu",
+        "title": "„Parašyk mano pristatymo el. laišką.“ Išsiųsti. Nukopijuoti. Įklijuoti. Atlikta.",
+        "subhead": "Dauguma žmonių pasilieka pirmąjį juodraštį. Patyrę naudotojai beveik niekada to nedaro.",
+        "cta": "Išbandyk abu būdus →"
+      },
+      "choose": {
+        "plaque": "Kelio išsišakojimas",
+        "title": "Gavai pirmąjį juodraštį. Kas toliau?",
+        "cta": "Pamatyk skirtumą →"
+      },
+      "approaches": {
+        "accept": "Priimti pirmąjį juodraštį",
+        "critique": "Paprašyti jo paties save sukritikuoti – „Kurios šio teksto dalys silpniausios?“"
+      },
+      "reveal": {
+        "plaque": "Antrasis etapas",
+        "title": "Kritikos etapas pakeitė el. laišką.",
+        "body1": "Paprašytas įvardyti savo silpnąsias vietas, modelis nurodė paslėptą raginimą veikti ir neaiškią pradžią – tada juos pataisė.",
+        "body2": "Nieko mistiško neįvyko. Tavo papildoma užklausa tapo nauju kontekstu ir nukreipė kitą prognozę. Kiekvienas etapas prideda informacijos; kiekvienas atsakymas tampa tikslesnis.",
+        "punchline": "Tu ne šiaip kalbiesi su kolega. Tu nukreipi prognozavimo variklį – o nukreipti geriau nei tiesiog priimti rezultatą.",
+        "cta": "Tęsti →"
+      }
+    },
+    "transfer": {
+      "plaque": "Sprendimas · {index}/{total}",
+      "title": "Kurti kontekstą ar tiesiog paklausti?",
+      "nextCta": "Toliau",
+      "lastCta": "Pamatyti rezultatą",
+      "choices": {
+        "reusable": "Sukurti pakartotinai naudojamą kontekstą",
+        "quick": "Pateikti greitą užklausą"
+      },
+      "feedback": {
+        "match": "Atitinka dėsningumą",
+        "rethink": "Pagalvok dar kartą"
+      },
+      "status": {
+        "matched": "Atitiko",
+        "missed": "Neatitiko"
+      },
+      "resultLine": "Tavo pasirinkimas: {picked} · Įprastas pasirinkimas: {usual}",
+      "scenarios": {
+        "street-sign": {
+          "scenario": "Išversti vieną kelio ženklą keliaujant",
+          "note": "Vienkartinė užduotis, ateityje jos nebereikės. Kontekstas būtų papildomas darbas, kurio daugiau nepanaudosi."
+        },
+        "company-style": {
+          "scenario": "Išlaikyti įmonės stilių nuoseklų ištisus metus skelbiant įrašus",
+          "note": "Tas pats tonas vėl ir vėl – prisek jį kartą."
+        },
+        "movie-year": {
+          "scenario": "Paklausti, kuriais metais pasirodė filmas",
+          "note": "Faktas, o ne nuolat naudojamas kontekstas. Nėra ko pakartotinai naudoti."
+        },
+        "weekly-reports": {
+          "scenario": "Kelias mėnesius rengti savaitines tos pačios projekto ataskaitas",
+          "note": "Pasikartojanti užduotis, stabilus kontekstas – idealiai tinka projektui."
+        },
+        "word-meaning": {
+          "scenario": "Greitai išspręsti nesutarimą dėl žodžio reikšmės",
+          "note": "Iš prigimties vienkartinė."
+        },
+        "personal-voice": {
+          "scenario": "Rašyti savo asmeniniu tonu visur, ką darai",
+          "note": "Tavo tonas yra stabilus kontekstas, kurį verta išsaugoti vieną kartą."
+        },
+        "random-article": {
+          "scenario": "Apibendrinti atsitiktinį straipsnį, prie kurio daugiau negrįši",
+          "note": "Nebus tęstinio darbo; projektas čia pridėtų daugiau vargo nei naudos."
+        }
+      },
+      "score": {
+        "plaque": "Dėsningumas",
+        "title": "{score} iš {total} atitiko įprastą pasirinkimą.",
+        "subhead": "Ne viskam reikia projekto. Svarbiausia mokėti atskirti, kam jo reikia, o kam ne.",
+        "cta": "Tęsti →"
+      }
+    },
+    "altitude": {
+      "task": {
+        "plaque": "Detalumo patikra",
+        "title": "Kaip detaliai aprašyti užduotį?",
+        "subhead": "Užduotis: „Padėk man parašyti motyvacinį laišką rinkodaros pareigoms užimti.“ Trys žmonės tą pačią užduotį suformuluoja trimis būdais.",
+        "cta": "Palyginti visus tris →"
+      },
+      "pick": {
+        "plaque": "Trys užklausos",
+        "title": "Kuri duoda geriausią rezultatą?",
+        "cta": "Parodyti →"
+      },
+      "choices": {
+        "vague": {
+          "label": "Per daug neaiški",
+          "detail": "„Parašyk man motyvacinį laišką.“"
+        },
+        "sweet-spot": {
+          "label": "Tikslas + apribojimai + sėkmės kriterijai",
+          "detail": "„Motyvacinis laiškas jaunesniojo rinkodaros specialisto pareigoms mažoje agentūroje. Šiltas, bet profesionalus tonas, mažiau nei 300 žodžių, pabrėžk mano renginių organizavimo patirtį. Sėkmė = jie gali įsivaizduoti mane komandoje.“"
+        },
+        "micromanaged": {
+          "label": "Per daug detaliai kontroliuojama",
+          "detail": "20 žingsnių scenarijus, nurodantis kiekvieną sakinį, perėjimą ir žodžių skaičių kiekvienoje pastraipoje."
+        }
+      },
+      "reveal": {
+        "plaque": "Optimalus vidurys",
+        "title": "Abu kraštutinumai pralaimi. Laimi vidurys.",
+        "body1": "Jei modeliui per daug neaišku, jis spragas užpildo interneto vidurkiu – gauni bendro pobūdžio rezultatą. Per daug kontroliuoji, ir pats jau būni atlikęs visą mąstymo darbą bei apribojęs modelį – gauni prastesnę savo paties plano versiją.",
+        "body2": "Laimintis variantas įvardija tikslą ir apribojimus – pareigas, toną, ilgį, ką pabrėžti ir kaip atrodo „geras“ rezultatas – o kaip tai padaryti palieka modeliui.",
+        "punchline": "Aiškiai nurodyk, koks tavo tiklas (rezultatas), aprašyti smukliai kiekvieno žingsnio nereikia.",
+        "cta": "Tęsti →"
+      }
+    },
+    "reflection": {
+      "plaque": "Studijos dienoraštis",
+      "title": "Užbaik sakinį.",
+      "subhead": "Jokio testo. Tiesiog stebėk, kaip pasikeitė tavo supratimas, ką reiškia „gerai naudoti DI“.",
+      "beforeLabel": "Iki šiandien maniau, kad geresni rezultatai gaunami dėl…",
+      "beforePlaceholder": "geresnių užklausų… magiškų žodžių… tinkamo modelio…",
+      "afterLabel": "Dabar manau, kad geresni rezultatai gaunami dėl…",
+      "afterPlaceholder": "geresnio konteksto… iteravimo… pakartotinai naudojamos sąrankos…",
+      "cta": "Išsaugoti dienoraštyje →"
+    },
+    "closing": {
+      "line": {
+        "plaque": "Studijos siena",
+        "title": "Pradedantieji optimizuoja užklausas. Ekspertai optimizuoja aplinką.",
+        "subhead": "Tas pats modelis visų rankose. Skirtumą lemia tai, ką sukuri aplink jį.",
+        "oldHabit": {
+          "eyebrow": "Senas įprotis",
+          "body": "Tobulinti vienos žinutės formuluotę."
+        },
+        "newHabit": {
+          "eyebrow": "Naujas įprotis",
+          "body": "Sukurti kontekstą vieną kartą. Naudoti jį pakartotinai. Tobulinti atsakymą iteruojant."
+        },
+        "cta": "Dar vienas dalykas →"
+      },
+      "principle": {
+        "plaque": "Kas išlieka",
+        "title": "Mygtukai nuolat keisis.",
+        "body": "Projektai, atmintis, darbo sritys, kad ir kas būtų pristatyta ateityje – visa tai tėra konkretūs įgyvendinimo variantai. Pagrindinis principas nesikeičia: kartu sukurtas kontekstas yra svarbesnis už formuluotę, kurią tobulini vienas. Tai galioja ChatGPT, Claude, Gemini ir viskam, kas juos pakeis.",
+        "cta": "Tęsti →"
+      },
+      "mystery": {
+        "headline": "Jei kontekstas toks galingas…",
+        "followUp": "kas nutinka, kai jo būna per daug – ar modelis kiekvienam žodžiui suteikia vienodą svorį?",
+        "toCoworker": "Pereiti į „The Coworker“",
+        "comingSoon": "Netrukus… Dėmesys",
+        "backHome": "Grįžti į pagrindinį puslapį"
+      }
+    }
+  }
+}

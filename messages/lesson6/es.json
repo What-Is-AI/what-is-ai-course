@@ -1,0 +1,387 @@
+{
+  "lesson6": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Qué es el aprendizaje profundo",
+      "shortTitle": "Qué es el aprendizaje profundo",
+      "mystery": "El aprendizaje profundo explicado: por qué las redes neuronales tienen profundidad, qué aprenden sus capas y qué se hace posible cuando se combinan distintas representaciones."
+    },
+    "shared": {
+      "continue": "Continuar →"
+    },
+    "shell": {
+      "eyebrow": "La profundidad",
+      "wordmark": "Aprendizaje profundo"
+    },
+    "steps": {
+      "arrive": {
+        "plaque": "Inicio",
+        "title": "¿En qué momento un conjunto de píxeles se convierte en un «7»?",
+        "body1": "Una red neuronal (neural network) no recibe la idea de un «7». Recibe información numérica de los píxeles.",
+        "body2": "Entonces, ¿cómo se convierte esa información en algo que la red pueda usar para reconocer un 7?",
+        "cta": "Empezar →"
+      },
+      "compose": {
+        "plaque": "Paso a paso",
+        "title": "Cada paso se apoya en el anterior",
+        "body": "Es el mismo 7 de antes. Apila un par de cambios —como poner un filtro de foto encima de otro— y observa cómo cada cambio nuevo actúa sobre el resultado del paso anterior, no sobre el original.",
+        "gateHint": "Añade al menos dos para verlo.",
+        "pivot": "Acabas de elegir tú esos pasos. ¿Y si la red pudiera encontrar los suyos propios, y mucho más útiles?",
+        "cta": "Ver cómo es el aprendizaje →"
+      },
+      "compressHuman": {
+        "plaque": "El 7, en 20 números",
+        "title": "Describe este 7 usando solo 20 números",
+        "body": "Imagina que describes este 7 por teléfono a alguien para que pueda volver a dibujarlo, pero solo puedes enviarle 20 números. Pon cada valor como quieras y observa qué se dibuja a partir de ellos. Después, mira los 20 números que ha elegido la red.",
+        "liveHelper": "Arrastra cualquier control deslizante: el dibujo se actualiza a medida que lo mueves.",
+        "panelTarget": "El 7",
+        "panelYours": "Dibujado a partir de tus 20 números",
+        "panelNetwork": "Dibujado a partir de los 20 números de la red",
+        "clueLabel": "Valor {n} de {total}",
+        "showNetwork": "Mostrar los 20 números de la red",
+        "tryAgain": "Volver a intentarlo",
+        "takeaway": "Cualquiera puede elegir 20 números. Pero estos 20 se han aprendido a partir de la imagen, así que contienen información suficiente para que la red reconstruya el 7.",
+        "cta": "Ahora, todavía más pequeño →"
+      },
+      "compressBottleneck": {
+        "plaque": "El 7, más pequeño",
+        "title": "¿Y si tienes todavía menos números?",
+        "body": "Hace un momento, la red ha resumido este 7 en 20 números. Ahora cambia cuántos números puede usar y observa qué parte del 7 se recupera.",
+        "controlLabel": "Cuántos números",
+        "scaleHint": "más números → más detalle · menos números → menos detalle",
+        "readout": {
+          "5": "5 números: solo sobrevive la forma general del 7.",
+          "20": "20 números: sigue siendo claramente un 7, aunque se pierde algo de detalle.",
+          "100": "100 números: se recupera casi todo el detalle."
+        },
+        "takeaway": "Cuantos menos números puede usar, menos queda del 7. Conserva la forma general y lo primero que descarta es el detalle fino.",
+        "cta": "¿Qué ha sobrevivido? →"
+      },
+      "compressReveal": {
+        "plaque": "Representación",
+        "title": "Esos 20 números tienen nombre: una representación",
+        "definition": "Una representación capta algo de forma que conserva la información útil y deja fuera el resto.",
+        "analogy": "Igual que un mapa capta los rasgos importantes de un lugar sin mostrar cada detalle, o un resumen recoge las ideas principales de un artículo largo.",
+        "recap": "Tú no habrías podido resumir el 7 en 20 números a mano. La red sí: no con palabras, sino con 20 números que contienen lo suficiente para volver a dibujarlo.",
+        "tease": "Entonces, ¿qué se conserva y qué se descarta cuando hay muy poco espacio?",
+        "cta": "Ver qué ha sobrevivido →"
+      },
+      "deepenCallback": {
+        "plaque": "Profundidad",
+        "title": "Las capas se apoyan unas en otras",
+        "body1": "Cada capa toma la representación de la capa anterior y la transforma en una nueva.",
+        "body2": "Los investigadores suelen observar que, tras el entrenamiento, estas capas desarrollan patrones cada vez más complejos. Pero es algo que observamos en la red ya entrenada: no es un conjunto de reglas que se le haya dado a la red.",
+        "cta": "Comparar una red poco profunda y una profunda →"
+      },
+      "deepenInspect": {
+        "plaque": "Profundidad",
+        "title": "¿Qué pueden hacer más pasos?",
+        "body": "Olvídate del 7 en esta pantalla: este rompecabezas muestra la idea con más claridad. Los puntos son de dos colores, y la red tiene que trazar una línea que deje cada color a un lado.",
+        "shallowLabel": "Poco profunda",
+        "shallowResult": "Pocos pasos: la línea sigue siendo recta y no puede separarlos. Acierta el {pct} % de las veces.",
+        "deeperLabel": "Más profunda",
+        "deeperResult": "Más pasos: la línea puede curvarse y rodearlos; ahora sí los separa. Acierta el {pct} % de las veces.",
+        "takeaway": "Es otra vez «La discriminación imposible» de la lección 5: una sola línea recta no puede hacerlo. Más pasos permiten a la red curvar la línea hasta darle una forma que sí lo consigue. Eso es lo que aporta la profundidad: no ser «más lista», sino poder manejar formas más complicadas.",
+        "training": "Entrenando la red poco profunda y la más profunda…",
+        "cta": "¿Y si añades más neuronas? →"
+      },
+      "deepenWidth": {
+        "plaque": "Profundidad",
+        "title": "¿No bastaría con añadir más neuronas?",
+        "body": "La profundidad ha ayudado en ese rompecabezas. Pero hay una objeción evidente: en lugar de apilar capas, ¿por qué no mantener una sola capa y meter más neuronas? El mismo número de piezas en ambos casos. Colócalas a lo ancho o apílalas en profundidad. Prueba las dos opciones con los mismos puntos.",
+        "controlLabel": "Cómo repartir tus neuronas",
+        "options": {
+          "wide": "Una capa ancha",
+          "deep": "Varias capas apiladas"
+        },
+        "layoutAnnounce": {
+          "wide": "Disposición: una capa ancha",
+          "deep": "Disposición: tres capas apiladas"
+        },
+        "predictLabel": "Tu apuesta: con más neuronas en una sola capa, ¿se separarán los puntos?",
+        "preds": {
+          "yes": "Sí, basta con la anchura",
+          "no": "No, hacen falta capas"
+        },
+        "predictFirst": "Primero haz tu apuesta y después prueba las dos disposiciones.",
+        "illustrativeNote": "Ilustrativo: las mismas {n} neuronas en ambos casos (una capa ancha frente a tres apiladas).",
+        "training": "Entrenando…",
+        "readout": {
+          "wide": "Una capa ancha, {n} neuronas: la línea sigue sin poder curvarse; {pct} % de aciertos. Más anchura no ha servido para curvarla.",
+          "deep": "Las mismas {n} neuronas en varias capas: la línea rodea los puntos; {pct} % de aciertos."
+        },
+        "verdict": {
+          "separated": "separados",
+          "notSeparated": "sin separar"
+        },
+        "takeaway": "Más neuronas en una capa no es lo mismo que más capas. Con el mismo número de piezas, apilarlas en pasos permite que cada paso remodele lo que hizo el anterior, así que la frontera puede curvarse y rodear los puntos de formas que una capa ancha no puede. La profundidad no es «más neuronas». Son piezas que se apoyan unas en otras.",
+        "hedge": "En teoría, una sola capa puede ajustarse a casi cualquier forma si la haces lo bastante ancha. El problema es que «lo bastante ancha» puede significar absurdamente ancha, hasta resultar inviable. Apilar es la forma de conseguir la misma potencia con un tamaño manejable. La profundidad renuncia a anchura a cambio de orden.",
+        "cta": "¿Siempre ayuda más profundidad? →"
+      },
+      "deepenPlateau": {
+        "plaque": "Profundidad",
+        "title": "¿Siempre ayuda más?",
+        "body": "Acabas de ver que añadir profundidad ha ayudado. Así que la siguiente pregunta es lógica: si algo de profundidad ayuda, ¿la red mejora siempre si añades cada vez más?",
+        "predictLabel": "Tu apuesta:",
+        "preds": {
+          "improve": "Sigue mejorando",
+          "plateau": "Se estanca",
+          "worse": "Empeora"
+        },
+        "addDepth": "Añadir más profundidad →",
+        "chartTitle": "Resultados según la profundidad",
+        "chartSummaryTemplate": "Sube hasta la profundidad {peak} y después baja: más profundidad ha dejado de ayudar.",
+        "readout": {
+          "rising": "Profundidad {d}: {pct} %. Mejor.",
+          "peak": "Profundidad {d}: {pct} %. La mejor hasta ahora.",
+          "slip": "Profundidad {d}: {pct} %. Empieza a bajar.",
+          "worse": "Profundidad {d}: {pct} %. Peor, y más difícil de entrenar.",
+          "shallow": "Profundidad {d}: {pct} %. Demasiado poco profunda; no puede curvarse lo suficiente."
+        },
+        "reveal": "Más profundidad no es automáticamente mejor. A partir de cierto punto, las capas extra dejan de ayudar y empiezan a perjudicar: son más difíciles de entrenar y el modelo funciona peor. La profundidad es una oportunidad, no una garantía.",
+        "predictFirst": "Primero haz tu apuesta y después añade profundidad.",
+        "cta": "Continuar →"
+      },
+      "deepenReveal": {
+        "plaque": "Profundidad",
+        "title": "La profundidad es una oportunidad, no una garantía",
+        "body1": "Más capas dan a una red más margen para aprender, pero también hacen más difícil el entrenamiento. Más profundidad no es automáticamente mejor.",
+        "historyCallback": "Como viste en la lección 5, algunos patrones son demasiado complejos para una sola capa. Añadir capas hace posibles más transformaciones.",
+        "historyNew": "Apilar capas no bastaba por sí solo. También tenían que mejorar los métodos de entrenamiento. En 2012, AlexNet mostró lo que era posible cuando la profundidad se combinaba con un entrenamiento viable, datos y capacidad de cómputo.",
+        "whyLabel": "Por qué fue importante",
+        "whyBody": "ImageNet era un benchmark clave para reconocer objetos en imágenes. El gran avance de AlexNet en ImageNet ayudó a demostrar que las redes grandes y profundas podían funcionar muy bien en cuanto estuvieran listos los métodos de entrenamiento, los datos y la capacidad de cómputo.",
+        "cta": "Continuar →"
+      },
+      "budget": {
+        "plaque": "Escala",
+        "title": "Tienes un presupuesto de cómputo fijo para el entrenamiento",
+        "body": "¿Deberías gastarlo en hacer el modelo más grande o en darle más datos de entrenamiento (training data)?",
+        "helper": "Elige una forma de gastar el presupuesto.",
+        "options": {
+          "bigger": {
+            "name": "Modelo más grande",
+            "label": "Gastar la mayor parte del presupuesto en un modelo más grande"
+          },
+          "data": {
+            "name": "Más datos",
+            "label": "Gastar la mayor parte del presupuesto en más datos de entrenamiento"
+          },
+          "balanced": {
+            "name": "Equilibrado",
+            "label": "Aumentar a la vez el tamaño del modelo y los datos de entrenamiento"
+          }
+        },
+        "revealTitle": "El cómputo es un presupuesto",
+        "reveal": "Con un presupuesto fijo de cómputo para el entrenamiento, el tamaño del modelo y los datos de entrenamiento deben crecer a la vez, no solo el tamaño del modelo.",
+        "chinchillaLabel": "Chinchilla (2022)",
+        "chinchillaBody": "70.000 millones de parámetros y más datos, con aproximadamente el mismo cómputo que Gopher, mucho mayor (280.000 millones de parámetros), y con mejores resultados al hacer crecer a la vez el tamaño y los tokens.",
+        "cta": "Continuar →"
+      },
+      "challenge": {
+        "plaque": "Reto final",
+        "title": "El aprendizaje profundo es útil porque…",
+        "cta": "Continuar →"
+      },
+      "reflection": {
+        "plaque": "Reflexión",
+        "title": "Piénsalo con calma",
+        "sub": "Escribe tanto o tan poco como quieras y después continúa.",
+        "beforeLabel": "Antes de esta lección pensaba que el aprendizaje profundo era…",
+        "beforePlaceholder": "simplemente apilar más capas… hacer los modelos más grandes…",
+        "afterLabel": "Ahora pienso que el aprendizaje profundo es…",
+        "afterPlaceholder": "componer transformaciones aprendidas para construir representaciones útiles, y que la profundidad es una oportunidad, no una garantía…",
+        "cta": "Continuar →"
+      },
+      "tracker": {
+        "plaque": "Modelo mental",
+        "title": "Antes y después",
+        "before": "Las redes neuronales tienen capas y parámetros ajustables.",
+        "after": "El aprendizaje profundo (deep learning) usa varias capas de transformaciones aprendidas para construir representaciones útiles a partir de los datos.",
+        "cta": "Continuar →"
+      },
+      "closing": {
+        "plaque": "Siguiente",
+        "title": "Acabas de ver lo que ocurre cuando una red puede encadenar una transformación tras otra.",
+        "question": "Pero ¿qué aprende a representar la red en realidad?",
+        "nextWorld": "La sala de escucha",
+        "hint": "Datos y una tarea, sin que nadie le diga qué características (features) buscar. Entonces, ¿de dónde salen esas características útiles?",
+        "nextLabel": "Siguiente: De las características a las representaciones",
+        "home": "Volver al inicio →"
+      }
+    },
+    "data": {
+      "reconstructionVerdicts": {
+        "5": {
+          "network": "Dibujado a partir de los números de la red: se desmorona; no hay espacio suficiente para conservar el 7.",
+          "humanGarbage": "Dibujado a partir de tus números: no es un 7 reconocible."
+        },
+        "20": {
+          "network": "Dibujado a partir de los números de la red: sigue pareciendo el 7, aunque se pierde algo de detalle.",
+          "humanGarbage": "Dibujado a partir de tus números: no es un 7 reconocible."
+        },
+        "100": {
+          "network": "Dibujado a partir de los números de la red: bastante detallado; sigue pareciendo el 7.",
+          "humanGarbage": "Dibujado a partir de tus números: no es un 7 reconocible."
+        }
+      },
+      "deepenVerdicts": {
+        "shallowFail": "Red poco profunda: sin separar; la frontera sigue siendo demasiado sencilla.",
+        "deeperWraps": "Red más profunda: la frontera se curva y rodea los datos.",
+        "plateaued": "La curva de entrenamiento se ha estancado: más profundidad ha dejado de ayudar.",
+        "overfit": "El entrenamiento ha mejorado con los datos de ejemplo, pero la curva muestra sobreajuste (overfitting) o un entrenamiento inestable."
+      },
+      "featureVizCaption": "Los investigadores observan patrones como estos después del entrenamiento; no son una regla que se le haya dado a la red.",
+      "finalChallenge": {
+        "prompt": "El aprendizaje profundo es útil porque…",
+        "options": [
+          {
+            "id": "A",
+            "label": "Hace que los ordenadores piensen más profundamente."
+          },
+          {
+            "id": "B",
+            "label": "Simplemente añade más neuronas."
+          },
+          {
+            "id": "C",
+            "label": "Permite a las redes neuronales componer muchas transformaciones aprendidas y construir representaciones útiles a partir de los datos."
+          }
+        ],
+        "correctId": "C"
+      },
+      "transformations": [
+        "brighten",
+        "blur",
+        "sharpen",
+        "contrast",
+        "invert",
+        "reduce detail"
+      ],
+      "budgetChoices": [
+        "bigger",
+        "data",
+        "balanced"
+      ]
+    },
+    "chrome": {
+      "arrive": {
+        "pixels": "Píxeles",
+        "earlyTransform": "Primera transformación",
+        "deeperRepresentation": "Representación más profunda",
+        "descentComplete": "Descenso completado.",
+        "watchingStages": "Observando cómo la imagen atraviesa etapas translúcidas…"
+      },
+      "compose": {
+        "originalToResult": "Original → Resultado",
+        "originalArrow": "Original → ",
+        "arrowResult": " → Resultado",
+        "stackedChanges": "{n} cambios apilados: cada uno actúa sobre el anterior, no sobre el original.",
+        "transforms": {
+          "brighten": "aclarar",
+          "blur": "desenfocar",
+          "sharpen": "enfocar",
+          "contrast": "contraste",
+          "invert": "invertir",
+          "reduce detail": "reducir detalle"
+        }
+      },
+      "compressHuman": {
+        "couldNotLoadTools": "No se han podido cargar las herramientas de dibujo.",
+        "couldNotLoadNetwork": "No se han podido cargar los números de la red.",
+        "networkValues": "Los 20 valores de la red",
+        "yourValues": "Tus 20 valores",
+        "originalAndDrawings": "Original y dibujos",
+        "originalHandwritten7": "7 original escrito a mano",
+        "yourAttemptLocked": "Tu intento (bloqueado)",
+        "fromYourValues": "A partir de tus 20 valores",
+        "fromNetwork20": "A partir de los 20 de la red",
+        "original": "Original",
+        "finding": "Resultado"
+      },
+      "compressBottleneck": {
+        "couldNotLoadDrawings": "No se han podido cargar los dibujos.",
+        "drawingFailed": "No se ha podido dibujar.",
+        "originalAndDrawing": "Original y dibujo",
+        "originalHandwritten7": "7 original escrito a mano",
+        "original": "Original",
+        "the7": "El 7",
+        "fromNNumbers": "A partir de {n} números",
+        "whatComesBack": "Lo que se recupera"
+      },
+      "compressReveal": {
+        "whatJustHappened": "Qué acaba de pasar",
+        "highlightedTerm": "una representación"
+      },
+      "deepenPlateau": {
+        "noDepthsMeasured": "Todavía no se ha medido ninguna profundidad.",
+        "depthsSoFar": "Puntos de profundidad hasta ahora: {points}."
+      },
+      "depthOpportunity": {
+        "fewLayers": "Pocas capas",
+        "fewLayersNote": "Algunos patrones quedan fuera de su alcance.",
+        "moreLayers": "Más capas",
+        "moreLayersNote": "Se hacen posibles más transformaciones.",
+        "tooMuch": "¿Demasiadas?",
+        "tooMuchNote": "Más profundidad también puede dificultar el entrenamiento.",
+        "alexNet": "2012 · AlexNet",
+        "alexNetNote": "Redes profundas + mejor entrenamiento",
+        "deepTrainable": "Profunda + entrenable",
+        "theArc": "La trayectoria",
+        "input": "Entrada",
+        "output": "Salida",
+        "asideTooMuch": "Más capas dan a la red más margen para aprender, pero también hacen más difícil el entrenamiento.",
+        "asideAlexNet": "AlexNet demostró que las redes grandes y profundas podían funcionar cuando estuvieran listos los métodos de entrenamiento, los datos y la capacidad de cómputo.",
+        "layerOne": "{n} capa",
+        "layerMany": "{n} capas"
+      },
+      "layerStack": {
+        "inputRepresentation": "Representación de entrada",
+        "nextLayerTransforms": "La siguiente capa la transforma",
+        "deeperRepresentation": "Representación más profunda",
+        "caption": "Lo que produce una capa se convierte en el punto de partida de la siguiente."
+      },
+      "budget": {
+        "fixedBudget": "Presupuesto fijo",
+        "modelSize": "Tamaño del modelo",
+        "trainingData": "Datos de entrenamiento",
+        "afterChoice": "Tu elección cambia cómo se reparte el presupuesto fijo.",
+        "beforeChoice": "Elige una opción y después mira qué descubrió la investigación.",
+        "finding": "Resultado"
+      },
+      "challenge": {
+        "correct": "Correcto: transformaciones compuestas y representaciones útiles.",
+        "wrong": "No del todo. Recuerda lo de ancho frente a profundo: más neuronas en una sola capa no podían curvar la línea; apilar esas mismas neuronas sí. La profundidad consiste en transformaciones compuestas, no más neuronas ni «pensar más». Inténtalo de nuevo."
+      },
+      "tracker": {
+        "before": "Antes de la lección 6",
+        "after": "Después de la lección 6"
+      },
+      "closing": {
+        "edges": "Bordes",
+        "shape": "Forma",
+        "pattern": "Patrón",
+        "features": "Características",
+        "representation": "Representación",
+        "usefulStructure": "Estructura útil, en poco espacio"
+      },
+      "deepenWidth": {
+        "finding": "Resultado",
+        "verdictSuffix": "Veredicto: {verdict}."
+      }
+    },
+    "seoSpine": {
+      "h1": "¿Qué es el aprendizaje profundo?",
+      "lead": "El aprendizaje profundo utiliza redes neuronales con muchas capas para que el sistema pueda construir representaciones internas cada vez más complejas, desde patrones sencillos hasta otros más abstractos, mediante la combinación sucesiva de transformaciones.",
+      "sections": [
+        {
+          "heading": "¿Por qué las redes neuronales tienen tantas capas?",
+          "body": "La profundidad permite que cada etapa aproveche lo que ya han calculado las capas anteriores. Un modelo poco profundo suele tener limitaciones, mientras que una red con más capas puede combinar muchos cálculos sencillos para conseguir un comportamiento más flexible."
+        },
+        {
+          "heading": "¿Qué aprenden las capas en el aprendizaje profundo?",
+          "body": "Las primeras capas suelen detectar estructuras más sencillas. Las capas posteriores combinan esas respuestas para identificar características de nivel más alto y más complejas. Esta progresión es una parte fundamental de lo que realmente significa el aprendizaje profundo."
+        }
+      ]
+    }
+  }
+}

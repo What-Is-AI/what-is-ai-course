@@ -1,0 +1,65 @@
+{
+  "source": "Incompetech / Kevin MacLeod",
+  "licenseDefault": "CC BY 3.0",
+  "licenseUrlDefault": "https://creativecommons.org/licenses/by/3.0/",
+  "attributionTemplate": "\"{title}\" by Kevin MacLeod (incompetech.com) — CC BY 3.0",
+  "baseUrl": "https://incompetech.com/music/royalty-free/mp3-royaltyfree",
+  "clipSeconds": 10,
+  "tracks": [
+    {"id": "energizing", "file": "Energizing.mp3", "tag": "driving electronic", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "electronic"}, "roles": ["predict", "train"]},
+    {"id": "hyperfun", "file": "Hyperfun.mp3", "tag": "driving electronic", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "electronic"}, "roles": ["predict", "train", "head-to-head", "hand-test"]},
+    {"id": "funky-chunk", "file": "Funky Chunk.mp3", "tag": "heavy bass", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "bass"}, "roles": ["predict", "train"]},
+    {"id": "bass-walker", "file": "Bass Walker.mp3", "tag": "heavy bass", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "bass"}, "roles": ["predict", "hand-test", "head-to-head"]},
+    {"id": "hitman", "file": "Hitman.mp3", "tag": "driving electronic", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "electronic"}, "roles": ["train", "head-to-head"]},
+    {"id": "heroic-age", "file": "Heroic Age.mp3", "tag": "bright pop", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "orchestra"}, "roles": ["train", "challenge"]},
+    {"id": "bassa-island", "file": "Bassa Island Game Loop.mp3", "tag": "driving electronic", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "electronic"}, "roles": ["predict", "hand-test"]},
+    {"id": "pamgaea", "file": "Pamgaea.mp3", "tag": "driving electronic", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "electronic"}, "roles": ["train", "head-to-head", "hand-test"]},
+    {"id": "hard-boiled", "file": "Hard Boiled.mp3", "tag": "heavy bass", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "bass"}, "roles": ["hand-test", "head-to-head"]},
+    {"id": "slow-burn", "file": "Slow Burn.mp3", "tag": "slow acoustic", "workoutBelongs": true, "labels": {"mood": "sweat", "instrument": "guitar"}, "roles": ["hand-test", "head-to-head"]},
+
+    {"id": "danger-storm", "file": "Danger Storm.mp3", "tag": "tense score", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "orchestra"}, "roles": ["hand-test", "head-to-head"]},
+    {"id": "darkest-child", "file": "Darkest Child.mp3", "tag": "tense score", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "orchestra"}, "roles": ["hand-test", "hidden-pair"]},
+    {"id": "arcane", "file": "Arcane.mp3", "tag": "tense score", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "synth"}, "roles": ["hand-test", "head-to-head"]},
+    {"id": "sneaky-snitch", "file": "Sneaky Snitch.mp3", "tag": "sparse beat", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "pluck"}, "roles": ["hand-test", "challenge"]},
+    {"id": "local-forecast", "file": "Local Forecast.mp3", "tag": "bright pop", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "orchestra"}, "roles": ["train", "hidden-pair", "hand-test"]},
+    {"id": "wallpaper", "file": "Wallpaper.mp3", "tag": "sparse beat", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "electronic"}, "roles": ["train", "challenge", "hand-test"]},
+    {"id": "space-jazz", "file": "Space Jazz.mp3", "tag": "live band", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "jazz"}, "roles": ["train", "task-view", "hand-test"]},
+    {"id": "lobby-time", "file": "Lobby Time.mp3", "tag": "bright pop", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "jazz"}, "roles": ["train", "challenge", "hand-test"]},
+
+    {"id": "gymnopedie", "file": "Gymnopedie No 1.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "piano"}, "roles": ["predict", "train", "task-view"]},
+    {"id": "meditation", "file": "Meditation Impromptu 01.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "piano"}, "roles": ["train", "task-view", "head-to-head"]},
+    {"id": "tranquility", "file": "Tranquility Base.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "pads"}, "roles": ["predict", "train", "task-view"]},
+    {"id": "dreamy", "file": "Dreamy Flashback.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "keys"}, "roles": ["train", "task-view"]},
+    {"id": "air-prelude", "file": "Air Prelude.mp3", "tag": "strings", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "strings"}, "roles": ["train", "task-view", "challenge"]},
+    {"id": "lightless", "file": "Lightless Dawn.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "pads"}, "roles": ["predict", "task-view"]},
+    {"id": "deep-haze", "file": "Deep Haze.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "pads"}, "roles": ["task-view", "head-to-head"]},
+    {"id": "wholesome", "file": "Wholesome.mp3", "tag": "bright pop", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "acoustic"}, "roles": ["train", "task-view", "hand-test"]},
+    {"id": "folk-round", "file": "Folk Round.mp3", "tag": "live band", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "acoustic"}, "roles": ["predict", "train", "task-view"]},
+    {"id": "carefree", "file": "Carefree.mp3", "tag": "bright pop", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "acoustic"}, "roles": ["predict", "train", "hand-test"]},
+    {"id": "smooth-lovin", "file": "Smooth Lovin.mp3", "tag": "bright pop", "workoutBelongs": false, "labels": {"mood": "neutral", "instrument": "guitar"}, "roles": ["train", "hidden-pair"]},
+    {"id": "floating-cities", "file": "Floating Cities.mp3", "tag": "soft ambient", "workoutBelongs": false, "labels": {"mood": "sleep", "instrument": "pads"}, "roles": ["train", "task-view", "hidden-pair"]}
+  ],
+  "hiddenPairs": [
+    {
+      "id": "pair-same-measures",
+      "clipA": "carefree",
+      "clipB": "floating-cities",
+      "kind": "same-measures-different-feel",
+      "expected": "far"
+    },
+    {
+      "id": "pair-related-feel",
+      "clipA": "funky-chunk",
+      "clipB": "smooth-lovin",
+      "kind": "different-measures-related-feel",
+      "expected": "close"
+    }
+  ],
+  "heldOutIds": [
+    "slow-burn",
+    "hard-boiled",
+    "danger-storm",
+    "wallpaper",
+    "local-forecast"
+  ]
+}

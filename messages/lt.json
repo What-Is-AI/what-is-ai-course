@@ -1,0 +1,1934 @@
+{
+  "common": {
+    "continue": "Tęsti →",
+    "language": "Kalba",
+    "enShort": "EN",
+    "esShort": "ES",
+    "ltShort": "LT",
+    "stepOf": "{step} žingsnis iš {total}",
+    "progressAria": "Pamokos eiga: {step} žingsnis iš {total}",
+    "stepsNavAria": "Pamokos žingsniai: {step} iš {total}",
+    "prevStep": "Ankstesnis žingsnis",
+    "nextStep": "Kitas žingsnis",
+    "copyright": "© {year} Pro Technologies, MB",
+    "footerCreatedBy": "Sukūrė",
+    "footerSupportedBy": "Su indėliu iš",
+    "footerCodeLicense": "Kodas: AGPL-3.0",
+    "footerLessonsLicense": "Pamokos: CC BY-NC-SA 4.0",
+    "footerSource": "Šaltinis",
+    "footerWarrantyNote": "be garantijos",
+    "breadcrumbAria": "Naršymo kelias",
+    "lessonOverviewAria": "Pamokos apžvalga"
+  },
+  "nav": {
+    "brand": "What is AI",
+    "lessons": "Pamokos",
+    "practiceSection": "Praktika",
+    "close": "Uždaryti",
+    "closeMenuAria": "Uždaryti meniu",
+    "expand": "Išskleisti meniu",
+    "collapse": "Sutraukti meniu",
+    "about": "Apie",
+    "aboutShort": "A",
+    "home": "Pagrindinis",
+    "collapsed": {
+      "practice1": "P1",
+      "practice2": "P2",
+      "practice3": "P3",
+      "workshop": "W",
+      "placeholder": "P"
+    },
+    "feedback": {
+      "trigger": "Atsiliepimai ir užklausos",
+      "kicker": "Privatu · anonimiška",
+      "title": "Atsiliepimai ir užklausos",
+      "titleShort": "Atsiliepimai",
+      "closeAria": "Uždaryti",
+      "thanks": "Ačiū – gavome jūsų žinutę.",
+      "note": "El. laiškas nesiunčiamas. Jūsų žinutė išsaugoma anonimiškai, kad galėtume ją peržiūrėti vėliau.",
+      "close": "Uždaryti",
+      "type": "Tipas",
+      "kindFeedback": "Atsiliepimai",
+      "kindRequest": "Užklausa",
+      "messageLabel": "Jūsų žinutė",
+      "placeholderFeedback": "Kas veikė gerai, kas sukėlė neaiškumų ar atrodė ne taip?",
+      "placeholderRequest": "Ką norėtumėte, kad pridėtume ar paaiškintume?",
+      "cancel": "Atšaukti",
+      "send": "Siųsti",
+      "sending": "Siunčiama…",
+      "sendFailed": "Nepavyko išsiųsti jūsų žinutės. Po akimirkos bandykite dar kartą.",
+      "unavailable": "Atsiliepimai šiuo metu nepasiekiami.",
+      "cooldown": "Prieš siųsdami kitą žinutę šiek tiek palaukite.",
+      "tooShort": "Parašykite bent {min} simbolių."
+    },
+    "cookies": "Slapukai"
+  },
+  "consent": {
+    "ga": {
+      "title": "Analitikos slapukai",
+      "body": "Naudojame Google Analytics, kad suprastume, kaip naudojamas kursas. Pakeisti galite bet kada meniu punkte Slapukai.",
+      "accept": "Sutikti",
+      "reject": "Atmesti"
+    }
+  },
+  "about": {
+    "eyebrow": "Apie",
+    "title": "What is AI",
+    "lead": "Supraskite DI jį išbandydami, o ne tik skaitydami apie jį.",
+    "intro": "Sukūrėme <strong>What is AI</strong> smalsiems žmonėms, kurie nori suprasti, kas iš tikrųjų vyksta už DI, kurį jie naudoja kasdien.",
+    "who": {
+      "title": "Kas už to slypi",
+      "before": "Sukūrė",
+      "mid": ", su indėliu iš",
+      "after": ".",
+      "proAi": "Pro AI Assistant",
+      "malagaAi": "Malaga AI"
+    },
+    "how": {
+      "title": "Kaip mokome",
+      "start": {
+        "title": "Pradedame nuo to, ką jau manote, o ne nuo galutinio atsakymo",
+        "body": "Jei iš karto pateiksime jums paaiškinimą, lengva pritarti ir pajusti, kad suprantate – iki tol, kol pabandote tai pritaikyti. Vietoj to pirmiausia norime paklausti, kas, jūsų manymu, nutiks, ir leisti jums tai išsiaiškinti patiems. Kartais būsite teisūs, tačiau būtent akimirkos, kai visiškai suklystate, dažniausiai tampa tikrojo mokymosi vieta. DI gausu dalykų, kurie atrodo akivaizdūs, kol jų neišbandote, todėl, kai tik įmanoma, leidžiame jums pažaisti su sistema prieš gilinantis į tai, kodėl ji elgiasi būtent taip. Nuspėkite, sulaužykite sistemą, stebėkite, kas nutiks, o tada paaiškinsime, kokia mechanika slypi už to."
+      },
+      "using": {
+        "title": "Naudoti DI nėra tas pats, kas jį suprasti",
+        "body": "Galite kasdien naudoti Didįjį kalbos modelį (DKM) ir vis tiek turėti stebėtinai netikslių įsivaizdavimų apie tai, kas vyksta jo viduje – panašiai kaip dešimtis kartų per valandą paliečiate stiklinį ekraną, nežinodami, kaip talpiniai jutikliai nuskaito jūsų pirštų galiukų elektrinį krūvį. Tačiau jei čia esate tam, kad iš tikrųjų suprastumėte DI, galiausiai turime pažvelgti po paviršiumi. Tai taip pat reiškia pripažinti, kad DI neprasidėjo nuo ChatGPT. Šiuolaikiniai DKM yra įdomūs, tačiau jie tėra vienas skyrius daug didesnėje istorijoje, apimančioje simbolinį samprotavimą, ekspertines sistemas, neuroninius tinklus, pastiprintąjį mokymąsi ir kelias garsias aklavietes. Nagrinėsime šiandien naudojamus įrankius, bet taip pat pažvelgsime į tai, kas buvo prieš juos, kodėl ankstyvieji metodai žlugo ir kur pakeliui visi klydo."
+      },
+      "patterns": {
+        "title": "Nenorime, kad įsimintumėte sąvokas – norime, kad pastebėtumėte dėsningumus",
+        "body1": "Mūsų tikslas nėra padėti jums išlaikyti testą; norime pakeisti tai, kaip žiūrite į technologijas. Perėję šias pamokas pradėsite matyti bendrus dėsningumus rekomendavimo sistemose, regos modeliuose, šachmatų DI ir autonominiuose agentuose. Jų istorijos ir nesėkmių būdai skiriasi, tačiau staiga jie visi pradeda intuityviai sietis.",
+        "body2": "Nereikia mokytis diferencialinio ir integralinio skaičiavimo, įsiminti sudėtingų lygčių ar vadintis „užklausų inžinieriumi“, kad iš to gautumėte naudos. Reikia tik pakankamai smalsumo pažvelgti į sistemą ir paklausti: „Palaukite – ar ji iš tikrųjų taip veikia?“ Nuo to ir pradedame."
+      }
+    },
+    "meta": {
+      "title": "Apie · What is AI",
+      "description": "Supraskite DI jį išbandydami, o ne tik skaitydami apie jį."
+    }
+  },
+  "home": {
+    "tagline": "Interaktyvus tyrimas, o ne vadovėlis. Paslapčių serija – po vieną klaidingą įsitikinimą.",
+    "startCta": "Pradėti nuo {number} pamokos"
+  },
+  "lesson1": {
+    "meta": {
+      "badge": "{number} pamoka",
+      "title": "Kas laikoma DI?",
+      "shortTitle": "Kas laikoma DI?",
+      "mystery": "Ar ChatGPT yra visa istorija – ar tik vienas jos skyrius?"
+    },
+    "shared": {
+      "continue": "Tęsti →",
+      "chooseOne": "Pasirinkite vieną",
+      "empty": "—",
+      "buckets": {
+        "definitely": "Tikrai DI",
+        "could": "Gali būti DI",
+        "probably-not": "Greičiausiai ne DI"
+      },
+      "domains": {
+        "language": "Kalba",
+        "vision": "Vaizdai",
+        "audio": "Garsas",
+        "planning": "Planavimas",
+        "ranking": "Rikiavimas",
+        "multiple": "Kelių sričių",
+        "none": "Ne DI"
+      },
+      "origins": {
+        "learned": "Išmokta",
+        "specified": "Nurodyta",
+        "both": "Abu",
+        "depends": "Priklauso"
+      },
+      "domainBlurbs": {
+        "language": "Tekstas, kalba, vertimas, pokalbiai.",
+        "vision": "Vaizdai, veidai, scenos, vaizdo įrašai.",
+        "audio": "Garsas, kalba, muzika – tai, ką girdite, ir kaip tai apdorojama.",
+        "planning": "Galimų veiksmų paieška į priekį.",
+        "ranking": "Parinkčių išrikiavimas – ką rodyti toliau.",
+        "multiple": "Kelios problemos sujungtos į vieną sistemą.",
+        "none": "Tai apskritai ne DI problema. Tai tikras skaičiavimas – aritmetika, o ne paieška ar kelio radimas, todėl nėra srities, kurią reikėtų įvardyti."
+      },
+      "originBlurbs": {
+        "learned": "Elgsena atsirado iš pavyzdžių / duomenų.",
+        "specified": "Elgsena atsirado iš žmogaus parašytų taisyklių ar paieškos metodo.",
+        "both": "Viena dalis išmokta, kita nurodyta – tame pačiame objekte.",
+        "depends": "Vien produkto pavadinimo nepakanka – svarbi epocha ir įgyvendinimas."
+      },
+      "status": {
+        "aligned": {
+          "visible": "Atitinka",
+          "sr": ", correct"
+        },
+        "rethink": {
+          "visible": "Pagalvokite dar kartą",
+          "sr": ", verta pažvelgti dar kartą"
+        },
+        "skipped": {
+          "visible": "Praleista",
+          "sr": ", į šį klausimą neatsakėte"
+        },
+        "rightPlace": {
+          "visible": "Tinkamoje vietoje",
+          "sr": ", correct"
+        }
+      },
+      "scenarioKinds": {
+        "learned": "Išmokta",
+        "specified": "Nurodyta (paieška)",
+        "hybrid": "Abu"
+      }
+    },
+    "shell": {
+      "stepOf": "{step} žingsnis iš {total}",
+      "progressAria": "Pamokos eiga: {step} žingsnis iš {total}",
+      "stepsNavAria": "Pamokos žingsniai: {step} iš {total}",
+      "prevStep": "Ankstesnis žingsnis",
+      "nextStep": "Kitas žingsnis"
+    },
+    "hook": {
+      "ask": {
+        "title": "Jau kasdien naudojate DI. Ar tikrai?",
+        "subhead": "Prieš pradėdami – kas laikoma DI?",
+        "cta": "Išsiaiškinkime →"
+      },
+      "sort": {
+        "eyebrow": "1 raundas · Rikiuokite pagal nuojautą",
+        "title": "Kas laikoma DI?",
+        "subhead": "Per daug negalvokite.",
+        "prompt": "Kur tai priklauso?",
+        "hint": "Vadovaukitės pirmąja nuojauta. Teisingų atsakymų nėra.",
+        "outputLabel": "Kur tai priklauso",
+        "outputNote": "Pildoma jums tęsiant.",
+        "waiting": "Laukiama…",
+        "completeTitle": "Klausimai baigti",
+        "completeSub": "Pažiūrėkite, ką atskleidžia jūsų pasirinkimai.",
+        "cta": "Peržiūrėti rezultatus →",
+        "objectOf": "Objektas {index} iš {total}: {label}",
+        "sortedInto": "{label} priskirta kategorijai „{bucket}“.",
+        "sortAria": "Priskirti {label} kategorijai „{bucket}“",
+        "binAria": "{bucket}, surikiuota: {count}"
+      }
+    },
+    "reveal": {
+      "locked": {
+        "plaque": "Rezultatai užrakinti",
+        "title": "Pirmiausia surikiuokite, kad pamatytumėte rezultatus.",
+        "body1": "Šiame žingsnyje lyginami jūsų intuityvūs priskyrimai rūšiavimo užduotyje. Pirmiausia užbaikite tą žingsnį, kad galėtumėte peržiūrėti rezultatus.",
+        "body2": "Galite grįžti ir surikiuoti arba tęsti be rezultatų.",
+        "back": "Grįžti į rūšiavimą",
+        "skip": "Tęsti be rezultatų →"
+      },
+      "plaque": "Pagrindinė mintis",
+      "title": "Du klausimai. Ne vienas verdiktas.",
+      "lede": "Užuot klausę „Ar tai DI?“, pažvelkite į du dalykus:",
+      "domain": {
+        "title": "01 · Sritis",
+        "name": "Sritis",
+        "question": "Kokia tai problema?",
+        "sub": "Ar tai apskritai DI problema? Jei taip, kokia?",
+        "body": "Norėdami nustatyti sritį, paklauskite: ar ši užduotis apima atpažinimą, interpretavimą, rikiavimą arba galimybių paiešką, kai nėra vieno mechaniškai „teisingo“ atsakymo? Jei taip, tai DI problema (kalba, rega, garsas, planavimas arba rikiavimas), nesvarbu, kaip ji sukurta. Jei užduotis yra tiesioginis, tikslus skaičiavimas su vienu garantuotai teisingu atsakymu, kuriam nereikia interpretacijos – aritmetika, vaizdo dydžio keitimas, failo glaudinimas, brūkšninio kodo dekodavimas – tai įprastas skaičiavimas, o ne DI, kad ir kokia sudėtinga būtų matematika.",
+        "openAria": "Atidaryti sritį kaip lipnų lapelį",
+        "bringToFrontAria": "Perkelti srities lapelį į priekį"
+      },
+      "origin": {
+        "title": "02 · Kilmė",
+        "name": "Kilmė",
+        "question": "Iš kur atsiranda elgsena?",
+        "sub": "Išmokta, nurodyta ar derinys?",
+        "openAria": "Atidaryti kilmę kaip lipnų lapelį",
+        "bringToFrontAria": "Perkelti kilmės lapelį į priekį"
+      },
+      "insightLabel": "Platesnis požiūris",
+      "insightBody": "<strong>DKM (Didieji Kalbos modeliai)</strong> yra vienas skyrius, o ne visa sritis.",
+      "instinctLabel": "Kur jus nuvedė nuojauta",
+      "instinctBody": "Čia balų nėra – 1 raundas skirtas tik patikrinti jūsų nuojautą. O nuojauta nebūna nei teisinga, nei klaidinga. 2 raunde galėsite pritaikysite taisykles ir pamatyti, ar jos sutampa su jūsų pasirinkimu.",
+      "reviewTitle": "Peržiūrėkite rezultatus",
+      "reviewSub": "Pasirinkite bet kurį objektą, kad sužinotumėte jo sritį ir kilmę. Tada palyginkite ją su sritimi, kuriai iš pradžių priskyrėte objektą remdamiesi savo nuojauta.",
+      "detailLabel": "Išsamiau",
+      "selectObject": "Pasirinkite objektą",
+      "emptyDetail": "Pasirinkite objektą iš sąrašo, kad pamatytumėte sritį, kilmę ir kaip jūsų nuojauta su tuo sutapo.",
+      "youSaid": "Jūs pasirinkote",
+      "closeNoteAria": "Uždaryti {title} pastabą",
+      "vanishing": {
+        "eyebrow": "Kodėl nuobodūs dalykai vis tiek yra DI",
+        "wordmark": "Kaip DI tampa nematomas",
+        "p1": "Ar pastebite keistą dalyką: el. laiškų šlamšto filtrai, GPS ir telefono įrenginio automatinis žinučių užbaigimas laikomi DI, tačiau nė vienas iš jų neatrodo kaip DI.",
+        "p2": "Tam yra pavadinimas, kai technologija ima ką nors atlikti patikimai, nustojame tai vadinti DI ir pradedame vadinti „tiesiog programine įranga“. Ši riba nuolat slenka – DI pradedame vadinti tai, ko dar nesame išsprendę.",
+        "p3": "Todėl DI sritis atrodo mažesnė, nei yra iš tikrųjų. Didelė dalis DI jau yra įdiegta į įrankius ar technologijas, kurias naudojate apie tai net nesusimąstydami. Štai kodėl į klausimą „ar tai DI?“ sunkiau atsakyti, nei gali pasirodyti iš pirmo žvilgsnio – atsakymas dažnai yra „priklauso nuo...“."
+      },
+      "cta": "Pritaikykite taisyklę naujiems objektams →"
+    },
+    "round2": {
+      "eyebrow": "2 raundas · Rikiuokite pagal taisyklę",
+      "title": "Dabar turite taisyklę.",
+      "ledeDomain": "<strong>Sritis</strong>: ar tai DI problema ir, jei taip, kokia?",
+      "ledeOrigin": "<strong>Kilmė</strong>: iš kur atsirado elgsena?",
+      "domainLegend": "Sritis – ar tai DI problema ir kokia?",
+      "originLegend": "Kilmė – iš kur ji atsirado",
+      "domainGroupAria": "Sritis",
+      "originGroupAria": "Kilmė",
+      "nextCue": "Toliau",
+      "pickDomain": "Pasirinkite sritį",
+      "pickOrigin": "Pasirinkite kilmę",
+      "check": "Patikrinti mano atsakymą →",
+      "nextObject": "Kitas objektas →",
+      "seeScore": "Pamatyti savo rezultatą →",
+      "objectOf": "Objektas {index} iš {total}: {label}",
+      "whatIsAria": "Kas yra {label}? ",
+      "matchedSr": ", sutampa",
+      "missedSr": ", nesutampa su jūsų pasirinkimu",
+      "announce": "{label}. Teisinga sritis: {domain}{domainDiff}. Teisinga kilmė: {origin}{originDiff}. {note}",
+      "differentChoice": " (skiriasi nuo jūsų pasirinkimo)",
+      "score": {
+        "plaque": "Perkėlimas",
+        "title": "{score} iš {total} sutapo su teisingais atsakymais.",
+        "sub": "1 raundas parodė, kuo tikėjote. 2 raundas parodo, ar įsisavinote taisyklę.",
+        "correctAnswer": " – teisingas atsakymas: {domain} · {origin}",
+        "cta": "Tęsti →"
+      }
+    },
+    "depends": {
+      "plaque": "Priklauso – nuo ko?",
+      "intro": {
+        "title": "Kodėl atsakymas dažnai yra „Priklauso“",
+        "body": "Anksčiau sakėme, kad tai, ar kažkas laikoma DI, laikui bėgant gali keistis. Štai svarbi priežastis: kai kurie įrankiai šiandien kuriami vienaip, o prieš kelerius metus buvo kuriami kitaip. Ta pati užduotis – bet tai, kas yra viduje, pasikeitė. Pažvelkime.",
+        "cta": "Parodyti →"
+      },
+      "toggle": {
+        "objectOf": "Objektas {index} iš {total}",
+        "sub": "Perstumkite slankiklį tarp dviejų epochų. Stebėkite, kaip keičiasi kilmė, o sritis lieka ta pati.",
+        "domainBadge": "Sritis · {domain}",
+        "originBadge": "Kilmė · {origin}",
+        "stays": "Nekinta",
+        "flips": "Pasikeičia",
+        "then": "Tada",
+        "now": "Dabar",
+        "sliderAria": "Epocha: tada arba dabar",
+        "eraKicker": "{era} · Kilmė {origin}",
+        "next": "Toliau →",
+        "seePoint": "Tęsti →",
+        "announceChange": "Sritis: {domain}, nepakitusi. Kilmė: dabar {origin}.",
+        "announceObject": "Objektas {index} iš {total}: {label}. Sritis: {domain}, nepakitusi. Kilmė: dabar {origin}."
+      },
+      "point": {
+        "title": "Dabar žinote, nuo ko priklauso „priklauso“.",
+        "p1": "<strong>Sritis niekada nepasikeitė</strong> – problema kiekvienoje epochoje yra ta pati.",
+        "p2": "<strong>Kilmė pasikeitė</strong> – elgsena iš parašytų taisyklių perėjo prie išmoktos iš duomenų.",
+        "p3": "Taigi „Priklauso“ turi tikslią reikšmę: vien produkto pavadinimo nepakanka. Turite žinoti, <em>kada</em> jis buvo sukurtas ir <em>kaip</em>.",
+        "cta": "Tęsti →"
+      }
+    },
+    "timeline": {
+      "plaque": "Laiko juosta",
+      "title": "Kas buvo pirmiau?",
+      "sub": "Išdėstykite svarbiausius įvykius nuo seniausio iki naujausio. Spustelėkite arba vilkite įvykius esančius dešinėje pusėje, į kairėje pusėje esančius laukelius.",
+      "yourOrder": "Jūsų tvarka",
+      "oldest": "Seniausias",
+      "newest": "Naujausias",
+      "pool": "Į vietą sudėliotini įvykiai",
+      "correctOrder": "Teisinga tvarka",
+      "emptySlot": "Tuščia vieta",
+      "tapToReturn": "Bakstelėkite, kad grąžintumėte · vilkite, kad pakeistumėte tvarką",
+      "allPlaced": "Visi sudėti. Bakstelėkite kairėje esantį elementą, kad jį grąžintumėte, arba nutempkite vieną čia atgal.",
+      "clickOrDrag": "Spustelėkite, kad padėtumėte kitą – arba nutempkite į vietą.",
+      "eitherOrder": "ABIEM EILIŠKUMAIS",
+      "check": "Patikrinti tvarką →",
+      "score": "{count} iš {total} yra tinkamoje vietoje.",
+      "scoreHint": "Daugumai žmonių tai sunkiau, nei jie tikisi – tikroji tvarka nėra tokia, kokią galėtų įteigti naujausios naujienos.",
+      "punchline": "Pats mokymasis nėra naujas – mašinos mokėsi jau 1959 m. Tačiau mastas pasikeitė neseniai – atsirado daugiau duomenų, didesnė skaičiavimo galia ir architektūra, kuri pagaliau leido išnaudoti abu šiuos dalykus kartu.",
+      "tieNote": "Abu darbai spaudoje pasirodė tais pačiais metais – programa, kuri samprotavo atlikdama paiešką (GPS), ir programa, kuri mokėsi iš patirties (Samuelio šaškės). DI kūrimosi metais samprotavimas ir mokymasis augo greta, o ne po kelių dešimtmečių vienas nuo kito.",
+      "sourcesEyebrow": "Pasirinktinai",
+      "sourcesTitle": "Papildomi šaltiniai",
+      "placedAnnounce": "{label}, įdėta į {position} poziciją. Paspauskite Enter, kad grąžintumėte, arba vilkite, kad pakeistumėte tvarką.",
+      "returnedAnnounce": "{label}, grąžinta į sudėliotinų įvykių sąrašą.",
+      "placeAria": "Įdėkite {label}. Spustelėkite arba vilkite į laiko juostą.",
+      "placedAria": "{label}, {position} pozicija, bakstelėkite arba paspauskite Enter, kad grąžintumėte, arba vilkite, kad pakeistumėte tvarką",
+      "slotAria": "{label}, {position} pozicija. {feedback}",
+      "positionAria": "{label}, {position} pozicija",
+      "emptySlotAria": "Tuščia vieta, {position} pozicija",
+      "rightPlace": "Tinkamoje vietoje.",
+      "offBy": "Šį objektą padėjote {placed}; jo vieta yra {belongs} – paklaida: {offBy}.",
+      "lineAnnounce": "{label}, {position} pozicija: {feedback}",
+      "scoreAnnounce": "{count} iš {total} yra tinkamoje vietoje. {lines}",
+      "ordinal": "{n, selectordinal, one {#-oji} two {#-oji} few {#-ioji} other {#-oji}}",
+      "ordinalRange": "{from}–{to}"
+    },
+    "cases": {
+      "plaque": "Atvejo analizė · {index}/{total}",
+      "title": "Kaip tai veikia?",
+      "progressAnnounce": "Atvejo analizė {index} iš {total}: {prompt}",
+      "youChose": "Pasirinkote: {choice}.",
+      "correct": "Teisingai.",
+      "incorrect": "Teisingas atsakymas: {correct}.",
+      "next": "Toliau →",
+      "seePattern": "Pamatyti dėsningumą →",
+      "finish": {
+        "plaque": "Ryškėja dėsningumas",
+        "title": "Vieni mokosi. Kiti ieško. Kai kurie daro abu.",
+        "sub": "Štai žemėlapis. 2 pamoka užduos sunkesnį klausimą: kodėl negalėjome tiesiog parašyti taisyklių?"
+      },
+      "labels": {
+        "faceid": "Veido atpažinimo sistema (Face ID)",
+        "spam": "Šlamšto filtras",
+        "spotify": "Spotify rekomendacijos",
+        "chess": "Klasikinis šachmatų variklis",
+        "gps": "GPS navigacija",
+        "siri": "Siri"
+      }
+    },
+    "consolidation": {
+      "plaque": "Taisyklė vienoje vietoje",
+      "title": "Du klausimai, kuriuos galite užduoti.",
+      "p1": "Pradėjote rikiuodami remdamiesi nuojauta. Dabar turite taisyklę, kuri veikia su visais objektais:",
+      "p2": "<strong>1. Sritis – ar tai DI problema ir, jei taip, kokia?</strong> Kalba, rega, garsas, planavimas, rikiavimas, kelios sritys – arba ne DI, kai tai įprastas skaičiavimas.",
+      "p3": "<strong>2. Kilmė – iš kur atsirado elgsena?</strong> Išmokta iš duomenų, nurodyta rašytinėmis taisyklėmis ar paieška, abu variantai arba priklauso nuo epochos.",
+      "p4": "Du dalykai, kuriuos verta prisiminti: <strong>DI yra daug platesnė sritis už pokalbių robotus</strong> – paieška, planavimas ir rikiavimas taip pat yra DI. Ir <strong>išmokta nereiškia nauja</strong> – mašinos mokosi nuo XX a. šeštojo dešimtmečio, tik pasikeitė apimtis.",
+      "cta": "Toliau →"
+    },
+    "reflection": {
+      "plaque": "Lankytojų knyga",
+      "title": "Užbaikite sakinį.",
+      "sub": "Tai ne testas. Tiesiog užsirašykite, kaip pasikeitė jūsų DI apibrėžimas.",
+      "beforeLabel": "Iki šiandien maniau, kad DI yra…",
+      "beforePlaceholder": "ChatGPT… robotai… kažkas kita…",
+      "afterLabel": "Dabar manau, kad DI yra…",
+      "afterPlaceholder": "Sritis… platesnis terminas… istorija…",
+      "cta": "Palikti savo žinutę →"
+    },
+    "closing": {
+      "rule": {
+        "plaque": "Prieš pamokos pabaigą",
+        "title": "Viena paprasta taisyklė.",
+        "body": "Matėte, kad kai kuris DI kuriamas iš žmogaus parašytų taisyklių. Išbandykime: štai el. pašto šlamšto aptikimo taisyklė – tokia ranka parašyta instrukcija, su kokia susidūrėte anksčiau šioje pamokoje.",
+        "eyebrow": "El. pašto taisyklė šlamšto laiškams atpažinti",
+        "ruleLine1": "JEI žinutėje yra princo palikimas",
+        "ruleLine2": "→ pažymėti kaip šlamštą",
+        "plain": "Paprastai tariant: jei el. laiške parašyta „princo palikimas“, laikykite jį šlamštu.",
+        "hold": "Atrodo paprasta. Tačiau įsidėmėkite šią taisyklę – kitame ekrane pamatysime, kiek iš tikrųjų gali padėti tokia viena taisyklė.",
+        "cta": "Toliau →"
+      },
+      "ask": {
+        "title": "Ar galite parašyti pakankamai taisyklių, kad aptiktumėte kiekvieną šlamšto laišką?",
+        "sub": "Dauguma žmonių sako: žinoma.",
+        "groupAria": "Ar galite parašyti pakankamai taisyklių, kad aptiktumėte kiekvieną šlamšto laišką?",
+        "sure": "Žinoma",
+        "probablyNot": "Greičiausiai ne"
+      },
+      "reveal": {
+        "title": "Yra daugybė būdų parašyti el. laišką, kuris kategorizuojamas kaip šlamštas.",
+        "body": "Rašytinės taisyklės puikiai išsprendė maršrutizavimo ir šachmatų užduotis, tačiau sudėtingos problemos, tokios kaip atpažinti el. pašto laišką kaip šlamštas, praslysta pro kiekvieną jūsų parašytą taisyklę. Todėl kyla svarbesnis klausimas…",
+        "cta": "Užduokite jį →"
+      },
+      "mystery": {
+        "title": "Taigi, jei negalime parašyti taisyklių kiekvienai problemai…",
+        "italic": "kaip kompiuteris gali išmokti tai, ko negalime aiškiai aprašyti?",
+        "toLesson2": "Pereiti į 2 pamoką →",
+        "backHome": "Grįžti į pagrindinį puslapį",
+        "terminal": "BELL LABS TERMINAL",
+        "ready": "paruošta."
+      }
+    },
+    "items": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "note": "DI, kurį dauguma žmonių pirmiausia įsivaizduoja – įvedate tekstą, o jis atsako. Aiškus „tikrai DI“ atvejis."
+      },
+      "calculator": {
+        "label": "Skaičiuotuvas (kalkuliatorius)",
+        "note": "Jis tiesiog skaičiuoja: ta pati suma visada duoda tą patį atsakymą, be spėjimo ar vertinimo. Tai įprastas skaičiavimas, o ne DI, todėl čia nėra DI problemos, kurią reikėtų įvardyti."
+      },
+      "gen-fill": {
+        "label": "Photoshop Generative Fill",
+        "note": "Ištrinate dalį nuotraukos, o įrankis užpildo tarpą visiškai naujais pikseliais – vaizdo turiniu, kurio ten niekada nebuvo. Jis sukuria juos prognozuodamas, kas labiausiai tiktų. Štai čia ir yra DI."
+      },
+      "crop": {
+        "label": "Photoshop Crop Tool",
+        "note": "Ta pati programa, tačiau šis įrankis tiesiog apkerpa kraštus pagal fiksuotus veiksmus. Nieko neišmokstama ir nieko nesukuriama, todėl tai nėra DI."
+      },
+      "spam": {
+        "label": "El. pašto šlamšto filtras",
+        "note": "Jis kasdien atskiria šlamštą nuo tikrų laiškų – užduotis, kurios dauguma žmonių niekada nelaiko DI. Tai vienas seniausių ir kasdieniškiausių pavyzdžių."
+      },
+      "gps": {
+        "label": "GPS Navigacija",
+        "note": "Kai paprašote maršruto, GPS patikrina milijonus galimų kelių ir greitai randa greičiausią būdą pasiekti tikslą. Geriausio maršruto radimas tarp daugybės galimybių yra tokio tipo problema, kurią DI padeda spręsti nuo pat pirmųjų savo dienų."
+      },
+      "chess": {
+        "label": "Šachmatų žaidimo programa",
+        "note": "Šiuolaikiniai šachmatų varikliai, tokie kaip AlphaZero, mokosi atpažinti stiprias ir silpnas pozicijas žaisdami patys prieš save, tada šias žinias naudoja numatydami tolesnius ėjimus ir pasirinkdami ėjimą. Ankstesni varikliai, tokie kaip Deep Blue, labiau rėmėsi daugelio galimų ėjimų paieška pagal žmonių parašytas taisykles ir strategijas.",
+        "refs": {
+          "alphazero": {
+            "term": "AlphaZero",
+            "tip": "Learn more on Wikipedia"
+          },
+          "deepBlue": {
+            "term": "Deep Blue",
+            "tip": "Learn more on Wikipedia"
+          }
+        }
+      },
+      "faceid": {
+        "label": "Veido atpažinimo sistema (Face ID)",
+        "note": "Jis atpažįsta jūsų veidą analizuodamas vaizdinius dėsningumus, išmoktus iš daugybės pavyzdžių. Tai rodo, kad DI gali dirbti su vaizdais ir kitokio pobūdžio informacija, ne tik su kalba ar pokalbių robotais."
+      },
+      "spotify": {
+        "label": "„Spotify“ rekomendacijos",
+        "note": "Jis siūlo dainas ieškodamas dėsningumų tarp to, ko klausosi milijonai žmonių. Jei panašaus skonio klausytojams patinka daina, Spotify gali rekomenduoti ją ir jums. Taip pat naudojami žmonių redaktorių sudaryti grojaraščiai. Šios rekomendacijos išmokstamos iš duomenų, o ne vadovaujantis fiksuotu taisyklių rinkiniu."
+      },
+      "autocomplete": {
+        "label": "Telefono automatinis žodžių užbaigimas (Autocomplete)",
+        "note": "Jis nuspėja, kokį žodį galite įvesti toliau. Senesnės versijos rėmėsi tuo, kurie žodžiai dažniausiai eina vienas po kito, o naujesnės versijos naudoja DI ir atsižvelgia į didesnę jau parašyto teksto dalį tam, kad geriau nuspėtų, kas bus toliau. Todėl tai, ar automatinis užbaigimas laikomas DI, priklauso nuo to, kuriuo metu jis buvo sukurtas."
+      },
+      "translate": {
+        "label": "Google Translate",
+        "note": "2006 m. jis pradėjo naudoti žmonių parašytas taisykles kalboms versti. Vėliau mokėsi iš milijonų išversto teksto pavyzdžių, o 2016 m. perėjo prie naujesnio DI metodo. Šiandien jis naudoja DI, kuris mokosi dėsningumų iš duomenų, parodydamas, kaip tos pačios priemonės technologija laikui bėgant gali pasikeisti."
+      },
+      "selfdrive": {
+        "label": "Savavaldis automobilis",
+        "note": "Jis naudoja DI kelioms skirtingoms užduotims atlikti vienu metu. Jis mokosi atpažinti kelyje esančius objektus, pavyzdžiui, automobilius, žmones ir ženklus, ir ieško geriausio būdo saugiai judėti eisme. Kitaip tariant, jis naudoja mokymąsi tam, kad suprastų tai, ką mato, ir planavimą tam, kad nuspręstų, ką daryti toliau."
+      }
+    },
+    "round2Items": {
+      "qr": {
+        "label": "QR Code Scanner",
+        "note": "QR kodas nuskaitomas atliekant fiksuotus veiksmus. Kvadratėlių raštas kiekvieną kartą atitinka tuos pačius simbolius. Čia nėra ko interpretuoti ir yra tik vienas teisingas atsakymas, todėl tai įprastas skaičiavimas, o ne DI.",
+        "whatIs": "Skaitytuvas, nuskaitantis kvadratinius juodai baltus kodus, į kuriuos nukreipiate telefoną – pavyzdžiui, restorano meniu kodą – ir atveriantis nuorodą arba parodantis informaciją."
+      },
+      "captcha": {
+        "label": "CAPTCHA",
+        "note": "Užduotis – pavyzdžiui, iškraipytos raidės ar „pasirinkite šviesoforus“ – vadovaujasi žmonių parašytomis taisyklėmis. Naujesni CAPTCHA gali naudoti ir DI jūsų elgesiui stebėti bei robotams aptikti, tačiau pati užduotis yra sukurta žmogaus.",
+        "whatIs": "Svetainėse naudojamas patikrinimas „įrodykite, kad nesate robotas“ – pavyzdžiui, įvesti vingiuotas raides arba spustelėti kiekvieną kvadratėlį su šviesoforu."
+      },
+      "search": {
+        "label": "Google Search",
+        "note": "Jo užduotis – pirmiausia parodyti naudingiausius rezultatus. Senesnės versijos naudojo žmonių sukurtas formules, o naujesnės naudoja DI ir netgi gali parašyti atsakymus už jus. Todėl tai priklauso nuo konkrečios dalies ir epochos.",
+        "whatIs": "Paieškos laukelis, kuriame įvedate, ko ieškote, ir gaunate svetainių, informacijos bei atsakymų sąrašą."
+      },
+      "ocr": {
+        "label": "OCR (teksto skaitytuvas)",
+        "note": "Jis paverčia teksto nuotrauką redaguojamu tekstu. Senesnės versijos raidžių formas atpažindavo pagal fiksuotas taisykles, o naujesnės naudoja DI, apmokytą su daugybe vaizdų. Ar tai yra DI, priklauso nuo to, kaip įrankis sukurtas.",
+        "whatIs": "Įrankis, paverčiantis spausdinto teksto nuotrauką ar skeną – pavyzdžiui, kvitą ar puslapį – tekstu, kurį galite kopijuoti ir redaguoti."
+      },
+      "grammar": {
+        "label": "Grammar Checker",
+        "note": "Jis randa jūsų teksto klaidas. Senesni įrankiai tikrindavo tekstą pagal gramatikos taisyklių sąrašą, o naujesni naudoja DI, kuris mokėsi iš milžiniško kiekio tekstų. Todėl tai priklauso nuo įrankio ir epochos.",
+        "whatIs": "Rašymo pagalbininkas, aptinkantis rašybos ir gramatikos klaidas bei siūlantis, kaip jas ištaisyti."
+      },
+      "siri": {
+        "label": "Siri",
+        "note": "Siri vienu metu atlieka kelias užduotis. Iš garso išmokęs DI paverčia jūsų kalbą žodžiais, kitas DI nustato, ko prašote, o žmogaus parašytos komandos atlieka užduotį, pavyzdžiui, nustato laikmatį. Taigi čia derinamos kelios problemų rūšys – dalis išmokta, dalis parašyta žmonių.",
+        "whatIs": "Apple balso asistentas. Galite paprašyti jo atlikti tokius veiksmus kaip nustatyti laikmatį ar kam nors paskambinti, arba užduoti klausimą."
+      },
+      "fingerprint": {
+        "label": "Fingerprint Reader",
+        "note": "Jis tikrina, ar piršto atspaudas sutampa su jūsų. Kai kurie skaitytuvai lygina fiksuotus matmenis, kiti naudoja DI, apmokytą su daugybe pirštų atspaudų. Ar tai laikoma DI, priklauso nuo sistemos viduje naudojamo metodo.",
+        "whatIs": "Jutiklis, ant kurio uždedate pirštą, kad atrakintumėte telefoną ar nešiojamąjį kompiuterį, užuot įvedę kodą."
+      },
+      "excel-formula": {
+        "label": "Excel Formula",
+        "note": "Formulė daro tiksliai tai, ką jai nurodote: sudeda šiuos langelius, padaugina iš ano. Tas pats įvesties duomenų rinkinys duoda tą patį rezultatą, be interpretacijos. Taigi tai įprastas skaičiavimas, o ne DI.",
+        "whatIs": "Instrukcija, kurią įrašote į skaičiuoklės langelį, kad automatiškai ką nors apskaičiuotumėte – pavyzdžiui, sudėtumėte stulpelį."
+      },
+      "excel-copilot": {
+        "label": "Excel Copilot",
+        "note": "Tai skaičiuoklėje esantis DI asistentas. Klausiate paprastais žodžiais, o jis gali parašyti formules arba paaiškinti jūsų duomenis. Jis naudoja DI, kuris mokėsi iš milžiniško kiekio tekstų ir kodo.",
+        "whatIs": "Excel pagalbininkas, kurio paprastais žodžiais galite paprašyti sukurti formules, sutvarkyti lapą ar paaiškinti skaičius."
+      },
+      "lens": {
+        "label": "Google Lens",
+        "note": "Nukreipkite kamerą į augalą, lankytiną objektą ar tekstą, ir jis pasakys, kas tai. Jis naudoja DI, išmokusį atpažinti objektus iš milijonų vaizdų.",
+        "whatIs": "Įrankis, naudojantis telefono kamerą ir pasakantis apie tai, į ką žiūrite – pavyzdžiui, augalą, lankytiną objektą ar užsienietišką meniu."
+      },
+      "compression": {
+        "label": "Vaizdo suspaudimas (glaudinimas)",
+        "note": "Failo sumažinimas siekiant sutaupyti vietos atliekamas pagal fiksuotą matematinę procedūrą. Tas pats paveikslas kiekvieną kartą suglaudinamas vienodai. Gali būti naudojama sudėtinga matematika, tačiau nėra interpretacijos, todėl tai nėra DI.",
+        "whatIs": "Būdas sumažinti paveikslėlio failą, kad jis užimtų mažiau vietos arba greičiau įsikeltų, išlaikant beveik tokią pačią išvaizdą."
+      },
+      "noise": {
+        "label": "Triukšmo slopinimas",
+        "note": "Jis pašalina foninį triukšmą, kad girdėtumėte tai, kas svarbu. Senesnės versijos naudojo fiksuotą garso filtravimo matematiką, o naujesnės naudoja DI, apmokytą atskirti balsus nuo triukšmo. Todėl tai priklauso nuo įgyvendinimo.",
+        "whatIs": "Ausinių ir skambučių funkcija, mažinanti foninius garsus – pavyzdžiui, eismą ar šurmulį – kad girdėtumėte tai, kas svarbu."
+      },
+      "deepfake": {
+        "label": "„Deepfake“ vaizdo įrašas",
+        "note": "Jis sukuria netikrą tikro žmogaus vaizdo įrašą sugeneruodamas naujus jo veido ir judesių kadrus. Tai DI, išmokęs, kaip atrodo veidai, iš daugybės tikrų vaizdo įrašų.",
+        "whatIs": "Netikras vaizdo įrašas, kuriame tikras žmogus atrodo sakantis ar darantis tai, ko iš tikrųjų niekada nesakė ar nedarė."
+      }
+    },
+    "dependsItems": {
+      "autocomplete": {
+        "label": "Automatinis užbaigimas",
+        "eraThen": "Ankstesni telefonai spėdavo kitą jūsų žodį pagal fiksuotą sąrašą, kuriame buvo nurodyta, kurie žodžiai paprastai eina vienas po kito. Įveskite „labas“ – ir telefonas pasiūlys „rytas“. (Nurodyta)",
+        "eraNow": "Naujesni telefonai naudoja DI, kuris nagrinėja visą jūsų rašomą sakinį ir prognozuoja, kas jame turėtų būti toliau. (Išmokta)",
+        "note": "Ta pati užduotis – užbaigti jūsų sakinį. Tačiau šįkart ją atlieka kita technologija."
+      },
+      "ocr": {
+        "label": "Teksto ištraukimas iš nuotraukos",
+        "eraThen": "Kai programėlės pirmą kartą pradėjo ištraukti tekstą iš nuotraukos, jos veikė lygindamos kiekvieną formą su išsaugotais šablonais, rodančiais, kaip atrodo kiekviena raidė. Tvarkingas spausdintas tekstas buvo atpažįstamas gerai, o neaiškus ar pasviręs tekstas dažnai būdavo atpažįstamas neteisingai. (Nurodyta)",
+        "eraNow": "Šiandien DI, išmokytas iš didžiulio kiekio tikrų vaizdų, perskaito tekstą už jus – todėl gali susidoroti su neįprastais šriftais, ranka rašytu tekstu ir kampu nufotografuotomis nuotraukomis. (Išmokta)",
+        "note": "Ta pati užduotis – paversti teksto nuotrauką tekstu, kurį galite redaguoti. Užduotį atlieka kita technologija."
+      },
+      "search-ranking": {
+        "label": "Google paieškos rezultatų rikiavimas",
+        "eraThen": "Prieš daugelį metų paieška tiesiog pateikdavo nuorodų sąrašą. „Google“ nustatydavo, kurią nuorodą rodyti pirmiausia, naudodama kūrėjų sukurtą formulę. Paprastai tariant, kuo daugiau kitų puslapių nukreipdavo į tam tikrą puslapį, tuo patikimesniu jis buvo laikomas ir tuo aukščiau rodomas paieškos rezultatuose. (Nurodyta)",
+        "eraNow": "Šiandien DI padeda rikiuoti rezultatus ir netgi gali parašyti jums tiesioginį atsakymą, remdamasis tuo, ko išmoko iš milžiniško kiekio tekstų. (Išmokta)",
+        "note": "Ta pati užduotis – pirmiausia pateikti naudingiausius rezultatus. Užduotį atlieka kita technologija."
+      }
+    },
+    "timelineItems": {
+      "ai-coined": {
+        "label": "DI pavadinimas",
+        "blurb": "Dartmuto seminare DI pirmą kartą įvardijamas kaip atskira tyrimų sritis. Pasiūlyme beveik neužsimenama apie mokymąsi iš duomenų."
+      },
+      "planning": {
+        "label": "Planavimas",
+        "blurb": "Newello, Shaw ir Simono „General Problem Solver“ – samprotavimas kaip galimų veiksmų paieška. Kurtas nuo 1957 m.; reikšmingas straipsnis paskelbtas 1959 m."
+      },
+      "ml": {
+        "label": "Mašininis mokymasis",
+        "blurb": "Samuelio šaškių programa tobulėja žaisdama pati su savimi ir išmoksta įveikti stiprius priešininkus. Jo straipsnyje pirmą kartą pavartotas terminas „mašininis mokymasis“."
+      },
+      "search": {
+        "label": "Paieška",
+        "blurb": "A* algoritmas padeda rasti geriausią maršrutą tinkle. Jis buvo sukurtas SRI laboratorijoje, kad robotas Shakey galėtų planuoti savo maršrutą – šiandien šis algoritmas naudojamas ir jūsų žemėlapių programėlėje."
+      },
+      "robotics": {
+        "label": "Robotika",
+        "blurb": "Shakey (sukurtas 1966–1972 m. SRI institute) buvo pirmasis robotas, galėjęs suvokti aplinką, planuoti ir veikti tikroje patalpoje. Kad galėtų judėti, jis turėjo suplanuoti kelią – todėl ta pati SRI komanda sukūrė A* algoritmą."
+      },
+      "rl": {
+        "label": "Pastiprintasis mokymasis",
+        "blurb": "Watkinso Q-mokymasis formalizuoja principą „bandyk, gauk atlygį, koreguok“ – svarbus pastiprintojo mokymosi etapas ir vėlesnių žaidimų sistemų pagrindas. (Pristatytas 1989 m.; konvergenciją įrodė Watkinsas ir Dayanas 1992 m.)"
+      },
+      "dl": {
+        "label": "Gilusis mokymasis",
+        "blurb": "AlexNet su didele persvara laimi „ImageNet“ konkursą. Daugiasluoksniai neuroniniai tinklai per vieną naktį iš nišinės technologijos tampa visiems aktualia technologija."
+      },
+      "transformers": {
+        "label": "Transformatoriai",
+        "blurb": "„„Attention Is All You Need“ – nauja neuroninių tinklų architektūra, iš pradžių skirta kalbai, vėliau pritaikyta daugeliui kitų sričių."
+      },
+      "llms": {
+        "label": "DKM pasiekia plačiąją visuomenę",
+        "blurb": "Paprasta pokalbių sąsaja padarė šiuos modelius prieinamus visiems. Patys modeliai egzistavo jau daugelį metų (GPT-2 – nuo 2019 m., GPT-3 – nuo 2020 m.), tačiau 2022 m. jie tapo prieinami plačiajai visuomenei. Tai naujausias šios laiko juostos etapas, o ne pirmasis DI įvykis."
+      }
+    },
+    "timelineSources": {
+      "dartmouth": {
+        "cite": "McCarthy, Minsky, Rochester ir Shannon (1955) – pavadinimo pasiūlymas",
+        "note": "Nemokamai, trys puslapiai."
+      },
+      "samuel": {
+        "cite": "Samuelis (1959) – šaškės",
+        "note": "Vien abstraktas jau parodo esmę."
+      },
+      "astar": {
+        "cite": "Hartas, Nilssonas ir Raphaelis (1968) – A*"
+      },
+      "qlearn": {
+        "cite": "Watkinsas ir Dayanas (1992) – Q-mokymasis"
+      },
+      "alexnet": {
+        "cite": "Krizhevsky, Sutskever ir Hinton (2012) – AlexNet",
+        "note": "Nemokamai."
+      },
+      "attention": {
+        "cite": "Vaswani ir kt. (2017) – Attention Is All You Need",
+        "note": "Nemokamai.",
+        "flag": "Grįžkite po 5 pamokos."
+      }
+    },
+    "scenarios": {
+      "faceid": {
+        "prompt": "Jūsų telefonas atrakinamas naudojant veido atpažinimo sistemą (Face ID). Kaip tai veikia?",
+        "options": {
+          "pixels": "Nustatymo metu jis išsaugo jūsų 3D veido žemėlapį ir tikrina, ar kiekvienas naujas nuskaitymas sutampa su tais pačiais matmenimis.",
+          "learn": "Jis išmoko, kuo skiriasi ir kuo sutampa bet kurie du veidai, o tada pritaikė tai jūsų veidui."
+        },
+        "reveal": "Telefonas turi atpažinti jūsų veidą net tada, kai pasikeičia apšvietimas, kampas ar šukuosena. Tam sistema išmoksta, kuo skiriasi ir kuo panašūs milijonai skirtingų veidų. Jūsų veido registracija yra tik vienas šio gebėjimo pritaikymas."
+      },
+      "spam": {
+        "prompt": "Jūsų el. pašto dėžutė atpažįsta šlamštą. Kaip?",
+        "options": {
+          "phrases": "Įvertinama kiekvieno siuntėjo reputacija ir blokuojami laiškai iš adresų, kuriuos kiti naudotojai pažymėjo kaip šlamštą.",
+          "learn": "Iš daugybės pavyzdžių sistema išmoko, kaip atrodo šlamštas,  – tada įvertino jūsų laišką."
+        },
+        "reveal": "Anksčiau buvo remiamasi konkrečių frazių sąrašais, tačiau šlamšto siuntėjai greitai prie jų prisitaikydavo. Šiuolaikiniai filtrai mokosi atpažinti dėsningumus iš pažymėtų laiškų, todėl „free money“ nėra vienas raktažodis, pagal kurį sprendžiama, ar laiškas yra šlamštas – tai tik vienas iš daugelio požymių."
+      },
+      "spotify": {
+        "prompt": "Spotify pasiūlo kitą jūsų dainą. Kaip?",
+        "options": {
+          "genre": "Jis analizuoja kiekvieno kūrinio audio – tempą, tonaciją, energiją – ir į įtraukia dainas, kurių akustinis profilis labiausiai panašus į jūsų mėgstamas dainas.",
+          "learn": "Jis mokosi iš milijonų žmonių klausymosi įpročių, tarp jų – panašaus skonio klausytojų kaip Jūs."
+        },
+        "reveal": "Žanrų panašumas – tik maža dalis to, kaip sudaromos rekomendacijos. Sistema sprendžia, ką išgirsite toliau, naudodama bendradarbiavimo filtravimą: ji ieško sąsajų tarp milijonų klausytojų pasirinkimų, redakcinių grojaraščių ir jūsų pačių klausymosi istorijos, o ne vadovaujasi iš anksto sudaryta taisykle „jei rokas, tada rokas“."
+      },
+      "chess": {
+        "prompt": "Klasikinė šachmatų programa pasirenka ėjimą. Kaip?",
+        "options": {
+          "search": "Ji analizuoja galimus tolimesnius ėjimus ir pasirenka tinkamiausią opciją.",
+          "learn": "Ji išmoksta vertinti galimas pozicijas iš žaidimo patirties, kaip tai darė AlphaZero."
+        },
+        "reveal": "Taip veikė AlphaZero programa, kuri išmoko vertinti pozicijas žaisdama pati su savimi. Klasikinės šachmatų programos, tokios kaip Deep Blue, veikė kitaip – jos ieškojo galimų ėjimų ir vertino pozicijas pagal žmonių sukurtas taisykles. Išmoktas pozicijų vertinimas atsirado vėliau."
+      },
+      "gps": {
+        "prompt": "GPS navigacija parenka maršrutą. Kaip?",
+        "options": {
+          "learn": "Programa išmoko geriausius maršrutus, mokydamasis iš milijonų ankstesnių vairuotojų kelionių mieste.",
+          "search": "Programa ieško geriausio kelio žemėlapyje, naudodama iš anksto parašytus algoritmus."
+        },
+        "reveal": "Eismo sąlygų prognozavimas gali būti išmoktas, tačiau maršruto parinkimas pagal užklausą „nugabenkite mane ten“ iš esmės yra kelio paieška grafe (jau minėtas A*). Tai tikras DI pavyzdys, tačiau jo elgsena iš anksto apibrėžta."
+      },
+      "siri": {
+        "prompt": "Siri nustato laikmatį, kai paprašote. Kaip?",
+        "options": {
+          "all-learned": "Ji išmoko visą procesą nuo pradžios iki galo – išgirsti jus ir nuspręsti, ką daryti, remiantis duomenimis.",
+          "hybrid": "Išgirsti jus - išmokta dalis; tačiau „nustatyti laikmatį“ vis dar yra iš anksto užprogramuotas veiksmas."
+        },
+        "reveal": "Kalbos atpažinimas išmoko iš garso. Daugelis veiksmų – laikmačiai, žadintuvai, „paskambink mamai“ – vis dar yra parašytos taisyklės, susietos su tuo, ką išgirdo sistema. Hibridas: dalis išmokta, dalis nurodyta."
+      }
+    }
+  },
+  "lesson2": {
+    "meta": {
+      "badge": "{number} pamoka",
+      "title": "Diena, kai DI nustojo vadovautis taisyklėmis",
+      "shortTitle": "Taisyklės ir mokymasis",
+      "mystery": "Kodėl tiesiog parašyti taisyklių negalime?"
+    },
+    "shared": {
+      "continue": "Tęsti →",
+      "chooseOne": "Pasirinkite vieną",
+      "next": "Toliau →",
+      "and": "{a} ir {b}",
+      "listMany": "{items} ir {last}",
+      "approaches": {
+        "rules": "Taisyklės",
+        "learning": "Mokymasis",
+        "hybrid": "Daugiausia taisyklės + paieška"
+      },
+      "feedback": {
+        "correct": "Teisingai",
+        "partly": "Iš dalies teisingai",
+        "notQuite": "Ne visai"
+      },
+      "results": {
+        "false-positive": "Klaidingai teigiamas",
+        "false-negative": "Klaidingai neigiamas",
+        "ambiguous": "Dviprasmiška"
+      }
+    },
+    "shell": {
+      "eyebrow": "Bell Labs · Terminalas 02",
+      "wordmark": "1985 DI LABORATORIJA"
+    },
+    "mission": {
+      "plaque": "Pamainos keitimas · 03:14",
+      "title": "Dabar esate DI inžinierius.",
+      "subhead": "Jūsų misija pasirodo mirksinčiame terminale.",
+      "open": "Atidaryti misiją →",
+      "fileLabel": "MISSION_BRIEF.txt",
+      "briefTitle": "Išmokykite kompiuterį atpažinti katę.",
+      "line1": "> No cameras. No datasets. Just logic.",
+      "line2": "> Write the rules.",
+      "coreQuestion": "Pagrindinis klausimas: kodėl negalime tiesiog parašyti taisyklių?",
+      "cta": "Pradėti rašyti taisykles →"
+    },
+    "rules": {
+      "plaque": "Lenta · 1 atradimas",
+      "title": "Parašykite „katės“ taisykles.",
+      "subhead": "Prisekite taisykles prie lentos. Drąsiai sugalvokite savų.",
+      "boardHeader": "JEI … TADA katė · {count} taisyklės",
+      "empty": "Taisyklių dar nėra.",
+      "sticky": "JEI {rule}",
+      "remove": "[pašalinti]",
+      "placeholder": "Pridėti pasirinktinę taisyklę…",
+      "add": "Pridėti",
+      "suggestionsEyebrow": "Siūlomos taisyklės",
+      "cta": "Išbandyti taisykles →",
+      "suggestions": {
+        "fourLegs": "Turi keturias kojas",
+        "fur": "Turi kailį",
+        "whiskers": "Turi ūsus",
+        "tail": "Turi uodegą",
+        "pointyEars": "Smailios ausys",
+        "meows": "Miauksi",
+        "claws": "Turi nagus",
+        "smallBody": "Mažas kūnas"
+      },
+      "break": {
+        "plaque": "Kontrpavyzdžiai",
+        "title": "Jūsų taisyklės susiduria su realiu pasauliu.",
+        "subInProgress": "Ar kompiuteris tai atpažįsta teisingai?",
+        "subDone": "Kiekviena išimtis tampa problema. Taisyklės atrodo tikslios – kol pasaulis pasirodo esąs daug sudėtingesnis.",
+        "activeRules": "AKTYVIOS_TAISYKLĖS := {rules}",
+        "none": "nėra",
+        "andJoin": " IR ",
+        "gloss": "Paprastai tariant: tai yra katė tik tada, jei <em>kiekviena</em> jūsų prisegta taisyklė vienu metu yra teisinga.",
+        "next": "Kitas kontrpavyzdys →",
+        "seePattern": "Pamatyti dėsningumą →",
+        "frustration": "Nenuvertinkite šio nusivylimo – būtent taip atrodė ankstyvasis DI.",
+        "keepGoing": "Tęsti →"
+      },
+      "coda": {
+        "ruleOne": "sugalvota taisyklė",
+        "ruleMany": "sugalvotos taisyklės",
+        "falsePositive": " Jūsų {noun} – {list} – taip pat neapsaugojo nuo šio atvejo.",
+        "falseNegative": " Jūsų {noun} – {list} – taip pat neatpažino šios katės.",
+        "ambiguous": " Jūsų {noun} – {list} – negali padėti, kai signalas toks silpnas."
+      },
+      "counterexamples": {
+        "tiger": {
+          "label": "Tigras",
+          "note": "Tigras <em>yra</em> katė – tik ne ta, kurią turėjote omenyje. O „ta, kurią turėjau omenyje“ yra būtent tai, ko negalite užrašyti kaip taisyklės."
+        },
+        "dog": {
+          "label": "Šuo",
+          "note": "Keturios kojos, kailis, uodega – jis puikiai atitinka jūsų taisykles. Jūsų taisyklės apibūdina gerokai daugiau nei kates.",
+          "noteShared": "{list} – jis puikiai atitinka jūsų taisykles. Jūsų taisyklės apibūdina gerokai daugiau nei kates.",
+          "noteFallback": "Jis puikiai atitinka jūsų taisykles. Jūsų taisyklės apibūdina gerokai daugiau nei kates."
+        },
+        "hairless": {
+          "label": "Beplaukė katė",
+          "note": "Tikra katė, kurią atmeta jūsų pačių taisyklės. „Turi kailį“ paprastai yra tiesa, tačiau tai niekada nebuvo būtina sąlyga."
+        },
+        "lion-cub": {
+          "label": "Liūto jauniklis",
+          "note": "Mažas, su ūsais, keturkojis. Pridėkite „mažas kūnas“, kad neįleistumėte tigro, ir šis gyvūnas vėl lengvai praslysta pro jūsų taisykles.",
+          "noteSmallBody": "Pridėjote „mažas kūnas“, kad atmestumėte tigrą – ir šis gyvūnas vėl lengvai praslysta pro jūsų taisykles."
+        },
+        "dark": {
+          "label": "Juoda katė tamsoje",
+          "note": "Jūsų taisyklės daro prielaidą, kad galite aiškiai matyti. Tikrovė ne visada tai leidžia."
+        },
+        "upside-down": {
+          "label": "Aukštyn kojomis mieganti katė",
+          "note": "Ausys, poza, forma – viskas pasikeitę. Jūsų taisyklės tikėjosi, kad katė bus tam tikroje pozoje."
+        }
+      }
+    },
+    "explosion": {
+      "locked": {
+        "plaque": "2 atradimas · Užrakinta",
+        "title": "Taisyklių sprogimas",
+        "body": "Norėdami pamatyti, kaip jūsų taisyklės virsta išimčių lavina, pirmiausia užrašykite jas lentoje.",
+        "hint": "Grįžkite ir prisekite kelias „katės“ taisykles arba tęskite be pradinio rinkinio.",
+        "back": "Grįžti prie taisyklių",
+        "skip": "Tęsti be taisyklių →"
+      },
+      "plaque": "2 atradimas · Perpildytas stalas",
+      "title": "Taisyklių sprogimas",
+      "subhead": "Kiekvieną kartą pridėjus taisyklę atsiranda vis daugiau išimčių.",
+      "startingRules": "Pradinės taisyklės",
+      "needRule": "Reikia taisyklės, skirtos: {exception}",
+      "multiplying": "Daugėja išimčių",
+      "prompt": "Prieš mums paaiškinant – kodėl <em>pridėjus</em> taisyklių tapo blogiau, o ne geriau?",
+      "revealTitle": "Jūs nemokote kompiuterio, kas yra katė.",
+      "revealLine1": "Bandote numatyti kiekvieną situaciją.",
+      "revealLine2": "Ankstyvajame DI buvo tikima, kad intelektą galima užrašyti taisyklėmis. Tai veikė – kol tikrovė netapo sudėtinga.",
+      "exceptions": {
+        "breeds": "Skirtingos veislės",
+        "lighting": "Apšvietimas",
+        "angles": "Kampai",
+        "occlusion": "Užstojimas",
+        "backgrounds": "Fonas",
+        "kittens": "Kačiukai",
+        "cartoons": "Animaciniai piešiniai",
+        "statues": "Statulos",
+        "halfVisible": "Iš dalies matomos katės",
+        "rain": "Lietus",
+        "snow": "Sniegas",
+        "motionBlur": "Judesio suliejimas"
+      }
+    },
+    "train": {
+      "compare": {
+        "plaque": "3 atradimas",
+        "title": "Žaidimas pasikeičia",
+        "subhead": "Užuot rašę taisykles… pateikiate pavyzdžius.",
+        "ruleBased": "Taisyklėmis pagrįsta",
+        "code": "JEI uodega\nIR ūsai\nIR kailis\nTADA katė",
+        "mlEyebrow": "Mašininis mokymasis",
+        "mlBody": "Tūkstančiai kačių nuotraukų.\nTūkstančiai šunų nuotraukų.\n↓ Algoritmas → Modelis → Nauja nuotrauka → Katė (97 %)",
+        "cta": "Išbandyti procesą →"
+      },
+      "workflow": {
+        "aria": "Proceso eiga",
+        "label": "Žymėti",
+        "train": "Mokyti",
+        "test": "Testuoti",
+        "done": "baigta",
+        "now": "dabar",
+        "later": "vėliau"
+      },
+      "label": {
+        "plaque": "Žymėjimo stotis",
+        "title": "Išmokykite mažą modelį",
+        "subhead": "Jokių lygčių. Tik procesas: žymėti → mokyti → testuoti.",
+        "progress": "Pažymėta {count} / {total}",
+        "photo": "Nuotrauka {n}",
+        "cat": "Katė",
+        "dog": "Šuo",
+        "labelCat": "Pažymėti kaip katę",
+        "labelDog": "Pažymėti kaip šunį",
+        "after": "Pažymėjote pavyzdžius. Dabar modelis gali mokytis iš jūsų žymų.",
+        "cta": "Mokyti →"
+      },
+      "samples": {
+        "c1": "Pūkuota oranžinė katė ilsisi",
+        "d1": "Auksaspalvis retriveris lauke",
+        "c2": "Rainuota katė žiūri į kamerą",
+        "d2": "Haskis sniege",
+        "c3": "Juoda katė ant palangės",
+        "d3": "Biglio šuniukas sniege",
+        "c4": "Siamo katė sėdi",
+        "d4": "Korgis ant žolės"
+      },
+      "trainPhase": {
+        "plaque": "Mokyti",
+        "title": "Modelis mokosi…",
+        "status": "Ieškoma dėsningumų jūsų pažymėtuose pavyzdžiuose"
+      },
+      "test": {
+        "plaque": "Testuoti",
+        "title": "Nauja nuotrauka. Kas tai?",
+        "hint": "Neryškus gyvūnas ant sofos",
+        "predictionEyebrow": "Modelio prognozė",
+        "prediction": "Katė · {confidence}%",
+        "youGuessed": "Jūs spėjote {guess}. Modeliui nereikėjo jūsų taisyklių – jis naudojo iš pavyzdžių išmoktus dėsningumus. Su sudėtingomis realaus pasaulio nuotraukomis jis susidoroja daug geriau, nei tai darytų tik pagal taisykles – nors kaip netrukus pamatysite - ne tobulai.",
+        "whyNot100": "Kodėl ne 100 %? Modeliai pateikia pasitikėjimo balą, o ne tikrumą. Nauja nuotrauka visada gali šiek tiek skirtis nuo pavyzdžių, iš kurių modelis mokėsi, todėl 97 % reiškia „labai tikėtina, kad tai katė“, o ne „įrodyta“. Be to, šis skaičius yra paties modelio <em>įvertis</em> apie savo tikrumą – jis gali būti per didelis arba per mažas, todėl vertinkite jį kaip signalą, o ne garantiją.",
+        "cta": "Dar vienas testas →"
+      },
+      "trap": {
+        "plaque": "Dar vienas testas",
+        "title": "Tas pats modelis. Nauja nuotrauka.",
+        "setup": "Jūsų modelis puikiai susidorojo su keblia nuotrauka ant sofos. Štai tokia, kuri turėtų būti dar lengvesnė – pūkuota katė, aiškiai matoma, sėdinti lauke sniege.",
+        "hint": "Pūkuota katė sėdi sniege – aiškiai ir neabejotinai katė",
+        "alt": "Pūkuota ilgaplaukė katė, sėdinti tiesiai šviežiame sniege, visas kūnas matomas, akivaizdžiai katė",
+        "prediction": "Šuo · {confidence}%",
+        "reaction": "Katė. Pavadinta šunimi. Ir labai užtikrintai.",
+        "whyCta": "Kodėl jis suklydo? →",
+        "revealTitle": "Jis niekada neišmoko, kas yra „katė“. Jis išmoko, kas buvo bendra jūsų nuotraukose.",
+        "body1": "Prisiminkite nuotraukas, kurias žymėjote. Kurie gyvūnai buvo lauke – tarp sniego, ant žolės, atviroje erdvėje? Tai buvo šunys. Kurie buvo viduje – ant sofų, grindų, palangių? Tai buvo katės.",
+        "body2": "Taigi modelis rado lengviausią dėsningumą, atskiriantį jūsų pavyzdžius, o dalis šio dėsningumo buvo <em>aplinka</em>, o ne gyvūnas. Sniegas ir atvira žemė pradėjo reikšti „šunį“.",
+        "punchline": "Štai ką lengva praleisti - mašininins mokymasis neišsiaiškina, kas <em>yra</em> katė. Jis randa bet kokį dėsningumą, skiriantį jūsų pateiktus pavyzdžius – net ir klaidingus. Jei pateikite jam šališkus pavyzdžius, ir jis išmoks jūsų šališkumą, visiškai pasitikėdamas savo prognoze.",
+        "close": "Geresni pavyzdžiai, geresni dėsningumai. Tačiau kyla klausimas, prie kurio šiame kurse nuolat grįšime: iš kur atsiranda pavyzdžiai – ir kas slypi jų viduje?"
+      }
+    },
+    "approach": {
+      "plaque": "Klasifikavimas",
+      "title": "Taisyklės ar mokymasis?",
+      "objectOf": "Objektas {index} iš {total}: {label}",
+      "next": "Toliau →",
+      "seeSummary": "Peržiūrėti santrauką →",
+      "summary": {
+        "plaque": "Dėsningumas",
+        "title": "{score} iš {total} atitiko įprastą metodą.",
+        "sub": "Kai kurioms problemoms reikia tikslių taisyklių. Sudėtingoms – mokymosi iš pavyzdžių."
+      },
+      "problems": {
+        "traffic": {
+          "label": "Šviesoforo signalų laiko nustatymas",
+          "note": "Šviesoforo ciklo valdymas – fiksuoti signalai, aiškios būsenos, todėl taisyklės veikia. (Tai ne tas pats, kas <em>atpažinti</em> šviesoforą nuotraukoje – tam naudojamas mokymasis.)"
+        },
+        "speech": {
+          "label": "Kalbos atpažinimas",
+          "note": "Balsai be galo skiriasi – reikia mokytis iš pavyzdžių."
+        },
+        "calculator": {
+          "label": "Skaičiuotuvas",
+          "note": "Deterministinė matematika. Mokytis nereikia."
+        },
+        "medical": {
+          "label": "Medicininio vaizdo diagnozė",
+          "note": "Dėsningumai skenuotuose vaizduose – per daug sudėtingi ranka parašytoms taisyklėms."
+        },
+        "sorting": {
+          "label": "Skaičių rikiavimas",
+          "note": "Algoritmai, kuriuos galime tiksliai užrašyti."
+        },
+        "spam": {
+          "label": "El. pašto šlamšto aptikimas",
+          "note": "Šlamšto siuntėjai nuolat sugalvoja naujų formuluočių."
+        },
+        "chess-classic": {
+          "label": "Šachmatų variklis (klasikinis)",
+          "note": "Daugiausia taisyklės + paieška."
+        },
+        "chess-modern": {
+          "label": "Šiuolaikinis šachmatų DI",
+          "note": "Sistema iš žaidimo patirties išmoksta, kurie ėjimai yra stiprūs, tačiau vis tiek ieško galimų tolimesnių ėjimų. Skirtingai nuo klasikinių programų, kurios pozicijas vertino pagal žmogaus sukurtas taisykles, šiuolaikinės programos naudoja išmoktą vertinimą. Paieška išlieka, tik keičiasi jos metu naudojamas vertinimas."
+        }
+      }
+    },
+    "chair": {
+      "plaque": "4 atradimas",
+      "title": "Kaip išmokote, kas yra kėdė?",
+      "subhead": "Ar kas nors apibrėžė „tiksliai keturias kojas“?",
+      "no": "Ne",
+      "notReally": "Nelabai",
+      "rulesTitle": "Ar jie parašė taisykles?",
+      "probablyNot": "Greičiausiai ne.",
+      "thenHow": "Tai kaip? →",
+      "thousands": "Jūs matėte tūkstančius.",
+      "punchline": "Išmokote sąvoką. Ne taisykles.",
+      "followUp": "Mašininis mokymasis mokosi šiek tiek panašiai – pirmiausia pavyzdžiai, vėliau dėsningumai – nors jam reikia kur kas daugiau pavyzdžių nei jums. (Ir atkreipkite dėmesį į akmenį: „kėdė“ iš dalies susijusi su <em>paskirtimi</em>, ne tik išvaizda – tai užuomina, kad kai kurias sąvokas sunkiau išmokti vien iš nuotraukų.)",
+      "examples": {
+        "kitchen": "Virtuvės kėdė",
+        "office": "Biuro kėdė",
+        "beanBag": "Pupų maišas",
+        "wheelchair": "Neįgaliojo vežimėlis",
+        "rock": "Akmeniu naudojamasi kaip kėde"
+      }
+    },
+    "twist": {
+      "plaque": "5 atradimas",
+      "title": "Posūkis",
+      "subhead": "Jei mašininis mokymasis toks nuostabus… kodėl tyrėjai to nedarė 1960 m.?",
+      "guesses": {
+        "idea": "Niekas apie tai dar nebuvo pagalvojęs",
+        "math": "Matematika / algoritmai dar nebuvo tam pasiruošę",
+        "ready": "Trūko duomenų ir skaičiavimo galios",
+        "rules": "Taisyklės jau veikė pakankamai gerai"
+      },
+      "headline": "Idėja nebuvo nauja. Turėjo sutapti trys dalykai.",
+      "bullet1": "> Pakankamai duomenų, iš kurių būtų galima mokytis",
+      "bullet2": "> Pakankamai spartūs kompiuteriai ir techninė įranga",
+      "bullet3": "> Geresni modelių mokymo būdai",
+      "close": "Duomenys ir skaičiavimo galia buvo didžiausios trūkstamos dalys – tačiau „tiesiog pridėti techninės įrangos“ nepakanka. Turėjo patobulėti ir mokymo metodai."
+    },
+    "closing": {
+      "wow": {
+        "plaque": "Poslinkis",
+        "title": "Mašininis mokymasis nebuvo pradėtas taikyti todėl, kad tyrėjai tapo protingesni.",
+        "sub": "Jis buvo pradėtas taikyti todėl, kad <em>kai kurios</em> problemos – sudėtingos, realaus pasaulio problemos – pasirodė esančios pernelyg sudėtingos, kad jas būtų galima aprašyti taisyklėmis.",
+        "unchangedEyebrow": "Vienas dalykas, kuris nepasikeitė",
+        "unchangedBody": "Taisyklės neprarado savo vietos. Problemoms, kurių struktūra aiški ir stabili – aritmetikai, rikiavimui, šviesoforų signalų laiko nustatymui – taisyklių rašymas vis dar yra tinkamas įrankis ir vis dar tikras DI. Mokymasis pakeitė taisyklių rašymą tik ten, kur kalbame apie neaiškias, išimčių kupinas realaus pasaulio kategorijas.",
+        "oldEyebrow": "Senas klausimas",
+        "oldQuestion": "Kaip pasakyti kompiuteriui, ką daryti?",
+        "newEyebrow": "Naujas klausimas",
+        "newQuestion": "Kaip kompiuteris gali tai išsiaiškinti iš patirties?",
+        "cta": "Dar viena mintis →"
+      },
+      "internet": {
+        "plaque": "Paskutinė paslaptis",
+        "title": "O kas, jei dirbtiniam intelektui suteiktume visą internetą?",
+        "sub": "Ką tik pamatėte, kokie svarbūs yra pavyzdžiai – keli šališki pavyzdžiai išmokė jūsų modelį neteisingo dalyko. O dabar įsivaizduokite, kad pavyzdžiai būtų viskas: knygos, Wikipedia, GitHub, naujienos, pokalbiai, milijonai svetainių.",
+        "cta": "Užduoti klausimą →",
+        "stickies": {
+          "books": "Knygos",
+          "wikipedia": "Wikipedia",
+          "github": "GitHub",
+          "news": "Naujienos",
+          "conversations": "Pokalbiai",
+          "websites": "Svetainės"
+        }
+      },
+      "mystery": {
+        "line1": "Ar modelis išmoktų kalbą?",
+        "line2": "Ar tik įsimintų?",
+        "toLesson3": "Pereiti į 3 pamoką →",
+        "backHome": "Grįžti į pagrindinį puslapį",
+        "alt": "Begalinė biblioteka"
+      }
+    }
+  },
+  "lesson3": {
+    "meta": {
+      "badge": "{number} pamoka",
+      "title": "Kodėl duomenys pakeitė viską",
+      "shortTitle": "Kodėl duomenys pakeitė viską",
+      "mystery": "Jei kompiuteriai galėjo mokytis jau devintajame dešimtmetyje… kodėl DI taip smarkiai išplito tik neseniai?"
+    },
+    "shared": {
+      "continue": "Tęsti →",
+      "chooseOne": "Pasirinkite vieną",
+      "next": "Toliau →",
+      "yes": "Taip",
+      "no": "Ne",
+      "maybe": "Galbūt",
+      "matched": "Atitiko",
+      "missed": "Neatitiko",
+      "feedback": {
+        "correct": "Teisingai",
+        "notQuite": "Ne visai"
+      }
+    },
+    "shell": {
+      "eyebrow": "Stacks · III wing",
+      "wordmark": "Begalinė biblioteka"
+    },
+    "doctors": {
+      "plaque": "I tomas · Patirtis",
+      "title": "Kuo pasitikėtumėte?",
+      "subhead": "Trys gydytojai, tas pats pacientas. Pasirinkite vieną – tada pažiūrėsime, kas nulėmė jūsų pasirinkimą.",
+      "hasTreated": "Gydė",
+      "patients": "pacientų",
+      "patientsWithTagline": "pacientų – {tagline}",
+      "reveal": "Atskleisti →",
+      "whyTitle": "Kodėl pasirinkote būtent jį?",
+      "whySub": "Ne skaičiai – o priežastis už jų. Ką gydytojui iš tikrųjų suteikia didesnė pacientų gydymo patirtis?",
+      "whyAria": "Kodėl pasirinkote būtent jį",
+      "cta": "Tęsti →",
+      "experienceTitle": "Patirtis svarbi.",
+      "machinesLine": "Argi tas pats neturėtų galioti ir mašinoms?",
+      "dataName": "DI srityje ši patirtis turi paprastą pavadinimą: <strong>duomenys</strong>.",
+      "pocket": "Tačiau turėkite omenyje vieną klausimą: svarbu pacientų skaičius – ar jų rūšių įvairovė? Įsidėmėkite šią mintį.",
+      "doctors": {
+        "a": {
+          "label": "Gydytojas A"
+        },
+        "b": {
+          "label": "Gydytojas B"
+        },
+        "c": {
+          "label": "Gydytojas C",
+          "tagline": "visų rūšių atvejai – dažni ir reti"
+        }
+      },
+      "reasons": {
+        "practice": "Daugiau praktikos",
+        "experience": "Daugiau patirties",
+        "cases": "Matė daugiau atvejų",
+        "judgment": "Geresnis sprendimas"
+      }
+    },
+    "sameBrain": {
+      "intro": {
+        "plaque": "II tomas · Dvi lentynos",
+        "title": "Tas pats DI",
+        "subhead": "Prisiminkite gydytojus – daugiau pacientų, geresnis sprendimas. Ta pati idėja, tik dabar su mašina. Dvi tos pačios programos kopijos: viena mokėsi iš 100 kačių nuotraukų, kita – iš 10 milijonų.",
+        "cta": "Rodyti pirmą nuotrauką →",
+        "modelA": "Modelis A – 100 nuotraukų",
+        "modelACaption": "nuotraukų – skaičių galima pamatyti iš pirmo žvilgsnio",
+        "modelB": "Modelis B – 10 milijonų",
+        "modelBCaption": "– net neįmanoma pradėti skaičiuoti"
+      },
+      "play": {
+        "plaque": "Sudėtingas vaizdas · {index}/{total}",
+        "title": "Kuris modelis atpažįsta teisingai?",
+        "subhead": "Tas pats DI. Kitoks mokymas. Kuris modelis susidoros su šiuo atveju?",
+        "chooseAria": "Kuris modelis atpažįsta teisingai",
+        "optionA": "Modelis A · 100 nuotraukų",
+        "optionB": "Modelis B · 10 milijonų nuotraukų",
+        "reveal": "Atskleisti →",
+        "next": "Kitas vaizdas →",
+        "seePoint": "Pamatyti esmę →"
+      },
+      "done": {
+        "plaque": "Atskleidimas",
+        "title": "Algoritmas nepasikeitė – pasikeitė tik tai, ką jis buvo matęs.",
+        "body1": "Modelį, mokytą iš 10 milijonų nuotraukų, pasirinkote {bWins} iš {total} atvejų. Paprastai tai teisingas pasirinkimas: daugiau įvairesnių kačių nuotraukų padeda atpažinti naujas kates.",
+        "body2": "Išskyrus robotą-katę. Šis atvejis suglumino abu modelius.",
+        "body3": "Daugiau pavyzdžių padeda modeliui susidoroti su daugiau atvejų. Tačiau joks duomenų rinkinys neapima visko. Visada bus dalykų, kurių jis nebus išmokęs."
+      },
+      "images": {
+        "cartoon": {
+          "label": "Animacinė katė",
+          "note": "Stiliaus pokytis – įvairesnis mokymas padeda."
+        },
+        "sleeping": {
+          "label": "Mieganti katė",
+          "note": "Susirangusi mieganti katė atrodo kitaip nei įprastose „į kamerą žiūrinčios katės“ nuotraukose. Nedideliame modelio A duomenų rinkinyje tokios pozos dažnai apskritai nebuvo, todėl jis gali jos neatpažinti. Modelis B matė kur kas daugiau variantų – įskaitant neįprastus kampus – todėl vis tiek atpažįsta „katę“."
+        },
+        "black": {
+          "label": "Juoda katė",
+          "note": "Esant silpnam apšvietimui juoda katė gali atrodyti kaip tamsi dėmė – akis ir kontūrus sunku įžiūrėti. Mažame modelio A rinkinyje gali būti tik ryškios, aiškios kačių nuotraukos. Modelis B matė daug įvairių apšvietimo ir spalvų atvejų, todėl vis tiek randa „katę“."
+        },
+        "blurry": {
+          "label": "Neryški katė",
+          "note": "Judesio suliejimas ir neryškus fokusas paslepia įprastas katės detales. Modelis A gali būti matęs tik ryškias, į studijines panašias nuotraukas. Modelis B matė triukšmingų ir netobulų kadrų, todėl vis tiek gali atpažinti „katę“."
+        },
+        "statue": {
+          "label": "Katės statula",
+          "note": "Tai ne gyvas gyvūnas – tai katės formos akmuo. Mažas tikrų kačių nuotraukų rinkinys, iš kurio mokėsi modelis A, gali nesugebėti atlikti tokio perėjimo. Modelio B patirtyje dažnai būna meno kūrinių, statulų ir žaislų, todėl jis vis tiek gali susieti formą su „kate“."
+        },
+        "robot": {
+          "label": "Robotė katė",
+          "note": "Metalinės jungtys ir švytinčios dalys nėra tikra katė – tai gali suklaidinti abu modelius. Modelio B tikimybė vis tiek didesnė, jei didžiuliame jo rinkinyje buvo žaislų, robotų ar mokslinės fantastikos meno kūrinių, tačiau nė vienas rezultatas nėra garantuotas."
+        }
+      }
+    },
+    "data": {
+      "plaque": "Katalogo kortelė · {index}/{total}",
+      "title": "Kas laikoma duomenimis?",
+      "subhead": "Ar tai padėtų mokyti Didžiuosius kalbos modelius?",
+      "document": "Dokumentas",
+      "chooseAria": "Ar tai padėtų mokyti Didžiuosius kalbos modelius?",
+      "next": "Kita kortelė →",
+      "seePattern": "Pamatyti dėsningumą →",
+      "insight": {
+        "plaque": "Įžvalga",
+        "title": "Duomenys nėra vien skaičiai.",
+        "subhead": "Kalba yra duomenys. Knygos yra duomenys. Kodas yra duomenys. Pokalbiai yra duomenys.",
+        "aside": "(Šiuolaikiniai asistentai taip pat mokosi iš vaizdų ir garso – tačiau jie naudojami regos ir kalbos dalių mokymui, o čia daugiausia dėmesio skiriame kalbos daliai.)",
+        "score": "Atitikote {matched} iš {total} kortelių.",
+        "you": "Jūs: {choice}",
+        "youAndAnswer": "Jūs: {choice} · Atsakymas: {answer}"
+      },
+      "cards": {
+        "wikipedia": {
+          "label": "Wikipedia",
+          "note": "Kalba, faktai, struktūra – klasikinė mokymo medžiaga."
+        },
+        "github": {
+          "label": "GitHub",
+          "note": "Kodas taip pat yra kalba."
+        },
+        "reddit": {
+          "label": "Reddit",
+          "note": "Pokalbiai yra duomenys – netvarkingi, žmogiški, naudingi."
+        },
+        "dictionary": {
+          "label": "Žodynas",
+          "note": "Stebėtinai silpnas, kai naudojamas vienas – apibrėžimai yra atskiri įrašai, o ne vientisas tekstas, padedantis išmokti sklandžios kalbos."
+        },
+        "scripts": {
+          "label": "Filmų scenarijai",
+          "note": "Dialogai yra turtingas pokalbinės kalbos tekstas."
+        },
+        "excel": {
+          "label": "Excel skaičiuoklė",
+          "note": "Lentelės gali šiek tiek padėti – dažnai vien jų nepakanka."
+        },
+        "dna": {
+          "label": "DNR sekos",
+          "note": "Tai kalba – bet ne žmogaus. Ji nepadės pokalbių robotui kalbėtis."
+        },
+        "contacts": {
+          "label": "Telefono kontaktai",
+          "note": "Privatūs vardai ir numeriai nėra geri kalbos mokymosi duomenys."
+        },
+        "gps": {
+          "label": "GPS koordinatės",
+          "note": "Daugiausia skaičiai be lingvistinės reikšmės."
+        }
+      }
+    },
+    "quality": {
+      "plaque": "IV tomas · Atranka",
+      "title": "Didesnis ne visada geresnis",
+      "trainSub": "Sukurkite mažą mokymo duomenų rinkinį. Stebėkite, kas keičia tikslumą – o kas ne.",
+      "pickSub": "Kuris duomenų rinkinys sukuria išmanesnį modelį?",
+      "pickAria": "Kuris duomenų rinkinys sukuria išmanesnį modelį?",
+      "punchline": "Svarbi kokybė. Svarbi įvairovė. Pasikartojimai kenkia. Šališkumas svarbus.",
+      "followUp": "Paprastai laimi subalansuotas derinys – kokybė ir įvairovė yra svarbesnės už vien duomenų kiekį. Prisiminkite gydytojus: svarbu buvo ne vien atvejų skaičius – svarbu, kiek skirtingų rūšių atvejų jie matė. Tas pats galioja duomenims.",
+      "datasets": {
+        "tweets": {
+          "label": "100 milijonų vienodų įrašų",
+          "note": "Kiekis be įvairovės. Pasikartojimai kenkia."
+        },
+        "books": {
+          "label": "20 milijonų knygų",
+          "note": "Stiprus rinkinys, bet vis dar tik vienos rūšies tekstas."
+        },
+        "wiki": {
+          "label": "Wikipedia",
+          "note": "Aukšta kokybė – aprėptis siauresnė nei derinio."
+        },
+        "mix": {
+          "label": "Subalansuotas derinys",
+          "note": "Kokybė + įvairovė pranoksta vien duomenų kiekį."
+        }
+      },
+      "trainer": {
+        "empty": "Jūsų rinkinys tuščias. Pridėkite nuotrauką, kad pradėtumėte mokymą.",
+        "newKind": "Naujos rūšies nuotrauka. Modelis anksčiau niekada nebuvo matęs atvejo, kai tai yra {kind}.",
+        "mono": "Kiekis be įvairovės. {total} nuotraukų, tačiau tik 1 iš 6 rūšių – tikslumas lieka ties maždaug {accuracy} %.",
+        "duplicate": "Beveik jokios naudos: skirtingi pikseliai, ta pati rūšis – modelis šį atvejį jau žinojo.",
+        "ceiling": "~97 % – keli atvejai tiesiog yra dviprasmiški. Joks duomenų kiekis to nepataisys.",
+        "accuracyLabel": "tikslumas pagal 6 sudėtingus testavimo atvejus",
+        "kindsCovered": "aprėptos rūšys:",
+        "addCue": "Pridėkite nuotrauką prie mokymo duomenų rinkinio:",
+        "addAria": "Pridėti {alt} nuotrauką. Pridėta: {n}.",
+        "setCountOne": "Jūsų mokymo duomenų rinkinys – {count} nuotrauka",
+        "setCountMany": "Jūsų mokymo duomenų rinkinys – {count} nuotraukos",
+        "kindsOne": " · {count} rūšis",
+        "kindsMany": " · {count} rūšys",
+        "reset": "Atkurti",
+        "disclaimer": "Supaprastintas modelis, skirtas parodyti idėjos esmę",
+        "srSummary": "Tikslumas {accuracy} procentų pagal 6 sudėtingus testavimo atvejus. Aprėpta {kinds} iš 6 rūšių. Mokymo duomenų rinkinyje yra {photos} nuotraukos. {feedback}",
+        "cases": {
+          "front": {
+            "label": "Katė, žiūrinti tiesiai į kamerą",
+            "short": "žiūrinti tiesiai į kamerą",
+            "alt": "katė, žiūrinti tiesiai į kamerą"
+          },
+          "black": {
+            "label": "Juoda katė, silpnas apšvietimas",
+            "short": "juoda / silpnas apšvietimas",
+            "alt": "juoda katė silpname apšvietime"
+          },
+          "blurry": {
+            "label": "Neryški katė",
+            "short": "neryški",
+            "alt": "neryški katė"
+          },
+          "cartoon": {
+            "label": "Animacinė katė",
+            "short": "animacinė",
+            "alt": "animacinė katė"
+          },
+          "statue": {
+            "label": "Katės statula",
+            "short": "statula",
+            "alt": "katės statula"
+          },
+          "sleeping": {
+            "label": "Mieganti katė",
+            "short": "mieganti",
+            "alt": "mieganti katė"
+          }
+        }
+      }
+    },
+    "internet": {
+      "plaque": "V tomas · Potvynis",
+      "title": "Internetas pakeitė DI",
+      "subhead": "DI staiga netapo išmanesnis. Žmonija sukūrė pakankamai skaitmeninių žinių, iš kurių mašinos galėjo mokytis – tuo pat metu kompiuteriai tapo pakankamai spartūs, o nauja architektūra („Transformer“, iš jūsų 1 pamokos laiko juostos) suteikė galimybę jomis pasinaudoti. Duomenys buvo trūkstamas ingredientas, tačiau kad jie taptų svarbūs, reikėjo ir kitų dviejų dalykų.",
+      "eras": {
+        "1985": {
+          "label": "Keli MB",
+          "blurb": "Maži vietiniai failai. Beveik nėra bendrų skaitmeninių žinių."
+        },
+        "1995": {
+          "label": "Milijonai interneto puslapių",
+          "blurb": "Žiniatinklis pradeda virsti vieša biblioteka."
+        },
+        "2001": {
+          "label": "Wikipedia",
+          "blurb": "Struktūruotos žmogaus žinios, redaguojamos dideliu mastu."
+        },
+        "2015": {
+          "label": "Socialiniai tinklai",
+          "blurb": "Pokalbiai virsta milžinišku kiekiu mašinoms nuskaitomo teksto."
+        },
+        "2024": {
+          "label": "Beveik viskas internete",
+          "blurb": "Beveik kiekviena tema kur nors aprašyta."
+        }
+      }
+    },
+    "detective": {
+      "plaque": "Įsigijimų skyrius",
+      "title": "Sukurkite DKM biblioteką",
+      "subhead": "Turite vietos tik šešiems duomenų rinkiniams. Kuriuos pasiliksite? Vieno tobulo atsakymo nėra.",
+      "selected": "Pasirinkta {count} / {limit}",
+      "lock": "Patvirtinti šešis →",
+      "revealTitle": "Kurti duomenų rinkinį reiškia ne tik surinkti daugiau – reikia pasirinkti tinkamą derinį.",
+      "youKept": "Pasilikote: {list}.",
+      "questions": {
+        "q1": "Kokybė ar kiekis?",
+        "q2": "Ekspertinės žinios ar kasdieniai pokalbiai?",
+        "q3": "Ar kodas vertingesnis už grožinę literatūrą?",
+        "q4": "Socialinių tinklų įrašai naudingi, triukšmingi ar ir viena, ir kita?"
+      },
+      "cta": "Tęsti →",
+      "buckets": {
+        "broad": "platus / faktinis",
+        "everyday": "kasdienis / pokalbinis",
+        "expert": "ekspertinis / siauras",
+        "code": "kodas",
+        "narrative": "pasakojamasis",
+        "weak": "silpnas tekstui"
+      },
+      "feedback": {
+        "weak": "Du ar daugiau jūsų pasirinkimų daugiausia yra skaičiai arba vaizdai – juose mažai kalbos, iš kurios iš tikrųjų mokosi pokalbių robotas.",
+        "noEveryday": "Daug formalios rašytinės kalbos, tačiau nepasirinkote kasdienių pokalbių – modelis gali skambėti nenatūraliai ir sunkiai atsakyti į neformalius klausimus.",
+        "heavy": "Daug {bucket} – giliai aprėpta viena sritis, tačiau duomenų dieta siaura. Tikrieji tekstynai yra įvairesni.",
+        "balanced": "Subalansuotas derinys – platus, pokalbinis, ekspertinis turinys ir kodas. Toks derinys artimesnis tam, kaip iš tikrųjų mokomi stiprūs modeliai.",
+        "workable": "Tinkamas derinys – atkreipkite dėmesį, kokias kalbos rūšis pasilikote, o kokias palikote lentynoje."
+      },
+      "datasets": {
+        "wikipedia": {
+          "label": "Wikipedia",
+          "note": "Platus faktinis tekstas."
+        },
+        "tiktok": {
+          "label": "TikTok Comments",
+          "note": "Kasdieniai pokalbiai – triukšmingi, kupini slengo, žmogiški."
+        },
+        "medical": {
+          "label": "Medical Journals",
+          "note": "Gili ekspertinė patirtis, siaura sritis."
+        },
+        "stackoverflow": {
+          "label": "Stack Overflow",
+          "note": "Problemų sprendimas + kodo paaiškinimai."
+        },
+        "harry": {
+          "label": "Harry Potter",
+          "note": "Pasakojimo stilius ir vaizduotė."
+        },
+        "weather": {
+          "label": "Weather Data",
+          "note": "Daugiausia skaičiai – silpna medžiaga pokalbiams."
+        },
+        "court": {
+          "label": "Court Decisions",
+          "note": "Formalus samprotavimas ir ilgi argumentai."
+        },
+        "menus": {
+          "label": "Restaurant Menus",
+          "note": "Siaura, pasikartojanti kalba."
+        },
+        "github": {
+          "label": "GitHub",
+          "note": "Pirminis kodas interneto mastu."
+        },
+        "reddit": {
+          "label": "Reddit",
+          "note": "Nuomonės, diskusijos, neformali kalba."
+        },
+        "finance": {
+          "label": "Financial Reports",
+          "note": "Tankus profesinis tekstas."
+        },
+        "satellite": {
+          "label": "Satellite Images",
+          "note": "Regos duomenys – ne tekstas, iš kurio mokomas ChatGPT."
+        }
+      }
+    },
+    "closing": {
+      "library": {
+        "plaque": "Klaidingas įsitikinimas",
+        "title": "Ar modelis atsakydamas ieško internete?",
+        "notByDefault": "Ne pagal nutylėjimą.",
+        "metaphor": "Internetas veikiau primena biblioteką, kurioje mokinys mokėsi prieš egzaminą.",
+        "exam": "Per egzaminą jis neperskaito visos bibliotekos iš naujo. Jis atsako remdamasis tuo, ko išmoko.",
+        "searchTool": "Kai kurie produktai gali pridėti paieškos įrankį – tarsi leistų mokiniui žvilgtelėti į telefoną ir pasitikrinti šiandienos naujienas. Šis naršymo žingsnis yra papildomas. Pats modelis vis tiek generuoja atsakymą pagal dėsningumus, kuriuos jau išmoko.",
+        "cta": "Dar vienas patikrinimas →"
+      },
+      "corpus": {
+        "plaque": "Oho akimirka",
+        "title": "Kur yra daugiau teksto?",
+        "chooseAria": "Kur yra daugiau teksto?",
+        "cta": "Užduoti paslapties klausimą →",
+        "body": "Nustebote, kad tai ne mokymo duomenys? Net didžiausi mokymo duomenų rinkiniai yra tik atrinkta interneto dalis – modeliai mokomi ne iš viso interneto, o tik iš filtruoto, leidžiamo naudoti ir pasikartojimų neturinčio teksto. Taigi internetas yra didesnis. Ir vis dėlto ši dalis yra daugybe eilių didesnė už tai, ką žmogus galėtų perskaityti per tūkstantį gyvenimų.",
+        "options": {
+          "britannica": "Encyclopedia Britannica",
+          "wikipedia": "Wikipedia",
+          "internet": "Viešasis internetas",
+          "llm": "Šiuolaikinio DKM mokymo duomenys"
+        },
+        "chart": {
+          "ariaTitle": "Santykinis teksto kiekis keturiuose tekstynuose logaritminėje skalėje",
+          "ariaDesc": "Horizontalioji juostinė diagrama logaritminėje skalėje, kurioje kiekvienas žingsnis reiškia maždaug šimtą kartų daugiau teksto. Encyclopedia Britannica yra trumpa juosta, žyminti dešimtis milijonų žodžių. Wikipedia yra ilgesnė ir žymi milijardus žodžių. Šiuolaikinio DKM mokymo duomenys dar didesni – tai atrinkta, filtruota ir nuo pasikartojimų išvalyta interneto dalis. Viešasis internetas yra ilgiausia juosta, žyminti viską, kas yra internete – gerokai daugiau, nei mokomas bet kuris modelis. Mokymo duomenys yra mažesnė interneto dalis, o ne kažkas už interneto ribų.",
+          "axis": "santykinis teksto kiekis – kiekvienas žingsnis yra maždaug 100× daugiau",
+          "logScale": "logaritminė skalė",
+          "britannica": {
+            "label": "Encyclopedia Britannica",
+            "note": "dešimtys milijonų žodžių"
+          },
+          "wikipedia": {
+            "label": "Wikipedia",
+            "note": "milijardai žodžių"
+          },
+          "llm": {
+            "label": "Šiuolaikinio DKM mokymo duomenys",
+            "note": "atrinkta, filtruota ir nuo pasikartojimų išvalyta interneto dalis"
+          },
+          "internet": {
+            "label": "Viešasis internetas",
+            "inside": "viskas, kas yra internete – gerokai daugiau, nei mokomas bet kuris modelis"
+          }
+        }
+      },
+      "mystery": {
+        "line1": "Įsivaizduokite, kad perskaitote kiekvieną Wikipedia straipsnį, kiekvieną Stack Overflow atsakymą, milijonus knygų…",
+        "line2": "Tai kaip mašina iš tikrųjų išmoksta iš viso to?",
+        "toLesson4": "Toliau: kaip mokosi mašinos",
+        "backHome": "Grįžti į pradžią",
+        "wallEyebrow": "Mokymo centras · Simuliacija Nr. 01",
+        "status": "Būsena",
+        "statusValue": "Modelis sukurtas",
+        "experience": "Patirtis",
+        "experienceValue": "0 pavyzdžių",
+        "accuracy": "Tikslumas",
+        "accuracyValue": "– (nemokytas)"
+      }
+    }
+  },
+  "lesson4": {
+    "meta": {
+      "badge": "{number} pamoka",
+      "title": "Kaip iš tikrųjų mokosi mašina?",
+      "shortTitle": "Kaip mokosi mašinos",
+      "mystery": "Jei niekas nerašo taisyklių, kas iš tikrųjų keičiasi mašinai mokantis?"
+    },
+    "shared": {
+      "continue": "Tęsti →",
+      "chooseOne": "Pasirinkite vieną",
+      "next": "Toliau →",
+      "cat": "Katė",
+      "dog": "Šuo",
+      "yes": "Taip",
+      "no": "Ne",
+      "slightly": "Tik šiek tiek",
+      "prediction": "{label} · {confidence}%"
+    },
+    "shell": {
+      "eyebrow": "DI mokymo centras",
+      "wordmark": "Mokymo kambarys"
+    },
+    "facility": {
+      "plaque": "Mokymo centras · Simuliacija Nr. 01",
+      "title": "Sveiki atvykę į mokymo kambarį.",
+      "subhead": "Modelis, kuris dar neturi patirties. Pateikite jam pavyzdžių ir pažiūrėkite, ko jis išmoks.",
+      "aCat": "Katė",
+      "wall": "Sieninis ekranas",
+      "thinking": "Hm",
+      "guess": "Hm… Šuo? · 52 %",
+      "waiting": "Visiškai naujas modelis. Dar nemokytas.",
+      "status": "Būsena",
+      "statusCreated": "Modelis sukurtas",
+      "statusGuessed": "Atliktas pirmasis spėjimas",
+      "experience": "Patirtis",
+      "experienceValue": "0 pavyzdžių",
+      "accuracy": "Tikslumas",
+      "accuracyUntrained": "– (nemokytas)",
+      "accuracyCoin": "ne geriau nei metant monetą",
+      "ask": "Paklausti visiškai naujo modelio →",
+      "mystery": "Jis nieko nežino. Tad kaip jis tampa išmanesnis?",
+      "cta": "Sužinoti →"
+    },
+    "assumption": {
+      "plaque": "Prieš pradedant",
+      "title": "Sukūrėte visiškai naują modelį.",
+      "subhead": "Netrukus pamatysite, kaip jis mokosi. Spėkite: kas iš tikrųjų jame keičiasi?",
+      "aria": "Kas iš tikrųjų keičiasi modelio viduje?",
+      "note": "Užfiksuota – pažiūrėkime, ar esate teisūs.",
+      "cta": "Pradėti mokymą →",
+      "choices": {
+        "rules": {
+          "label": "Kažkas prideda naujų taisyklių",
+          "getsSmarterBy": "kažkas prideda naujų taisyklių"
+        },
+        "memorize": {
+          "label": "Jis įsimena kiekvieną nuotrauką",
+          "getsSmarterBy": "kiekvienos nuotraukos įsiminimas"
+        },
+        "adjust": {
+          "label": "Jis keičia save po klaidų",
+          "getsSmarterBy": "savęs keitimas po klaidų"
+        },
+        "unsure": {
+          "label": "Nesu tikri"
+        }
+      }
+    },
+    "firstPrediction": {
+      "plaque": "1 pavyzdys",
+      "title": "Pirmą kartą jis suklydo. Tad ką darome su klaidingu spėjimu?",
+      "subhead": "Išbandykite kiekvieną variantą. Pažiūrėkite, kas nutiks.",
+      "tryEach": "Išbandyti kiekvieną",
+      "survived": "Išliko",
+      "broke": "Nutrūko",
+      "sameCat": "Ta pati katė · iš ankstesnio pavyzdžio",
+      "was": "Buvo: Šuo · 52 %",
+      "now": "Dabar: {prediction}",
+      "shifted": "Prognozė pasikeitė",
+      "counterexample": "Kontrpavyzdys",
+      "idle": "Pasirinkite variantą. Spėjimas čia bus atnaujintas.",
+      "tryAll": "Išbandykite visus tris variantus, kad tęstumėte",
+      "cta": "Tęsti →",
+      "revealBody": "Mašina paprastai neprideda taisyklių ir neįsimena nuotraukos. Ji šiek tiek pakeičia savo vidines reikšmes, kad kitą kartą būtų šiek tiek labiau linkusi pasirinkti teisingą atsakymą.",
+      "raise": "Tačiau tai iškelia tikrąjį klausimą – būtent apie jį ir yra ši pamoka:",
+      "question": "Kurias reikšmes ji keičia ir kuria kryptimi?",
+      "showMe": "Parodyti →",
+      "instincts": {
+        "rule": {
+          "label": "Pridėti taisyklę (jei smailios ausys → katė)",
+          "failureCaption": "Smailios ausys – bet tai lapė",
+          "failureLine": "Nauja išimtis. Pridėti dar vieną taisyklę?"
+        },
+        "memorize": {
+          "label": "Įsiminti šią nuotrauką",
+          "failureCaption": "Ta pati katė · kitoks apšvietimas / kampas",
+          "failureLine": "Šios nuotraukos niekada nemačiau. Įsiminimas nepadėjo."
+        },
+        "adjust": {
+          "label": "Šiek tiek pakoreguoti modelį",
+          "successFrom": "Šuo · 52 %",
+          "successTo": "Šuo · 48 %",
+          "successLine": "Jis pasislinko link katės. Tai kažką pakeitė."
+        }
+      }
+    },
+    "whichWay": {
+      "plaqueFirst": "Jūsų eilė",
+      "plaqueN": "Koregavimas {index} iš {total}",
+      "title": "Jūs pasukate reguliatorių.",
+      "subhead": "Vienas reguliatorius. Vienas klaidingas spėjimas. Į kurią pusę jį pasuksite?",
+      "modelSaid": "Modelis pasakė",
+      "truth": "Tiesa",
+      "towardCat": "‹ link katės",
+      "towardDog": "link šuns ›",
+      "pushCat": "link katės",
+      "pushDog": "link šuns",
+      "oops": "{prediction} – oi, dar toliau nuo tiesos",
+      "towardTruth": "{signed} % arčiau tiesos",
+      "furtherTruth": "{signed} % toliau nuo tiesos",
+      "pushOther": "Pasukite į kitą pusę, kad ištaisytumėte.",
+      "again": "Dar kartą →",
+      "next": "Toliau →",
+      "whatHappened": "Kas ką tik nutiko? →",
+      "revealTitle": "Jums niekada nereikėjo spėti krypties. Kiekviena klaida parodė, kur judėti.",
+      "revealBody": "Dabar įsivaizduokite, kad tai darote su milijonais reguliatorių ir milijonais nuotraukų. Jums tai būtų per lėta. Pažiūrėkite, kaip tai atlieka mašina.",
+      "cta": "Leisti jai veikti savarankiškai →"
+    },
+    "train": {
+      "plaque": "Mokymas",
+      "title": "Dabar leiskime sistemai tai daryti – greitai.",
+      "predictSub": "Netrukus mokysite sistemą iš milijono nuotraukų. Koks galiausiai bus tikslumas?",
+      "emptyChart": "Tikslumas · tuščia diagrama",
+      "ariaEmpty": "Tuščia tikslumo diagrama nuo 0 iki 100 procentų",
+      "ariaFilled": "Dabar tikslumas apie {accuracy} procentų po {examples} pavyzdžių",
+      "chartMax": "100 %",
+      "chartMin": "0 %",
+      "chartEnd": "1 000 000",
+      "predictAria": "Koks galiausiai bus tikslumas?",
+      "trainCta": "▶ Mokyti →",
+      "runSub": "Dabar jis mokosi iš jūsų pavyzdžių – vieno po kito. Jūs kontroliuojate greitį.",
+      "overTime": "Tikslumas laikui bėgant",
+      "examplesAcc": "{examples} pavyzdžių · ~{accuracy} %",
+      "drive": "Valdykite tempą",
+      "holdFf": "Laikykite nuspaudę, kad pagreitintumėte → 1 000 000",
+      "paceHint": "Bakstelėkite „Mokyti“, kad atliktumėte vieną žingsnį, arba laikykite nuspaudę, kad greitai pasiektumėte milijoną pavyzdžių.",
+      "plateauReached": "Pasiekta plynaukštė…",
+      "payoffTitle": "~98 % – niekada 100 %.",
+      "yourBet": "Jūsų spėjimas",
+      "payoffGuess": "Spėjote {bet}. Tikslumas nusistovi ties 98 % – niekada nepasiekia 100 %.",
+      "payoffBody": "Visiškai nauja nuotrauka visada gali šiek tiek skirtis nuo visko, ką modelis yra matęs. 98 % reiškia „labai tikėtina, kad tai katė“, o ne „įrodyta“.",
+      "bets": {
+        "hundred": "Pakils iki ~100 %",
+        "levels": "Nusistovės žemiau 100 %",
+        "bounces": "Svyravimai"
+      },
+      "stages": {
+        "1": {
+          "prediction": "Šuo · 52 %",
+          "result": "Klaidinga · koreguoti link katės"
+        },
+        "2": {
+          "prediction": "Katė · 51%",
+          "result": "Klaidinga · koreguoti link šuns"
+        },
+        "7": {
+          "prediction": "Katė · 63%",
+          "result": "Teisinga"
+        },
+        "14": {
+          "prediction": "Šuo · 55%",
+          "result": "Vėl klaidinga",
+          "dipGloss": "Vienas teisingas atsakymas dar ne viskas – kita nuotrauka atrodo kitaip."
+        },
+        "100": {
+          "prediction": "Katė · 71%",
+          "result": "Teisinga"
+        },
+        "1000": {
+          "prediction": "Katė · 84%",
+          "result": "Teisinga"
+        },
+        "10000": {
+          "prediction": "Katė · 91%",
+          "result": "Teisinga"
+        },
+        "100000": {
+          "prediction": "Katė · 95%",
+          "result": "Teisinga"
+        },
+        "1000000": {
+          "prediction": "Katė · 97%",
+          "result": "Teisinga"
+        }
+      }
+    },
+    "loop": {
+      "plaque": "Ciklas",
+      "title": "Sudėliokite ciklą eilės tvarka.",
+      "subhead": "Sudėliokite penkis veiksmus, kuriuos mašina kartoja – kai kurios kortelės čia netinka.",
+      "pickCard": "Pasirinkite kortelę",
+      "pickHint": "Bakstelėkite, kad įdėtumėte kitą, arba nutempkite ant žingsnio.",
+      "poolAria": "Kortelės, kurias reikia sudėti",
+      "allPlaced": "Visos kortelės sudėtos.",
+      "build": "Sudėlioti ciklą",
+      "dropHint": "Nutempkite arba bakstelėkite tuščią žingsnį.",
+      "nextOpen": "Kitas laisvas žingsnis: {step}",
+      "completeHint": "Ciklas baigtas – tęskite toliau.",
+      "removeAria": "Pašalinti {label} iš žingsnio {step}",
+      "dropOrTap": "Nutempti arba bakstelėti",
+      "waiting": "Laukiama…",
+      "empty": "Tuščia",
+      "runLoop": "Paleisti ciklą →",
+      "doesntBelong": "Netinka",
+      "rejectDecoy": "„{label}“ čia netinka.",
+      "rejectStep": "„{label}“ nėra {step} žingsnis – išbandykite kitą kortelę.",
+      "runTitle": "Modelis mokosi kartodamas tą patį ciklą.",
+      "runSub": "Paspauskite vienam ciklui. Laikykite nuspaudę, kad pagreitintumėte.",
+      "ready": "Pasiruošę – vienas paspaudimas = prognozuoti → klaida → koreguoti",
+      "loopsAcc": "ciklų · ~{accuracy} % tikslumas",
+      "runCta": "▶ Paleisti ciklą →",
+      "holdAcc": "Laikykite nuspaudę, kad pagreitintumėte → 1 000 000",
+      "holdHintEarly": "Bakstelėkite vienam ciklui arba laikykite nuspaudę, kad greitai pasiektumėte milijoną ciklų.",
+      "holdHintLater": "Laikykite nuspaudę, kad pajustumėte mastą – arba spauskite po vieną.",
+      "done": "Baigta",
+      "doneBody": "Dabar papildomas mokymas beveik nieko nekeičia.",
+      "cards": {
+        "image": {
+          "label": "Vaizdas",
+          "gloss": "Pateikiamas naujas pavyzdys."
+        },
+        "prediction": {
+          "label": "Prognozė",
+          "gloss": "Modelis pateikia geriausią spėjimą – su pasitikėjimo lygiu."
+        },
+        "error": {
+          "label": "Įvertinti klaidą",
+          "gloss": "Kiek jis suklydo ir kuria kryptimi?"
+        },
+        "adjust": {
+          "label": "Koreguoti",
+          "gloss": "Šiek tiek pastumti vidines reikšmes ta kryptimi."
+        },
+        "repeat": {
+          "label": "Kartoti",
+          "gloss": "Pakartoti. Ir dar kartą. Milijonus kartų."
+        },
+        "add-rule": {
+          "label": "Pridėti taisyklę"
+        },
+        "memorize": {
+          "label": "Įsiminti vaizdą"
+        }
+      },
+      "flashes": {
+        "0": {
+          "prediction": "Šuo · 61%",
+          "result": "Klaidinga → koreguoti link katės"
+        },
+        "1": {
+          "prediction": "Katė · 54%",
+          "result": "Klaidinga → koreguoti link šuns"
+        },
+        "2": {
+          "prediction": "Katė · 72%",
+          "result": "Teisinga → nedidelis poslinkis"
+        },
+        "3": {
+          "prediction": "Šuo · 48 %",
+          "result": "Klaidinga → koreguoti link katės"
+        },
+        "4": {
+          "prediction": "Katė · 88%",
+          "result": "Teisinga → labai mažas poslinkis"
+        }
+      }
+    },
+    "controlPanel": {
+      "plaque": "Po skydeliu",
+      "title": "Kas iš tikrųjų koreguojama?",
+      "subhead": "Modelio viduje yra 16 nustatymų. Kuris, jūsų manymu, padeda jam atpažinti katę?",
+      "predEyebrow": "Prognozė · katės nuotrauka",
+      "shifted": "Pasikeitė – daug reguliatorių kartu",
+      "barely": "Vos pajudėjo",
+      "guessHint": "Šiuo metu jums nereikia suprasti skaičių. Tiesiog spėkite.",
+      "tapFirst": "Bakstelėkite nustatymą",
+      "tapAnother": "Bakstelėkite kitą nustatymą",
+      "tapMore": "Bakstelėkite daugiau arba šiek tiek pajudinkite juos kartu →",
+      "testAria": "Išbandyti nustatymą {label}",
+      "off": "išjungta",
+      "notTheOne": "Visiškai jį išjungėte – vis tiek sako Katė · {confidence} %. Ne šis.",
+      "noCatDial": "Nėra vieno „katės“ reguliatoriaus. Žinios paskirstytos tarp visų jų – tūkstančiai mažų „balsų“, o ne vienas jungiklis.",
+      "parameters": "Jie turi pavadinimą – parametrai. Tikras modelis jų turi nuo milijonų iki milijardų.",
+      "tryADial": "Išbandykite reguliatorių",
+      "hintFirst": "Bakstelėkite kairėje esantį reguliatorių, kad jį išbandytumėte.",
+      "hintSecond": "Išbandykite kitą – galbūt tai ne jis.",
+      "hintTogether": "Vieno reguliatoriaus nepakanka. Šiek tiek pajudinkite juos kartu.",
+      "nudgeAll": "Šiek tiek pajudinti visus →",
+      "seePoint": "Pamatyti esmę",
+      "cta": "Tęsti →"
+    },
+    "oneMore": {
+      "plaque": "Mokymas baigtas",
+      "title": "Dar viena nuotrauka. Stebėkite kreivę.",
+      "subNow": "Grįžote prie maždaug 98 % – ten, kur mokymas jau beveik nieko nekeičia.",
+      "subEarly": "Grįžta prie 1 pavyzdžio – nemokytas, ~50 %. Ta pati +1 nuotrauka. Pažiūrėkite, kokį didelį poveikį ji daro.",
+      "compareAria": "Palyginti ankstyvą mokymą su dabartiniu",
+      "nowToggle": "Dabar · 100 mln.",
+      "rewindToggle": "Grįžti prie 1 pavyzdžio",
+      "chartEarly": "1 pavyzdys · pradžia",
+      "chartNow": "Tikslumas laikui bėgant",
+      "examplesAcc": "{examples} pavyzdžių · ~{accuracy} %",
+      "aria": "Tikslumas apie {accuracy} procentų po {examples} pavyzdžių",
+      "twitchEarly": "Ta pati +1 nuotrauka – šuolis {delta}. Patirtis tik prasideda.",
+      "twitchNow": "Kreivė pasislinko {delta} – iš esmės nekinta.",
+      "reveal": "Pradžioje viena nuotrauka daug ką pakeitė. Dabar, po šimto milijonų nuotraukų, dar viena tėra vos juntamas pokytis. Todėl kreivė nusistovėjo – lengviausia mokymosi dalis jau baigta.",
+      "addCue": "Pridėti pavyzdžių",
+      "showOne": "Parodyti dar vieną katę →",
+      "plusOne": "+1 nuotrauka →",
+      "alreadyDid": "+1 nuotrauka (jau atlikta)",
+      "plusMillion": "+1 000 000 nuotraukų →",
+      "millionDone": "+1 000 000 atlikta",
+      "wait": "Bet palaukite… →",
+      "watchHint": "Stebėkite kreivę kairėje – tada tęskite.",
+      "deltaOne": "+0,001 %",
+      "deltaMillion": "+0,04 %",
+      "deltaEarly": "+18 %"
+    },
+    "labeled": {
+      "catch": {
+        "plaque": "Viena problema",
+        "title": "Kačių atveju kažkas kiekvieną nuotrauką pažymėjo „katė“ arba „šuo“.",
+        "subhead": "Tačiau praėjusioje pamokoje sužinojote, kad tokie modeliai, kaip ChatGPT mokėsi iš viso interneto – knygų, kodo, pokalbių. Niekas nesėdėjo ir nežymėjo interneto.",
+        "question": "Tai kaip jis gavo „teisingą atsakymą“, su kuriuo galėjo palyginti savo klaidą?",
+        "aria": "Kaip jis gavo teisingą atsakymą?",
+        "noted": "Užfiksuota – dar netikrinkite. Pabandykime.",
+        "cta": "Išbandyti sakinį →"
+      },
+      "choices": {
+        "humans": "Žmonės rankomis pažymėjo kiekvieną sakinį",
+        "text": "Pats tekstas yra atsakymų raktas",
+        "none": "Jam nereikėjo vertinti klaidos"
+      },
+      "play": {
+        "plaque": "Užpildymas · {index}/{total}",
+        "title": "Spėkite kitą žodį.",
+        "subhead": "Tas pats ciklas kaip su katėmis – tik sakinys yra atsakymų raktas.",
+        "authorRight": "Autorius parašė „{answer}“. Jūs buvote teisūs – tai ir yra žyma. Niekas jos nepridėjo.",
+        "authorOff": "Autorius parašė „{answer}“. Jūs suklydote – tai ir yra žyma. Niekas jos nepridėjo.",
+        "authorAmbiguous": "Autorius parašė „{answer}“. Jūs suklydote – ir tai vis tiek naudinga – tai ir yra žyma. Niekas jos nepridėjo.",
+        "closeMiss": "Net ir beveik teisingas spėjimas („{guess}“) parodo kryptį – kaip ir klaidingas spėjimas „katė“ / „šuo“.",
+        "next": "Kitas sakinys →",
+        "seePoint": "Pamatyti esmę →"
+      },
+      "rounds": {
+        "mat": {
+          "prompt": "Katė sėdėjo ant ___.",
+          "options": {
+            "mat": "kilimėlio",
+            "moon": "mėnulio",
+            "idea": "idėjos",
+            "carpet": "kilimo"
+          },
+          "answer": "kilimėlio"
+        },
+        "cup": {
+          "prompt": "Įpyliau jai puodelį ___.",
+          "options": {
+            "coffee": "kavos",
+            "tea": "arbatos",
+            "rain": "lietaus",
+            "code": "kodo"
+          },
+          "answer": "kavos"
+        },
+        "door": {
+          "prompt": "Ji atidarė ___.",
+          "options": {
+            "door": "duris",
+            "cloud": "debesį",
+            "algorithm": "algoritmą",
+            "purple": "violetinį"
+          },
+          "answer": "duris"
+        }
+      },
+      "reveal": {
+        "plaque": "Viena problema",
+        "title": "Tas pats ciklas. Be žymėtojo.",
+        "subhead": "Ką tik atlikote tai, ką daro kalbos modelis – spėjate kitą žodį, patikrinate jį pagal tikrą tekstą ir koreguojate. Internetui nereikėjo žymėtojų. Kiekvienas sakinys pats yra savo atsakymų raktas.",
+        "earlierBet": "Jūsų ankstesnis spėjimas",
+        "youSaidHeld": "Pasakėte: „{label}“. Tai pasitvirtino.",
+        "youSaidMissed": "Pasakėte: „{label}“. Ką tik atliktas pratimas yra atsakymas: pats tekstas yra savo atsakymų raktas.",
+        "cats": "Katės:",
+        "catsBody": "žmogus pasako „katė“.",
+        "language": "Kalba:",
+        "languageBody": "sakinys nurodo kitą žodį.",
+        "sameLoop": "Tas pats ciklas – pasikeitė tik teisingo atsakymo šaltinis.",
+        "punchline": "Prognozuoti → patikrinti → koreguoti → kartoti. Pasikeitė tik tai, iš kur gaunamas „teisingas atsakymas“."
+      }
+    },
+    "history": {
+      "plaque": "Tai nėra nauja",
+      "title": "Mašinos taip mokosi jau seniai.",
+      "close": "Mokymosi iš klaidų idėjai egzistuoja jau kelis dešimtmečius. Neseniai pasikeitė ne pati idėja – kartu atsirado trys dalykai: pakankamai duomenų, pakankamai spartūs kompiuteriai ir geresni mokymo metodai.",
+      "eras": {
+        "perceptron": {
+          "year": "1957–58",
+          "label": "Perceptronas",
+          "blurb": "Frankas Rosenblattas sukūrė mašiną, kuri svorių mokosi iš pavyzdžių – pirmąjį mokomą modelį. Jo taisyklė yra būtent ta pati idėja, kurią ką tik naudojote: kai modelis suklysta, sustiprinti įvestis, kurios rodė teisingą atsakymą, ir susilpninti tas, kurios rodė neteisingą kryptį."
+        },
+        "backprop": {
+          "year": "1980s–90s",
+          "label": "Atgalinio sklidimo era",
+          "blurb": "Metodas (atgalinis sklidimas, išpopuliarėjęs 1986 m.) leidžia praktiškai apskaičiuoti tinkamą kryptį kiekvienai reikšmei daugiasluoksniame tinkle – tačiau kompiuteriai ir duomenų rinkiniai vis dar maži."
+        },
+        "scale": {
+          "year": "2000s–10s",
+          "label": "Atsiranda mastas",
+          "blurb": "Dideli duomenų rinkiniai, spartesnė aparatinė įranga ir geresni mokymo metodai pirmą kartą kartu leidžia efektyviai mokyti giliuosius modelius."
+        }
+      }
+    },
+    "reflection": {
+      "plaque": "Pažangos žurnalas",
+      "titleCheck": "Įsitikinkite patys.",
+      "titleComplete": "Užbaikite sakinius.",
+      "readBet": "Skaityti · jūsų spėjimas",
+      "youBet": "Jūsų spėjimas: {bet}.",
+      "unsure": "dar nebuvote tikri",
+      "watched": "Ką matėte: jis šiek tiek keičia savo vidines reikšmes ta kryptimi, kurią nurodo kiekviena klaida.",
+      "matched": "Tai sutapo.",
+      "different": "Kitaip – ir tai gerai.",
+      "gotAnswer": "Dabar jau turite atsakymą.",
+      "noBet": "Ankstesnio spėjimo nėra – tęskite toliau pateiktą patikrinimą.",
+      "doCheck": "Atlikti · vieną patikrinimą",
+      "weatherQ": "Orų modelis šiandien suklysta. Kas nutiks toliau?",
+      "weatherAria": "Kas toliau nutinka mokymosi cikle?",
+      "weatherYes": "Taip – įvertinti klaidą ir šiek tiek pajudėti reikiama kryptimi.",
+      "weatherClose": "Beveik – ciklas įvertina, kiek buvo suklysta, ir tada šiek tiek pakoreguoja.",
+      "noQuiz": "Jokio testo. Tiesiog pastebėkite, kaip pasikeitė jūsų supratimas apie „mokymąsi“.",
+      "writeLog": "Rašyti · savo žurnalą",
+      "beforeLabel": "Iki šiandien maniau, kad mašina mokosi…",
+      "beforePlaceholder": "magija… įsimindama… vadovaudamasi taisyklėmis…",
+      "afterLabel": "Dabar manau, kad ji mokosi…",
+      "afterPlaceholder": "spėdama, tikrindama, šiek tiek koreguodama, kartodama…",
+      "save": "Išsaugoti mano žurnalą →",
+      "weather": {
+        "rule": "Modelis prideda taisyklę apie debesis",
+        "nudge": "Modelis įvertina, kiek suklydo, ir šiek tiek pakeičia savo reikšmes nurodyta kryptimi",
+        "delete": "Modelis ištrina šiandieną ir pradeda iš naujo"
+      }
+    },
+    "closing": {
+      "takeaways": {
+        "plaque": "Mokymas baigtas",
+        "title": "Svarbiausios išvados",
+        "cta": "Tęsti →",
+        "items": {
+          "t1": "Klaida nėra vien „neteisinga“ – ji parodo kryptį.",
+          "t2": "Modelis šiek tiek pakeičia savo reikšmes ta kryptimi – milijonus kartų.",
+          "t3": "Tas pats ciklas leidžia mokytis kalbos: pats tekstas yra savo atsakymų raktas."
+        }
+      },
+      "final": {
+        "title": "Mokymasis nėra magija.",
+        "body": "Tai pasikartojantis ciklas: prognozuoti, įvertinti klaidą ir atlikti nedidelį, kryptingą patobulinimą – vėl ir vėl.",
+        "model": "Jūsų modelis",
+        "started": "Pradėjo nuo 50 % – kaip metant monetą. Dabar pasiekė 98 % po visų atliktų bandymų.",
+        "cta": "Tęsti →"
+      },
+      "transition": {
+        "line1": "Pamatėte, kad mašina keičia pati save – ir visada žino, kuria kryptimi judėti.",
+        "line2": "Bet kas tiksliai ten keičiasi?",
+        "inside": "Mokytis gebančios mašinos viduje.",
+        "toLesson5": "Toliau: Neuroniniai tinklai",
+        "backHome": "Grįžti į pradžią"
+      }
+    }
+  }
+}

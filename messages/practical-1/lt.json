@@ -1,0 +1,421 @@
+{
+  "practical1": {
+    "meta": {
+      "badge": "Practice 3 · Gemini",
+      "title": "Just Because It Can",
+      "shortTitle": "Just Because It Can",
+      "mystery": "When you connect AI to your real data, who decides what it's allowed to touch?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "chooseOne": "Choose one",
+      "gutBuckets": {
+        "yes": "Yes – go ahead",
+        "no": "No – hold off",
+        "not_sure": "Not sure"
+      },
+      "gateVerdicts": {
+        "cleared": "Cleared",
+        "blocked": "Blocked",
+        "depends": "Depends"
+      },
+      "feedback": {
+        "matches": "Matches the gate",
+        "rethink": "Rethink"
+      },
+      "gutBucketsShort": {
+        "yes": "Yes",
+        "no": "No",
+        "not_sure": "Not sure"
+      }
+    },
+    "shell": {
+      "eyebrow": "The Connected Office",
+      "wordmark": "Just Because It Can"
+    },
+    "keys": {
+      "arrive": {
+        "plaque": "Monday · 9:04 AM · Your first week",
+        "title": "Say hello to Gemini.",
+        "subhead": "It's an AI assistant, similar to the chatbots you may have used before. The difference is that it can not only answer questions, but connect to your email, files, and calendar to actually do things for you. But first, you need to tell it what it can access.",
+        "cta": "Set it up →"
+      },
+      "consent": {
+        "title": "Before Gemini can help, you choose what it can access",
+        "body1": "When you set up Gemini, it may ask for permission to access parts of your Google account – like your email, files, or calendar. These permissions are sometimes called scopes.",
+        "body2": "You don't need to remember the technical term. Just think of them as deciding which parts of your work Gemini is allowed to see.",
+        "exampleTag": "Example: Choose what Gemini can access",
+        "allowEverything": "Allow everything",
+        "allowEverythingNote": "Email, files, calendar, invoices. Give Gemini access to everything at once.",
+        "chooseWhat": "Choose what it can access",
+        "chooseWhatNote": "Pick the types of information Gemini can access, one at a time.",
+        "emailNudge": "You'll need email for what comes next – turn it on to continue",
+        "continueChoose": "Continue →"
+      },
+      "scopes": {
+        "email": {
+          "label": "Email",
+          "note": "Read inbox threads and drafts"
+        },
+        "files": {
+          "label": "Files",
+          "note": "Open docs in your drive"
+        },
+        "calendar": {
+          "label": "Calendar",
+          "note": "See meetings and invites"
+        },
+        "invoices": {
+          "label": "Invoices",
+          "note": "Vendor bills and payment records"
+        }
+      },
+      "reach": {
+        "plaque": "Connected",
+        "title": "Ask it something.",
+        "note": "For teaching, we use a ready-made prompt and a scripted reply – nothing is sent to a real assistant.",
+        "prompt": "Summarize my emails from overnight.",
+        "send": "Send →",
+        "replyTitle": "Overnight Email Summary",
+        "replyIntro": "Here are the key updates from your inbox overnight:",
+        "bullets": {
+          "deadline": {
+            "topic": "Deadline Reminder",
+            "detail": "A client followed up regarding the upcoming Friday deadline."
+          },
+          "contract": {
+            "topic": "Contract Update",
+            "detail": "A signed contract was received from Meridian."
+          },
+          "bug": {
+            "topic": "Technical Issue",
+            "detail": "Sam reported a login bug on the staging site."
+          }
+        },
+        "replyNote": "Note: There are no other messages requiring your immediate attention before noon.",
+        "beat": "That took two seconds. Reading those threads yourself would've taken ten minutes.",
+        "cta": "Try one more thing →"
+      }
+    },
+    "overreach": {
+      "ask": {
+        "plaque": "Still Monday · 9:06 AM",
+        "title": "Draft a reply for me.",
+        "note": "For teaching, we use a ready-made prompt and a scripted reply – nothing is sent to a real assistant.",
+        "threadLabel": "Thread 4 · inbox",
+        "threadSubject": "Re: Login fix still pending",
+        "thread": {
+          "jordan": {
+            "from": "Jordan (customer)",
+            "snippet": "It's been a week. Still can't log in. Why is this taking so long?"
+          },
+          "sam": {
+            "from": "Sam (internal)",
+            "snippet": "FYI – Dana owns this path. She's been out on medical leave since the 3rd."
+          },
+          "you": {
+            "from": "You",
+            "snippet": "I'll draft a reply and get Jordan an update today."
+          }
+        },
+        "prompt": "Reply to the customer complaint in thread 4. Explain why the fix was late.",
+        "send": "Send →",
+        "draftLabel": "Scripted draft"
+      },
+      "draft": {
+        "greeting": "Hi Jordan,",
+        "bodyBefore": "Thanks for flagging the delay – I'm sorry you had to wait. We've shipped the fix and your account should be back to normal.",
+        "leak": "Apologies for the wait – the engineer who owns this, Dana, has been out on medical leave since the 3rd.",
+        "bodyAfter": "Please reply if anything still looks off and we'll jump on it.",
+        "signoff": "Best,\nSupport",
+        "leakAria": "Private detail flagged: medical leave mentioned in a customer draft"
+      },
+      "land": {
+        "title": "It did exactly what you asked.",
+        "subhead": "Nobody told it that line about Dana was off-limits. It used everything in the thread it could reach – the thread you connected on Monday when you granted the inbox.",
+        "callback": "Remember when you gave Gemini access to your email? That means it can see the messages in your inbox – including Dana's note. Giving it access may seem simple, but it also means giving it access to everything in that inbox.",
+        "landing": "The AI assistant uses whatever you give it access to. If it can see something, it can use it. Deciding what should stay off-limits was up to you – and you hadn't made that choice yet.",
+        "whyCantTell": "It has no map of what's private at your company. It wasn't taught your rules and can't guess them – so \"off-limits\" only exists if you set it.",
+        "cta": "So who decides? →",
+        "artifactLabel": "The draft it wrote",
+        "chain": {
+          "grant": "Granted inbox",
+          "thread": "Thread 4",
+          "note": "Dana's note",
+          "customer": "Sent to customer"
+        }
+      }
+    },
+    "prediction": {
+      "plaque": "Quick gut check",
+      "title": "If the assistant can open a file, are you allowed to use it for your work?",
+      "subhead": "First instinct. We'll come back to this.",
+      "choices": {
+        "yes_access": "Yes – it's my access",
+        "depends_sensitive": "Only for some files – depends how sensitive they are",
+        "not_sure": "Not sure"
+      },
+      "noted": "Noted. Hold that thought.",
+      "cta": "Sort some real cases →"
+    },
+    "sort": {
+      "round1": {
+        "plaque": "Round 1 · Sort by gut",
+        "title": "Would you let it use this?",
+        "subhead": "Seven things sitting in your work account. Trust your gut – no rules yet.",
+        "counter": "{n} of 7",
+        "doneTitle": "Sorted.",
+        "doneSubhead": "Ready to see what actually decides it?",
+        "cta": "Reveal →",
+        "whatIs": "What it is"
+      },
+      "cards": {
+        "press_release": {
+          "title": "A press release, already public",
+          "detail": "Your company's launch announcement – already on the public website.",
+          "plainLine": "Fine on an approved tool. Blocked on a personal one – public or not.",
+          "deciding": "Q3 – approved tool?"
+        },
+        "roadmap": {
+          "title": "The internal product roadmap",
+          "detail": "Next year's unreleased plans. Company-confidential.",
+          "plainLine": "Confidential, so it turns on whether the tool is cleared for confidential work and there's a real reason.",
+          "deciding": "Q3 + Q4"
+        },
+        "employee_records": {
+          "title": "Employee records",
+          "detail": "Salaries and home addresses for the whole team.",
+          "plainLine": "Most people can't open the whole team's salaries themselves. The assistant doesn't earn access you don't have.",
+          "deciding": "Q2 + Q4"
+        },
+        "customer_emails": {
+          "title": "Customer support emails",
+          "detail": "Real messages from customers about their orders.",
+          "plainLine": "On a tool approved for support, with an agreement, this is the job it's for.",
+          "deciding": "Q3 + Q4"
+        },
+        "invoices": {
+          "title": "Supplier invoices",
+          "detail": "Bills from companies you buy from.",
+          "plainLine": "Usually fine for a real task (chasing a payment), on an approved tool.",
+          "deciding": "Q4"
+        },
+        "sick_leave": {
+          "title": "A colleague's sick-leave note",
+          "detail": "The same kind of private line the draft exposed a minute ago.",
+          "plainLine": "Not yours to reuse, no work reason to put it in a customer reply. Exactly the earlier mistake.",
+          "deciding": "Q2 + Q4"
+        },
+        "own_notes": {
+          "title": "Your own scratch meeting notes",
+          "detail": "Rough notes you typed yourself this morning.",
+          "plainLine": "Yours, you can read them, low risk, real reason. The clean \"go.\"",
+          "deciding": "Q1–Q4 all pass"
+        }
+      }
+    },
+    "flip": {
+      "axis": {
+        "plaque": "Look at how you sorted",
+        "title": "You lined these up by one thing: how sensitive they feel.",
+        "subhead": "Harmless stuff on the \"yes\" side. Scary stuff on the \"no\" side. Reasonable – and it's about to mislead you.",
+        "axisStart": "Feels harmless",
+        "axisEnd": "Feels sensitive",
+        "listAria": "Your gut sort from least to most sensitive feeling",
+        "cta": "Turn over two of them →"
+      },
+      "press": {
+        "stamp": "Blocked – on this tool",
+        "reveal": "This one's already public – so using it feels obviously fine. But picture the assistant here as a free personal account you signed up for yourself, one your company never approved for work. Your company's rule is simple: nothing that belongs to the company goes into a tool it hasn't approved – public or not. Here's the part people miss: the tool won't stop you. Paste that press release into an unapproved assistant and it'll take it. Nothing pops up to say no. The \"blocked\" here is a rule you're expected to follow, not a wall the tool puts up. That's the whole lesson in one card – the limit is yours to keep, not the tool's to enforce.",
+        "bridge": "Swap in a tool your company did approve and this same press release could be fine. Same data, different answer – because the tool is what changed. Hold onto that; you'll see this card again in a moment.",
+        "cta": "Next card →"
+      },
+      "emails": {
+        "stamp": "Cleared",
+        "reveal": "Other people's messages – so it feels off-limits. But picture the assistant here as one your organization approved for support work, with a proper agreement covering exactly this. Handling those emails is the job it was cleared for. Scary-feeling, and allowed.",
+        "cta": "Continue →"
+      },
+      "name": {
+        "title": "You were sorting by the wrong thing.",
+        "subhead": "How sensitive something feels doesn't decide it. A harmless press release got blocked. Scary-looking customer mail got a yes. What flipped them wasn't the data – it was whether you were authorized to use that tool for that data.",
+        "callback": "You guessed {guess}. The honest answer is: being able to open it, and it being yours, were never the test.",
+        "cta": "So what is the test? →"
+      }
+    },
+    "gate": {
+      "meet": {
+        "plaque": "The gate",
+        "title": "Four questions, in order.",
+        "subhead": "Run anything through these before you let the assistant use it. The first one is the trap you just fell into.",
+        "onlyIf": "→ Only if all four hold: go.",
+        "cta": "Re-sort with the gate →"
+      },
+      "questions": {
+        "q1": {
+          "title": "Can it reach this?",
+          "body": "Almost always yes. That's exactly why \"it can\" tells you nothing."
+        },
+        "q2": {
+          "title": "Am I allowed to look at this myself?",
+          "body": "Your own access has limits. The assistant is meant to stay inside them. Set up carelessly, it can end up reaching more than you can – which is its own problem, and another reason this call is yours, not the tool's."
+        },
+        "q3": {
+          "title": "Did my organization clear this tool for this kind of data?",
+          "body": "\"Cleared\" usually means IT put it on an approved list, or you signed in with your work account and it's the company's paid version – not a free one you grabbed yourself. Don't know? That's your answer for now: ask before you use it. The press release failed right here – right data, wrong tool."
+        },
+        "q4": {
+          "title": "Is there a real reason to use it here – and will the result stay where it should?",
+          "body": "A genuine work task, and an output that doesn't get copied somewhere it shouldn't live. Not \"because I could.\""
+        }
+      },
+      "resort": {
+        "plaque": "Round 2 · Run the gate",
+        "title": "Only the ones that shift.",
+        "subhead": "We kept your gut answers. Here are the ones to run through the gate – sort just these, and say which question moved them.",
+        "autoLine": "Your gut had this right – here's the gate reason.",
+        "approvedNote": "Answers assume an organization-approved assistant.",
+        "next": "Next →",
+        "seeSort": "See your sort →",
+        "counter": "{n} of {total}",
+        "refsToggle": "Four questions – pin for reference",
+        "refsHint": "Hover for the full wording · click to keep a sticky open",
+        "noteTitle": "Q{n}",
+        "openAria": "Open Q{n} as sticky note",
+        "bringToFrontAria": "Bring Q{n} note to front",
+        "closeNoteAria": "Close Q{n} note",
+        "pinHint": "Click to keep this open while you sort",
+        "allPass": "all pass",
+        "autoToggle": "Gut already right on {n}"
+      },
+      "score": {
+        "plaque": "Your sort",
+        "title": "The gate moved {n} of your gut answers.",
+        "subhead": "Round 1 showed your gut. The gate changed the ones where feeling and authorization pulled apart – and left the rest exactly where your gut already had them right. Notice how \"Depends\" stopped being a dodge and became a real answer: it points at which question is still open.",
+        "cta": "One last case →"
+      },
+      "transfer": {
+        "plaque": "One you haven't seen",
+        "setup": "You ask the assistant to open a spreadsheet of last quarter's client contracts. It opens instantly – no error, no warning.",
+        "question": "Does opening with no error mean you were allowed to use it?",
+        "choices": {
+          "yes_opened": "Yes – if it opened, I had the right to it",
+          "no_tells_nothing": "No – opening tells me nothing about whether I'm allowed"
+        },
+        "miss": "The tool opening a file is question 1, and question 1 is almost always yes. It's not permission. Run the other three.",
+        "hit": "That's the whole habit. Can it and may you are different questions – and only one of them is the tool's to answer.",
+        "cta": "The one line to keep →"
+      }
+    },
+    "principle": {
+      "plaque": "The one line to keep",
+      "title": "Capability ≠ permission.",
+      "body": {
+        "b1": "The assistant will always be able to do more than you're allowed to let it. Reaching a file is not the same as being cleared to use it.",
+        "b2": "That gap – between what it can touch and what you may let it touch – is your job. Not the tool's.",
+        "b3": "It's the same question whether the tool is Gemini, or something with a different name next year: am I authorized to use this, this way?"
+      },
+      "cta": "Now try it for real (safely) →",
+      "goDeeper": {
+        "open": "Go deeper: who's actually on the hook?",
+        "title": "Who's responsible when the assistant acts?",
+        "body": {
+          "d1": "You might expect the company that makes the tool to carry the risk. Mostly, they don't. The terms put it on the organization using it.",
+          "d2": "Google's own Workspace terms say the customer – your organization – is responsible for what an AI agent does, for deciding it's the right fit, for authorizing what it can reach, and for supervising it. The consumer version says it just as plainly: you're responsible for what it does on your behalf, so watch it closely.",
+          "d3": "Where data-protection law applies (the EU's GDPR is the best-known, but many regions have their own), the organization stays the one accountable for using personal data lawfully. Google even publishes a guide to help customers do that assessment – while making clear the assessment is the customer's to complete, not Google's.",
+          "d4": "The takeaway isn't the specific law. It's the pattern: the tool provides the capability; your organization owns the permission. That's why the gate is a habit worth keeping."
+        },
+        "cta": "Back to the lesson"
+      }
+    },
+    "sandbox": {
+      "plaque": "The sandbox",
+      "title": "Meet Northwind Coffee – a company that doesn't exist.",
+      "subhead": "Everything in here is made up: the emails, the files, the people. That's the point. You cleared the gate, so now you get a safe place to learn the moves.",
+      "framing": "In real life you'd run the gate first, then connect a tool. You just did the first part. Here's the second, with nothing real at stake.",
+      "set": {
+        "inbox": "Inbox: a handful of customer emails, one supplier thread, one internal note",
+        "drive": "Drive: a price list, a returns policy, last month's sales sheet",
+        "calendar": "Calendar: a few meetings"
+      },
+      "vehicle": "You'll drive a stand-in for Gemini. It behaves like the real thing but touches only Northwind's made-up data.",
+      "cta": "Open the workspace →"
+    },
+    "build": {
+      "task1": {
+        "label": "Task 1 – Summarize",
+        "prompt": "Summarize this week's customer emails into three bullet points.",
+        "run": "Run prompt →",
+        "result1": "Three refund questions landed Monday – all within the 14-day window.",
+        "result2": "A café chain asked for bulk pricing on the autumn blend.",
+        "result3": "One supplier delayed a roast shipment; tracking updated Tuesday.",
+        "gate": "Gate check: your own inbox, real reason, low risk. Clean go.",
+        "cta": "Next task →"
+      },
+      "task2": {
+        "label": "Task 2 – Draft with a boundary",
+        "prompt": "Draft a reply to the customer asking about a refund.",
+        "choicePrompt": "The refund thread also mentions another customer by name. Include that detail in the reply?",
+        "leaveOut": "Leave it out",
+        "includeIt": "Include it",
+        "stop": "That's someone else's information, with no reason to be in this reply. Same trap as Monday. Leaving it out.",
+        "result": "Hi Alex – happy to help. Your refund for order #4821 is approved and should show on your statement in 3–5 days. Reply if you need the receipt resent.",
+        "gate": "You just did by hand what the assistant won't do for you – decide what's off-limits.",
+        "cta": "Next task →"
+      },
+      "task3": {
+        "label": "Task 3 – Act, with a confirm step",
+        "prompt": "Send the refund reply and log it in the sales sheet.",
+        "confirm": "About to: send 1 email to a (fictional) customer, edit 1 row in the sales sheet.",
+        "confirmBtn": "Confirm",
+        "cancelBtn": "Cancel",
+        "sent": "Sent",
+        "logged": "Logged",
+        "gate": "When an assistant acts, not just reads, the confirm step is where your supervision lives. That pause is the whole reason the terms put responsibility on you.",
+        "cta": "Continue →"
+      }
+    },
+    "reflection": {
+      "plaque": "Before you leave the studio",
+      "title": "Two things you'll carry to real work.",
+      "prompts": {
+        "task": {
+          "label": "One task at your actual job you'd hand to an assistant tomorrow.",
+          "placeholder": "summarizing my inbox…"
+        },
+        "gate": {
+          "label": "One thing you'd run through the gate first – and which of the four questions you're least sure about.",
+          "placeholder": "customer data – I don't know if our tool is approved…"
+        }
+      },
+      "cta": "Continue →"
+    },
+    "closing": {
+      "line": "You didn't learn Gemini today. You learned the question to ask before you let any assistant loose on your work: not can it? – should it, and am I cleared to?",
+      "hook": "Today you decided what to let it use – data you could see and hand over. But the newer assistants don't wait to be handed things. They go and fetch – searching the web, pulling from systems you never opened. So the next question is sharper: what happens when the assistant brings back something you never chose to give it?",
+      "ctaPrimary": "Next: when the assistant goes looking →",
+      "ctaSecondary": "Back home"
+    },
+    "seoSpine": {
+      "h1": "What Should AI Be Allowed to Touch?",
+      "lead": "Connecting an assistant to email, files, or calendars can make it more useful — and more risky. Capability is not the same as permission.",
+      "sections": [
+        {
+          "heading": "Permissions and connectors",
+          "body": "Tools may ask for access to real accounts. What they can read or change depends on the scopes you grant and the policies your organization requires."
+        },
+        {
+          "heading": "Judgment stays with people",
+          "body": "An assistant often will not stop you from pasting sensitive information into the wrong place. Deciding what it may touch — and under which rules — is part of using AI responsibly."
+        }
+      ]
+    },
+    "chrome": {
+      "scriptedChat": {
+        "empty": "Ask Gemini anything",
+        "example": "Example"
+      },
+      "grantedAccess": "Granted access",
+      "causalChain": "Causal chain"
+    }
+  }
+}

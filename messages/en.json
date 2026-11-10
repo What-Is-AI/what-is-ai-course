@@ -1,0 +1,2050 @@
+{
+  "common": {
+    "continue": "Continue →",
+    "language": "Language",
+    "enShort": "EN",
+    "esShort": "ES",
+    "ltShort": "LT",
+    "stepOf": "Step {step} of {total}",
+    "progressAria": "Lesson progress: step {step} of {total}",
+    "stepsNavAria": "Lesson steps: {step} of {total}",
+    "prevStep": "Previous step",
+    "nextStep": "Next step",
+    "copyright": "© {year} Pro Technologies, MB",
+    "footerCreatedBy": "Created by",
+    "footerSupportedBy": "With contributions from",
+    "footerCodeLicense": "Code: AGPL-3.0",
+    "footerLessonsLicense": "Lessons: CC BY-NC-SA 4.0",
+    "footerSource": "Source",
+    "footerWarrantyNote": "provided without warranty",
+    "breadcrumbAria": "Breadcrumb",
+    "lessonOverviewAria": "Lesson overview"
+  },
+  "nav": {
+    "brand": "What is AI",
+    "lessons": "Lessons",
+    "practiceSection": "Practice",
+    "close": "Close",
+    "closeMenuAria": "Close menu",
+    "expand": "Expand menu",
+    "collapse": "Collapse menu",
+    "about": "About",
+    "aboutShort": "A",
+    "home": "Home",
+    "collapsed": {
+      "practice1": "P1",
+      "practice2": "P2",
+      "practice3": "P3",
+      "workshop": "W",
+      "placeholder": "P"
+    },
+    "feedback": {
+      "trigger": "Feedback & requests",
+      "kicker": "Private · anonymous",
+      "title": "Feedback & requests",
+      "titleShort": "Feedback",
+      "closeAria": "Close",
+      "thanks": "Thanks — we got it.",
+      "note": "No email is sent. Your note is stored anonymously so we can review it later.",
+      "close": "Close",
+      "type": "Type",
+      "kindFeedback": "Feedback",
+      "kindRequest": "Request",
+      "messageLabel": "Your message",
+      "placeholderFeedback": "What worked, what confused you, or what felt off?",
+      "placeholderRequest": "What would you like us to add or explain?",
+      "cancel": "Cancel",
+      "send": "Send",
+      "sending": "Sending…",
+      "sendFailed": "Could not send your message. Try again in a moment.",
+      "unavailable": "Feedback is not available right now.",
+      "cooldown": "Please wait a moment before sending another message.",
+      "tooShort": "Please write at least {min} characters."
+    },
+    "cookies": "Cookies"
+  },
+  "consent": {
+    "ga": {
+      "title": "Analytics cookies",
+      "body": "We use Google Analytics to understand how the course is used. Change this anytime via Cookies in the menu.",
+      "accept": "Accept",
+      "reject": "Reject"
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "What is AI",
+    "lead": "Understand AI by experiencing it, not just reading about it.",
+    "intro": "We developed <strong>What is AI</strong> for curious people who want to understand what's actually happening behind the AI they use every day.",
+    "who": {
+      "title": "Who’s behind this",
+      "before": "Created by",
+      "mid": ", with contributions from",
+      "after": ".",
+      "proAi": "Pro AI Assistant",
+      "malagaAi": "Malaga AI"
+    },
+    "how": {
+      "title": "How We Teach",
+      "start": {
+        "title": "We start with what you already think, not the final answer",
+        "body": "If we just give you the explanation upfront, it’s easy to nod along and feel like you understand – right up until you try to apply it. Instead, we like to ask what you think will happen first and let you find out for yourself. Sometimes you’ll be right, but the moments where you're completely wrong are usually where the real learning happens. AI is full of things that sound obvious until you test them, so whenever possible, we let you play with the system before we dive into why it behaves the way it does. Make a prediction, break the system, watch what happens, and then we’ll explain the mechanics behind it."
+      },
+      "using": {
+        "title": "Using AI isn't the same as understanding it",
+        "body": "You can use a Large Language Model every day and still hold surprisingly inaccurate ideas about what’s happening under the hood, much like you tap on a glass screen dozens of times an hour without knowing how capacitive sensors read the electrical charge of your fingertips. But if you're here to actually understand AI, eventually we have to look underneath the surface. That also means recognizing that AI didn't start with ChatGPT. Modern LLMs are fascinating, but they're just one chapter in a much larger story that spans symbolic reasoning, expert systems, neural networks, reinforcement learning, and a few famous dead ends. We’ll study the tools you use today, but we’ll also look at what came before them, why early approaches failed, and what everyone got wrong along the way."
+      },
+      "patterns": {
+        "title": "We don't want you to memorize concepts – we want you to notice patterns",
+        "body1": "Our goal isn't to help you pass a test; it's to change how you look at technology. After walking through these lessons, you’ll start seeing the shared patterns across recommendation engines, vision models, chess AIs, and autonomous agents. They all have different histories and failure modes, but suddenly they start making intuitive sense together.",
+        "body2": "You don't need to learn calculus, memorize complex equations, or call yourself a \"prompt engineer\" to get value out of this. You just need enough curiosity to look at a system and ask, \"Wait–is that actually how it works?\" That’s where we start."
+      }
+    },
+    "meta": {
+      "title": "About · What is AI",
+      "description": "Understand AI by experiencing it, not just reading about it."
+    }
+  },
+  "home": {
+    "tagline": "An interactive investigation – not a textbook. A series of mysteries, one misconception at a time.",
+    "startCta": "Begin with lesson {number}"
+  },
+  "lesson1": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "What counts as AI?",
+      "shortTitle": "What counts as AI?",
+      "mystery": "Is ChatGPT the whole story – or just one chapter?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "chooseOne": "Choose one",
+      "empty": "—",
+      "buckets": {
+        "definitely": "Definitely AI",
+        "could": "Could be AI",
+        "probably-not": "Probably not AI"
+      },
+      "domains": {
+        "language": "Language",
+        "vision": "Vision",
+        "audio": "Audio",
+        "planning": "Planning",
+        "ranking": "Ranking",
+        "multiple": "Multiple",
+        "none": "Not AI"
+      },
+      "origins": {
+        "learned": "Learned",
+        "specified": "Specified",
+        "both": "Both",
+        "depends": "Depends"
+      },
+      "domainBlurbs": {
+        "language": "Text, speech, translation, chat.",
+        "vision": "Images, faces, scenes, video.",
+        "audio": "Sound, speech, music – what you hear and how it’s processed.",
+        "planning": "Searching ahead through possible actions.",
+        "ranking": "Ordering options – what to show next.",
+        "multiple": "Several problems stitched into one system.",
+        "none": "Not an AI problem at all. Real computation – but arithmetic, not search or pathfinding – so there's no domain to name."
+      },
+      "originBlurbs": {
+        "learned": "Behaviour came from examples / data.",
+        "specified": "Behaviour came from rules or search someone wrote.",
+        "both": "Parts learned, parts specified – in the same object.",
+        "depends": "The product name isn’t enough – era and implementation matter."
+      },
+      "status": {
+        "aligned": {
+          "visible": "Aligned",
+          "sr": ", correct"
+        },
+        "rethink": {
+          "visible": "Rethink",
+          "sr": ", worth a second look"
+        },
+        "skipped": {
+          "visible": "Skipped",
+          "sr": ", you didn’t answer this one"
+        },
+        "rightPlace": {
+          "visible": "In the right place",
+          "sr": ", correct"
+        }
+      },
+      "scenarioKinds": {
+        "learned": "Learned",
+        "specified": "Specified (search)",
+        "hybrid": "Both"
+      }
+    },
+    "shell": {
+      "stepOf": "Step {step} of {total}",
+      "progressAria": "Lesson progress: step {step} of {total}",
+      "stepsNavAria": "Lesson steps: {step} of {total}",
+      "prevStep": "Previous step",
+      "nextStep": "Next step"
+    },
+    "hook": {
+      "ask": {
+        "title": "You already use AI every day. Or do you?",
+        "subhead": "Before we begin – what counts as AI?",
+        "cta": "Let's find out →"
+      },
+      "sort": {
+        "eyebrow": "Round 1 · Sort by instinct",
+        "title": "What counts as AI?",
+        "subhead": "Don't overthink it.",
+        "prompt": "Where does this belong?",
+        "hint": "Go with your first instinct. There are no right answers.",
+        "outputLabel": "Where it belongs",
+        "outputNote": "Filled in as you go.",
+        "waiting": "Waiting…",
+        "completeTitle": "Collection complete.",
+        "completeSub": "See what your choices reveal.",
+        "cta": "See the results →",
+        "objectOf": "Object {index} of {total}: {label}",
+        "sortedInto": "{label} sorted into {bucket}.",
+        "sortAria": "Sort {label} into {bucket}",
+        "binAria": "{bucket}, {count} sorted"
+      }
+    },
+    "reveal": {
+      "locked": {
+        "plaque": "Results locked",
+        "title": "Sort first to see your results.",
+        "body1": "This step compares your instinct placements from the sorting exhibit. Complete that step first to unlock your review.",
+        "body2": "You can go back and sort, or continue without results.",
+        "back": "Back to sorting",
+        "skip": "Continue without results →"
+      },
+      "plaque": "Key idea",
+      "title": "Two questions. Not one verdict.",
+      "lede": "Instead of asking “Is this AI?”, look at two things:",
+      "domain": {
+        "title": "01 · Domain",
+        "name": "Domain",
+        "question": "What kind of problem is this?",
+        "sub": "Is it an AI problem at all? If so, which?",
+        "body": "To decide the Domain, ask: does this task involve recognizing, interpreting, ranking, or searching through possibilities – where there's no single mechanically \"correct\" answer? If yes, it's an AI problem (Language, Vision, Audio, Planning, or Ranking), no matter how it's built. If the task is a direct, exact computation with one guaranteed right answer and no interpretation involved – arithmetic, resizing an image, compressing a file, decoding a barcode – it's ordinary computation, not AI, however complicated the math is.",
+        "openAria": "Open Domain as sticky note",
+        "bringToFrontAria": "Bring Domain note to front"
+      },
+      "origin": {
+        "title": "02 · Origin",
+        "name": "Origin",
+        "question": "Where does the behaviour come from?",
+        "sub": "Learned, specified, or a combination?",
+        "openAria": "Open Origin as sticky note",
+        "bringToFrontAria": "Bring Origin note to front"
+      },
+      "insightLabel": "A broader view",
+      "insightBody": "<strong>LLMs</strong> are one chapter – not the whole field.",
+      "instinctLabel": "Where your instinct landed",
+      "instinctBody": "No score here – Round 1 just captures your gut, and there are no right or wrong instincts. In Round 2 you’ll apply the rule and see how it compares.",
+      "reviewTitle": "Review your results",
+      "reviewSub": "Tap any object to see its Domain and Origin, then compare them with where your instinct first put it.",
+      "detailLabel": "Detail",
+      "selectObject": "Select an object",
+      "emptyDetail": "Choose from the list to see Domain, Origin, and how your instinct compared.",
+      "youSaid": "You said",
+      "closeNoteAria": "Close {title} note",
+      "vanishing": {
+        "eyebrow": "Why boring things are still AI",
+        "wordmark": "The vanishing act",
+        "p1": "Notice something strange: spam filters, GPS, and autocomplete all count as AI – yet none of them <em>feels</em> like it.",
+        "p2": "There’s a name for this. Once a machine does something reliably, we stop calling it AI and start calling it “just software.” The label keeps moving to whatever isn’t solved yet.",
+        "p3": "So the field looks smaller than it is. Much of AI is already hidden inside tools you use without thinking about it. That’s why “is this AI?” is harder to answer than it sounds – and why the answer is often “it depends.”"
+      },
+      "cta": "Try the rule on new objects →"
+    },
+    "round2": {
+      "eyebrow": "Round 2 · Sort by rule",
+      "title": "Now you have the rule.",
+      "ledeDomain": "<strong>Domain</strong>: is this an AI problem, and if so, which kind?",
+      "ledeOrigin": "<strong>Origin</strong>: where did the behaviour come from?",
+      "domainLegend": "Domain – is it an AI problem, and which kind?",
+      "originLegend": "Origin – where it came from",
+      "domainGroupAria": "Domain",
+      "originGroupAria": "Origin",
+      "nextCue": "Next",
+      "pickDomain": "Pick a Domain",
+      "pickOrigin": "Pick an Origin",
+      "check": "Check my answer →",
+      "nextObject": "Next object →",
+      "seeScore": "See your score →",
+      "objectOf": "Object {index} of {total}: {label}",
+      "whatIsAria": "What is {label}?",
+      "matchedSr": ", matched",
+      "missedSr": ", did not match your choice",
+      "announce": "{label}. Correct Domain: {domain}{domainDiff}. Correct Origin: {origin}{originDiff}. {note}",
+      "differentChoice": " (different from your choice)",
+      "score": {
+        "plaque": "Transfer",
+        "title": "{score} of {total} matched the correct answers.",
+        "sub": "Round 1 showed what you believed. Round 2 shows whether the rule stuck.",
+        "correctAnswer": " – correct answer: {domain} · {origin}",
+        "cta": "Continue →"
+      }
+    },
+    "depends": {
+      "plaque": "Depends, on what?",
+      "intro": {
+        "title": "Why the answer is often \"Depends\"",
+        "body": "Earlier we said that whether something counts as AI can change over time. Here's a big reason why: some tools are built one way today and were built a different way years ago. Same job – but what's inside changed. Let's look.",
+        "cta": "Show me →"
+      },
+      "toggle": {
+        "objectOf": "Object {index} of {total}",
+        "sub": "Drag the slider between the two eras. Watch Origin flip – Domain stays put.",
+        "domainBadge": "Domain · {domain}",
+        "originBadge": "Origin · {origin}",
+        "stays": "Stays",
+        "flips": "Flips",
+        "then": "Then",
+        "now": "Now",
+        "sliderAria": "Era: Then or Now",
+        "eraKicker": "{era} · Origin {origin}",
+        "next": "Next →",
+        "seePoint": "See the point →",
+        "announceChange": "Domain: {domain}, unchanged. Origin: now {origin}.",
+        "announceObject": "Object {index} of {total}: {label}. Domain: {domain}, unchanged. Origin: now {origin}."
+      },
+      "point": {
+        "title": "Now you know what “depends” depends on.",
+        "p1": "The <strong>Domain never moved</strong> – the problem is the same in every era.",
+        "p2": "The <strong>Origin flipped</strong> – the behaviour went from written rules to learned-from-data.",
+        "p3": "So “Depends” has a precise meaning: the product name isn’t enough. You have to know <em>when</em> it was built and <em>how</em>.",
+        "cta": "Continue →"
+      }
+    },
+    "timeline": {
+      "plaque": "Timeline",
+      "title": "Which came first?",
+      "sub": "Arrange the milestones from oldest to newest – click, tap, drag, or use your keyboard. Tap or press Enter again to move one back.",
+      "yourOrder": "Your order",
+      "oldest": "Oldest",
+      "newest": "Newest",
+      "pool": "Milestones to place",
+      "correctOrder": "Correct order",
+      "emptySlot": "Empty slot",
+      "tapToReturn": "Tap to return · drag to reorder",
+      "allPlaced": "All placed. Tap an item on the left to return it, or drag one back here.",
+      "clickOrDrag": "Click to place next – or drag onto a slot.",
+      "eitherOrder": "either order",
+      "check": "Check order →",
+      "score": "{count} of {total} in the right place.",
+      "scoreHint": "Most people find this harder than they expect – the real order is not the one recent news would suggest.",
+      "punchline": "Learning isn’t the new part. Machines were learning in 1959. What changed recently is scale – the amount of data, the amount of computing power, and one design that could finally use both.",
+      "tieNote": "Both landed the same year in print – a program that reasoned by searching (GPS) and a program that learned from experience (Samuel's checkers). Reasoning and learning grew up side by side in AI's founding years, not decades apart.",
+      "sourcesEyebrow": "Optional",
+      "sourcesTitle": "Go deeper",
+      "placedAnnounce": "{label}, placed in position {position}. Press Enter on it to return, or drag to reorder.",
+      "returnedAnnounce": "{label}, returned to milestones to place.",
+      "placeAria": "Place {label}. Click or drag onto the timeline.",
+      "placedAria": "{label}, position {position}, tap or press Enter to return, or drag to reorder",
+      "slotAria": "{label}, position {position}. {feedback}",
+      "positionAria": "{label}, position {position}",
+      "emptySlotAria": "Empty slot, position {position}",
+      "rightPlace": "In the right place.",
+      "offBy": "You placed this {placed}; it belongs {belongs} – off by {offBy}.",
+      "lineAnnounce": "{label}, position {position}: {feedback}",
+      "scoreAnnounce": "{count} of {total} in the right place. {lines}",
+      "ordinal": "{n, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
+      "ordinalRange": "{from}–{to}"
+    },
+    "cases": {
+      "plaque": "Case study · {index}/{total}",
+      "title": "How does it work?",
+      "progressAnnounce": "Case study {index} of {total}: {prompt}",
+      "youChose": "You chose: {choice}.",
+      "correct": "That’s correct.",
+      "incorrect": "The correct answer is: {correct}.",
+      "next": "Next →",
+      "seePattern": "See the pattern →",
+      "finish": {
+        "plaque": "Pattern emerging",
+        "title": "Some learned. Some searched. Some do both.",
+        "sub": "That’s the map. Lesson 2 asks the harder question: why couldn’t we just write the rules?"
+      },
+      "labels": {
+        "faceid": "Face ID",
+        "spam": "Spam filter",
+        "spotify": "Spotify recommendations",
+        "chess": "Classic chess engine",
+        "gps": "GPS navigation",
+        "siri": "Siri"
+      }
+    },
+    "consolidation": {
+      "plaque": "The rule, in one place",
+      "title": "Two questions you can ask about anything.",
+      "p1": "You started by sorting on instinct. Now you have a rule that works on objects you’ve never seen:",
+      "p2": "<strong>1. Domain – is this an AI problem, and if so, which kind?</strong> Language, Vision, Audio, Planning, Ranking, Multiple – or Not AI when it’s ordinary computation.",
+      "p3": "<strong>2. Origin – where did the behaviour come from?</strong> Learned from data, Specified by written rules or search, Both, or Depends on the era.",
+      "p4": "Two things to carry with you: <strong>AI is bigger than chatbots</strong> – search, planning, and ranking are AI too. And <strong>learned isn’t the same as new</strong> – machines have learned since the 1950s; what changed is scale.",
+      "cta": "One last thing →"
+    },
+    "reflection": {
+      "plaque": "Visitor book",
+      "title": "Complete the sentence.",
+      "sub": "No quiz. Just notice how your definition of AI has changed.",
+      "beforeLabel": "Before today I thought AI was…",
+      "beforePlaceholder": "ChatGPT… robots… something else…",
+      "afterLabel": "Now I think AI is…",
+      "afterPlaceholder": "A field… an umbrella… a history…",
+      "cta": "Leave your note →"
+    },
+    "closing": {
+      "rule": {
+        "plaque": "Before you go",
+        "title": "One rule is easy.",
+        "body": "You've seen that some AI is built from rules a person writes. So let's try it: here's a rule for catching spam, the kind of hand-written instruction you met earlier in the lesson.",
+        "eyebrow": "A spam rule",
+        "ruleLine1": "IF message contains \"free money\"",
+        "ruleLine2": "→ mark as Spam",
+        "plain": "In plain words: if an email says \"free money,\" treat it as spam.",
+        "hold": "Simple enough. But hold onto it – on the next screen we'll see how far one rule like this really gets you.",
+        "cta": "Next →"
+      },
+      "ask": {
+        "title": "Can you write enough rules to catch every spam email?",
+        "sub": "Most people say: sure.",
+        "groupAria": "Can you write enough rules to catch every spam email?",
+        "sure": "Sure",
+        "probablyNot": "Probably not"
+      },
+      "reveal": {
+        "title": "There are billions of ways to write spam.",
+        "body": "Written rules solved routing and chess beautifully – but messy problems like spam get past every rule you write. Which raises a sharper question…",
+        "cta": "Ask it →"
+      },
+      "mystery": {
+        "title": "So if we can’t write the rules for every problem…",
+        "italic": "how can a computer learn what we can’t spell out?",
+        "toLesson2": "Travel to Lesson 2 →",
+        "backHome": "Back home",
+        "terminal": "BELL LABS TERMINAL",
+        "ready": "ready."
+      }
+    },
+    "items": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "note": "The AI most people picture first – you type, and it writes back. A clear case of \"definitely AI.\""
+      },
+      "calculator": {
+        "label": "Calculator",
+        "note": "It just does math: the same sum always gives the same answer, with no guessing or judgment. That's ordinary computation, not AI – so there's no AI problem here to name."
+      },
+      "gen-fill": {
+        "label": "Photoshop Generative Fill",
+        "note": "You erase part of a photo and it fills the gap with brand-new pixels – image content that was never there. It creates them by predicting what most likely fits. That's the AI."
+      },
+      "crop": {
+        "label": "Photoshop Crop Tool",
+        "note": "Same app, but this tool just trims the edges using fixed steps. Nothing is learned or invented, so it isn't AI."
+      },
+      "spam": {
+        "label": "Spam Filter",
+        "note": "It sorts junk mail from real mail every day – a task most people never think of as AI. One of the oldest, most everyday examples there is."
+      },
+      "gps": {
+        "label": "GPS Navigation",
+        "note": "When you ask for directions, GPS checks millions of possible routes and quickly finds the fastest way to get where you're going. Finding the best route through a huge number of possibilities is a type of problem AI has been helping solve since its early days."
+      },
+      "chess": {
+        "label": "Chess Engine",
+        "note": "Modern chess engines such as AlphaZero learn to recognize strong and weak positions by playing against themselves, then use that knowledge to look ahead and choose a move. Earlier engines such as Deep Blue relied more on searching many possible moves using rules and strategies written by people.",
+        "refs": {
+          "alphazero": {
+            "term": "AlphaZero",
+            "tip": "Learn more on Wikipedia"
+          },
+          "deepBlue": {
+            "term": "Deep Blue",
+            "tip": "Learn more on Wikipedia"
+          }
+        }
+      },
+      "faceid": {
+        "label": "Face ID",
+        "note": "It recognizes your face by analyzing visual patterns it learned from lots of examples. This shows that AI can work with images and other types of information – not just language or chatbots."
+      },
+      "spotify": {
+        "label": "Spotify Recommendations",
+        "note": "It suggests songs by looking for patterns in what millions of people listen to. If other listeners with similar tastes enjoy a song, Spotify may recommend it to you too. It also uses playlists created by human editors. These recommendations are learned from data rather than following a fixed set of rules."
+      },
+      "autocomplete": {
+        "label": "Phone Autocomplete",
+        "note": "It predicts the next word you might type. Older versions guessed from which words usually come after each other, while newer ones use AI to consider more of what you've already written and make a better guess. So whether autocomplete counts as AI depends on how it was built."
+      },
+      "translate": {
+        "label": "Google Translate",
+        "note": "It started in 2006 by using rules written by people to translate between languages. Later, it learned from millions of examples of translated text, and in 2016 it moved to a newer AI approach. Today, it uses AI that learns patterns from data, showing how the technology behind the same tool can change over time."
+      },
+      "selfdrive": {
+        "label": "Self-driving Car",
+        "note": "It uses AI to handle several different jobs at once. It learns to recognize things on the road, like cars, people, and signs, and it searches for the best way to move safely through traffic. In other words, it uses learning to make sense of what it sees and planning to decide what to do next."
+      }
+    },
+    "round2Items": {
+      "qr": {
+        "label": "QR Code Scanner",
+        "note": "A QR code is read using fixed steps. The pattern of squares maps to the same characters every time. There’s nothing to interpret and only one right answer, so it’s ordinary computation, not AI.",
+        "whatIs": "The scanner that reads those square black-and-white codes you point your phone at – like the menu code at a restaurant – and opens a link or shows info."
+      },
+      "captcha": {
+        "label": "CAPTCHA",
+        "note": "The puzzle – like warped letters or “pick the traffic lights” – follows rules written by people. Newer CAPTCHAs may also use AI to watch how you behave and spot bots, but the puzzle itself is hand-made.",
+        "whatIs": "The “prove you’re not a robot” check on websites – like typing wavy letters or clicking every square with a traffic light."
+      },
+      "search": {
+        "label": "Google Search",
+        "note": "Its job is to put the most useful results first. Older versions used formulas designed by people; newer versions use AI and can even write answers for you. So it depends on which part and which era.",
+        "whatIs": "The search box where you type what you’re looking for and get a list of websites, information, and answers."
+      },
+      "ocr": {
+        "label": "OCR (Text Scanner)",
+        "note": "It turns a picture of text into editable text. Older versions matched letter shapes using fixed rules; newer ones use AI trained on many images. Whether it’s AI depends on how it was built.",
+        "whatIs": "A tool that turns a photo or scan of printed text – like a receipt or page – into text you can copy and edit."
+      },
+      "grammar": {
+        "label": "Grammar Checker",
+        "note": "It finds mistakes in your writing. Older tools checked your text against a list of grammar rules; newer ones use AI that learned from huge amounts of writing. So it depends on the tool and the era.",
+        "whatIs": "A writing helper that spots spelling and grammar mistakes and suggests ways to fix them."
+      },
+      "siri": {
+        "label": "Siri",
+        "note": "Siri does several jobs at once. AI that learned from audio turns your speech into words, other AI works out what you're asking, and hand-written commands carry out the task, like setting a timer. So it combines more than one kind of problem – part learned, part written by people.",
+        "whatIs": "Apple’s voice assistant. You can ask it to do things like set a timer or call someone, or ask it a question."
+      },
+      "fingerprint": {
+        "label": "Fingerprint Reader",
+        "note": "It checks whether a fingerprint matches yours. Some readers compare fixed measurements; others use AI trained on many fingerprints. Whether it counts as AI depends on the system inside.",
+        "whatIs": "A sensor you press your finger on to unlock a phone or laptop, instead of entering a passcode."
+      },
+      "excel-formula": {
+        "label": "Excel Formula",
+        "note": "A formula does exactly what you tell it: add these cells, multiply by that. The same input gives the same result, with no interpretation. So it’s ordinary computation, not AI.",
+        "whatIs": "An instruction you put into a spreadsheet cell to calculate something – like adding up a column – automatically."
+      },
+      "excel-copilot": {
+        "label": "Excel Copilot",
+        "note": "This is the AI assistant inside the spreadsheet. You ask in plain words, and it can write formulas or explain your data. It uses AI that learned from huge amounts of text and code.",
+        "whatIs": "A helper inside Excel that you can ask in plain words to create formulas, clean up a sheet, or explain your numbers."
+      },
+      "lens": {
+        "label": "Google Lens",
+        "note": "Point your camera at a plant, landmark, or text, and it tells you what it is. It uses AI that learned to recognize things from millions of images.",
+        "whatIs": "A tool that uses your phone’s camera to tell you about what you’re looking at – like a plant, landmark, or foreign menu."
+      },
+      "compression": {
+        "label": "Image Compression",
+        "note": "Shrinking a file to save space follows a fixed mathematical recipe. The same picture is compressed the same way every time. It may use complicated math, but there’s no interpretation, so it’s not AI.",
+        "whatIs": "A way to make a picture’s file smaller so it takes up less space or loads faster, while keeping it looking almost the same."
+      },
+      "noise": {
+        "label": "Noise Cancellation",
+        "note": "It removes background noise so you can hear what matters. Older versions used fixed sound-filtering math; newer ones use AI trained to tell voices from noise. So it depends on the implementation.",
+        "whatIs": "A feature in headphones and calls that reduces background sounds – like traffic or chatter – so you can hear what matters."
+      },
+      "deepfake": {
+        "label": "Deepfake Video",
+        "note": "It creates fake video of a real person by generating new frames of their face and movements. This comes from AI that learned what faces look like from lots of real footage.",
+        "whatIs": "A fake video that makes a real person appear to say or do something they never actually said or did."
+      }
+    },
+    "dependsItems": {
+      "autocomplete": {
+        "label": "Autocomplete",
+        "eraThen": "Earlier phones guessed your next word from a fixed list of which words usually follow each other. Type \"good\" and it offers \"morning.\" (Specified)",
+        "eraNow": "Newer phones use AI that looks at the whole sentence you're writing to predict what fits next. (Learned)",
+        "note": "Same job – finishing your sentence. Different machine underneath."
+      },
+      "ocr": {
+        "label": "Extract Text from a Photo",
+        "eraThen": "When apps first started pulling text out of a photo, they worked by matching each shape against stored templates of what each letter looks like. Clean, printed text came out fine; messy or slanted text often came out wrong. (Specified)",
+        "eraNow": "Today, AI that learned from huge numbers of real images reads the text for you – so it handles odd fonts, handwriting, and photos taken at an angle. (Learned)",
+        "note": "Same job – turning a picture of text into text you can edit. Different machine underneath."
+      },
+      "search-ranking": {
+        "label": "Google Search ranking",
+        "eraThen": "Years ago, searching gave you a list of links to click through. Google decided the order with a formula its creators designed – roughly, a page counted as more trustworthy when lots of other pages linked to it, so it showed up higher. (Specified)",
+        "eraNow": "Today, AI helps order the results and can even write you a direct answer, drawing on what it learned from huge amounts of text. (Learned)",
+        "note": "Same job – putting the most useful results first. Different machine underneath."
+      }
+    },
+    "timelineItems": {
+      "ai-coined": {
+        "label": "AI coined",
+        "blurb": "The Dartmouth workshop names the field. The proposal barely mentions learning from data."
+      },
+      "planning": {
+        "label": "Planning",
+        "blurb": "Newell, Shaw & Simon’s General Problem Solver – reasoning as search through possible actions. Developed from 1957; landmark paper 1959."
+      },
+      "ml": {
+        "label": "Machine Learning",
+        "blurb": "Samuel’s checkers program improves by playing itself, and learns to beat strong human players. His paper coins the term “machine learning.”"
+      },
+      "search": {
+        "label": "Search",
+        "blurb": "The A* algorithm finds the best route through a network. Invented at SRI to give the robot Shakey a way to plan its path – and it’s in your maps app right now."
+      },
+      "robotics": {
+        "label": "Robotics",
+        "blurb": "Shakey at SRI (built 1966–1972): the first robot to perceive, plan and act in a real room. To move, it needed to plan a path – which is why the same SRI team invented A* one row up."
+      },
+      "rl": {
+        "label": "Reinforcement Learning",
+        "blurb": "Watkins’ Q-learning formalises trial, reward, adjust – a landmark in reinforcement learning, and the basis of later game-playing systems. (Introduced 1989; convergence proven by Watkins & Dayan, 1992.)"
+      },
+      "dl": {
+        "label": "Deep Learning",
+        "blurb": "AlexNet wins ImageNet by a wide margin. Multi-layer nets stop being a niche overnight."
+      },
+      "transformers": {
+        "label": "Transformers",
+        "blurb": "“Attention Is All You Need” – a new architecture for language, later for everything else."
+      },
+      "llms": {
+        "label": "LLMs reach the public",
+        "blurb": "A chat interface puts them in everyone’s hands. The models had existed for years (GPT-2 in 2019, GPT-3 in 2020); 2022 is when they reached everyone – the newest milestone here, not the first thing to happen in AI."
+      }
+    },
+    "timelineSources": {
+      "dartmouth": {
+        "cite": "McCarthy, Minsky, Rochester & Shannon (1955) – the naming proposal",
+        "note": "Free, three pages."
+      },
+      "samuel": {
+        "cite": "Samuel (1959) – checkers",
+        "note": "The abstract alone makes the point."
+      },
+      "astar": {
+        "cite": "Hart, Nilsson & Raphael (1968) – A*"
+      },
+      "qlearn": {
+        "cite": "Watkins & Dayan (1992) – Q-learning"
+      },
+      "alexnet": {
+        "cite": "Krizhevsky, Sutskever & Hinton (2012) – AlexNet",
+        "note": "Free."
+      },
+      "attention": {
+        "cite": "Vaswani et al. (2017) – Attention Is All You Need",
+        "note": "Free.",
+        "flag": "Come back after Lesson 5."
+      }
+    },
+    "scenarios": {
+      "faceid": {
+        "prompt": "Your phone unlocks with Face ID. How does it work?",
+        "options": {
+          "pixels": "It stores a 3D map of your face at setup and checks whether each new scan matches those exact measurements.",
+          "learn": "It learned what makes any two faces the same or different – then applied that to yours."
+        },
+        "reveal": "The hard part isn’t storing your face – it’s knowing what “same face” means under new light, angle, and hair. That similarity was learned from millions of face pairs; your enrollment is just one application."
+      },
+      "spam": {
+        "prompt": "Your inbox catches spam. How?",
+        "options": {
+          "phrases": "It scores each sender’s reputation and blocks mail from addresses that other users reported as spam.",
+          "learn": "It learned what spam looks like from millions of examples – then judged yours."
+        },
+        "reveal": "Phrase lists were the old approach – and spammers rewrote around them. Modern filters learn patterns from labeled mail, so “free money” isn’t a magic keyword; it’s one signal among many."
+      },
+      "spotify": {
+        "prompt": "Spotify suggests your next song. How?",
+        "options": {
+          "genre": "It analyzes the audio of each track – tempo, key, energy – and queues songs with the closest acoustic profile to your favorites.",
+          "learn": "It learned listening patterns across millions of people – including people like you."
+        },
+        "reveal": "Genre matching is part of the story people tell themselves. The system ranks what you hear next using collaborative filtering – patterns across millions of listeners, editorial playlists, and your own history – not a hand-written map of “if rock, then rock.”"
+      },
+      "chess": {
+        "prompt": "A classic chess engine picks a move. How?",
+        "options": {
+          "search": "It searches ahead through possible moves and picks the strongest line.",
+          "learn": "It learned to judge positions from experience, the way AlphaZero did."
+        },
+        "reveal": "That describes AlphaZero, which learned its judgment from self-play – but not a classic engine like Deep Blue, which searched and evaluated with rules written by hand. Learned judgment came later. Same board, different origin."
+      },
+      "gps": {
+        "prompt": "GPS navigation picks a route. How?",
+        "options": {
+          "learn": "It learned the best routes by training on millions of drivers’ past trips through the city.",
+          "search": "It searches a map of roads for the best path – using algorithms written in advance."
+        },
+        "reveal": "Traffic prediction can be learned – but the core of “get me there” is search on a graph of roads (think A*). Real AI, specified behaviour. Same idea you placed on the timeline."
+      },
+      "siri": {
+        "prompt": "Siri sets a timer when you ask. How?",
+        "options": {
+          "all-learned": "It learned end-to-end – hearing you and deciding what to do, all from data.",
+          "hybrid": "Hearing you is learned; “set a timer” is still a hard-coded action."
+        },
+        "reveal": "Speech recognition learned from audio. Many skills – timers, alarms, “call Mom” – are still written rules hooked to what it heard. Hybrid: some learned, some specified."
+      }
+    },
+    "seoSpine": {
+      "h1": "What Is Artificial Intelligence? An Interactive Introduction",
+      "lead": "Artificial intelligence is a family of systems that perform tasks people often associate with intelligence — recognizing patterns, ranking options, planning steps, or generating language. Not every clever-looking program is AI, and ChatGPT is only one chapter in a longer story.",
+      "sections": [
+        {
+          "heading": "What counts as AI",
+          "body": "Some systems follow fixed rules written by people. Others learn patterns from examples. Many everyday tools sit in between. This lesson asks you to sort familiar products and notice where the label “AI” fits — and where it doesn’t."
+        },
+        {
+          "heading": "Why the distinction matters",
+          "body": "If you only meet AI as a chat box, it’s easy to miss vision systems, recommenders, planners, and older approaches that shaped today’s tools. Naming what a system does — and how it was built — is the first step to understanding it."
+        }
+      ]
+    }
+  },
+  "lesson2": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "The Day AI Stopped Following Rules",
+      "shortTitle": "Rules vs Learning",
+      "mystery": "Why can’t we just write the rules?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "chooseOne": "Choose one",
+      "next": "Next →",
+      "and": "{a} and {b}",
+      "listMany": "{items}, and {last}",
+      "approaches": {
+        "rules": "Rules",
+        "learning": "Learning",
+        "hybrid": "Mostly rules + search"
+      },
+      "feedback": {
+        "correct": "Correct",
+        "partly": "Partly right",
+        "notQuite": "Not quite"
+      },
+      "results": {
+        "false-positive": "False positive",
+        "false-negative": "False negative",
+        "ambiguous": "Ambiguous"
+      }
+    },
+    "shell": {
+      "eyebrow": "Bell Labs · Terminal 02",
+      "wordmark": "1985 AI LABORATORY"
+    },
+    "mission": {
+      "plaque": "Shift change · 03:14 AM",
+      "title": "You are now an AI engineer.",
+      "subhead": "Your mission arrives on a blinking terminal.",
+      "open": "Open mission →",
+      "fileLabel": "MISSION_BRIEF.txt",
+      "briefTitle": "Teach a computer to recognize a cat.",
+      "line1": "> No cameras. No datasets. Just logic.",
+      "line2": "> Write the rules.",
+      "coreQuestion": "Core question: why can’t we just write the rules?",
+      "cta": "Start writing rules →"
+    },
+    "rules": {
+      "plaque": "Whiteboard · Discovery 1",
+      "title": "Write the rules for “cat.”",
+      "subhead": "Pin rules to the board. Feel free to invent your own.",
+      "boardHeader": "IF … THEN cat · {count} rules",
+      "empty": "No rules yet.",
+      "sticky": "IF {rule}",
+      "remove": "[remove]",
+      "placeholder": "Add a custom rule…",
+      "add": "Add",
+      "suggestionsEyebrow": "Sticky suggestions",
+      "cta": "Test the rules →",
+      "suggestions": {
+        "fourLegs": "Has four legs",
+        "fur": "Has fur",
+        "whiskers": "Has whiskers",
+        "tail": "Has a tail",
+        "pointyEars": "Pointy ears",
+        "meows": "Meows",
+        "claws": "Has claws",
+        "smallBody": "Small body"
+      },
+      "break": {
+        "plaque": "Counterexamples",
+        "title": "Your rules meet reality.",
+        "subInProgress": "Does the computer get this right?",
+        "subDone": "Every exception hurts. Rules look precise – until the world gets messy.",
+        "activeRules": "ACTIVE_RULES := {rules}",
+        "none": "none",
+        "andJoin": " AND ",
+        "gloss": "In plain terms: it’s only a cat if <em>every</em> rule you pinned is true at once.",
+        "next": "Next counterexample →",
+        "seePattern": "See the pattern →",
+        "frustration": "Don’t rush past the frustration. This is how early AI felt.",
+        "keepGoing": "Keep going →"
+      },
+      "coda": {
+        "ruleOne": "invented rule",
+        "ruleMany": "invented rules",
+        "falsePositive": " Your {noun} – {list} – didn’t keep this out either.",
+        "falseNegative": " Your {noun} – {list} – didn’t rescue this cat either.",
+        "ambiguous": " Your {noun} – {list} – can’t help when the signal is this weak."
+      },
+      "counterexamples": {
+        "tiger": {
+          "label": "Tiger",
+          "note": "A tiger <em>is</em> a cat – just not the one you meant. And “the one I meant” is the thing you can’t write as a rule."
+        },
+        "dog": {
+          "label": "Dog",
+          "note": "Four legs, fur, a tail – it fits your rules perfectly. Your rules describe far more than cats.",
+          "noteShared": "{list} – it fits your rules perfectly. Your rules describe far more than cats.",
+          "noteFallback": "It fits your rules perfectly. Your rules describe far more than cats."
+        },
+        "hairless": {
+          "label": "Hairless cat",
+          "note": "A real cat your own rules reject. “Has fur” is usually true – but it was never required."
+        },
+        "lion-cub": {
+          "label": "Lion cub",
+          "note": "Small, whiskered, four-legged. Add “small body” to shut out the tiger, and this one strolls right back in.",
+          "noteSmallBody": "You added “small body” to shut out the tiger – and this one strolls right back in."
+        },
+        "dark": {
+          "label": "Black cat in the dark",
+          "note": "Your rules assume you can see clearly. Reality doesn’t always allow it."
+        },
+        "upside-down": {
+          "label": "Cat sleeping upside down",
+          "note": "Ears, posture, shape – all rearranged. Your rules expected the cat to hold still."
+        }
+      }
+    },
+    "explosion": {
+      "locked": {
+        "plaque": "Discovery 2 · Locked",
+        "title": "The rule explosion",
+        "body": "To see how your rules explode into exceptions, write them on the board first.",
+        "hint": "Go back and pin a few rules for “cat,” or continue without that starting set.",
+        "back": "Back to rules",
+        "skip": "Continue without rules →"
+      },
+      "plaque": "Discovery 2 · Desk overflow",
+      "title": "The rule explosion",
+      "subhead": "Every time you add a rule, more exceptions appear.",
+      "startingRules": "Starting rules",
+      "needRule": "Need a rule for {exception}",
+      "multiplying": "Exceptions multiplying",
+      "prompt": "Before we tell you – why did <em>adding</em> rules make it worse, not better?",
+      "revealTitle": "You aren’t teaching the computer what a cat is.",
+      "revealLine1": "You’re trying to predict every situation.",
+      "revealLine2": "Early AI believed intelligence could be written as rules. It worked – until reality became messy.",
+      "exceptions": {
+        "breeds": "Different breeds",
+        "lighting": "Lighting",
+        "angles": "Angles",
+        "occlusion": "Occlusion",
+        "backgrounds": "Backgrounds",
+        "kittens": "Kittens",
+        "cartoons": "Cartoons",
+        "statues": "Statues",
+        "halfVisible": "Half-visible cats",
+        "rain": "Rain",
+        "snow": "Snow",
+        "motionBlur": "Motion blur"
+      }
+    },
+    "train": {
+      "compare": {
+        "plaque": "Discovery 3",
+        "title": "The game changes",
+        "subhead": "Instead of writing rules… you provide examples.",
+        "ruleBased": "Rule-based",
+        "code": "IF tail\nAND whiskers\nAND fur\nTHEN cat",
+        "mlEyebrow": "Machine Learning",
+        "mlBody": "Thousands of cat pictures.\nThousands of dog pictures.\n↓ Algorithm → Model → New picture → Cat (97%)",
+        "cta": "Try the workflow →"
+      },
+      "workflow": {
+        "aria": "Workflow progress",
+        "label": "Label",
+        "train": "Train",
+        "test": "Test",
+        "done": "done",
+        "now": "now",
+        "later": "later"
+      },
+      "label": {
+        "plaque": "Label station",
+        "title": "Train a tiny model",
+        "subhead": "No equations. Just the workflow: label → train → test.",
+        "progress": "Labeled {count} / {total}",
+        "photo": "Photo {n}",
+        "cat": "Cat",
+        "dog": "Dog",
+        "labelCat": "Label as Cat",
+        "labelDog": "Label as Dog",
+        "after": "You’ve labeled the examples. Now the model can learn from your labels.",
+        "cta": "Train →"
+      },
+      "samples": {
+        "c1": "Fluffy orange lounging",
+        "d1": "Golden retriever outdoors",
+        "c2": "Tabby staring at camera",
+        "d2": "Husky in snow",
+        "c3": "Black cat on a windowsill",
+        "d3": "Beagle puppy in snow",
+        "c4": "Siamese sitting",
+        "d4": "Corgi on grass"
+      },
+      "trainPhase": {
+        "plaque": "Train",
+        "title": "Model learning…",
+        "status": "Finding patterns across your labeled examples"
+      },
+      "test": {
+        "plaque": "Test",
+        "title": "New picture. What is it?",
+        "hint": "Blurry animal on a sofa",
+        "predictionEyebrow": "Model prediction",
+        "prediction": "Cat · {confidence}%",
+        "youGuessed": "You guessed {guess}. The model didn’t need your rules – it used patterns from examples. It handles messy, real-world photos far better than rules ever could – though not perfectly, as you’re about to see.",
+        "whyNot100": "Why not 100%? Models output a confidence score, not certainty. A new photo can always look a little unlike the examples it learned from – so 97% means “very likely a cat,” not “proven.” And that number is the model’s <em>own</em> estimate of its certainty – it can run too high or too low, so read it as a signal, not a guarantee.",
+        "cta": "One more test →"
+      },
+      "trap": {
+        "plaque": "One more test",
+        "title": "Same model. New photo.",
+        "setup": "Your model nailed the tricky sofa photo. Here’s one that should be even easier – a fluffy cat, clear as day, sitting outside in the snow.",
+        "hint": "Fluffy cat sitting in snow – a clear, unmistakable cat",
+        "alt": "A fluffy long-haired cat sitting upright in fresh snow, whole body visible, obviously a cat",
+        "prediction": "Dog · {confidence}%",
+        "reaction": "A cat. Called a dog. Confidently.",
+        "whyCta": "Why did it fail? →",
+        "revealTitle": "It never learned “cat.” It learned what your photos had in common.",
+        "body1": "Look back at the photos you labeled. Which animals were outdoors – in snow, on grass, in the open? Your dogs. Which ones were indoors – on couches, floors, windowsills? Your cats.",
+        "body2": "So the model found the easiest pattern that split your examples apart – and part of that pattern was the <em>setting</em>, not the animal. Snow and open ground came to mean “dog.” A cat in the snow walks straight into the trap.",
+        "punchline": "This is the catch nobody mentions. Learning doesn’t work out what a cat <em>is</em>. It finds whatever pattern separates the examples you gave it – even the wrong one. Feed it lopsided examples, and it learns your lopsidedness, at full confidence.",
+        "close": "Better examples, better patterns. Which raises the question the rest of this course keeps circling: where do the examples come from – and what’s hiding inside them?"
+      }
+    },
+    "approach": {
+      "plaque": "Classification",
+      "title": "Rules or learning?",
+      "objectOf": "Object {index} of {total}: {label}",
+      "next": "Next →",
+      "seeSummary": "See summary →",
+      "summary": {
+        "plaque": "Pattern",
+        "title": "{score} of {total} matched the usual approach.",
+        "sub": "Some problems want precise rules. Messy ones want learning from examples."
+      },
+      "problems": {
+        "traffic": {
+          "label": "Traffic-signal timing",
+          "note": "Controlling the light cycle – fixed signals, clear states, so rules work. (Not the same as <em>recognizing</em> a traffic light in a photo, which is learning.)"
+        },
+        "speech": {
+          "label": "Speech recognition",
+          "note": "Voices vary endlessly – learn from examples."
+        },
+        "calculator": {
+          "label": "Calculator",
+          "note": "Deterministic math. No learning needed."
+        },
+        "medical": {
+          "label": "Medical image diagnosis",
+          "note": "Patterns in scans – too messy for hand rules."
+        },
+        "sorting": {
+          "label": "Sorting numbers",
+          "note": "Algorithms we can write precisely."
+        },
+        "spam": {
+          "label": "Spam detection",
+          "note": "Attackers keep inventing new wording."
+        },
+        "chess-classic": {
+          "label": "Chess engine (classic)",
+          "note": "Mostly rules + search."
+        },
+        "chess-modern": {
+          "label": "Modern chess AI",
+          "note": "Learns strong play from experience – but still <em>searches</em> ahead. The shift from classic engines isn’t “search → learning”; it’s a <em>hand-crafted</em> evaluation becoming a <em>learned</em> one, inside the same search."
+        }
+      }
+    },
+    "chair": {
+      "plaque": "Discovery 4",
+      "title": "How did you learn what a chair is?",
+      "subhead": "Did someone define “exactly four legs”?",
+      "no": "No",
+      "notReally": "Not really",
+      "rulesTitle": "Did they write rules?",
+      "probablyNot": "Probably not.",
+      "thenHow": "Then how? →",
+      "thousands": "You saw thousands.",
+      "punchline": "You learned a concept. Not rules.",
+      "followUp": "Machine learning learns in a loosely similar way – examples first, patterns later – though it needs far more examples than you did. (And notice the rock: “chair” is partly about <em>use</em>, not just looks – a hint that some concepts are harder to learn from pictures alone.)",
+      "examples": {
+        "kitchen": "Kitchen chair",
+        "office": "Office chair",
+        "beanBag": "Bean bag",
+        "wheelchair": "Wheelchair",
+        "rock": "Rock used as a chair"
+      }
+    },
+    "twist": {
+      "plaque": "Discovery 5",
+      "title": "The twist",
+      "subhead": "If machine learning is so amazing… why didn’t researchers do this in 1960?",
+      "guesses": {
+        "idea": "Nobody had thought of it yet",
+        "math": "The math/algorithms weren’t ready",
+        "ready": "They lacked data and computing power",
+        "rules": "Rules were already working fine"
+      },
+      "headline": "The idea wasn’t new. Three things had to arrive together.",
+      "bullet1": "> Enough data to learn from",
+      "bullet2": "> Fast enough computers and hardware",
+      "bullet3": "> Better ways to train the models",
+      "close": "Data and compute were the biggest missing pieces – but “just add hardware” isn’t the whole story. The training methods had to catch up too."
+    },
+    "closing": {
+      "wow": {
+        "plaque": "The shift",
+        "title": "Machine learning wasn’t adopted because researchers got smarter.",
+        "sub": "It was adopted because <em>some</em> problems – the messy, real-world ones – turned out too complex to describe with rules.",
+        "unchangedEyebrow": "One thing that didn’t change",
+        "unchangedBody": "Rules didn’t lose everywhere. For problems with clean, stable structure – arithmetic, sorting, traffic-signal timing, searching a game tree – writing the rules is still the right tool, and still real AI. What learning replaced was rule-writing for the blurry, exception-filled categories of the real world.",
+        "oldEyebrow": "Old question",
+        "oldQuestion": "How do we tell the computer what to do?",
+        "newEyebrow": "New question",
+        "newQuestion": "How can the computer figure it out from experience?",
+        "cta": "One more thought →"
+      },
+      "internet": {
+        "plaque": "Closing mystery",
+        "title": "What if we gave it the entire internet?",
+        "sub": "You just saw how much the examples matter – a lopsided dozen taught your model the wrong thing. Now imagine the examples were everything: books, Wikipedia, GitHub, news, conversations, millions of websites.",
+        "cta": "Ask the question →",
+        "stickies": {
+          "books": "Books",
+          "wikipedia": "Wikipedia",
+          "github": "GitHub",
+          "news": "News",
+          "conversations": "Conversations",
+          "websites": "Websites"
+        }
+      },
+      "mystery": {
+        "line1": "Would it learn language?",
+        "line2": "Or just memorize?",
+        "toLesson3": "Travel to Lesson 3 →",
+        "backHome": "Back home",
+        "alt": "The Infinite Library"
+      }
+    },
+    "seoSpine": {
+      "h1": "Why Rules Aren't Enough for AI",
+      "lead": "For decades, one common approach to AI was to write explicit rules: if this condition, then that action. Rules can work in narrow worlds. They struggle when reality has too many exceptions.",
+      "sections": [
+        {
+          "heading": "The limit of hard-coded intelligence",
+          "body": "As you add rules for every edge case, the system grows brittle. Sticky notes pile up. Special cases conflict. The approach that felt clear at the start becomes impossible to maintain."
+        },
+        {
+          "heading": "Why learning became necessary",
+          "body": "When the world is too messy to specify by hand, systems need another way to improve: learning from examples instead of enumerating every rule in advance."
+        }
+      ]
+    }
+  },
+  "lesson3": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "Why Data Changed Everything",
+      "shortTitle": "Why Data Changed Everything",
+      "mystery": "If computers could learn in the 1980s… why did AI explode only recently?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "chooseOne": "Choose one",
+      "next": "Next →",
+      "yes": "Yes",
+      "no": "No",
+      "maybe": "Maybe",
+      "matched": "Matched",
+      "missed": "Missed",
+      "feedback": {
+        "correct": "Correct",
+        "notQuite": "Not quite"
+      }
+    },
+    "shell": {
+      "eyebrow": "Stacks · Wing III",
+      "wordmark": "The Infinite Library"
+    },
+    "doctors": {
+      "plaque": "Volume I · Experience",
+      "title": "Who would you trust?",
+      "subhead": "Three doctors, same patient. Pick one – then we'll look at what made you choose.",
+      "hasTreated": "Has treated",
+      "patients": "patients",
+      "patientsWithTagline": "patients – {tagline}",
+      "reveal": "Reveal →",
+      "whyTitle": "Why that choice?",
+      "whySub": "Not the numbers – the reason behind them. What does treating more patients actually give a doctor?",
+      "whyAria": "Why that choice",
+      "cta": "Continue →",
+      "experienceTitle": "Experience matters.",
+      "machinesLine": "Shouldn’t the same be true for machines?",
+      "dataName": "In AI, that experience has a plain name: <strong>data</strong>.",
+      "pocket": "But keep one question in your pocket: is it how many patients – or how many kinds? Hold that thought.",
+      "doctors": {
+        "a": {
+          "label": "Doctor A"
+        },
+        "b": {
+          "label": "Doctor B"
+        },
+        "c": {
+          "label": "Doctor C",
+          "tagline": "every kind of case, common and rare"
+        }
+      },
+      "reasons": {
+        "practice": "More practice",
+        "experience": "More experience",
+        "cases": "Seen more cases",
+        "judgment": "Better judgment"
+      }
+    },
+    "sameBrain": {
+      "intro": {
+        "plaque": "Volume II · Two shelves",
+        "title": "The same AI",
+        "subhead": "Remember the doctors – more patients seen, better judgment. Same idea, now with a machine. Two copies of one program: one learned from 100 cat photos, the other from 10 million.",
+        "cta": "Show the first photo →",
+        "modelA": "Model A – 100 photos",
+        "modelACaption": "photos – countable at a glance",
+        "modelB": "Model B – 10 million",
+        "modelBCaption": "– can’t even begin"
+      },
+      "play": {
+        "plaque": "Hard image · {index}/{total}",
+        "title": "Which model succeeds?",
+        "subhead": "Same AI. Different training. Which one handles this case?",
+        "chooseAria": "Which model succeeds",
+        "optionA": "Model A · 100 photos",
+        "optionB": "Model B · 10 million photos",
+        "reveal": "Reveal →",
+        "next": "Next image →",
+        "seePoint": "See the point →"
+      },
+      "done": {
+        "plaque": "Reveal",
+        "title": "The algorithm didn’t change – only what it had seen.",
+        "body1": "You picked the model trained on 10 million photos in {bWins} of {total} cases. That’s usually the right call: more photos of more kinds of cats help it recognize new ones.",
+        "body2": "Except for the robot cat. That one stumped both.",
+        "body3": "More examples help a model handle more. But no dataset covers everything. Some things will always be outside what it learned."
+      },
+      "images": {
+        "cartoon": {
+          "label": "Cartoon cat",
+          "note": "Style shift – more varied training helps."
+        },
+        "sleeping": {
+          "label": "Sleeping cat",
+          "note": "A curled-up sleeping cat looks different from the usual “cat facing the camera” photos. Model A’s thin set often never saw this pose, so it can miss it. Model B has seen far more variations – including odd angles – so it still recognizes “cat.”"
+        },
+        "black": {
+          "label": "Black cat",
+          "note": "In low light, a black cat can look like a dark blob – eyes and outline are hard to see. Model A’s small set may only have bright, clear cats. Model B has seen many lighting and color edge cases, so it still finds “cat.”"
+        },
+        "blurry": {
+          "label": "Blurry cat",
+          "note": "Motion blur and soft focus hide the usual cat details. Model A may only know sharp studio-like photos. Model B has seen noisy, imperfect shots, so it can still recognize “cat.”"
+        },
+        "statue": {
+          "label": "Statue of a cat",
+          "note": "This isn’t a living animal – it’s stone shaped like a cat. Model A’s tiny set of real cats may fail the leap. Model B often includes art, statues, and toys in its experience, so it can still map the shape to “cat.”"
+        },
+        "robot": {
+          "label": "Robot cat",
+          "note": "Metal joints and glowing parts aren’t a real cat – this can stump both models. Model B still has better odds if its huge set included toys, robots, or sci-fi art, but neither is guaranteed."
+        }
+      }
+    },
+    "data": {
+      "plaque": "Catalog card · {index}/{total}",
+      "title": "What counts as data?",
+      "subhead": "Would this help train Large Language Models?",
+      "document": "Document",
+      "chooseAria": "Would this help train Large Language Models?",
+      "next": "Next card →",
+      "seePattern": "See the pattern →",
+      "insight": {
+        "plaque": "Insight",
+        "title": "Data isn’t just numbers.",
+        "subhead": "Language is data. Books are data. Code is data. Conversations are data.",
+        "aside": "(Modern assistants also learn from images and audio – but those train the vision and speech parts, not the language part we’re focused on here.)",
+        "score": "You matched {matched} of {total} cards.",
+        "you": "You: {choice}",
+        "youAndAnswer": "You: {choice} · Answer: {answer}"
+      },
+      "cards": {
+        "wikipedia": {
+          "label": "Wikipedia",
+          "note": "Language, facts, structure – classic training fuel."
+        },
+        "github": {
+          "label": "GitHub",
+          "note": "Code is language too."
+        },
+        "reddit": {
+          "label": "Reddit",
+          "note": "Conversations are data – messy, human, useful."
+        },
+        "dictionary": {
+          "label": "Dictionary",
+          "note": "Surprisingly weak alone – definitions are isolated entries, not the connected prose that teaches fluency."
+        },
+        "scripts": {
+          "label": "Movie Scripts",
+          "note": "Dialogue is rich conversational text."
+        },
+        "excel": {
+          "label": "Excel Spreadsheet",
+          "note": "Tables can help a little – often not enough alone."
+        },
+        "dna": {
+          "label": "DNA Sequences",
+          "note": "It's a language – but not a human one. It won't help a chatbot converse."
+        },
+        "contacts": {
+          "label": "Phone Contacts",
+          "note": "Private names and numbers don’t teach language well."
+        },
+        "gps": {
+          "label": "GPS Coordinates",
+          "note": "Mostly numbers without linguistic meaning."
+        }
+      }
+    },
+    "quality": {
+      "plaque": "Volume IV · Selection",
+      "title": "Bigger isn’t always better",
+      "trainSub": "Build a tiny training set. Watch what moves accuracy – and what doesn’t.",
+      "pickSub": "Which dataset creates a smarter model?",
+      "pickAria": "Which dataset creates a smarter model?",
+      "punchline": "Quality matters. Diversity matters. Duplicates hurt. Bias matters.",
+      "followUp": "A balanced mixture usually wins – quality and diversity beat raw volume. Remember the doctors? It was never just how many cases – it was how many kinds. Same for data.",
+      "datasets": {
+        "tweets": {
+          "label": "100 million identical tweets",
+          "note": "Quantity without diversity. Duplicates hurt."
+        },
+        "books": {
+          "label": "20 million books",
+          "note": "Strong, but still one kind of writing."
+        },
+        "wiki": {
+          "label": "Wikipedia",
+          "note": "High quality – narrower coverage than a mix."
+        },
+        "mix": {
+          "label": "A balanced mixture",
+          "note": "Quality + diversity beats raw volume."
+        }
+      },
+      "trainer": {
+        "empty": "Your set is empty. Add a photo to start training.",
+        "newKind": "A new kind of photo. The model had never seen a {kind} case before.",
+        "mono": "Quantity without diversity. {total} photos, still only 1 of 6 kinds – accuracy stays stuck near {accuracy}%.",
+        "duplicate": "Almost no gain: different pixels, same kind – the model already knew this case.",
+        "ceiling": "~97% – a few cases are just ambiguous. No amount of data fixes that.",
+        "accuracyLabel": "accuracy on 6 hard test cases",
+        "kindsCovered": "kinds covered:",
+        "addCue": "Add a photo to the training set:",
+        "addAria": "Add a {alt} photo. {n} added.",
+        "setCountOne": "Your training set – {count} photo",
+        "setCountMany": "Your training set – {count} photos",
+        "kindsOne": " · {count} kind",
+        "kindsMany": " · {count} kinds",
+        "reset": "Reset",
+        "disclaimer": "A simplified model, to show the shape of the idea",
+        "srSummary": "Accuracy {accuracy} percent on 6 hard test cases. Kinds covered {kinds} of 6. Training set has {photos} photos. {feedback}",
+        "cases": {
+          "front": {
+            "label": "Front-facing cat",
+            "short": "front-facing",
+            "alt": "front-facing cat"
+          },
+          "black": {
+            "label": "Black cat, low light",
+            "short": "black / low-light",
+            "alt": "black cat in low light"
+          },
+          "blurry": {
+            "label": "Blurry cat",
+            "short": "blurry",
+            "alt": "blurry cat"
+          },
+          "cartoon": {
+            "label": "Cartoon cat",
+            "short": "cartoon",
+            "alt": "cartoon cat"
+          },
+          "statue": {
+            "label": "Cat statue",
+            "short": "statue",
+            "alt": "cat statue"
+          },
+          "sleeping": {
+            "label": "Sleeping cat",
+            "short": "sleeping",
+            "alt": "sleeping cat"
+          }
+        }
+      }
+    },
+    "internet": {
+      "plaque": "Volume V · The flood",
+      "title": "The internet changed AI",
+      "subhead": "AI didn’t suddenly become smarter. Humanity produced enough digital knowledge for machines to learn from – and, at the same time, computers got fast enough and a new architecture (the Transformer, from your Lesson 1 timeline) arrived to use it. Data was the missing ingredient, but it needed the other two to matter.",
+      "eras": {
+        "1985": {
+          "label": "Few MB",
+          "blurb": "Tiny local files. Almost no shared digital knowledge."
+        },
+        "1995": {
+          "label": "Millions of webpages",
+          "blurb": "The web starts becoming a public library."
+        },
+        "2001": {
+          "label": "Wikipedia",
+          "blurb": "Structured human knowledge, editable at scale."
+        },
+        "2015": {
+          "label": "Social media",
+          "blurb": "Conversations explode into machine-readable text."
+        },
+        "2024": {
+          "label": "Almost everything online",
+          "blurb": "Nearly every topic documented somewhere."
+        }
+      }
+    },
+    "detective": {
+      "plaque": "Acquisitions desk",
+      "title": "Build LLM’s library",
+      "subhead": "You only have room for six datasets. Which do you keep? There isn’t one perfect answer.",
+      "selected": "Selected {count} / {limit}",
+      "lock": "Lock in your six →",
+      "revealTitle": "Building a dataset isn’t just collecting more – it’s choosing the right mix.",
+      "youKept": "You kept: {list}.",
+      "questions": {
+        "q1": "Quality or quantity?",
+        "q2": "Expert knowledge or everyday conversation?",
+        "q3": "Code more valuable than fiction?",
+        "q4": "Social posts useful, noisy, or both?"
+      },
+      "cta": "Continue →",
+      "buckets": {
+        "broad": "broad/factual",
+        "everyday": "everyday/conversational",
+        "expert": "expert/narrow",
+        "code": "code",
+        "narrative": "narrative",
+        "weak": "weak-for-text"
+      },
+      "feedback": {
+        "weak": "Two or more of your picks are mostly numbers or images – light on the language a chatbot actually learns from.",
+        "noEveryday": "Strong on formal writing, but you kept no everyday conversation – the model may sound stiff and struggle with casual questions.",
+        "heavy": "Heavy on {bucket} – deep in one area, but a narrow diet. Real corpora spread wider.",
+        "balanced": "A balanced spread – broad, conversational, expert, and code. That mix is closer to how strong models are actually trained.",
+        "workable": "A workable mix – notice which kinds of language you kept, and which you left on the shelf."
+      },
+      "datasets": {
+        "wikipedia": {
+          "label": "Wikipedia",
+          "note": "Broad factual writing."
+        },
+        "tiktok": {
+          "label": "TikTok Comments",
+          "note": "Everyday chat – noisy, slangy, human."
+        },
+        "medical": {
+          "label": "Medical Journals",
+          "note": "Deep expertise, narrow domain."
+        },
+        "stackoverflow": {
+          "label": "Stack Overflow",
+          "note": "Problem-solving + code explanations."
+        },
+        "harry": {
+          "label": "Harry Potter",
+          "note": "Narrative style and imagination."
+        },
+        "weather": {
+          "label": "Weather Data",
+          "note": "Mostly numbers – weak for chat."
+        },
+        "court": {
+          "label": "Court Decisions",
+          "note": "Formal reasoning and long arguments."
+        },
+        "menus": {
+          "label": "Restaurant Menus",
+          "note": "Narrow, repetitive language."
+        },
+        "github": {
+          "label": "GitHub",
+          "note": "Source code at internet scale."
+        },
+        "reddit": {
+          "label": "Reddit",
+          "note": "Opinions, debate, casual speech."
+        },
+        "finance": {
+          "label": "Financial Reports",
+          "note": "Dense professional prose."
+        },
+        "satellite": {
+          "label": "Satellite Images",
+          "note": "Vision data – not text for ChatGPT."
+        }
+      }
+    },
+    "closing": {
+      "library": {
+        "plaque": "Misconception",
+        "title": "Does the model search the internet while answering?",
+        "notByDefault": "Not by default.",
+        "metaphor": "The internet is more like the library where the student studied before the exam.",
+        "exam": "During the exam, they aren’t re-reading the whole library. They’re answering from what they learned.",
+        "searchTool": "Some products can add a search tool – like letting the student glance at a phone for today’s news. That browsing step is extra. The model itself still generates the answer from patterns it already learned.",
+        "cta": "One more check →"
+      },
+      "corpus": {
+        "plaque": "Wow moment",
+        "title": "Which contains more text?",
+        "chooseAria": "Which contains more text?",
+        "cta": "Ask the mystery →",
+        "body": "Surprised it’s not the training data? Even the largest training sets are only a curated slice of the internet – models don’t train on all of it, just filtered, permitted, deduplicated text. So the internet is bigger. And yet that slice is still orders of magnitude more than any human could read in a thousand lifetimes.",
+        "options": {
+          "britannica": "Encyclopedia Britannica",
+          "wikipedia": "Wikipedia",
+          "internet": "The public internet",
+          "llm": "Training data for a modern LLM"
+        },
+        "chart": {
+          "ariaTitle": "Relative amount of text across four corpora on a log scale",
+          "ariaDesc": "Horizontal bar chart on a log scale where each step is roughly one hundred times more text. Encyclopedia Britannica is a short bar for tens of millions of words. Wikipedia is longer for billions of words. A modern LLM’s training data is longer still – a curated, filtered, deduplicated slice of the internet. The public internet is the longest bar, labeled everything online – far more than any model is trained on. Training data sits below the internet, not beyond it.",
+          "axis": "relative amount of text – each step is roughly 100× more",
+          "logScale": "log scale",
+          "britannica": {
+            "label": "Encyclopedia Britannica",
+            "note": "tens of millions of words"
+          },
+          "wikipedia": {
+            "label": "Wikipedia",
+            "note": "billions of words"
+          },
+          "llm": {
+            "label": "A modern LLM’s training data",
+            "note": "a curated, filtered, deduplicated slice of the internet"
+          },
+          "internet": {
+            "label": "The public internet",
+            "inside": "everything online – far more than any model is trained on"
+          }
+        }
+      },
+      "mystery": {
+        "line1": "Imagine reading every Wikipedia article, every Stack Overflow answer, millions of books…",
+        "line2": "So how does a machine actually learn from all of that?",
+        "toLesson4": "Next: How Machines Learn",
+        "backHome": "Back home",
+        "wallEyebrow": "Training Facility · Simulation #01",
+        "status": "Status",
+        "statusValue": "Model created",
+        "experience": "Experience",
+        "experienceValue": "0 examples",
+        "accuracy": "Accuracy",
+        "accuracyValue": "– (untrained)"
+      }
+    },
+    "seoSpine": {
+      "h1": "How Data Changed Artificial Intelligence",
+      "lead": "Machines could learn from data long before the recent AI boom. What changed was scale: more examples, better ways to use them, and enough compute to train larger systems.",
+      "sections": [
+        {
+          "heading": "Learning needs examples",
+          "body": "A learning system improves by seeing many cases — text, images, labels, outcomes — and adjusting how it responds. Without enough useful data, learning stalls."
+        },
+        {
+          "heading": "Why AI accelerated recently",
+          "body": "Earlier learning methods existed, but large collections of data and the hardware to process them made modern breakthroughs possible. Data didn’t invent learning; it unlocked how far learning could go."
+        }
+      ]
+    }
+  },
+  "lesson4": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "How Does a Machine Actually Learn?",
+      "shortTitle": "How Machines Learn",
+      "mystery": "If nobody writes the rules, what actually changes while a machine is learning?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "chooseOne": "Choose one",
+      "next": "Next →",
+      "cat": "Cat",
+      "dog": "Dog",
+      "yes": "Yes",
+      "no": "No",
+      "slightly": "Only slightly",
+      "prediction": "{label} · {confidence}%"
+    },
+    "shell": {
+      "eyebrow": "AI Training Facility",
+      "wordmark": "The Training Room"
+    },
+    "facility": {
+      "plaque": "Training Facility · Simulation #01",
+      "title": "Welcome to the training room.",
+      "subhead": "A model with no experience yet. Give it examples and see what it learns.",
+      "aCat": "A cat",
+      "wall": "Wall display",
+      "thinking": "Uh",
+      "guess": "Uh… Dog? · 52%",
+      "waiting": "Brand-new model. No training yet.",
+      "status": "Status",
+      "statusCreated": "Model created",
+      "statusGuessed": "First guess made",
+      "experience": "Experience",
+      "experienceValue": "0 examples",
+      "accuracy": "Accuracy",
+      "accuracyUntrained": "– (untrained)",
+      "accuracyCoin": "no better than a coin flip",
+      "ask": "Ask the brand-new model →",
+      "mystery": "It knows nothing. So how does it get smarter?",
+      "cta": "Find out →"
+    },
+    "assumption": {
+      "plaque": "Before we start",
+      "title": "You’ve built a brand-new model.",
+      "subhead": "You’re about to watch it learn. Place your bet: what actually changes inside it?",
+      "aria": "What actually changes inside the model?",
+      "note": "Noted – let’s see if you’re right.",
+      "cta": "Start training →",
+      "choices": {
+        "rules": {
+          "label": "Someone adds new rules",
+          "getsSmarterBy": "someone adding new rules"
+        },
+        "memorize": {
+          "label": "It memorizes every picture",
+          "getsSmarterBy": "memorizing every picture"
+        },
+        "adjust": {
+          "label": "It changes itself after mistakes",
+          "getsSmarterBy": "changing itself after mistakes"
+        },
+        "unsure": {
+          "label": "I’m not sure"
+        }
+      }
+    },
+    "firstPrediction": {
+      "plaque": "Example 1",
+      "title": "It got that first one wrong. So what do we do with a wrong guess?",
+      "subhead": "Try each instinct. Watch what happens.",
+      "tryEach": "Try each",
+      "survived": "Survived",
+      "broke": "Broke",
+      "sameCat": "Same cat · from earlier",
+      "was": "Was: Dog · 52%",
+      "now": "Now: {prediction}",
+      "shifted": "Prediction shifted",
+      "counterexample": "Counterexample",
+      "idle": "Pick an instinct. The guess updates here.",
+      "tryAll": "Try all three instincts to continue",
+      "cta": "Continue →",
+      "revealBody": "A machine usually doesn’t add rules and doesn’t memorize the photo. It makes a small change to its own internal values – so that next time, it leans a little more toward the right answer.",
+      "raise": "But that raises the real question – the one this lesson is about:",
+      "question": "Which values does it change, and which way?",
+      "showMe": "Show me →",
+      "instincts": {
+        "rule": {
+          "label": "Add a rule (if pointy ears → cat)",
+          "failureCaption": "Pointy ears – but it’s a fox",
+          "failureLine": "New exception. Add another rule?"
+        },
+        "memorize": {
+          "label": "Memorize this photo",
+          "failureCaption": "Same cat · different light / angle",
+          "failureLine": "Never seen this one. Memorizing didn’t help."
+        },
+        "adjust": {
+          "label": "Adjust the model a little",
+          "successFrom": "Dog · 52%",
+          "successTo": "Dog · 48%",
+          "successLine": "It leaned toward cat. That did something."
+        }
+      }
+    },
+    "whichWay": {
+      "plaqueFirst": "Your turn",
+      "plaqueN": "Adjustment {index} of {total}",
+      "title": "You move the dial.",
+      "subhead": "One dial. One wrong guess. Which way do you push it?",
+      "modelSaid": "Model said",
+      "truth": "Truth",
+      "towardCat": "‹ toward cat",
+      "towardDog": "toward dog ›",
+      "pushCat": "Toward cat",
+      "pushDog": "Toward dog",
+      "oops": "{prediction} – oops, further from the truth",
+      "towardTruth": "{signed}% toward the truth",
+      "furtherTruth": "{signed}% further from the truth",
+      "pushOther": "Push the other way to fix it.",
+      "again": "Again →",
+      "next": "Next →",
+      "whatHappened": "What just happened? →",
+      "revealTitle": "You never guessed the direction. Each mistake pointed the way.",
+      "revealBody": "Now imagine doing this to millions of dials, on millions of photos. Too slow for you. Watch the machine do it.",
+      "cta": "Let it run on its own →"
+    },
+    "train": {
+      "plaque": "Training",
+      "title": "Now let it do that – fast.",
+      "predictSub": "You’re about to train it on a million photos. Where does accuracy end up?",
+      "emptyChart": "Accuracy · empty chart",
+      "ariaEmpty": "Empty accuracy chart from 0 to 100 percent",
+      "ariaFilled": "Accuracy now about {accuracy} percent after {examples} examples",
+      "chartMax": "100%",
+      "chartMin": "0%",
+      "chartEnd": "1,000,000",
+      "predictAria": "Where does accuracy end up?",
+      "trainCta": "▶ Train →",
+      "runSub": "Now it learns from your examples – one after another. You control how fast.",
+      "overTime": "Accuracy over time",
+      "examplesAcc": "{examples} examples · ~{accuracy}%",
+      "drive": "Drive the pace",
+      "holdFf": "Hold to fast-forward → 1,000,000",
+      "paceHint": "Tap Train for one step, or hold to race to a million examples.",
+      "plateauReached": "Plateau reached…",
+      "payoffTitle": "~98% – never 100%.",
+      "yourBet": "Your bet",
+      "payoffGuess": "You guessed {bet}. It levels off at 98% – never 100%.",
+      "payoffBody": "A brand-new photo can always look a little unlike everything the model has seen. 98% means “very likely a cat,” not “proven.”",
+      "bets": {
+        "hundred": "Climbs to ~100%",
+        "levels": "Levels off below 100%",
+        "bounces": "Bounces around"
+      },
+      "stages": {
+        "1": {
+          "prediction": "Dog · 52%",
+          "result": "Wrong · adjust toward cat"
+        },
+        "2": {
+          "prediction": "Cat · 51%",
+          "result": "Wrong · adjust toward dog"
+        },
+        "7": {
+          "prediction": "Cat · 63%",
+          "result": "Correct"
+        },
+        "14": {
+          "prediction": "Dog · 55%",
+          "result": "Wrong again",
+          "dipGloss": "One right answer isn’t the whole job – the next photo looks different."
+        },
+        "100": {
+          "prediction": "Cat · 71%",
+          "result": "Correct"
+        },
+        "1000": {
+          "prediction": "Cat · 84%",
+          "result": "Correct"
+        },
+        "10000": {
+          "prediction": "Cat · 91%",
+          "result": "Correct"
+        },
+        "100000": {
+          "prediction": "Cat · 95%",
+          "result": "Correct"
+        },
+        "1000000": {
+          "prediction": "Cat · 97%",
+          "result": "Correct"
+        }
+      }
+    },
+    "loop": {
+      "plaque": "The loop",
+      "title": "Put the loop in order.",
+      "subhead": "Build the five steps the machine repeats – some cards don’t belong.",
+      "pickCard": "Pick a card",
+      "pickHint": "Tap to place next, or drag onto a step.",
+      "poolAria": "Cards to place",
+      "allPlaced": "All cards placed.",
+      "build": "Build the loop",
+      "dropHint": "Drop or tap an empty step.",
+      "nextOpen": "Next open step: {step}",
+      "completeHint": "Loop complete – continue below.",
+      "removeAria": "Remove {label} from step {step}",
+      "dropOrTap": "Drop or tap",
+      "waiting": "Waiting…",
+      "empty": "Empty",
+      "runLoop": "Run the loop →",
+      "doesntBelong": "Doesn’t belong",
+      "rejectDecoy": "“{label}” doesn’t belong here.",
+      "rejectStep": "“{label}” isn’t step {step} – try another card.",
+      "runTitle": "The model learns by repeating the same cycle.",
+      "runSub": "Press for one cycle. Hold to accelerate.",
+      "ready": "Ready – one press = predict → error → adjust",
+      "loopsAcc": "loops · ~{accuracy}% accuracy",
+      "runCta": "▶ Run loop →",
+      "holdAcc": "Hold to accelerate → 1,000,000",
+      "holdHintEarly": "Tap for one cycle, or hold to race to a million loops.",
+      "holdHintLater": "Hold to feel the scale – or keep pressing one by one.",
+      "done": "Done",
+      "doneBody": "More training isn't changing much now.",
+      "cards": {
+        "image": {
+          "label": "Image",
+          "gloss": "A new example comes in."
+        },
+        "prediction": {
+          "label": "Prediction",
+          "gloss": "The model makes its best guess – with a confidence."
+        },
+        "error": {
+          "label": "Measure error",
+          "gloss": "How far off was it, and in which direction?"
+        },
+        "adjust": {
+          "label": "Adjust",
+          "gloss": "Nudge the internal values that way – a little."
+        },
+        "repeat": {
+          "label": "Repeat",
+          "gloss": "Do it again. And again. Millions of times."
+        },
+        "add-rule": {
+          "label": "Add a rule"
+        },
+        "memorize": {
+          "label": "Memorize the image"
+        }
+      },
+      "flashes": {
+        "0": {
+          "prediction": "Dog · 61%",
+          "result": "Wrong → adjust toward cat"
+        },
+        "1": {
+          "prediction": "Cat · 54%",
+          "result": "Wrong → adjust toward dog"
+        },
+        "2": {
+          "prediction": "Cat · 72%",
+          "result": "Correct → small nudge"
+        },
+        "3": {
+          "prediction": "Dog · 48%",
+          "result": "Wrong → adjust toward cat"
+        },
+        "4": {
+          "prediction": "Cat · 88%",
+          "result": "Correct → tiny nudge"
+        }
+      }
+    },
+    "controlPanel": {
+      "plaque": "Under the panel",
+      "title": "What actually gets adjusted?",
+      "subhead": "There are 16 settings inside the model. Which one do you think helps it recognize a cat?",
+      "predEyebrow": "Prediction · cat photo",
+      "shifted": "Shifted – many dials together",
+      "barely": "Barely moved",
+      "guessHint": "At this point you don't need to understand the numbers. Just make a guess.",
+      "tapFirst": "Tap a setting",
+      "tapAnother": "Tap another setting",
+      "tapMore": "Tap more, or nudge them together →",
+      "testAria": "Test setting {label}",
+      "off": "off",
+      "notTheOne": "Turned it all the way off – still says Cat · {confidence}%. Not the one.",
+      "noCatDial": "There’s no cat dial. The knowledge is spread across all of them – thousands of tiny votes, not one switch.",
+      "parameters": "These have a name – parameters. A real model has millions to billions of them.",
+      "tryADial": "Try a dial",
+      "hintFirst": "Tap a dial on the left to test it.",
+      "hintSecond": "Try another – maybe that wasn’t it.",
+      "hintTogether": "One dial isn’t enough. Nudge them together.",
+      "nudgeAll": "Nudge all of them a little →",
+      "seePoint": "See the point",
+      "cta": "Continue →"
+    },
+    "oneMore": {
+      "plaque": "Training complete",
+      "title": "One more photo. Watch the curve.",
+      "subNow": "You’re back at about 98% – where training stopped making much difference.",
+      "subEarly": "Rewound to example 1 – untrained, ~50%. Same +1 photo. Watch how hard it hits.",
+      "compareAria": "Compare early training to now",
+      "nowToggle": "Now · 100M",
+      "rewindToggle": "Rewind to example 1",
+      "chartEarly": "Example 1 · starting out",
+      "chartNow": "Accuracy over time",
+      "examplesAcc": "{examples} examples · ~{accuracy}%",
+      "aria": "Accuracy about {accuracy} percent after {examples} examples",
+      "twitchEarly": "Same +1 photo – jumped {delta}. Experience barely started.",
+      "twitchNow": "Curve twitched {delta} – essentially flat.",
+      "reveal": "At the start, one photo moved it a lot. Now, after a hundred million, one more is a whisper. That’s why it plateaued – the easy learning is already done.",
+      "addCue": "Add examples",
+      "showOne": "Show it one more cat →",
+      "plusOne": "+1 photo →",
+      "alreadyDid": "+1 photo (already did)",
+      "plusMillion": "+1,000,000 photos →",
+      "millionDone": "+1,000,000 done",
+      "wait": "But wait… →",
+      "watchHint": "Watch the curve on the left – then keep going.",
+      "deltaOne": "+0.001%",
+      "deltaMillion": "+0.04%",
+      "deltaEarly": "+18%"
+    },
+    "labeled": {
+      "catch": {
+        "plaque": "One problem",
+        "title": "For cats, someone marked every photo “cat” or “dog.”",
+        "subhead": "But last lesson, you learned ChatGPT learned from the whole internet – books, code, conversations. Nobody sat and labeled the internet.",
+        "question": "So how did it get a “right answer” to measure its error against?",
+        "aria": "How did it get a right answer?",
+        "noted": "Noted – don’t check yet. Let’s try it.",
+        "cta": "Try a sentence →"
+      },
+      "choices": {
+        "humans": "Humans labeled every sentence by hand",
+        "text": "The text is its own answer key",
+        "none": "It didn’t need to measure error"
+      },
+      "play": {
+        "plaque": "Fill-in · {index}/{total}",
+        "title": "Guess the next word.",
+        "subhead": "Same loop as cats – but the sentence is the answer key.",
+        "authorRight": "The author wrote “{answer}.” You were right – and that’s the label. Nobody added it.",
+        "authorOff": "The author wrote “{answer}.” You were off – and that’s the label. Nobody added it.",
+        "authorAmbiguous": "The author wrote “{answer}.” You were off – and that’s still useful – and that’s the label. Nobody added it.",
+        "closeMiss": "Even a close miss (“{guess}”) teaches direction – same as a wrong cat/dog guess.",
+        "next": "Next sentence →",
+        "seePoint": "See the point →"
+      },
+      "rounds": {
+        "mat": {
+          "prompt": "The cat sat on the ___.",
+          "options": {
+            "mat": "mat",
+            "moon": "moon",
+            "idea": "idea",
+            "carpet": "carpet"
+          },
+          "answer": "mat"
+        },
+        "cup": {
+          "prompt": "I poured her a cup of ___.",
+          "options": {
+            "coffee": "coffee",
+            "tea": "tea",
+            "rain": "rain",
+            "code": "code"
+          },
+          "answer": "coffee"
+        },
+        "door": {
+          "prompt": "She opened the ___.",
+          "options": {
+            "door": "door",
+            "cloud": "cloud",
+            "algorithm": "algorithm",
+            "purple": "purple"
+          },
+          "answer": "door"
+        }
+      },
+      "reveal": {
+        "plaque": "One problem",
+        "title": "Same loop. No labeler.",
+        "subhead": "You just did what a language model does – guess the next word, check it against the real text, adjust. The internet didn’t need labelers. Every sentence is its own answer key.",
+        "earlierBet": "Your earlier bet",
+        "youSaidHeld": "You said: “{label}.” That held up.",
+        "youSaidMissed": "You said: “{label}.” What you just played is the answer: the text is its own answer key.",
+        "cats": "Cats:",
+        "catsBody": "a human says “cat.”",
+        "language": "Language:",
+        "languageBody": "the sentence says the next word.",
+        "sameLoop": "Same loop – only the source of the right answer changed.",
+        "punchline": "Predict → check → adjust → repeat. The only thing that changed is where the “right answer” comes from."
+      }
+    },
+    "history": {
+      "plaque": "This isn’t new",
+      "title": "Machines have learned this way for a long time.",
+      "close": "The idea of learning from mistakes is decades old. What changed recently wasn’t the idea – it was three things arriving together: enough data, fast enough computers, and better training methods.",
+      "eras": {
+        "perceptron": {
+          "year": "1957–58",
+          "label": "Perceptron",
+          "blurb": "Frank Rosenblatt builds a machine that learns weights from examples – the first trainable model. Its rule is exactly the idea you just used: when it’s wrong, strengthen the inputs that pointed to the right answer, weaken the ones that pointed the wrong way."
+        },
+        "backprop": {
+          "year": "1980s–90s",
+          "label": "Backpropagation era",
+          "blurb": "A method (backpropagation, popularized 1986) makes it practical to compute the right direction for every value in a many-layer network – but computers and datasets are still small."
+        },
+        "scale": {
+          "year": "2000s–10s",
+          "label": "Scale arrives",
+          "blurb": "Large datasets, faster hardware, and better training methods together make training deep models effective for the first time."
+        }
+      }
+    },
+    "reflection": {
+      "plaque": "Progress log",
+      "titleCheck": "Prove it to yourself.",
+      "titleComplete": "Complete the sentences.",
+      "readBet": "Read · your bet",
+      "youBet": "You bet: {bet}.",
+      "unsure": "you weren’t sure yet",
+      "watched": "What you watched: it changes its internal values a little, in the direction each mistake points.",
+      "matched": "That matched.",
+      "different": "Different – and that’s fine.",
+      "gotAnswer": "You’ve got an answer now.",
+      "noBet": "No earlier bet on file – keep going with the check below.",
+      "doCheck": "Do · one check",
+      "weatherQ": "A weather model gets today wrong. Using the loop, what happens next?",
+      "weatherAria": "What happens next in the learning loop?",
+      "weatherYes": "Yes – measure the miss, nudge that way.",
+      "weatherClose": "Close – the loop measures how far off it was, then nudges.",
+      "noQuiz": "No quiz. Just notice how your picture of “learning” changed.",
+      "writeLog": "Write · your log",
+      "beforeLabel": "Before today, I thought a machine learned by…",
+      "beforePlaceholder": "magic… memorizing… following rules…",
+      "afterLabel": "Now I think it learns by…",
+      "afterPlaceholder": "guessing, checking, adjusting a little, repeating…",
+      "save": "Save my log →",
+      "weather": {
+        "rule": "It adds a rule about clouds",
+        "nudge": "It measures how far off it was and nudges its values that way",
+        "delete": "It deletes today and starts over"
+      }
+    },
+    "closing": {
+      "takeaways": {
+        "plaque": "Training complete",
+        "title": "Key takeaways",
+        "cta": "Continue →",
+        "items": {
+          "t1": "A mistake isn’t just “wrong” – it points a direction.",
+          "t2": "The model nudges its values a little, that way – millions of times.",
+          "t3": "Same loop learns language: the text is its own answer key."
+        }
+      },
+      "final": {
+        "title": "Learning isn’t magic.",
+        "body": "It’s the repeated cycle of predicting, measuring the mistake, and making a small, directed improvement – over and over.",
+        "model": "Your model",
+        "started": "Started at a coin flip. Now 98%, after everything you put it through.",
+        "cta": "Continue →"
+      },
+      "transition": {
+        "line1": "You’ve seen that the machine changes itself – and that it always knows which way to move.",
+        "line2": "But what exactly is changing in there?",
+        "inside": "Inside the machine that learns.",
+        "toLesson5": "Next: Neural Networks",
+        "backHome": "Back home"
+      }
+    },
+    "seoSpine": {
+      "h1": "How Does Machine Learning Work?",
+      "lead": "Machine learning is how a system improves from examples instead of following a fixed rulebook. A machine learns by making predictions, measuring error, and adjusting — again and again — so it gets better on the patterns in its data.",
+      "sections": [
+        {
+          "heading": "How does a machine learn from data?",
+          "body": "The model sees examples, produces an output, and compares that output with a target or signal. The difference — prediction error — guides small updates. Over many passes, those updates are how AI learns from data."
+        },
+        {
+          "heading": "Prediction, error, and adjustment",
+          "body": "Nothing mystical happens in one step. Learning is the pile of tiny corrections: predict, measure the miss, nudge parameters, repeat. That is machine learning explained at the level that matters for intuition."
+        },
+        {
+          "heading": "Training versus new cases",
+          "body": "Doing well on the training examples is not enough. The real test is new inputs the system has not memorized — generalization, not just fitting what it already saw."
+        }
+      ]
+    }
+  },
+  "lessonsIndex": {
+    "breadcrumbHome": "What is AI",
+    "breadcrumbCurrent": "Lessons",
+    "title": "Interactive AI Lessons",
+    "lead": "Free interactive lessons on how artificial intelligence works — machine learning, neural networks, deep learning, Transformers, and LLMs. No signup.",
+    "preferIntro": "Prefer the full introduction?",
+    "startHome": "Start at the homepage",
+    "aboutCourse": "About this course",
+    "entries": {
+      "lessons/1": {
+        "title": "What Is Artificial Intelligence? An Interactive Introduction",
+        "description": "Explore what actually counts as AI — from ChatGPT to everyday tools — and what doesn’t. An interactive introduction with no signup."
+      },
+      "lessons/2": {
+        "title": "Why Rules Aren't Enough for AI",
+        "description": "See what happens when intelligence is written as rules: sticky notes pile up, edge cases multiply, and the system breaks. An interactive AI lesson."
+      },
+      "lessons/3": {
+        "title": "How Data Changed Artificial Intelligence",
+        "description": "Explore why learning from data changed AI — and why systems that could learn decades ago only took off when data and compute arrived."
+      },
+      "lessons/4": {
+        "title": "How Does Machine Learning Work?",
+        "description": "How does a machine learn from data? See prediction, error, and repeated adjustment — machine learning explained without the jargon wall."
+      },
+      "lessons/5": {
+        "title": "What Is a Neural Network?",
+        "description": "What is a neural network, and how do neural networks learn? Explore weights, layers, and how networks recognize patterns — no calculus required."
+      },
+      "lessons/6": {
+        "title": "What Is Deep Learning?",
+        "description": "Deep learning explained: why neural networks are deep, what layers learn, and what becomes possible when representations stack."
+      },
+      "lessons/7": {
+        "title": "What Are Learned Representations in AI?",
+        "description": "Representation learning explained: how neural networks learn features, and how that differs from hand-built feature engineering."
+      },
+      "lessons/8": {
+        "title": "What Is a Transformer? How Attention Works",
+        "description": "What is a Transformer, and how does attention work? Self-attention, why Transformers were invented, and how models predict what comes next."
+      },
+      "lessons/working-with-llms": {
+        "title": "How Do Large Language Models Actually Work?",
+        "description": "How do LLMs work — tokens, next-word prediction, and how a language model generates text? Practical interactive lesson. Free, no signup."
+      },
+      "lessons/delegate-real-work": {
+        "title": "What Changes When AI Does the Work?",
+        "description": "Explore what changes the first time AI does the work instead of just answering questions — handoff, judgment, and staying in the loop."
+      },
+      "lessons/just-because-it-can": {
+        "title": "What Should AI Be Allowed to Touch?",
+        "description": "Explore connectors, permissions, and who decides what an assistant may touch when it’s linked to real data and accounts."
+      }
+    },
+    "breadcrumbAria": "Breadcrumb"
+  }
+}

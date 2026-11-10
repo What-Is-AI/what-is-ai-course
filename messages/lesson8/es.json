@@ -1,0 +1,654 @@
+{
+  "lesson8": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Qué es un Transformer y cómo funciona la atención",
+      "shortTitle": "Transformers y atención",
+      "mystery": "¿Qué es un Transformer y cómo funciona el mecanismo de atención? Descubre la autoatención, por qué surgieron los Transformers y cómo los modelos predicen lo que viene a continuación."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "tapOne": "Pulsa una opción"
+    },
+    "shell": {
+      "eyebrow": "La sala de lectura",
+      "wordmark": "Transformers"
+    },
+    "steps": {
+      "opening": {
+        "plaque": "La sala de lectura",
+        "title": "¿Y si cada palabra pudiera mirar directamente las palabras que necesita?",
+        "body2": "Piensa en la palabra «banco». ¿Es para sentarse o es el sitio donde guardas tu dinero?",
+        "leadIn": "Ahora prueba con otro tipo de frase:",
+        "sentence": "El animal no cruzó el puente porque este estaba demasiado concurrido.",
+        "ask": "¿A qué se refiere «este»?",
+        "chooseHelper": "Pulsa una opción",
+        "options": {
+          "animal": "al animal",
+          "road": "al puente",
+          "unsure": "Todavía no lo sé"
+        },
+        "body3": "Para responder, necesitas información de otra parte de la frase.",
+        "pivot": "Entonces, ¿cómo conecta una máquina una palabra con las otras palabras que necesita?",
+        "cta": "Continuar →"
+      },
+      "telephone": {
+        "plaque": "El camino largo",
+        "title": "Uno de los primeros enfoques consistía en procesar las palabras una detrás de otra.",
+        "rnn": "Esta familia de modelos se conoce como red neuronal recurrente (RNN).",
+        "body": "Cada palabra nueva tiene que trabajar con lo que se ha ido transmitiendo desde las palabras anteriores.",
+        "prompt": "Usa el control para enviar la referencia de «este» a lo largo de la frase hasta que llegue a «este».",
+        "hopCta": "Avanzar un salto →",
+        "afterShort": "En un recorrido corto, la referencia todavía puede llegar, con solo un poco de desgaste.",
+        "longerPrompt": "Ahora haz la frase mucho más larga. Observa qué ocurre cuando la información tiene que pasar por más pasos.",
+        "surprise": "La referencia todavía puede llegar, pero ha tenido que atravesar cada paso intermedio, y los relevos simulados la dejan distorsionada.",
+        "point": "No se trata de que las RNN siempre pierdan información, sino de que la relación entre dos palabras lejanas tiene que transportarse a través de todos los pasos intermedios.",
+        "pivot": "¿Y si el modelo pudiera conectar «este» directamente con la palabra que necesita?",
+        "staticSummaryLabel": "Mensaje en cada paso",
+        "cta": "Continuar →"
+      },
+      "connections": {
+        "plaque": "Conexiones directas",
+        "title": "¿Y si las palabras pudieran mirarse entre sí?",
+        "tryIt": "Pruébalo.",
+        "instruct": "Pulsa una palabra que te ayude a decidir a qué se refiere «este». Después, pulsa otra palabra que importe menos.",
+        "hint": "«este» ya está seleccionado como origen. Pulsa una palabra de destino para trazar una conexión.",
+        "madeVisible": "Acabas de hacer visible la idea básica de la atención (attention).",
+        "body": "La atención permite que una posición de una secuencia use información de otras posiciones, con conexiones más fuertes o más débiles según lo útiles que sean.",
+        "history": "La atención en sí no se inventó en 2017. Trabajos anteriores, como el de Bahdanau y sus colegas en 2014, ya usaban la atención junto con modelos recurrentes. La gran novedad del artículo de 2017 que presentó el Transformer fue convertir la atención en el mecanismo principal para conectar posiciones, en lugar de depender de la recurrencia para transportar la información paso a paso.",
+        "strengthLabel": "Fuerza de la conexión",
+        "needTwo": "Traza al menos dos conexiones desde «este».",
+        "cta": "Continuar →"
+      },
+      "paper": {
+        "plaque": "2017",
+        "docTitle": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": "2017",
+        "title": "El artículo que cambió la arquitectura",
+        "body": "Vaswani y sus colegas publicaron un artículo con un título deliberadamente atrevido. El artículo presentó el Transformer.",
+        "idea": "La idea no era simplemente «añadir atención». Era construir el procesamiento de secuencias en torno a la atención, en lugar de la recurrencia o la convolución. Así, las posiciones podían intercambiar información directamente, y el trabajo podía repartirse en paralelo de forma mucho más eficiente durante el entrenamiento.",
+        "ask": "¿Cuál da a una posición un camino más corto hasta la información que necesita?",
+        "optionA": "Procesamiento paso a paso",
+        "optionADetail": "palabra → palabra → palabra → palabra",
+        "optionB": "Conexiones directas",
+        "optionBDetail": "posiciones que intercambian información directamente",
+        "reveal": "El Transformer.",
+        "revealBody": "Las posiciones podían intercambiar información directamente, sin enviar cada relación a través de todos los pasos intermedios.",
+        "cta": "Continuar →"
+      },
+      "softLookup": {
+        "plaque": "Búsqueda suave",
+        "title": "La atención es una búsqueda ponderada",
+        "body": "Hay una forma útil de pensar en la atención: es una búsqueda suave.",
+        "drawers": "Imagina que estás buscando en un mueble con cajones. Tu consulta (query) es lo que buscas. Cada cajón tiene una clave (key): una etiqueta que describe lo que hay dentro. El valor (value) es la información que hay dentro del cajón.",
+        "compare": "El modelo compara la consulta con las claves, da una puntuación a cada una y extrae más información de los sitios que mejor coinciden.",
+        "analogy": "En un Transformer, se llaman consulta, clave y valor. Son representaciones numéricas aprendidas, no preguntas, etiquetas ni cajones literales. La analogía sirve para que la operación sea más fácil de imaginar.",
+        "queryLabel": "¿Qué estoy buscando?",
+        "drawerCol": "Cajón",
+        "matchCol": "Coincidencia",
+        "contentCol": "Contenido",
+        "stripLabel": "Sin la metáfora",
+        "qLabel": "Consulta",
+        "kLabel": "Clave",
+        "vLabel": "Valor",
+        "mixtureLabel": "Mezcla ponderada",
+        "mixtureHint": "La atención no se limita a elegir una palabra. Puede tomar algo de información de muchas palabras, con distintos pesos (weights).",
+        "nudgeHint": "Ajusta una puntuación ilustrativa para ver cómo cambia la mezcla.",
+        "cta": "Continuar →"
+      },
+      "order": {
+        "plaque": "Mantener el orden",
+        "title": "La atención no aporta el orden por sí sola",
+        "body": "Hay una cosa que la atención no aporta por sí sola: el orden de las palabras.",
+        "sameWords": "«El perro mordió al hombre» y «El hombre mordió al perro» contienen las mismas palabras. El orden cambia el significado.",
+        "shuffleCta": "Desordenar las palabras →",
+        "restoreCta": "Recuperar el orden original →",
+        "afterShuffle": "Las mismas palabras. Otro orden. Otro significado.",
+        "needPositional": "Así que un Transformer necesita información posicional, además de las relaciones entre posiciones.",
+        "encodings": "El Transformer original añadía codificaciones posicionales (positional encodings) para que el modelo supiera en qué lugar de la secuencia aparece cada token.",
+        "twoPieces": "Eso nos da dos piezas del puzle: la atención le dice al modelo qué posiciones pueden intercambiar información, y la información posicional le dice dónde están esas posiciones.",
+        "cta": "Continuar →"
+      },
+      "stack": {
+        "plaque": "Apila las capas",
+        "title": "Una sola operación de atención no basta",
+        "body": "Una operación de atención da a cada posición una forma de reunir información de la secuencia.",
+        "repeatedly": "Un Transformer lo hace una y otra vez.",
+        "eachLayer": "Cada capa toma las representaciones de la capa anterior, deja que las posiciones intercambien información, transforma esas representaciones un poco más y las pasa a la siguiente.",
+        "deepLearning": "Esto enlaza con el aprendizaje profundo (deep learning): se pueden construir representaciones útiles mediante una secuencia de transformaciones aprendidas.",
+        "notOnlyAttention": "El Transformer original también incluye transformaciones de propagación hacia adelante (feed-forward), conexiones residuales (residual connections), normalización, información posicional y otros componentes. La atención es el mecanismo central para intercambiar información entre posiciones, no toda la arquitectura por sí sola.",
+        "cta": "Continuar →"
+      },
+      "hideFuture": {
+        "plaque": "Predicción del siguiente token",
+        "title": "Oculta el futuro",
+        "body": "Hay un detalle importante en los modelos del lenguaje.",
+        "rule": "Cuando el modelo está prediciendo la siguiente palabra, cada posición puede mirar las palabras que vinieron antes, no las que todavía no han llegado.",
+        "why": "Así se evita que el modelo use la respuesta que debe predecir.",
+        "mask": "Por eso, la misma idea de atención puede usarse con una restricción sobre qué posiciones son visibles. En la predicción del siguiente token (next-token prediction), la atención está enmascarada (masked), de modo que cada posición solo puede usar el contexto disponible.",
+        "prompt": "El animal no cruzó el puente porque ___",
+        "inspectHint": "Observa qué posiciones anteriores reciben más o menos atención. Las palabras futuras permanecen ocultas.",
+        "revealFuture": "Mostrar una palabra futura →",
+        "futureWord": "este",
+        "futureNote": "«este» nunca ha estado disponible para el modelo mientras hacía esta predicción.",
+        "tableLabel": "Contexto permitido por posición",
+        "cta": "Continuar →"
+      },
+      "multiHead": {
+        "plaque": "Profundiza",
+        "title": "Varias cabezas de atención",
+        "body": "Un Transformer no tiene por qué usar un solo patrón de atención. Puede usar varias cabezas de atención (attention heads) a la vez.",
+        "teaser": "Opcional: descubre cómo varios patrones de atención pueden fijarse en la misma frase a la vez. Sáltatelo si quieres seguir con el hilo principal.",
+        "deeperBody": "Cada cabeza tiene sus propios parámetros aprendidos y puede aprender a fijarse en relaciones distintas de la secuencia.",
+        "headA": "La cabeza A podría destacar un vínculo sintáctico útil.",
+        "headB": "La cabeza B podría destacar otra dependencia.",
+        "notAssigned": "No decidimos de antemano qué debe aprender cada cabeza. La idea importante es que el modelo puede mirar la misma secuencia de varias formas aprendidas a la vez.",
+        "loadBearing": "La atención multicabeza (multi-head attention) es un refinamiento útil, pero no es la idea principal que debes recordar de esta lección. La idea fundamental es que un Transformer da a las posiciones formas directas y ponderadas de intercambiar información, y que puede hacerlo en paralelo.",
+        "skipCta": "Continuar →",
+        "deeperCta": "Profundizar"
+      },
+      "whyMattered": {
+        "plaque": "Por qué fue importante",
+        "title": "El Transformer cambió la forma de construir los modelos de secuencias",
+        "body": "En lugar de hacer que cada fragmento de información viajara paso a paso por una cadena, la arquitectura dio a las posiciones una forma directa de intercambiar información.",
+        "benefits": "Eso hizo más fácil modelar relaciones de largo alcance y permitió paralelizar gran parte del cálculo durante el entrenamiento.",
+        "later": "Los modelos posteriores se basaron en la arquitectura Transformer de distintas formas.",
+        "bert": "Los Transformers de tipo codificador (encoder-style), como BERT, usaban contexto bidireccional para tareas de comprensión.",
+        "decoder": "Los Transformers de solo decodificador (decoder-only) usaban atención enmascarada y en un solo sentido para generar el siguiente token.",
+        "scale": "Los grandes modelos del lenguaje (LLM) surgieron de esta línea de trabajo a medida que se ampliaban la arquitectura, los métodos de entrenamiento, los datos y la capacidad de cómputo.",
+        "cta": "Continuar →"
+      },
+      "nextToken": {
+        "plaque": "Experimento final",
+        "title": "Construye el siguiente token",
+        "lead": "Empieza con: «El animal no cruzó el puente porque…»",
+        "body": "En la posición actual, observa qué posiciones anteriores reciben más o menos atención. Después, elige a partir de una distribución de probabilidad sobre los posibles tokens siguientes.",
+        "process": "El modelo construye una nueva representación, usa el contexto disponible, calcula probabilidades de lo que podría venir después, selecciona un token, lo añade a la secuencia y repite el proceso.",
+        "clarification": "En esta tarea de predecir el siguiente token, el modelo no mira el futuro. En cada paso, solo tiene acceso a los tokens que ya han aparecido.",
+        "probsLabel": "Posibles tokens siguientes",
+        "pickHint": "Elige un token siguiente (probabilidades ilustrativas).",
+        "historyLabel": "Generado hasta ahora",
+        "contextLabel": "Contexto disponible",
+        "again": "Generar otro →",
+        "cta": "Continuar →"
+      },
+      "challenge": {
+        "plaque": "Reto final",
+        "title": "Comprueba qué se te ha quedado",
+        "body": "Puntuación: 5 puntos en total. Un punto por cada respuesta correcta.",
+        "scoreLabel": "Puntuación",
+        "correctLabel": "Correcto.",
+        "wrongLabel": "Si has elegido otra respuesta:",
+        "cta": "Continuar →"
+      },
+      "reflection": {
+        "plaque": "Reflexión",
+        "title": "Antes / después",
+        "beforeLabel": "Antes de esta lección, pensaba que un modelo del lenguaje entendía una frase gracias a…",
+        "afterLabel": "Ahora pienso que un Transformer…",
+        "wantLabel": "Una parte que quiero ser capaz de explicar con mis propias palabras es…",
+        "cta": "Continuar →"
+      },
+      "closing": {
+        "plaque": "Revelación final",
+        "headline": "Un Transformer da a una red neuronal una forma de mover la información a lo largo de una secuencia",
+        "body": "La atención decide cuánta información tomar de otras posiciones. La información posicional conserva el orden. Apilar capas permite transformar esas representaciones una y otra vez.",
+        "under": "Esa es la arquitectura en la que se basan los modelos del lenguaje modernos.",
+        "but": "Pero todavía no hemos recorrido todo el camino.",
+        "bridge": "¿Qué ocurre realmente cuando escribes un texto en un LLM? ¿Qué es un token? ¿Cómo se convierte el texto en números? ¿Qué ocurre dentro del Transformer? ¿Y cómo convierte el modelo todo eso en su siguiente token?",
+        "nextLesson": "Lo veremos en la siguiente lección: ¿Cómo funcionan realmente los LLM?",
+        "nextLabel": "Siguiente: Lección 9 · ¿Cómo funcionan realmente los LLM?",
+        "home": "Volver al inicio"
+      }
+    },
+    "data": {
+      "illustrativeNumbersNote": "Estos números son ilustrativos: se han elegido para mostrar la idea con claridad, no proceden de un modelo en funcionamiento.",
+      "canonicalSentence": "El animal no cruzó el puente porque este estaba demasiado concurrido.",
+      "telephoneShort": {
+        "id": "short",
+        "label": "Frase corta",
+        "hops": [
+          {
+            "word": "animal",
+            "message": "referente: animal",
+            "kind": "kept",
+            "note": "El mensaje empieza en el primer sustantivo."
+          },
+          {
+            "word": "no",
+            "message": "referente: animal",
+            "kind": "kept",
+            "note": "El relevo conserva lo importante."
+          },
+          {
+            "word": "cruzó",
+            "message": "referente: animal",
+            "kind": "kept",
+            "note": "Sigue intacto tras unos cuantos pasos."
+          },
+          {
+            "word": "el",
+            "message": "referente: anim…",
+            "kind": "lost",
+            "note": "Se pierde un pequeño detalle."
+          },
+          {
+            "word": "puente",
+            "message": "referente: ¿animal?",
+            "kind": "changed",
+            "note": "Aparece una ligera duda."
+          },
+          {
+            "word": "porque",
+            "message": "referente: ¿animal?",
+            "kind": "kept",
+            "note": "Se transmite tal cual."
+          },
+          {
+            "word": "este",
+            "message": "referente: ¿animal?",
+            "kind": "kept",
+            "note": "Llega y se puede usar, aunque con algo de duda."
+          }
+        ]
+      },
+      "telephoneLong": {
+        "id": "long",
+        "label": "Frase más larga",
+        "hops": [
+          {
+            "word": "animal",
+            "message": "referente: animal",
+            "kind": "kept",
+            "note": "La misma referencia de partida."
+          },
+          {
+            "word": "no",
+            "message": "referente: animal",
+            "kind": "kept",
+            "note": "Los primeros saltos siguen limpios."
+          },
+          {
+            "word": "cruzó",
+            "message": "referente: animal",
+            "kind": "kept",
+            "note": "Todavía está claro."
+          },
+          {
+            "word": "el",
+            "message": "referente: anim…",
+            "kind": "lost",
+            "note": "El detalle empieza a diluirse."
+          },
+          {
+            "word": "concurrido",
+            "message": "referente: ¿¿puente??",
+            "kind": "changed",
+            "note": "Una palabra cercana contamina el mensaje."
+          },
+          {
+            "word": "tráfico",
+            "message": "ref.: trá… / an…",
+            "kind": "lost",
+            "note": "Más pasos, más pérdida."
+          },
+          {
+            "word": "tarde",
+            "message": "ref.: ???",
+            "kind": "lost",
+            "note": "El referente casi ha desaparecido."
+          },
+          {
+            "word": "trayecto",
+            "message": "algo estaba… ¿concurrido?",
+            "kind": "changed",
+            "note": "El mensaje se desvía todavía más."
+          },
+          {
+            "word": "porque",
+            "message": "¿concurrido? ¿puente? ¿animal?",
+            "kind": "changed",
+            "note": "La confusión se acumula."
+          },
+          {
+            "word": "este",
+            "message": "??? (distorsionado)",
+            "kind": "lost",
+            "note": "Llega, pero distorsionado tras todos los pasos intermedios."
+          }
+        ]
+      },
+      "lookupQuery": "¿Qué ayuda a explicar a qué se refiere «este»?",
+      "lookupDrawers": [
+        {
+          "id": "animal",
+          "keyLabel": "animal",
+          "valueLabel": "primer sustantivo · posible referente",
+          "match": 0.82
+        },
+        {
+          "id": "road",
+          "keyLabel": "puente",
+          "valueLabel": "lugar que se cruza",
+          "match": 0.41
+        },
+        {
+          "id": "busy",
+          "keyLabel": "concurrido",
+          "valueLabel": "propiedad mencionada después",
+          "match": 0.09
+        }
+      ],
+      "orderOriginal": "El perro mordió al hombre.",
+      "orderShuffled": "El hombre mordió al perro.",
+      "hideContextSentence": "El animal no cruzó el puente porque",
+      "hideFutureWord": "este",
+      "nextTokenRounds": [
+        {
+          "id": "r1",
+          "context": "El animal no cruzó el puente porque",
+          "candidates": [
+            {
+              "token": "este",
+              "p": 0.34
+            },
+            {
+              "token": "estaba",
+              "p": 0.18
+            },
+            {
+              "token": "el",
+              "p": 0.11
+            },
+            {
+              "token": "había",
+              "p": 0.09
+            },
+            {
+              "token": "tenía",
+              "p": 0.07
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "context": "El animal no cruzó el puente porque este",
+          "candidates": [
+            {
+              "token": "estaba",
+              "p": 0.41
+            },
+            {
+              "token": "está",
+              "p": 0.12
+            },
+            {
+              "token": "tenía",
+              "p": 0.1
+            },
+            {
+              "token": "parecía",
+              "p": 0.08
+            },
+            {
+              "token": "vio",
+              "p": 0.06
+            }
+          ]
+        }
+      ],
+      "challengeQuestions": [
+        {
+          "id": "q1",
+          "prompt": "Un Transformer se diferencia de un modelo recurrente paso a paso, sobre todo, porque:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Guarda todas las frases que ha visto."
+            },
+            {
+              "id": "B",
+              "text": "Permite que las posiciones intercambien información directamente mediante la atención."
+            },
+            {
+              "id": "C",
+              "text": "No usa parámetros aprendidos."
+            },
+            {
+              "id": "D",
+              "text": "Solo lee una palabra de cada frase."
+            }
+          ],
+          "correctId": "B",
+          "correctFeedback": "Un Transformer permite que las posiciones intercambien información directamente mediante la atención, en lugar de transportarla paso a paso a través de cada palabra intermedia.",
+          "wrongFeedback": "No del todo. La ventaja de un Transformer es conectar las posiciones directamente: no guarda todas las frases, sí usa parámetros aprendidos y trabaja con toda la secuencia, no con una sola palabra."
+        },
+        {
+          "id": "q2",
+          "prompt": "¿Qué hace la atención?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Da a cada palabra la misma cantidad de información."
+            },
+            {
+              "id": "B",
+              "text": "Elige una palabra e ignora el resto."
+            },
+            {
+              "id": "C",
+              "text": "Pondera la información de otras posiciones y la combina."
+            },
+            {
+              "id": "D",
+              "text": "Convierte las palabras directamente en hechos."
+            }
+          ],
+          "correctId": "C",
+          "correctFeedback": "La atención da distinto peso a la información de otras posiciones y combina esas aportaciones.",
+          "wrongFeedback": "No del todo. La atención no se limita a elegir una palabra. Asigna pesos a la información de varias posiciones y la combina."
+        },
+        {
+          "id": "q3",
+          "prompt": "¿Por qué necesita un Transformer información posicional?",
+          "options": [
+            {
+              "id": "A",
+              "text": "La atención por sí sola no le dice al modelo en qué lugar de la secuencia está una posición."
+            },
+            {
+              "id": "B",
+              "text": "Impide que el modelo aprenda pesos."
+            },
+            {
+              "id": "C",
+              "text": "Hace innecesarios los datos de entrenamiento."
+            },
+            {
+              "id": "D",
+              "text": "Hace que todos los tokens signifiquen lo mismo."
+            }
+          ],
+          "correctId": "A",
+          "correctFeedback": "La atención capta las relaciones entre posiciones, pero no dónde está cada una en la secuencia: la información posicional aporta ese orden.",
+          "wrongFeedback": "No del todo. La información posicional existe porque la atención, por sí sola, no ve el orden; no impide aprender pesos ni sustituye a los datos de entrenamiento (training data)."
+        },
+        {
+          "id": "q4",
+          "prompt": "Durante la predicción del siguiente token, ¿a qué puede prestar atención una posición?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Solo a los tokens futuros."
+            },
+            {
+              "id": "B",
+              "text": "A los tokens anteriores disponibles, no a los que todavía no han aparecido."
+            },
+            {
+              "id": "C",
+              "text": "A todos los tokens de la respuesta completa."
+            },
+            {
+              "id": "D",
+              "text": "Solo al token inmediatamente anterior."
+            }
+          ],
+          "correctId": "B",
+          "correctFeedback": "En la predicción del siguiente token, una posición puede usar los tokens anteriores disponibles, no los que todavía no han aparecido. El futuro se enmascara para que el modelo no pueda usar la respuesta que tiene que predecir.",
+          "wrongFeedback": "No del todo. Un modelo que predice el siguiente token no puede usar tokens que todavía no han aparecido. Su atención tiene una máscara causal (causal masking)."
+        },
+        {
+          "id": "q5",
+          "prompt": "¿Cuál es la idea principal de la atención multicabeza?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Varios patrones de atención aprendidos pueden actuar sobre la misma secuencia."
+            },
+            {
+              "id": "B",
+              "text": "El modelo usa varios modelos independientes sin ninguna entrada compartida."
+            },
+            {
+              "id": "C",
+              "text": "A cada cabeza se le asigna a mano una regla gramatical."
+            },
+            {
+              "id": "D",
+              "text": "Con más cabezas ya no hace falta información posicional."
+            }
+          ],
+          "correctId": "A",
+          "correctFeedback": "Varias cabezas de atención permiten al modelo aprender varios patrones de atención sobre la misma secuencia. Las cabezas se aprenden; no se les asignan tareas concretas a mano.",
+          "wrongFeedback": "No del todo. A las cabezas no se les asignan tareas a mano. Pueden aprender relaciones distintas a partir de los datos."
+        }
+      ]
+    },
+    "chrome": {
+      "connections": {
+        "focusIt": "foco · este",
+        "tapAWord": "Pulsa una palabra"
+      },
+      "telephone": {
+        "seeLonger": "Ver la frase más larga →",
+        "showGarble": "Ver la distorsión →",
+        "tryLonger": "Probar con una frase más larga →",
+        "seeWhatArrived": "Ver qué ha llegado →",
+        "pressToAdvance": "Pulsa para avanzar",
+        "wordChain": "Cadena de palabras",
+        "message": "Mensaje",
+        "kept": "conservado",
+        "lost": "perdido",
+        "changed": "cambiado",
+        "handoff": "Traspaso",
+        "atWord": "En «{word}»: mensaje «{message}». {note} Traspaso: {kind}."
+      },
+      "paper": {
+        "compareRoutes": "Comparar los dos caminos →",
+        "stepSentence": "El animal no cruzó el puente",
+        "optionAPrefix": "A · {label}",
+        "optionBPrefix": "B · {label}",
+        "chainCaption": "palabra → palabra → palabra → palabra",
+        "markChain": "cadena",
+        "markDirect": "directo"
+      },
+      "softLookup": {
+        "referenceDesk": "mostrador de consulta",
+        "inspectOrNudge": "Examina o ajusta una puntuación",
+        "tableCaption": "Coincidencias entre consulta y clave, y contenido de los cajones",
+        "gateHint": "Abre un cajón o ajusta una puntuación de coincidencia para continuar.",
+        "matchScoreFor": "Puntuación de coincidencia de {label}"
+      },
+      "order": {
+        "shuffledOrder": "orden alterado",
+        "originalOrder": "orden original",
+        "shuffleOnce": "Desordena una vez para desbloquear el resto de este paso.",
+        "pressToReorder": "Pulsa para reordenar",
+        "positions": "Posiciones",
+        "linearOrder": "Orden lineal: {orderText}",
+        "posN": "pos. {n}"
+      },
+      "stack": {
+        "layer1": "Capa 1: reúne información de la secuencia",
+        "layer2": "Capa 2: vuelve a intercambiar y transforma más",
+        "layer3": "Capa 3: pasa representaciones más ricas",
+        "stackedMark": "transformaciones apiladas"
+      },
+      "hideFuture": {
+        "availableContextOnly": "solo el contexto disponible",
+        "shownForTeaching": "Se muestra para explicarlo; no estaba disponible al predecir",
+        "notAvailable": "No disponible al predecir",
+        "pressToReveal": "Pulsa para mostrar",
+        "tapContextWord": "Pulsa una palabra del contexto",
+        "position": "Posición",
+        "mayAttendTo": "Puede prestar atención a",
+        "futureSuffix": "(futuro)",
+        "background": "Fondo",
+        "none": "(ninguno)"
+      },
+      "multiHead": {
+        "attentionHead": "Cabeza de atención",
+        "headAPattern": "cabeza A · un patrón",
+        "headBPattern": "cabeza B · otro patrón",
+        "tapAHead": "Pulsa una cabeza",
+        "headA": "Cabeza A",
+        "headB": "Cabeza B"
+      },
+      "whyMattered": {
+        "laterLines": "Evolución posterior del Transformer",
+        "encoderStyle": "Tipo codificador",
+        "decoderOnly": "Solo decodificador",
+        "scale": "Escala"
+      },
+      "nextToken": {
+        "chooseAtLeastOne": "Elige al menos un token siguiente para continuar.",
+        "tapNextToken": "Pulsa un token siguiente",
+        "pressToContinueGenerating": "Pulsa para seguir generando",
+        "reviewMode": "Modo repaso: cada elección ha sido deliberada, sin muestreo automático.",
+        "historyStep": "Paso {n}: se añadió «{token}» · el contexto era «{context}»",
+        "percentAria": "{token}, {pct} por ciento"
+      },
+      "challenge": {
+        "pressForNext": "Pulsa para ver la siguiente",
+        "nextQuestion": "Siguiente pregunta →",
+        "progress": "{scoreLabel}: {score} / {total} · Pregunta {n} de {total}",
+        "correctMark": "(correcta)"
+      },
+      "closing": {
+        "pressToContinue": "Pulsa para continuar",
+        "oneMoreThing": "Una cosa más →",
+        "comingSoon": "Próximamente"
+      },
+      "attention": {
+        "strong": "fuerte",
+        "medium": "media",
+        "weak": "débil",
+        "attendsMostTo": "{label} presta más atención a: {parts}.",
+        "connections": "Conexiones: {parts}."
+      },
+      "stepStub": {
+        "stubNote": "Paso provisional: la interacción llegará en una fase posterior."
+      }
+    },
+    "seoSpine": {
+      "h1": "¿Qué es un Transformer y cómo funciona la atención?",
+      "lead": "Un Transformer es una arquitectura que permite que cada posición de una secuencia obtenga información directamente de otras posiciones, con distintos grados de importancia, en lugar de transmitir información únicamente paso a paso. La atención es el mecanismo que hace posibles estas conexiones directas.",
+      "sections": [
+        {
+          "heading": "¿Cómo funciona la atención?",
+          "body": "La atención permite que cada posición consulte otras posiciones e incorpore la información que necesita. Las conexiones más fuertes tienen mayor influencia; las más débiles, menor. La autoatención (self-attention) se produce cuando las posiciones de una misma secuencia prestan atención unas a otras."
+        },
+        {
+          "heading": "¿Por qué se inventaron los Transformers?",
+          "body": "Los modelos anteriores solían transmitir la información paso a paso a lo largo de una secuencia. Esto dificultaba las conexiones entre elementos alejados y limitaba el procesamiento en paralelo. Los Transformers se diseñaron para permitir conexiones más directas entre las distintas posiciones. Esta idea se popularizó con el artículo «Attention Is All You Need»."
+        },
+        {
+          "heading": "Cómo se predice lo que viene a continuación",
+          "body": "Mediante la atención y la información sobre el orden de los elementos, el modelo construye representaciones que tienen en cuenta el contexto y puede predecir qué viene a continuación en la secuencia. Esta misma familia de ideas es la que está detrás de los modelos de lenguaje actuales."
+        }
+      ]
+    }
+  }
+}

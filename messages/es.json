@@ -1,0 +1,2050 @@
+{
+  "common": {
+    "continue": "Continuar →",
+    "language": "Idioma",
+    "enShort": "EN",
+    "esShort": "ES",
+    "ltShort": "LT",
+    "stepOf": "Paso {step} de {total}",
+    "progressAria": "Progreso de la lección: paso {step} de {total}",
+    "stepsNavAria": "Pasos de la lección: {step} de {total}",
+    "prevStep": "Paso anterior",
+    "nextStep": "Siguiente paso",
+    "copyright": "© {year} Pro Technologies, MB",
+    "footerCreatedBy": "Creado por",
+    "footerSupportedBy": "Con contribuciones de",
+    "footerCodeLicense": "Código: AGPL-3.0",
+    "footerLessonsLicense": "Lecciones: CC BY-NC-SA 4.0",
+    "footerSource": "Código fuente",
+    "footerWarrantyNote": "sin garantía",
+    "breadcrumbAria": "Miga de pan",
+    "lessonOverviewAria": "Resumen de la lección"
+  },
+  "nav": {
+    "brand": "¿Qué es la IA?",
+    "lessons": "Lecciones",
+    "practiceSection": "Práctica",
+    "close": "Cerrar",
+    "closeMenuAria": "Cerrar menú",
+    "expand": "Expandir menú",
+    "collapse": "Contraer menú",
+    "about": "Acerca de",
+    "aboutShort": "A",
+    "home": "Inicio",
+    "collapsed": {
+      "practice1": "P1",
+      "practice2": "P2",
+      "practice3": "P3",
+      "workshop": "W",
+      "placeholder": "P"
+    },
+    "feedback": {
+      "trigger": "Comentarios y solicitudes",
+      "kicker": "Privado · anónimo",
+      "title": "Comentarios y solicitudes",
+      "titleShort": "Comentarios",
+      "closeAria": "Cerrar",
+      "thanks": "Gracias. Hemos recibido tu mensaje.",
+      "note": "No se envía ningún correo electrónico. Tu mensaje se guarda de forma anónima para que podamos revisarlo más adelante.",
+      "close": "Cerrar",
+      "type": "Tipo",
+      "kindFeedback": "Comentario",
+      "kindRequest": "Solicitud",
+      "messageLabel": "Tu mensaje",
+      "placeholderFeedback": "¿Qué ha funcionado, qué te ha confundido o qué te ha parecido extraño?",
+      "placeholderRequest": "¿Qué te gustaría que añadiéramos o explicáramos?",
+      "cancel": "Cancelar",
+      "send": "Enviar",
+      "sending": "Enviando…",
+      "sendFailed": "No se ha podido enviar tu mensaje. Inténtalo de nuevo dentro de un momento.",
+      "unavailable": "Los comentarios no están disponibles en este momento.",
+      "cooldown": "Espera un momento antes de enviar otro mensaje.",
+      "tooShort": "Escribe al menos {min} caracteres."
+    },
+    "cookies": "Cookies"
+  },
+  "consent": {
+    "ga": {
+      "title": "Cookies de análisis",
+      "body": "Usamos Google Analytics para entender cómo se usa el curso. Puedes cambiarlo cuando quieras desde «Cookies», en el menú.",
+      "accept": "Aceptar",
+      "reject": "Rechazar"
+    }
+  },
+  "about": {
+    "eyebrow": "Acerca de",
+    "title": "¿Qué es la IA?",
+    "lead": "Entiende la IA experimentando con ella, no solo leyendo sobre ella.",
+    "intro": "Hemos desarrollado <strong>¿Qué es la IA?</strong> para personas curiosas que quieren entender qué ocurre realmente detrás de la IA que utilizan cada día.",
+    "who": {
+      "title": "Quién está detrás",
+      "before": "Creado por",
+      "mid": ", con contribuciones de",
+      "after": ".",
+      "proAi": "Pro AI Assistant",
+      "malagaAi": "Malaga AI"
+    },
+    "how": {
+      "title": "Cómo enseñamos",
+      "start": {
+        "title": "Empezamos por lo que ya crees, no por la respuesta final",
+        "body": "Si te damos la explicación desde el principio, es fácil asentir y sentir que lo entiendes… justo hasta que intentas aplicarlo. En lugar de eso, preferimos preguntarte primero qué crees que va a ocurrir y dejar que lo descubras por ti mismo. A veces acertarás, pero los momentos en los que te equivocas por completo suelen ser donde realmente se produce el aprendizaje. La IA está llena de cosas que parecen obvias hasta que las pones a prueba, así que, siempre que es posible, dejamos que juegues con el sistema antes de profundizar en por qué se comporta como lo hace. Haz una predicción, rompe el sistema, observa qué ocurre y después te explicaremos la mecánica que hay detrás."
+      },
+      "using": {
+        "title": "Usar la IA no es lo mismo que entenderla",
+        "body": "Puedes utilizar un gran modelo del lenguaje (LLM) todos los días y, aun así, tener ideas sorprendentemente inexactas sobre lo que ocurre en su interior, igual que tocas una pantalla de cristal decenas de veces a la hora sin saber cómo los sensores capacitivos leen la carga eléctrica de las yemas de tus dedos. Pero si estás aquí para entender realmente la IA, tarde o temprano tenemos que mirar debajo de la superficie. Eso también significa reconocer que la IA no empezó con ChatGPT. Los LLM modernos son fascinantes, pero solo son un capítulo de una historia mucho más amplia que abarca el razonamiento simbólico, los sistemas expertos, las redes neuronales (neural networks), el aprendizaje por refuerzo (reinforcement learning) y algunos sonados callejones sin salida. Estudiaremos las herramientas que utilizas hoy, pero también veremos qué hubo antes, por qué fracasaron los primeros enfoques y en qué se equivocó todo el mundo por el camino."
+      },
+      "patterns": {
+        "title": "No queremos que memorices conceptos; queremos que detectes patrones",
+        "body1": "Nuestro objetivo no es ayudarte a aprobar un examen, sino cambiar tu forma de mirar la tecnología. Después de recorrer estas lecciones, empezarás a ver los patrones comunes que existen entre los motores de recomendación, los modelos de visión, las IA que juegan al ajedrez y los agentes autónomos. Todos tienen historias y formas de fallar diferentes, pero de repente empiezan a cobrar sentido de forma intuitiva.",
+        "body2": "No necesitas aprender cálculo, memorizar ecuaciones complejas ni llamarte «ingeniero de prompts» para sacar partido de esto. Solo necesitas la suficiente curiosidad para mirar un sistema y preguntarte: «Espera, ¿realmente funciona así?». Ahí es donde empezamos."
+      }
+    },
+    "meta": {
+      "title": "Acerca de · ¿Qué es la IA?",
+      "description": "Entiende la IA experimentando con ella, no solo leyendo sobre ella."
+    }
+  },
+  "home": {
+    "tagline": "Una investigación interactiva, no un libro de texto. Una serie de misterios, una idea errónea cada vez.",
+    "startCta": "Empieza por la lección {number}"
+  },
+  "lesson1": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Qué es la inteligencia artificial: una introducción interactiva",
+      "shortTitle": "Qué es la IA",
+      "mystery": "Descubre qué se considera realmente inteligencia artificial, desde ChatGPT hasta las herramientas que utilizas a diario, y qué no. Una introducción interactiva sin necesidad de registrarte."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "chooseOne": "Elige una opción",
+      "empty": "—",
+      "buckets": {
+        "definitely": "Sin duda, IA",
+        "could": "Podría ser IA",
+        "probably-not": "Probablemente no sea IA"
+      },
+      "domains": {
+        "language": "Lenguaje",
+        "vision": "Visión",
+        "audio": "Audio",
+        "planning": "Planificación",
+        "ranking": "Ordenación",
+        "multiple": "Múltiple",
+        "none": "No es IA"
+      },
+      "origins": {
+        "learned": "Aprendido",
+        "specified": "Especificado",
+        "both": "Ambos",
+        "depends": "Depende"
+      },
+      "domainBlurbs": {
+        "language": "Texto, voz, traducción y chat.",
+        "vision": "Imágenes, rostros, escenas y vídeo.",
+        "audio": "Sonido, voz y música: lo que oyes y cómo se procesa.",
+        "planning": "Explorar de antemano las acciones posibles.",
+        "ranking": "Ordenar opciones: qué mostrar a continuación.",
+        "multiple": "Varios problemas integrados en un mismo sistema.",
+        "none": "No es un problema de IA en absoluto. Es computación real —pero aritmética, no búsqueda ni cálculo de rutas—, así que no hay ningún dominio que asignar."
+      },
+      "originBlurbs": {
+        "learned": "El comportamiento procede de ejemplos o datos.",
+        "specified": "El comportamiento procede de reglas o búsquedas diseñadas por alguien.",
+        "both": "Una parte se aprende y otra se especifica, dentro del mismo objeto.",
+        "depends": "El nombre del producto no basta: importan la época y la implementación."
+      },
+      "status": {
+        "aligned": {
+          "visible": "Coincide",
+          "sr": ", correcto"
+        },
+        "rethink": {
+          "visible": "Revísalo",
+          "sr": ", merece la pena revisarlo"
+        },
+        "skipped": {
+          "visible": "Omitido",
+          "sr": ", no has respondido a esta"
+        },
+        "rightPlace": {
+          "visible": "En el lugar correcto",
+          "sr": ", correcto"
+        }
+      },
+      "scenarioKinds": {
+        "learned": "Aprendido",
+        "specified": "Especificado (búsqueda)",
+        "hybrid": "Ambos"
+      }
+    },
+    "shell": {
+      "stepOf": "Paso {step} de {total}",
+      "progressAria": "Progreso de la lección: paso {step} de {total}",
+      "stepsNavAria": "Pasos de la lección: {step} de {total}",
+      "prevStep": "Paso anterior",
+      "nextStep": "Siguiente paso"
+    },
+    "hook": {
+      "ask": {
+        "title": "Ya usas IA todos los días. ¿O no?",
+        "subhead": "Antes de empezar: ¿qué se considera IA?",
+        "cta": "Vamos a averiguarlo →"
+      },
+      "sort": {
+        "eyebrow": "Ronda 1 · Clasifica por intuición",
+        "title": "¿Qué se considera IA?",
+        "subhead": "No le des demasiadas vueltas.",
+        "prompt": "¿Dónde va esto?",
+        "hint": "Sigue tu primera intuición. No hay respuestas correctas.",
+        "outputLabel": "Dónde va",
+        "outputNote": "Se completa a medida que avanzas.",
+        "waiting": "Esperando…",
+        "completeTitle": "Colección completa.",
+        "completeSub": "Descubre qué revelan tus elecciones.",
+        "cta": "Ver los resultados →",
+        "objectOf": "Objeto {index} de {total}: {label}",
+        "sortedInto": "Se ha clasificado {label} en «{bucket}».",
+        "sortAria": "Clasifica {label} en «{bucket}»",
+        "binAria": "{bucket}, {count} clasificados"
+      }
+    },
+    "reveal": {
+      "locked": {
+        "plaque": "Resultados bloqueados",
+        "title": "Clasifica primero para ver tus resultados.",
+        "body1": "Este paso compara las ubicaciones que has elegido por intuición en la actividad de clasificación. Completa primero ese paso para desbloquear la revisión.",
+        "body2": "Puedes volver atrás y clasificar, o continuar sin resultados.",
+        "back": "Volver a clasificar",
+        "skip": "Continuar sin resultados →"
+      },
+      "plaque": "Idea clave",
+      "title": "Dos preguntas. No un único veredicto.",
+      "lede": "En lugar de preguntar «¿Esto es IA?», fíjate en dos cosas:",
+      "domain": {
+        "title": "01 · Dominio",
+        "name": "Dominio",
+        "question": "¿Qué tipo de problema es?",
+        "sub": "¿Es siquiera un problema de IA? Y, si lo es, ¿de qué tipo?",
+        "body": "Para decidir el Dominio, pregúntate: ¿esta tarea implica reconocer, interpretar, ordenar o explorar posibilidades, sin una única respuesta «correcta» que pueda obtenerse mecánicamente? Si es así, es un problema de IA (Lenguaje, Visión, Audio, Planificación o Clasificación), independientemente de cómo esté construido. Si la tarea consiste en un cálculo directo y exacto, con una única respuesta correcta garantizada y sin interpretación —aritmética, cambiar el tamaño de una imagen, comprimir un archivo o descodificar un código de barras—, es computación convencional, no IA, por complicadas que sean las matemáticas.",
+        "openAria": "Abrir Dominio como nota adhesiva",
+        "bringToFrontAria": "Traer la nota de Dominio al frente"
+      },
+      "origin": {
+        "title": "02 · Origen",
+        "name": "Origen",
+        "question": "¿De dónde procede el comportamiento?",
+        "sub": "¿Aprendido, especificado o una combinación?",
+        "openAria": "Abrir Origen como nota adhesiva",
+        "bringToFrontAria": "Traer la nota de Origen al frente"
+      },
+      "insightLabel": "Una visión más amplia",
+      "insightBody": "Los <strong>LLM</strong> son un capítulo, no todo el campo.",
+      "instinctLabel": "Adónde te ha llevado la intuición",
+      "instinctBody": "Aquí no hay puntuación: la ronda 1 solo recoge tu intuición, y no hay intuiciones correctas ni incorrectas. En la ronda 2 aplicarás la regla y verás en qué se diferencia de tu intuición.",
+      "reviewTitle": "Revisa tus resultados",
+      "reviewSub": "Toca cualquier objeto para ver su Dominio y Origen y compáralos con el lugar donde lo ha colocado tu intuición al principio.",
+      "detailLabel": "Detalle",
+      "selectObject": "Selecciona un objeto",
+      "emptyDetail": "Elige un objeto de la lista para ver su Dominio, Origen y en qué se diferencia de tu intuición.",
+      "youSaid": "Tu respuesta",
+      "closeNoteAria": "Cerrar la nota {title}",
+      "vanishing": {
+        "eyebrow": "Por qué las cosas aburridas también son IA",
+        "wordmark": "El truco de la desaparición",
+        "p1": "Fíjate en algo extraño: los filtros de spam, el GPS y el autocompletado se consideran IA, pero ninguno de ellos <em>parece</em> IA.",
+        "p2": "Esto tiene un nombre. Cuando una máquina hace algo de forma fiable, dejamos de llamarlo IA y empezamos a llamarlo «solo software». La etiqueta se desplaza continuamente hacia lo que todavía no está resuelto.",
+        "p3": "Así que el campo parece más pequeño de lo que realmente es. Gran parte de la IA ya está oculta en herramientas que utilizas sin pensar en ello. Por eso «¿esto es IA?» es más difícil de responder de lo que parece, y por eso la respuesta suele ser «depende»."
+      },
+      "cta": "Aplica la regla a objetos nuevos →"
+    },
+    "round2": {
+      "eyebrow": "Ronda 2 · Clasifica según la regla",
+      "title": "Ahora ya tienes la regla.",
+      "ledeDomain": "<strong>Dominio</strong>: ¿es un problema de IA? Y, si lo es, ¿de qué tipo?",
+      "ledeOrigin": "<strong>Origen</strong>: ¿de dónde procede el comportamiento?",
+      "domainLegend": "Dominio: ¿es un problema de IA y de qué tipo?",
+      "originLegend": "Origen: de dónde procede",
+      "domainGroupAria": "Dominio",
+      "originGroupAria": "Origen",
+      "nextCue": "Siguiente",
+      "pickDomain": "Elige un Dominio",
+      "pickOrigin": "Elige un Origen",
+      "check": "Comprobar mi respuesta →",
+      "nextObject": "Siguiente objeto →",
+      "seeScore": "Ver tu puntuación →",
+      "objectOf": "Objeto {index} de {total}: {label}",
+      "whatIsAria": "¿Qué es {label}?",
+      "matchedSr": ", coincide",
+      "missedSr": ", no coincide con tu elección",
+      "announce": "{label}. Dominio correcto: {domain}{domainDiff}. Origen correcto: {origin}{originDiff}. {note}",
+      "differentChoice": " (diferente de tu elección)",
+      "score": {
+        "plaque": "Ponlo en práctica",
+        "title": "{score} de {total} han coincidido con las respuestas correctas.",
+        "sub": "La ronda 1 ha mostrado lo que creías. La ronda 2 muestra si has interiorizado la regla.",
+        "correctAnswer": " — respuesta correcta: {domain} · {origin}",
+        "cta": "Continuar →"
+      }
+    },
+    "depends": {
+      "plaque": "¿Depende? ¿De qué?",
+      "intro": {
+        "title": "Por qué la respuesta suele ser «depende»",
+        "body": "Antes hemos dicho que el hecho de que algo se considere IA puede cambiar con el tiempo. Esta es una de las grandes razones: algunas herramientas se construyen de una manera hoy y se construían de otra hace años. Misma función, pero distinto funcionamiento interno. Veámoslo.",
+        "cta": "Muéstramelo →"
+      },
+      "toggle": {
+        "objectOf": "Objeto {index} de {total}",
+        "sub": "Arrastra el control deslizante entre las dos épocas. Observa cómo cambia el Origen mientras el Dominio permanece igual.",
+        "domainBadge": "Dominio · {domain}",
+        "originBadge": "Origen · {origin}",
+        "stays": "Se mantiene",
+        "flips": "Cambia",
+        "then": "Antes",
+        "now": "Ahora",
+        "sliderAria": "Época: antes o ahora",
+        "eraKicker": "{era} · Origen {origin}",
+        "next": "Siguiente →",
+        "seePoint": "Ver la conclusión →",
+        "announceChange": "Dominio: {domain}, sin cambios. Origen: ahora {origin}.",
+        "announceObject": "Objeto {index} de {total}: {label}. Dominio: {domain}, sin cambios. Origen: ahora {origin}."
+      },
+      "point": {
+        "title": "Ahora sabes de qué depende «depende».",
+        "p1": "El <strong>Dominio no ha cambiado</strong>: el problema es el mismo en todas las épocas.",
+        "p2": "El <strong>Origen ha cambiado</strong>: el comportamiento ha pasado de depender de reglas escritas a aprenderse a partir de datos.",
+        "p3": "Así que «depende» tiene un significado preciso: el nombre del producto no basta. Tienes que saber <em>cuándo</em> se construyó y <em>cómo</em>.",
+        "cta": "Continuar →"
+      }
+    },
+    "timeline": {
+      "plaque": "Cronología",
+      "title": "¿Qué fue primero?",
+      "sub": "Ordena los hitos del más antiguo al más reciente: haz clic, toca, arrastra o usa el teclado. Vuelve a tocar un hito o a pulsar Enter para devolverlo.",
+      "yourOrder": "Tu orden",
+      "oldest": "Más antiguo",
+      "newest": "Más reciente",
+      "pool": "Hitos por colocar",
+      "correctOrder": "Orden correcto",
+      "emptySlot": "Espacio vacío",
+      "tapToReturn": "Toca para devolver · arrastra para reordenar",
+      "allPlaced": "Ya están todos colocados. Toca un elemento de la izquierda para devolverlo, o arrástralo de nuevo aquí.",
+      "clickOrDrag": "Haz clic para colocar el siguiente, o arrástralo a un espacio.",
+      "eitherOrder": "en cualquier orden",
+      "check": "Comprobar orden →",
+      "score": "{count} de {total} en el lugar correcto.",
+      "scoreHint": "A la mayoría de la gente le resulta más difícil de lo esperado: el orden real no es el que podría sugerir las noticias recientes.",
+      "punchline": "Aprender no es la parte nueva. Las máquinas ya aprendían en 1959. Lo que ha cambiado recientemente es la escala: la cantidad de datos, la capacidad de cómputo y un diseño que por fin podía aprovechar ambas cosas.",
+      "tieNote": "Ambos aparecieron publicados el mismo año: un programa que razonaba mediante búsqueda (GPS) y un programa que aprendía de la experiencia (el programa de damas de Samuel). El razonamiento y el aprendizaje crecieron uno al lado del otro durante los primeros años de la IA, no con décadas de diferencia.",
+      "sourcesEyebrow": "Opcional",
+      "sourcesTitle": "Profundiza",
+      "placedAnnounce": "Se ha colocado {label} en la posición {position}. Pulsa Enter para devolverlo, o arrastra para reordenarlo.",
+      "returnedAnnounce": "Se ha devuelto {label} a los hitos por colocar.",
+      "placeAria": "Coloca {label}. Haz clic o arrastra hasta la cronología.",
+      "placedAria": "{label}, posición {position}; toca o pulsa Enter para devolverlo, o arrastra para reordenarlo",
+      "slotAria": "{label}, posición {position}. {feedback}",
+      "positionAria": "{label}, posición {position}",
+      "emptySlotAria": "Espacio vacío, posición {position}",
+      "rightPlace": "En el lugar correcto.",
+      "offBy": "Lo has colocado en {placed} lugar; va en {belongs} lugar (diferencia: {offBy}).",
+      "lineAnnounce": "{label}, posición {position}: {feedback}",
+      "scoreAnnounce": "{count} de {total} en el lugar correcto. {lines}",
+      "ordinal": "{n, selectordinal, one {#.º} two {#.º} few {#.º} other {#.º}}",
+      "ordinalRange": "{from}–{to}"
+    },
+    "cases": {
+      "plaque": "Caso práctico · {index}/{total}",
+      "title": "¿Cómo funciona?",
+      "progressAnnounce": "Caso práctico {index} de {total}: {prompt}",
+      "youChose": "Has elegido: {choice}.",
+      "correct": "Correcto.",
+      "incorrect": "La respuesta correcta es: {correct}.",
+      "next": "Siguiente →",
+      "seePattern": "Ver el patrón →",
+      "finish": {
+        "plaque": "Empieza a verse un patrón",
+        "title": "Algunos aprendieron. Otros buscaron. Algunos hacen ambas cosas.",
+        "sub": "Ese es el mapa. La lección 2 plantea una pregunta más difícil: ¿por qué no podíamos limitarnos a escribir las reglas?"
+      },
+      "labels": {
+        "faceid": "Face ID",
+        "spam": "Filtro de spam",
+        "spotify": "Recomendaciones de Spotify",
+        "chess": "Motor de ajedrez clásico",
+        "gps": "Navegación GPS",
+        "siri": "Siri"
+      }
+    },
+    "consolidation": {
+      "plaque": "La regla, en un solo lugar",
+      "title": "Dos preguntas que puedes hacer sobre cualquier cosa.",
+      "p1": "Has empezado clasificando por intuición. Ahora tienes una regla que funciona con objetos que nunca has visto:",
+      "p2": "<strong>1. Dominio: ¿es un problema de IA y, si lo es, de qué tipo?</strong> Lenguaje, Visión, Audio, Planificación, Ordenación, Múltiple o No es IA cuando se trata de computación convencional.",
+      "p3": "<strong>2. Origen: ¿de dónde procede el comportamiento?</strong> Aprendido a partir de datos, Especificado mediante reglas escritas o búsqueda, Ambos o Depende de la época.",
+      "p4": "Quédate con dos ideas. <strong>La IA es mucho más que los chatbots</strong>: la búsqueda, la planificación y la ordenación también son IA. Y <strong>que algo sea aprendido no significa que sea nuevo</strong>: las máquinas aprenden desde los años 50; lo que ha cambiado es la escala.",
+      "cta": "Una última cosa →"
+    },
+    "reflection": {
+      "plaque": "Libro de visitas",
+      "title": "Completa la frase.",
+      "sub": "No es un cuestionario. Solo observa cómo ha cambiado tu definición de IA.",
+      "beforeLabel": "Antes de hoy pensaba que la IA era…",
+      "beforePlaceholder": "ChatGPT… robots… otra cosa…",
+      "afterLabel": "Ahora pienso que la IA es…",
+      "afterPlaceholder": "Un campo… un concepto amplio… una historia…",
+      "cta": "Deja tu nota →"
+    },
+    "closing": {
+      "rule": {
+        "plaque": "Antes de irte",
+        "title": "Una regla es fácil.",
+        "body": "Has visto que parte de la IA se construye a partir de reglas que escribe una persona. Probémoslo: aquí tienes una regla para detectar spam, el tipo de instrucción escrita a mano que has visto antes en la lección.",
+        "eyebrow": "Una regla para el spam",
+        "ruleLine1": "SI el mensaje contiene «dinero gratis»",
+        "ruleLine2": "→ marcar como spam",
+        "plain": "En palabras sencillas: si un correo electrónico dice «dinero gratis», trátalo como spam.",
+        "hold": "Parece sencillo. Pero recuerda esta regla: en la siguiente pantalla veremos hasta dónde te lleva realmente una sola regla como esta.",
+        "cta": "Siguiente →"
+      },
+      "ask": {
+        "title": "¿Puedes escribir suficientes reglas para detectar todos los correos de spam?",
+        "sub": "La mayoría de la gente dice: claro que sí.",
+        "groupAria": "¿Puedes escribir suficientes reglas para detectar todos los correos de spam?",
+        "sure": "Claro que sí",
+        "probablyNot": "Probablemente no"
+      },
+      "reveal": {
+        "title": "Hay miles de millones de formas de escribir spam.",
+        "body": "Las reglas escritas resolvieron magníficamente problemas como el cálculo de rutas y el ajedrez, pero problemas caóticos como el spam consiguen esquivar todas las reglas que escribas. Y eso plantea una pregunta aún más precisa…",
+        "cta": "Plantearla →"
+      },
+      "mystery": {
+        "title": "Entonces, si no podemos escribir las reglas para todos los problemas…",
+        "italic": "¿cómo puede un ordenador aprender lo que no podemos expresar con reglas?",
+        "toLesson2": "Ir a la lección 2 →",
+        "backHome": "Volver al inicio",
+        "terminal": "TERMINAL DE BELL LABS",
+        "ready": "listo."
+      }
+    },
+    "items": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "note": "La IA que la mayoría de la gente imagina primero: escribes y te responde. Un caso claro de «sin duda, IA»."
+      },
+      "calculator": {
+        "label": "Calculadora",
+        "note": "Solo hace cálculos: la misma suma siempre da el mismo resultado, sin conjeturas ni criterio. Es computación convencional, no IA, así que aquí no hay ningún problema de IA que asignar."
+      },
+      "gen-fill": {
+        "label": "Relleno generativo de Photoshop",
+        "note": "Borras una parte de una foto y rellena el hueco con píxeles completamente nuevos: contenido de imagen que antes no estaba ahí. Los crea prediciendo qué encaja con mayor probabilidad. Eso es la IA."
+      },
+      "crop": {
+        "label": "Herramienta Recortar de Photoshop",
+        "note": "La misma aplicación, pero esta herramienta simplemente recorta los bordes siguiendo pasos fijos. No aprende ni inventa nada, así que no es IA."
+      },
+      "spam": {
+        "label": "Filtro de spam",
+        "note": "Separa el correo basura del correo legítimo todos los días, una tarea que la mayoría de la gente nunca considera IA. Es uno de los ejemplos más antiguos y cotidianos que existen."
+      },
+      "gps": {
+        "label": "Navegación GPS",
+        "note": "Cuando pides indicaciones, el GPS comprueba millones de rutas posibles y encuentra en poco tiempo la más rápida para llegar a tu destino. Encontrar la mejor ruta entre un gran número de posibilidades es un tipo de problema que la IA ayuda a resolver desde sus inicios."
+      },
+      "chess": {
+        "label": "Motor de ajedrez",
+        "note": "Los motores de ajedrez modernos, como AlphaZero, aprenden a reconocer posiciones fuertes y débiles jugando contra sí mismos, y después utilizan ese conocimiento para anticiparse y elegir una jugada. Los motores anteriores, como Deep Blue, dependían más de explorar muchas jugadas posibles mediante reglas y estrategias escritas por personas.",
+        "refs": {
+          "alphazero": {
+            "term": "AlphaZero",
+            "tip": "Más información en Wikipedia"
+          },
+          "deepBlue": {
+            "term": "Deep Blue",
+            "tip": "Más información en Wikipedia"
+          }
+        }
+      },
+      "faceid": {
+        "label": "Face ID",
+        "note": "Reconoce tu rostro analizando patrones visuales que ha aprendido a partir de muchos ejemplos. Esto demuestra que la IA puede trabajar con imágenes y otros tipos de información, no solo con lenguaje o chatbots."
+      },
+      "spotify": {
+        "label": "Recomendaciones de Spotify",
+        "note": "Sugiere canciones buscando patrones en lo que escuchan millones de personas. Si a otros oyentes con gustos similares les gusta una canción, Spotify puede recomendártela también. Además, utiliza listas de reproducción creadas por editores humanos. Estas recomendaciones se aprenden a partir de datos, en lugar de seguir un conjunto fijo de reglas."
+      },
+      "autocomplete": {
+        "label": "Autocompletado del móvil",
+        "note": "Predice la siguiente palabra que podrías escribir. Las versiones antiguas predecían basándose en las palabras que suelen aparecer juntas, mientras que las más nuevas utilizan IA para tener en cuenta una mayor parte de lo que ya has escrito y hacer una predicción mejor. Por eso, que el autocompletado se considere IA depende de cómo se haya construido."
+      },
+      "translate": {
+        "label": "Google Traductor",
+        "note": "Comenzó en 2006 utilizando reglas escritas por personas para traducir entre idiomas. Más tarde, aprendió a partir de millones de ejemplos de textos traducidos y, en 2016, pasó a un enfoque de IA más moderno. Hoy utiliza IA que aprende patrones a partir de datos, lo que demuestra cómo la tecnología que hay detrás de una misma herramienta puede cambiar con el tiempo."
+      },
+      "selfdrive": {
+        "label": "Coche autónomo",
+        "note": "Utiliza IA para realizar varias tareas diferentes a la vez. Aprende a reconocer elementos de la carretera, como coches, personas y señales, y busca la mejor forma de desplazarse con seguridad entre el tráfico. En otras palabras, utiliza el aprendizaje para interpretar lo que ve y la planificación para decidir qué hacer a continuación."
+      }
+    },
+    "round2Items": {
+      "qr": {
+        "label": "Lector de códigos QR",
+        "note": "Un código QR se lee siguiendo pasos fijos. El patrón de cuadrados se corresponde siempre con los mismos caracteres. No hay nada que interpretar y solo existe una respuesta correcta, así que es computación convencional, no IA.",
+        "whatIs": "El lector que lee esos códigos cuadrados en blanco y negro a los que apuntas con el móvil, como el código de la carta de un restaurante, y abre un enlace o muestra información."
+      },
+      "captcha": {
+        "label": "CAPTCHA",
+        "note": "El desafío —como letras deformadas o «selecciona los semáforos»— sigue reglas escritas por personas. Los CAPTCHA más nuevos también pueden utilizar IA para observar cómo te comportas y detectar bots, pero el desafío en sí está diseñado a mano.",
+        "whatIs": "La comprobación de «demuestra que no eres un robot» de los sitios web, como escribir letras onduladas o hacer clic en todos los cuadrados que contienen un semáforo."
+      },
+      "search": {
+        "label": "Búsqueda de Google",
+        "note": "Su función es colocar primero los resultados más útiles. Las versiones antiguas utilizaban fórmulas diseñadas por personas; las más nuevas utilizan IA e incluso pueden escribir respuestas para ti. Por eso depende de qué parte y de qué época hablemos.",
+        "whatIs": "El cuadro de búsqueda donde escribes lo que buscas y obtienes una lista de sitios web, información y respuestas."
+      },
+      "ocr": {
+        "label": "OCR (lector de texto)",
+        "note": "Convierte una imagen de texto en texto editable. Las versiones antiguas comparaban las formas de las letras mediante reglas fijas; las más nuevas utilizan IA entrenada con muchas imágenes. Que se considere IA depende de cómo se haya construido.",
+        "whatIs": "Una herramienta que convierte una foto o un escaneo de texto impreso, como un recibo o una página, en texto que puedes copiar y editar."
+      },
+      "grammar": {
+        "label": "Corrector gramatical",
+        "note": "Detecta errores en lo que escribes. Las herramientas antiguas comprobaban el texto comparándolo con una lista de reglas gramaticales; las más nuevas utilizan IA que ha aprendido a partir de enormes cantidades de texto. Por eso depende de la herramienta y de la época.",
+        "whatIs": "Un asistente de escritura que detecta errores ortográficos y gramaticales y sugiere cómo corregirlos."
+      },
+      "siri": {
+        "label": "Siri",
+        "note": "Siri hace varias tareas a la vez. Una IA que aprendió a partir de audio convierte tu voz en palabras, otra IA averigua qué le estás pidiendo y unos comandos escritos a mano ejecutan la tarea, como poner un temporizador. Así que combina más de un tipo de problema: una parte aprendida y otra escrita por personas.",
+        "whatIs": "El asistente de voz de Apple. Puedes pedirle que haga cosas como poner un temporizador o llamar a alguien, o hacerle una pregunta."
+      },
+      "fingerprint": {
+        "label": "Lector de huellas dactilares",
+        "note": "Comprueba si una huella dactilar coincide con la tuya. Algunos lectores comparan mediciones fijas; otros utilizan IA entrenada con muchas huellas. Que se considere IA depende del sistema que haya dentro.",
+        "whatIs": "Un sensor sobre el que apoyas el dedo para desbloquear un móvil o portátil, en lugar de introducir un código."
+      },
+      "excel-formula": {
+        "label": "Fórmula de Excel",
+        "note": "Una fórmula hace exactamente lo que le indicas: sumar estas celdas, multiplicar por aquello. La misma entrada produce el mismo resultado, sin interpretación. Por eso es computación convencional, no IA.",
+        "whatIs": "Una instrucción que introduces en una celda de una hoja de cálculo para calcular algo automáticamente, como sumar una columna."
+      },
+      "excel-copilot": {
+        "label": "Excel Copilot",
+        "note": "Es el asistente de IA integrado en la hoja de cálculo. Le preguntas con palabras normales y puede escribir fórmulas o explicar tus datos. Utiliza IA que ha aprendido a partir de enormes cantidades de texto y código.",
+        "whatIs": "Un asistente integrado en Excel al que puedes pedir, con palabras normales, que cree fórmulas, ordene una hoja o explique tus cifras."
+      },
+      "lens": {
+        "label": "Google Lens",
+        "note": "Apunta con la cámara a una planta, un lugar emblemático o un texto y te dice qué es. Utiliza IA que ha aprendido a reconocer cosas a partir de millones de imágenes.",
+        "whatIs": "Una herramienta que utiliza la cámara del móvil para informarte sobre lo que estás viendo, como una planta, un lugar emblemático o una carta en otro idioma."
+      },
+      "compression": {
+        "label": "Compresión de imágenes",
+        "note": "Reducir un archivo para ahorrar espacio sigue una receta matemática fija. La misma imagen se comprime de la misma manera cada vez. Puede utilizar matemáticas complejas, pero no hay interpretación, así que no es IA.",
+        "whatIs": "Una forma de hacer que el archivo de una imagen ocupe menos espacio o cargue más rápido, manteniendo un aspecto casi idéntico."
+      },
+      "noise": {
+        "label": "Cancelación de ruido",
+        "note": "Elimina el ruido de fondo para que puedas oír lo importante. Las versiones antiguas utilizaban matemáticas fijas de filtrado de sonido; las más nuevas utilizan IA entrenada para distinguir las voces del ruido. Por eso depende de la implementación.",
+        "whatIs": "Una función de los auriculares y las llamadas que reduce los sonidos de fondo, como el tráfico o las conversaciones, para que puedas oír lo importante."
+      },
+      "deepfake": {
+        "label": "Vídeo deepfake",
+        "note": "Crea un vídeo falso de una persona real generando nuevos fotogramas de su rostro y sus movimientos. Esto procede de una IA que ha aprendido cómo son los rostros a partir de muchas grabaciones reales.",
+        "whatIs": "Un vídeo falso que hace que una persona real parezca decir o hacer algo que nunca dijo ni hizo."
+      }
+    },
+    "dependsItems": {
+      "autocomplete": {
+        "label": "Autocompletado",
+        "eraThen": "Los móviles antiguos predecían la siguiente palabra a partir de una lista fija de palabras que suelen aparecer juntas. Escribe «buen» y te sugiere «día». (Especificado)",
+        "eraNow": "Los móviles más nuevos utilizan IA que analiza toda la frase que estás escribiendo para predecir qué encaja a continuación. (Aprendido)",
+        "note": "Misma función: completar la frase. Distinto mecanismo interno."
+      },
+      "ocr": {
+        "label": "Extraer texto de una foto",
+        "eraThen": "Cuando las aplicaciones empezaron a extraer texto de una foto, funcionaban comparando cada forma con plantillas almacenadas de cómo es cada letra. El texto impreso y limpio salía bien; el texto borroso o torcido a menudo se interpretaba mal. (Especificado)",
+        "eraNow": "Hoy, una IA que ha aprendido a partir de enormes cantidades de imágenes reales lee el texto por ti, por lo que puede manejar fuentes poco habituales, escritura a mano y fotos tomadas en ángulo. (Aprendido)",
+        "note": "Misma función: convertir una imagen de texto en texto que puedas editar. Distinto mecanismo interno."
+      },
+      "search-ranking": {
+        "label": "Orden de resultados de Google",
+        "eraThen": "Hace años, buscar te daba una lista de enlaces que podías abrir. Google decidía el orden con una fórmula diseñada por sus creadores: a grandes rasgos, una página se consideraba más fiable cuando muchas otras páginas enlazaban con ella, por lo que aparecía más arriba. (Especificado)",
+        "eraNow": "Hoy, la IA ayuda a ordenar los resultados e incluso puede redactar una respuesta directa para ti, basándose en lo que ha aprendido de enormes cantidades de texto. (Aprendido)",
+        "note": "Misma función: colocar primero los resultados más útiles. Distinto mecanismo interno."
+      }
+    },
+    "timelineItems": {
+      "ai-coined": {
+        "label": "Nace el término IA",
+        "blurb": "El taller de Dartmouth da nombre al campo. La propuesta apenas menciona el aprendizaje a partir de datos."
+      },
+      "planning": {
+        "label": "Planificación",
+        "blurb": "El General Problem Solver de Newell, Shaw y Simon: razonamiento como búsqueda entre posibles acciones. En desarrollo desde 1957; artículo fundamental en 1959."
+      },
+      "ml": {
+        "label": "Aprendizaje automático",
+        "blurb": "El programa de damas de Samuel mejora jugando contra sí mismo y aprende a vencer a jugadores humanos de alto nivel. Su artículo acuña el término «machine learning» (aprendizaje automático)."
+      },
+      "search": {
+        "label": "Búsqueda",
+        "blurb": "El algoritmo A* encuentra la mejor ruta a través de una red. Se inventó en SRI para que el robot Shakey pudiera planificar su recorrido, y está presente ahora mismo en tu aplicación de mapas."
+      },
+      "robotics": {
+        "label": "Robótica",
+        "blurb": "Shakey en SRI (construido entre 1966 y 1972): el primer robot capaz de percibir, planificar y actuar en una habitación real. Para desplazarse necesitaba planificar una ruta: por eso el mismo equipo de SRI inventó A* (una fila más arriba)."
+      },
+      "rl": {
+        "label": "Aprendizaje por refuerzo",
+        "blurb": "El Q-learning de Watkins formaliza el ciclo prueba, recompensa, ajuste: un hito del aprendizaje por refuerzo (reinforcement learning) y la base de posteriores sistemas capaces de jugar. (Introducido en 1989; convergencia demostrada por Watkins y Dayan en 1992.)"
+      },
+      "dl": {
+        "label": "Aprendizaje profundo",
+        "blurb": "AlexNet gana ImageNet por un amplio margen. De la noche a la mañana, las redes multicapa dejan de ser un nicho."
+      },
+      "transformers": {
+        "label": "Transformers",
+        "blurb": "«Attention Is All You Need»: una nueva arquitectura para el lenguaje, y más tarde para todo lo demás."
+      },
+      "llms": {
+        "label": "Los LLM llegan al público",
+        "blurb": "Una interfaz de chat los pone al alcance de todo el mundo. Los modelos ya existían desde hacía años (GPT-2 en 2019, GPT-3 en 2020); 2022 es cuando llegaron a todo el mundo: el hito más reciente de esta cronología, no el primero que ocurrió en IA."
+      }
+    },
+    "timelineSources": {
+      "dartmouth": {
+        "cite": "McCarthy, Minsky, Rochester y Shannon (1955) — la propuesta que dio nombre al campo",
+        "note": "Gratuito, tres páginas."
+      },
+      "samuel": {
+        "cite": "Samuel (1959) — damas",
+        "note": "El resumen por sí solo deja clara la idea."
+      },
+      "astar": {
+        "cite": "Hart, Nilsson y Raphael (1968) — A*"
+      },
+      "qlearn": {
+        "cite": "Watkins y Dayan (1992) — Q-learning"
+      },
+      "alexnet": {
+        "cite": "Krizhevsky, Sutskever y Hinton (2012) — AlexNet",
+        "note": "Gratuito."
+      },
+      "attention": {
+        "cite": "Vaswani et al. (2017) — Attention Is All You Need",
+        "note": "Gratuito.",
+        "flag": "Vuelve después de la lección 5."
+      }
+    },
+    "scenarios": {
+      "faceid": {
+        "prompt": "Tu móvil se desbloquea con Face ID. ¿Cómo funciona?",
+        "options": {
+          "pixels": "Guarda un mapa 3D de tu rostro durante la configuración y comprueba si cada nuevo escaneo coincide con esas mediciones exactas.",
+          "learn": "Aprendió qué hace que dos rostros sean iguales o diferentes y después aplicó ese conocimiento al tuyo."
+        },
+        "reveal": "La parte difícil no es almacenar tu rostro, sino saber qué significa «mismo rostro» con una iluminación, un ángulo o un peinado diferentes. Esa similitud se aprendió a partir de millones de pares de rostros; tu registro es solo una aplicación de ello."
+      },
+      "spam": {
+        "prompt": "Tu bandeja de entrada detecta spam. ¿Cómo?",
+        "options": {
+          "phrases": "Asigna una puntuación a la reputación de cada remitente y bloquea los correos de direcciones que otros usuarios han marcado como spam.",
+          "learn": "Aprendió cómo es el spam a partir de millones de ejemplos y después evaluó el tuyo."
+        },
+        "reveal": "Las listas de frases eran el enfoque antiguo, y los spammers las esquivaban cambiando sus mensajes. Los filtros modernos aprenden patrones a partir de correo etiquetado, así que «dinero gratis» no es una palabra clave mágica, sino una señal entre muchas."
+      },
+      "spotify": {
+        "prompt": "Spotify sugiere tu próxima canción. ¿Cómo?",
+        "options": {
+          "genre": "Analiza el audio de cada canción —tempo, tonalidad y energía— y pone en cola canciones con un perfil acústico lo más parecido posible al de tus favoritas.",
+          "learn": "Aprendió patrones de escucha a partir de millones de personas, incluidas personas como tú."
+        },
+        "reveal": "Relacionar géneros forma parte de la explicación que solemos darnos. El sistema ordena lo que escucharás después mediante filtrado colaborativo: patrones entre millones de oyentes, listas editoriales y tu propio historial, no un mapa escrito a mano del tipo «si es rock, entonces rock»."
+      },
+      "chess": {
+        "prompt": "Un motor de ajedrez clásico elige una jugada. ¿Cómo?",
+        "options": {
+          "search": "Calcula de antemano las jugadas posibles y elige la variante más fuerte.",
+          "learn": "Aprendió a valorar posiciones a partir de la experiencia, como hizo AlphaZero."
+        },
+        "reveal": "Eso describe a AlphaZero, que aprendió a valorar posiciones jugando contra sí mismo, pero no a un motor clásico como Deep Blue, que buscaba y evaluaba mediante reglas escritas a mano. La valoración aprendida llegó después. Mismo tablero, distinto origen."
+      },
+      "gps": {
+        "prompt": "La navegación GPS elige una ruta. ¿Cómo?",
+        "options": {
+          "learn": "Aprendió las mejores rutas entrenándose con millones de trayectos anteriores de conductores por la ciudad.",
+          "search": "Busca la mejor ruta en un mapa de carreteras mediante algoritmos escritos de antemano."
+        },
+        "reveal": "La predicción del tráfico puede aprenderse, pero el núcleo de «llévame allí» es la búsqueda en un grafo de carreteras (piensa en A*). IA real, comportamiento especificado. La misma idea que has colocado en la cronología."
+      },
+      "siri": {
+        "prompt": "Siri pone un temporizador cuando se lo pides. ¿Cómo?",
+        "options": {
+          "all-learned": "Aprendió de principio a fin: te escucha y decide qué hacer, todo a partir de datos.",
+          "hybrid": "Entender lo que dices se aprende; «poner un temporizador» sigue siendo una acción programada."
+        },
+        "reveal": "El reconocimiento de voz aprende a partir de audio. Muchas funciones —temporizadores, alarmas, «llama a mamá»— siguen siendo reglas escritas conectadas a lo que ha oído. Híbrido: una parte aprendida y otra especificada."
+      }
+    },
+    "seoSpine": {
+      "h1": "¿Qué es la inteligencia artificial? Una introducción interactiva",
+      "lead": "La inteligencia artificial engloba distintos tipos de sistemas capaces de realizar tareas que solemos asociar con la inteligencia humana, como reconocer patrones, ordenar opciones según su relevancia, planificar pasos o generar lenguaje. No todos los programas que parecen inteligentes son IA, y ChatGPT es solo un capítulo de una historia mucho más larga.",
+      "sections": [
+        {
+          "heading": "Qué se considera inteligencia artificial",
+          "body": "Algunos sistemas siguen reglas fijas escritas por personas. Otros aprenden patrones a partir de ejemplos. Muchas de las herramientas que utilizamos a diario se encuentran en algún punto intermedio. En esta lección tendrás que clasificar productos que te resultan familiares y descubrir en qué casos tiene sentido hablar de inteligencia artificial y en cuáles no."
+        },
+        {
+          "heading": "Por qué importa esta distinción",
+          "body": "Si solo conoces la IA a través de un cuadro de chat, es fácil pasar por alto los sistemas de visión artificial, los sistemas de recomendación, los de planificación y otros enfoques anteriores que han contribuido a desarrollar las herramientas actuales. Identificar qué hace un sistema y cómo se ha construido es el primer paso para entenderlo."
+        }
+      ]
+    }
+  },
+  "lesson2": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Por qué las reglas no son suficientes para la inteligencia artificial",
+      "shortTitle": "Por qué las reglas no bastan",
+      "mystery": "Descubre qué ocurre cuando intentamos definir la inteligencia mediante reglas: se acumulan las notas, se multiplican las excepciones y el sistema acaba fallando. Una lección interactiva sobre inteligencia artificial."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "chooseOne": "Elige una opción",
+      "next": "Siguiente →",
+      "and": "{a} y {b}",
+      "listMany": "{items} y {last}",
+      "approaches": {
+        "rules": "Reglas",
+        "learning": "Aprendizaje",
+        "hybrid": "Sobre todo reglas + búsqueda"
+      },
+      "feedback": {
+        "correct": "Correcto",
+        "partly": "Parcialmente correcto",
+        "notQuite": "No del todo"
+      },
+      "results": {
+        "false-positive": "Falso positivo",
+        "false-negative": "Falso negativo",
+        "ambiguous": "Ambiguo"
+      }
+    },
+    "shell": {
+      "eyebrow": "Bell Labs · Terminal 02",
+      "wordmark": "LABORATORIO DE IA DE 1985"
+    },
+    "mission": {
+      "plaque": "Cambio de turno · 03:14",
+      "title": "Ahora eres ingeniero de IA.",
+      "subhead": "Tu misión aparece en un terminal parpadeante.",
+      "open": "Abrir misión →",
+      "fileLabel": "descripción_de_la_misión.txt",
+      "briefTitle": "Enseña a un ordenador a reconocer un gato.",
+      "line1": "> Sin cámaras. Sin conjuntos de datos (datasets). Solo lógica.",
+      "line2": "> Escribe las reglas.",
+      "coreQuestion": "Pregunta clave: ¿por qué no podemos limitarnos a escribir las reglas?",
+      "cta": "Empezar a escribir reglas →"
+    },
+    "rules": {
+      "plaque": "Pizarra · Descubrimiento 1",
+      "title": "Escribe las reglas para «gato».",
+      "subhead": "Fija reglas en la pizarra. Puedes inventarte las tuyas.",
+      "boardHeader": "SI … ENTONCES gato · {count} reglas",
+      "empty": "Todavía no hay reglas.",
+      "sticky": "SI {rule}",
+      "remove": "[eliminar]",
+      "placeholder": "Añade una regla personalizada…",
+      "add": "Añadir",
+      "suggestionsEyebrow": "Notas sugeridas",
+      "cta": "Probar las reglas →",
+      "suggestions": {
+        "fourLegs": "Tiene cuatro patas",
+        "fur": "Tiene pelo",
+        "whiskers": "Tiene bigotes",
+        "tail": "Tiene cola",
+        "pointyEars": "Orejas puntiagudas",
+        "meows": "Maúlla",
+        "claws": "Tiene garras",
+        "smallBody": "Cuerpo pequeño"
+      },
+      "break": {
+        "plaque": "Contraejemplos",
+        "title": "Tus reglas se encuentran con la realidad.",
+        "subInProgress": "¿El ordenador acierta?",
+        "subDone": "Cada excepción hace daño. Las reglas parecen precisas… hasta que el mundo se complica.",
+        "activeRules": "REGLAS_ACTIVAS := {rules}",
+        "none": "ninguna",
+        "andJoin": " Y ",
+        "gloss": "En términos sencillos: solo es un gato si <em>todas</em> las reglas que has fijado son ciertas al mismo tiempo.",
+        "next": "Siguiente contraejemplo →",
+        "seePattern": "Ver el patrón →",
+        "frustration": "No pases por alto la frustración. Así era trabajar con la IA en sus primeros tiempos.",
+        "keepGoing": "Seguir →"
+      },
+      "coda": {
+        "ruleOne": "tu regla inventada",
+        "ruleMany": "tus reglas inventadas",
+        "falsePositive": " Ni siquiera con {noun} —{list}— se ha conseguido dejar esto fuera.",
+        "falseNegative": " Ni siquiera con {noun} —{list}— se ha podido reconocer a este gato.",
+        "ambiguous": " Con {noun} —{list}— no hay forma de acertar cuando la señal es tan débil."
+      },
+      "counterexamples": {
+        "tiger": {
+          "label": "Tigre",
+          "note": "Un tigre <em>es</em> un gato, pero no el que tú querías decir. Y «el que yo quería decir» es precisamente lo que no puedes expresar como una regla."
+        },
+        "dog": {
+          "label": "Perro",
+          "note": "Cuatro patas, pelo, cola: encaja perfectamente con tus reglas. Tus reglas describen mucho más que gatos.",
+          "noteShared": "{list}: encaja perfectamente con tus reglas. Tus reglas describen mucho más que gatos.",
+          "noteFallback": "Encaja perfectamente con tus reglas. Tus reglas describen mucho más que gatos."
+        },
+        "hairless": {
+          "label": "Gato sin pelo",
+          "note": "Un gato real que tus propias reglas rechazan. «Tiene pelo» suele ser cierto, pero nunca fue un requisito."
+        },
+        "lion-cub": {
+          "label": "Cachorro de león",
+          "note": "Pequeño, con bigotes y cuatro patas. Añade «cuerpo pequeño» para excluir al tigre y este vuelve a entrar sin problemas.",
+          "noteSmallBody": "Has añadido «cuerpo pequeño» para excluir al tigre, y este vuelve a entrar sin problemas."
+        },
+        "dark": {
+          "label": "Gato negro en la oscuridad",
+          "note": "Tus reglas dan por hecho que puedes ver con claridad. La realidad no siempre lo permite."
+        },
+        "upside-down": {
+          "label": "Gato durmiendo boca abajo",
+          "note": "Orejas, postura, forma: todo está cambiado de sitio. Tus reglas esperaban que el gato se quedara quieto."
+        }
+      }
+    },
+    "explosion": {
+      "locked": {
+        "plaque": "Descubrimiento 2 · Bloqueado",
+        "title": "La explosión de reglas",
+        "body": "Para ver cómo tus reglas acaban multiplicándose en excepciones, escríbelas primero en la pizarra.",
+        "hint": "Vuelve atrás y fija algunas reglas para «gato», o continúa sin ese conjunto inicial.",
+        "back": "Volver a las reglas",
+        "skip": "Continuar sin reglas →"
+      },
+      "plaque": "Descubrimiento 2 · Escritorio desbordado",
+      "title": "La explosión de reglas",
+      "subhead": "Cada vez que añades una regla, aparecen más excepciones.",
+      "startingRules": "Reglas iniciales",
+      "needRule": "Hace falta una regla para {exception}",
+      "multiplying": "Las excepciones se multiplican",
+      "prompt": "Antes de explicártelo: ¿por qué <em>añadir</em> reglas lo ha empeorado en lugar de mejorarlo?",
+      "revealTitle": "No estás enseñando al ordenador qué es un gato.",
+      "revealLine1": "Estás intentando prever todas las situaciones.",
+      "revealLine2": "La IA de los primeros tiempos creía que la inteligencia podía escribirse en forma de reglas. Funcionaba… hasta que la realidad se complicaba.",
+      "exceptions": {
+        "breeds": "Razas diferentes",
+        "lighting": "Iluminación",
+        "angles": "Ángulos",
+        "occlusion": "Oclusión",
+        "backgrounds": "Fondos",
+        "kittens": "Gatitos",
+        "cartoons": "Dibujos animados",
+        "statues": "Estatuas",
+        "halfVisible": "Gatos parcialmente visibles",
+        "rain": "Lluvia",
+        "snow": "Nieve",
+        "motionBlur": "Desenfoque de movimiento"
+      }
+    },
+    "train": {
+      "compare": {
+        "plaque": "Descubrimiento 3",
+        "title": "El juego cambia",
+        "subhead": "En lugar de escribir reglas… proporcionas ejemplos.",
+        "ruleBased": "Basado en reglas",
+        "code": "SI cola\nY bigotes\nY pelo\nENTONCES gato",
+        "mlEyebrow": "Aprendizaje automático",
+        "mlBody": "Miles de fotos de gatos.\nMiles de fotos de perros.\n↓ Algoritmo → Modelo → Foto nueva → Gato (97 %)",
+        "cta": "Probar el proceso →"
+      },
+      "workflow": {
+        "aria": "Progreso del proceso",
+        "label": "Etiquetar",
+        "train": "Entrenar",
+        "test": "Probar",
+        "done": "hecho",
+        "now": "ahora",
+        "later": "después"
+      },
+      "label": {
+        "plaque": "Estación de etiquetado",
+        "title": "Entrena un modelo pequeño",
+        "subhead": "Sin ecuaciones. Solo el proceso: etiquetar → entrenar → probar.",
+        "progress": "Etiquetadas {count} / {total}",
+        "photo": "Foto {n}",
+        "cat": "Gato",
+        "dog": "Perro",
+        "labelCat": "Etiquetar como gato",
+        "labelDog": "Etiquetar como perro",
+        "after": "Has etiquetado los ejemplos. Ahora el modelo puede aprender de tus etiquetas.",
+        "cta": "Entrenar →"
+      },
+      "samples": {
+        "c1": "Gato naranja y peludo descansando",
+        "d1": "Golden retriever al aire libre",
+        "c2": "Gato atigrado mirando a la cámara",
+        "d2": "Husky en la nieve",
+        "c3": "Gato negro en el alféizar",
+        "d3": "Cachorro de beagle en la nieve",
+        "c4": "Siamés sentado",
+        "d4": "Corgi sobre la hierba"
+      },
+      "trainPhase": {
+        "plaque": "Entrenar",
+        "title": "El modelo está aprendiendo…",
+        "status": "Buscando patrones entre tus ejemplos etiquetados"
+      },
+      "test": {
+        "plaque": "Probar",
+        "title": "Foto nueva. ¿Qué es?",
+        "hint": "Animal borroso sobre un sofá",
+        "predictionEyebrow": "Predicción del modelo",
+        "prediction": "Gato · {confidence} %",
+        "youGuessed": "Has respondido {guess}. El modelo no ha necesitado tus reglas: ha utilizado patrones de los ejemplos. Se desenvuelve con fotos reales e imperfectas mucho mejor de lo que podrían hacerlo las reglas, aunque no a la perfección, como estás a punto de comprobar.",
+        "whyNot100": "¿Por qué no el 100 %? Los modelos producen una puntuación de confianza, no una certeza. Una foto nueva siempre puede ser un poco diferente de los ejemplos de los que aprendió, así que un 97 % significa «es muy probable que sea un gato», no «está demostrado». Además, esa cifra es la estimación <em>propia</em> del modelo sobre su certeza: puede ser demasiado alta o demasiado baja, así que debes interpretarla como una señal, no como una garantía.",
+        "cta": "Una prueba más →"
+      },
+      "trap": {
+        "plaque": "Una prueba más",
+        "title": "Mismo modelo. Foto nueva.",
+        "setup": "Tu modelo ha acertado de lleno con la complicada foto del sofá. Aquí tienes una que debería ser aún más fácil: un gato peludo, perfectamente visible, sentado fuera en la nieve.",
+        "hint": "Gato peludo sentado en la nieve: un gato claro e inequívoco",
+        "alt": "Un gato peludo de pelo largo, sentado erguido sobre nieve recién caída, con todo el cuerpo visible; obviamente es un gato",
+        "prediction": "Perro · {confidence} %",
+        "reaction": "Un gato. Clasificado como perro. Y con total seguridad.",
+        "whyCta": "¿Por qué ha fallado? →",
+        "revealTitle": "No ha aprendido «gato». Ha aprendido lo que tenían en común tus fotos.",
+        "body1": "Mira de nuevo las fotos que has etiquetado. ¿Qué animales estaban fuera, en la nieve, sobre la hierba o al aire libre? Tus perros. ¿Cuáles estaban dentro, en sofás, suelos o alféizares? Tus gatos.",
+        "body2": "Así que el modelo ha encontrado el patrón más fácil que separaba tus ejemplos, y parte de ese patrón era el <em>entorno</em>, no el animal. La nieve y el campo abierto han acabado significando «perro». Un gato en la nieve cae directamente en la trampa.",
+        "punchline": "Este es el problema del que nadie habla. El aprendizaje no descubre qué <em>es</em> un gato. Encuentra cualquier patrón que separe los ejemplos que le has dado, incluso si es el equivocado. Si le das ejemplos sesgados, aprende tu sesgo con total confianza.",
+        "close": "Mejores ejemplos, mejores patrones. Y eso plantea la pregunta que recorre el resto de este curso: ¿de dónde proceden los ejemplos y qué esconden?"
+      }
+    },
+    "approach": {
+      "plaque": "Clasificación",
+      "title": "¿Reglas o aprendizaje?",
+      "objectOf": "Objeto {index} de {total}: {label}",
+      "next": "Siguiente →",
+      "seeSummary": "Ver resumen →",
+      "summary": {
+        "plaque": "Patrón",
+        "title": "{score} de {total} han coincidido con el enfoque habitual.",
+        "sub": "Algunos problemas requieren reglas precisas. Los problemas complejos requieren aprender a partir de ejemplos."
+      },
+      "problems": {
+        "traffic": {
+          "label": "Temporización de semáforos",
+          "note": "Controlar el ciclo del semáforo: señales fijas, estados claros, así que las reglas funcionan. (No es lo mismo que <em>reconocer</em> un semáforo en una foto, que es aprendizaje.)"
+        },
+        "speech": {
+          "label": "Reconocimiento de voz",
+          "note": "Las voces varían infinitamente: hay que aprender a partir de ejemplos."
+        },
+        "calculator": {
+          "label": "Calculadora",
+          "note": "Matemáticas deterministas. No hace falta aprendizaje."
+        },
+        "medical": {
+          "label": "Diagnóstico por imagen",
+          "note": "Patrones en escáneres: demasiado complejos para reglas escritas a mano."
+        },
+        "sorting": {
+          "label": "Ordenación de números",
+          "note": "Algoritmos que podemos escribir con precisión."
+        },
+        "spam": {
+          "label": "Detección de spam",
+          "note": "Los atacantes no dejan de inventar nuevas formas de expresarse."
+        },
+        "chess-classic": {
+          "label": "Motor de ajedrez (clásico)",
+          "note": "Sobre todo reglas + búsqueda."
+        },
+        "chess-modern": {
+          "label": "IA de ajedrez moderna",
+          "note": "Aprende a jugar bien a partir de la experiencia, pero sigue <em>buscando</em> jugadas por anticipado. El cambio respecto a los motores clásicos no es «búsqueda → aprendizaje»; es que una evaluación <em>diseñada a mano</em> pasa a ser una evaluación <em>aprendida</em>, dentro de la misma búsqueda."
+        }
+      }
+    },
+    "chair": {
+      "plaque": "Descubrimiento 4",
+      "title": "¿Cómo aprendiste qué es una silla?",
+      "subhead": "¿Alguien definió «exactamente cuatro patas»?",
+      "no": "No",
+      "notReally": "No exactamente",
+      "rulesTitle": "¿Escribieron reglas?",
+      "probablyNot": "Probablemente no.",
+      "thenHow": "Entonces, ¿cómo? →",
+      "thousands": "Viste miles.",
+      "punchline": "Aprendiste un concepto. No reglas.",
+      "followUp": "El aprendizaje automático (machine learning) aprende de una forma parecida, a grandes rasgos: primero ejemplos y después patrones, aunque necesita muchos más ejemplos de los que necesitaste tú. (Y fíjate en la roca: «silla» depende en parte del <em>uso</em>, no solo del aspecto: una pista de que algunos conceptos son más difíciles de aprender únicamente a partir de imágenes.)",
+      "examples": {
+        "kitchen": "Silla de cocina",
+        "office": "Silla de oficina",
+        "beanBag": "Puf",
+        "wheelchair": "Silla de ruedas",
+        "rock": "Roca utilizada como silla"
+      }
+    },
+    "twist": {
+      "plaque": "Descubrimiento 5",
+      "title": "El giro",
+      "subhead": "Si el aprendizaje automático es tan increíble… ¿por qué los investigadores no hicieron esto en 1960?",
+      "guesses": {
+        "idea": "Aún no se le había ocurrido a nadie",
+        "math": "Las matemáticas y los algoritmos no estaban preparados",
+        "ready": "Les faltaban datos y capacidad de cómputo",
+        "rules": "Las reglas ya funcionaban bien"
+      },
+      "headline": "La idea no era nueva. Tres cosas tenían que llegar a la vez.",
+      "bullet1": "> Suficientes datos de los que aprender",
+      "bullet2": "> Ordenadores y hardware suficientemente rápidos",
+      "bullet3": "> Mejores formas de entrenar los modelos",
+      "close": "Los datos y la capacidad de cómputo eran las piezas que más faltaban, pero «basta con añadir hardware» no cuenta toda la historia. Los métodos de entrenamiento también tenían que ponerse al día."
+    },
+    "closing": {
+      "wow": {
+        "plaque": "El cambio",
+        "title": "El aprendizaje automático no se adoptó porque los investigadores se volvieran más inteligentes.",
+        "sub": "Se adoptó porque <em>algunos</em> problemas —los complejos del mundo real— resultaron ser demasiado difíciles de describir mediante reglas.",
+        "unchangedEyebrow": "Una cosa que no cambió",
+        "unchangedBody": "Las reglas no perdieron la batalla en todas partes. Para problemas con una estructura clara y estable —aritmética, ordenación, temporización de semáforos, búsqueda en un árbol de juego— escribir las reglas sigue siendo la herramienta adecuada y sigue siendo IA real. Lo que el aprendizaje sustituyó fue la escritura de reglas para las categorías difusas y llenas de excepciones del mundo real.",
+        "oldEyebrow": "Pregunta antigua",
+        "oldQuestion": "¿Cómo le decimos al ordenador qué hacer?",
+        "newEyebrow": "Pregunta nueva",
+        "newQuestion": "¿Cómo puede el ordenador averiguarlo a partir de la experiencia?",
+        "cta": "Una última reflexión →"
+      },
+      "internet": {
+        "plaque": "Misterio final",
+        "title": "¿Y si le diéramos todo Internet?",
+        "sub": "Acabas de ver hasta qué punto importan los ejemplos: una docena sesgada ha enseñado a tu modelo algo equivocado. Ahora imagina que los ejemplos fueran todo: libros, Wikipedia, GitHub, noticias, conversaciones, millones de sitios web.",
+        "cta": "Plantear la pregunta →",
+        "stickies": {
+          "books": "Libros",
+          "wikipedia": "Wikipedia",
+          "github": "GitHub",
+          "news": "Noticias",
+          "conversations": "Conversaciones",
+          "websites": "Sitios web"
+        }
+      },
+      "mystery": {
+        "line1": "¿Aprendería el lenguaje?",
+        "line2": "¿O simplemente memorizaría?",
+        "toLesson3": "Ir a la lección 3 →",
+        "backHome": "Volver al inicio",
+        "alt": "La biblioteca infinita"
+      }
+    },
+    "seoSpine": {
+      "h1": "Por qué las reglas no son suficientes para la inteligencia artificial",
+      "lead": "Durante décadas, uno de los enfoques habituales de la inteligencia artificial consistía en escribir reglas explícitas: si se cumple esta condición, entonces se ejecuta esta acción. Las reglas pueden funcionar en entornos muy limitados, pero tienen dificultades cuando la realidad presenta demasiadas excepciones.",
+      "sections": [
+        {
+          "heading": "Los límites de una inteligencia basada en reglas predefinidas",
+          "body": "Cuando añades reglas para cubrir cada caso excepcional, el sistema se vuelve cada vez más frágil. Se acumulan las notas. Los casos especiales entran en conflicto. Lo que al principio parecía un enfoque claro acaba convirtiéndose en algo prácticamente imposible de mantener."
+        },
+        {
+          "heading": "Por qué fue necesario aprender",
+          "body": "Cuando el mundo es demasiado complejo para describirlo todo mediante reglas escritas a mano, los sistemas necesitan otra forma de mejorar: aprender a partir de ejemplos en lugar de intentar enumerar todas las reglas de antemano."
+        }
+      ]
+    }
+  },
+  "lesson3": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Cómo los datos cambiaron la inteligencia artificial",
+      "shortTitle": "Cómo cambiaron los datos",
+      "mystery": "Descubre por qué aprender a partir de datos supuso un cambio decisivo para la inteligencia artificial y por qué los sistemas capaces de aprender desde hacía décadas no despegaron hasta que llegaron los datos y la capacidad de cálculo necesarios."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "chooseOne": "Elige una opción",
+      "next": "Siguiente →",
+      "yes": "Sí",
+      "no": "No",
+      "maybe": "Quizá",
+      "matched": "Coincide",
+      "missed": "No coincide",
+      "feedback": {
+        "correct": "Correcto",
+        "notQuite": "No del todo"
+      }
+    },
+    "shell": {
+      "eyebrow": "Estanterías · Ala III",
+      "wordmark": "La biblioteca infinita"
+    },
+    "doctors": {
+      "plaque": "Volumen I · Experiencia",
+      "title": "¿En quién confiarías?",
+      "subhead": "Tres médicos, el mismo paciente. Elige uno y después veremos qué te ha llevado a elegirlo.",
+      "hasTreated": "Ha tratado",
+      "patients": "pacientes",
+      "patientsWithTagline": "pacientes: {tagline}",
+      "reveal": "Revelar →",
+      "whyTitle": "¿Por qué esa elección?",
+      "whySub": "No te fijes en las cifras, sino en el motivo que hay detrás. ¿Qué le aporta realmente a un médico tratar a más pacientes?",
+      "whyAria": "Por qué esa elección",
+      "cta": "Continuar →",
+      "experienceTitle": "La experiencia importa.",
+      "machinesLine": "¿No debería ocurrir lo mismo con las máquinas?",
+      "dataName": "En IA, esa experiencia tiene un nombre sencillo: <strong>datos</strong>.",
+      "pocket": "Pero guarda una pregunta: ¿lo que cuenta es cuántos pacientes o cuántos tipos de casos? Quédate con esa idea.",
+      "doctors": {
+        "a": {
+          "label": "Médico A"
+        },
+        "b": {
+          "label": "Médico B"
+        },
+        "c": {
+          "label": "Médico C",
+          "tagline": "todo tipo de casos, comunes y poco frecuentes"
+        }
+      },
+      "reasons": {
+        "practice": "Más práctica",
+        "experience": "Más experiencia",
+        "cases": "Ha visto más casos",
+        "judgment": "Mejor criterio"
+      }
+    },
+    "sameBrain": {
+      "intro": {
+        "plaque": "Volumen II · Dos estantes",
+        "title": "La misma IA",
+        "subhead": "Recuerda a los médicos: más pacientes vistos, mejor criterio. La misma idea, ahora aplicada a una máquina. Dos copias de un mismo programa: una ha aprendido con 100 fotos de gatos y la otra con 10 millones.",
+        "cta": "Mostrar la primera foto →",
+        "modelA": "Modelo A: 100 fotos",
+        "modelACaption": "fotos: se pueden contar de un vistazo",
+        "modelB": "Modelo B: 10 millones",
+        "modelBCaption": ": ni siquiera se pueden empezar a contar"
+      },
+      "play": {
+        "plaque": "Imagen difícil · {index}/{total}",
+        "title": "¿Qué modelo acierta?",
+        "subhead": "La misma IA. Entrenamiento diferente. ¿Cuál resuelve este caso?",
+        "chooseAria": "Qué modelo acierta",
+        "optionA": "Modelo A · 100 fotos",
+        "optionB": "Modelo B · 10 millones de fotos",
+        "reveal": "Revelar →",
+        "next": "Siguiente imagen →",
+        "seePoint": "Ver la conclusión →"
+      },
+      "done": {
+        "plaque": "Revelación",
+        "title": "El algoritmo no ha cambiado; solo ha cambiado lo que había visto.",
+        "body1": "Has elegido el modelo entrenado con 10 millones de fotos en {bWins} de {total} casos. Normalmente es la opción correcta: más fotos de más tipos de gatos le ayudan a reconocer otros nuevos.",
+        "body2": "Salvo con el gato robot: ese ha desconcertado a ambos.",
+        "body3": "Más ejemplos ayudan a un modelo a enfrentarse a más situaciones. Pero ningún conjunto de datos (dataset) lo cubre todo. Algunas cosas siempre quedarán fuera de lo que ha aprendido."
+      },
+      "images": {
+        "cartoon": {
+          "label": "Gato de dibujos animados",
+          "note": "Cambio de estilo: un entrenamiento más variado ayuda."
+        },
+        "sleeping": {
+          "label": "Gato durmiendo",
+          "note": "Un gato dormido y hecho un ovillo tiene un aspecto diferente al de las habituales fotos de «gatos mirando a la cámara». El conjunto reducido del modelo A a menudo no incluye esta postura, por lo que puede no reconocerla. El modelo B ha visto muchas más variaciones, incluidos ángulos poco habituales, así que sigue reconociendo al gato."
+        },
+        "black": {
+          "label": "Gato negro",
+          "note": "Con poca luz, un gato negro puede parecer una mancha oscura: cuesta distinguir los ojos y el contorno. El conjunto pequeño del modelo A puede contener solo gatos con buena iluminación y claramente visibles. El modelo B ha visto muchos casos límite de iluminación y color, así que sigue viendo que es un gato."
+        },
+        "blurry": {
+          "label": "Gato borroso",
+          "note": "El desenfoque por movimiento y la falta de nitidez ocultan los detalles habituales de un gato. El modelo A puede conocer únicamente fotos nítidas, similares a las de un estudio. El modelo B ha visto imágenes con ruido e imperfectas, por lo que aún puede reconocer al gato."
+        },
+        "statue": {
+          "label": "Estatua de un gato",
+          "note": "No es un animal vivo: es una piedra con forma de gato. El diminuto conjunto de gatos reales del modelo A puede no permitirle dar ese salto. El modelo B suele incluir arte, estatuas y juguetes en su experiencia, por lo que aún puede asociar la forma con un gato."
+        },
+        "robot": {
+          "label": "Gato robot",
+          "note": "Las articulaciones metálicas y las piezas luminosas no son las de un gato real, así que esto puede desconcertar a ambos modelos. El modelo B tiene más posibilidades si su enorme conjunto incluía juguetes, robots o arte de ciencia ficción, pero ninguno tiene el acierto garantizado."
+        }
+      }
+    },
+    "data": {
+      "plaque": "Ficha de catálogo · {index}/{total}",
+      "title": "¿Qué cuenta como datos?",
+      "subhead": "¿Esto ayudaría a entrenar grandes modelos del lenguaje (LLM)?",
+      "document": "Documento",
+      "chooseAria": "¿Esto ayudaría a entrenar grandes modelos del lenguaje (LLM)?",
+      "next": "Siguiente ficha →",
+      "seePattern": "Ver el patrón →",
+      "insight": {
+        "plaque": "Idea clave",
+        "title": "Los datos no son solo números.",
+        "subhead": "El lenguaje son datos. Los libros son datos. El código son datos. Las conversaciones son datos.",
+        "aside": "(Los asistentes modernos también aprenden de imágenes y audio, pero esos datos entrenan las partes de visión y habla, no la parte lingüística en la que nos centramos aquí.)",
+        "score": "Has acertado {matched} de {total} fichas.",
+        "you": "Tú: {choice}",
+        "youAndAnswer": "Tú: {choice} · Respuesta: {answer}"
+      },
+      "cards": {
+        "wikipedia": {
+          "label": "Wikipedia",
+          "note": "Lenguaje, hechos y estructura: material clásico para el entrenamiento."
+        },
+        "github": {
+          "label": "GitHub",
+          "note": "El código también es lenguaje."
+        },
+        "reddit": {
+          "label": "Reddit",
+          "note": "Las conversaciones son datos: complejas, humanas y útiles."
+        },
+        "dictionary": {
+          "label": "Diccionario",
+          "note": "Sorprendentemente poco útil por sí solo: las definiciones son entradas aisladas, no un texto continuo que enseñe a expresarse con soltura."
+        },
+        "scripts": {
+          "label": "Guiones de películas",
+          "note": "Los diálogos son una rica fuente de texto conversacional."
+        },
+        "excel": {
+          "label": "Hoja de cálculo de Excel",
+          "note": "Las tablas pueden ayudar un poco, pero a menudo no son suficientes por sí solas."
+        },
+        "dna": {
+          "label": "Secuencias de ADN",
+          "note": "Es un lenguaje, pero no humano. No ayudará a un chatbot a mantener una conversación."
+        },
+        "contacts": {
+          "label": "Contactos del móvil",
+          "note": "Los nombres y números privados no enseñan bien el lenguaje."
+        },
+        "gps": {
+          "label": "Coordenadas GPS",
+          "note": "Principalmente números sin significado lingüístico."
+        }
+      }
+    },
+    "quality": {
+      "plaque": "Volumen IV · Selección",
+      "title": "Más grande no siempre es mejor",
+      "trainSub": "Crea un pequeño conjunto de entrenamiento. Observa qué mejora la precisión y qué no.",
+      "pickSub": "¿Qué conjunto de datos crea un modelo más inteligente?",
+      "pickAria": "¿Qué conjunto de datos crea un modelo más inteligente?",
+      "punchline": "La calidad importa. La diversidad importa. Los duplicados perjudican. El sesgo importa.",
+      "followUp": "Normalmente gana una mezcla equilibrada: la calidad y la diversidad superan al volumen bruto. ¿Recuerdas a los médicos? Nunca se trató solo de cuántos casos, sino de cuántos tipos. Lo mismo ocurre con los datos.",
+      "datasets": {
+        "tweets": {
+          "label": "100 millones de tuits idénticos",
+          "note": "Cantidad sin diversidad. Los duplicados perjudican."
+        },
+        "books": {
+          "label": "20 millones de libros",
+          "note": "Una opción potente, pero sigue siendo un solo tipo de escritura."
+        },
+        "wiki": {
+          "label": "Wikipedia",
+          "note": "Alta calidad, pero una cobertura más limitada que una mezcla."
+        },
+        "mix": {
+          "label": "Una mezcla equilibrada",
+          "note": "La calidad + la diversidad superan al volumen bruto."
+        }
+      },
+      "trainer": {
+        "empty": "Tu conjunto está vacío. Añade una foto para empezar a entrenar.",
+        "newKind": "Un nuevo tipo de foto. El modelo nunca había visto un caso así: {kind}.",
+        "mono": "Cantidad sin diversidad. {total} fotos, pero solo 1 de 6 tipos; la precisión se mantiene estancada cerca del {accuracy} %.",
+        "duplicate": "Casi ninguna mejora: píxeles diferentes, mismo tipo; el modelo ya conocía este caso.",
+        "ceiling": "~97 %: algunos casos son simplemente ambiguos. Eso no se arregla con más datos, por muchos que sean.",
+        "accuracyLabel": "precisión en 6 casos de prueba difíciles",
+        "kindsCovered": "tipos cubiertos:",
+        "addCue": "Añade una foto al conjunto de entrenamiento:",
+        "addAria": "Añade una foto de {alt}. Añadidas: {n}.",
+        "setCountOne": "Tu conjunto de entrenamiento: {count} foto",
+        "setCountMany": "Tu conjunto de entrenamiento: {count} fotos",
+        "kindsOne": " · {count} tipo",
+        "kindsMany": " · {count} tipos",
+        "reset": "Restablecer",
+        "disclaimer": "Un modelo simplificado para mostrar la idea general",
+        "srSummary": "Precisión del {accuracy} % en 6 casos de prueba difíciles. Tipos cubiertos: {kinds} de 6. El conjunto de entrenamiento tiene {photos} fotos. {feedback}",
+        "cases": {
+          "front": {
+            "label": "Gato de frente",
+            "short": "de frente",
+            "alt": "gato de frente"
+          },
+          "black": {
+            "label": "Gato negro, poca luz",
+            "short": "negro / poca luz",
+            "alt": "gato negro con poca luz"
+          },
+          "blurry": {
+            "label": "Gato borroso",
+            "short": "borroso",
+            "alt": "gato borroso"
+          },
+          "cartoon": {
+            "label": "Gato de dibujos animados",
+            "short": "dibujos animados",
+            "alt": "gato de dibujos animados"
+          },
+          "statue": {
+            "label": "Estatua de gato",
+            "short": "estatua",
+            "alt": "estatua de gato"
+          },
+          "sleeping": {
+            "label": "Gato durmiendo",
+            "short": "durmiendo",
+            "alt": "gato durmiendo"
+          }
+        }
+      }
+    },
+    "internet": {
+      "plaque": "Volumen V · La inundación",
+      "title": "Internet cambió la IA",
+      "subhead": "La IA no se volvió más inteligente de repente. La humanidad produjo suficientes conocimientos digitales para que las máquinas aprendieran de ellos y, al mismo tiempo, los ordenadores alcanzaron la velocidad necesaria y llegó una nueva arquitectura (el Transformer, de la cronología de la lección 1) capaz de aprovecharlos. Los datos eran el ingrediente que faltaba, pero necesitaban a los otros dos para ser realmente útiles.",
+      "eras": {
+        "1985": {
+          "label": "Pocos MB",
+          "blurb": "Pequeños archivos locales. Casi ningún conocimiento digital compartido."
+        },
+        "1995": {
+          "label": "Millones de páginas web",
+          "blurb": "La web empieza a convertirse en una biblioteca pública."
+        },
+        "2001": {
+          "label": "Wikipedia",
+          "blurb": "Conocimiento humano estructurado y editable a gran escala."
+        },
+        "2015": {
+          "label": "Redes sociales",
+          "blurb": "Las conversaciones se multiplican en forma de texto legible por máquinas."
+        },
+        "2024": {
+          "label": "Casi todo en Internet",
+          "blurb": "Casi todos los temas están documentados en algún sitio."
+        }
+      }
+    },
+    "detective": {
+      "plaque": "Mesa de adquisiciones",
+      "title": "Construye la biblioteca de un LLM",
+      "subhead": "Solo tienes espacio para seis conjuntos de datos. ¿Cuáles conservas? No existe una única respuesta perfecta.",
+      "selected": "Seleccionados {count} / {limit}",
+      "lock": "Confirmar selección →",
+      "revealTitle": "Crear un conjunto de datos no consiste solo en recopilar más, sino en elegir la combinación adecuada.",
+      "youKept": "Has conservado: {list}.",
+      "questions": {
+        "q1": "¿Calidad o cantidad?",
+        "q2": "¿Conocimiento experto o conversación cotidiana?",
+        "q3": "¿Es el código más valioso que la ficción?",
+        "q4": "Las publicaciones en redes sociales: ¿útiles, ruidosas o ambas cosas?"
+      },
+      "cta": "Continuar →",
+      "buckets": {
+        "broad": "amplio/factual",
+        "everyday": "cotidiano/conversacional",
+        "expert": "experto/específico",
+        "code": "código",
+        "narrative": "narrativo",
+        "weak": "poco útil para texto"
+      },
+      "feedback": {
+        "weak": "Dos o más de tus elecciones son principalmente números o imágenes: contienen poco del lenguaje del que realmente aprende un chatbot.",
+        "noEveryday": "Mucha escritura formal, pero no has conservado ninguna conversación cotidiana: el modelo puede sonar rígido y tener dificultades con preguntas informales.",
+        "heavy": "Mucho contenido de tipo {bucket}: gran profundidad en un área, pero una dieta limitada. Los corpus reales abarcan más.",
+        "balanced": "Una distribución equilibrada: contenido amplio, conversacional, experto y código. Esa mezcla se acerca más a cómo se entrenan realmente los modelos potentes.",
+        "workable": "Una mezcla viable: fíjate en qué tipos de lenguaje has conservado y cuáles has dejado en la estantería."
+      },
+      "datasets": {
+        "wikipedia": {
+          "label": "Wikipedia",
+          "note": "Escritura factual y de amplia cobertura."
+        },
+        "tiktok": {
+          "label": "Comentarios de TikTok",
+          "note": "Conversación cotidiana: ruidosa, coloquial y humana."
+        },
+        "medical": {
+          "label": "Revistas médicas",
+          "note": "Gran especialización, dominio específico."
+        },
+        "stackoverflow": {
+          "label": "Stack Overflow",
+          "note": "Resolución de problemas + explicaciones de código."
+        },
+        "harry": {
+          "label": "Harry Potter",
+          "note": "Estilo narrativo e imaginación."
+        },
+        "weather": {
+          "label": "Datos meteorológicos",
+          "note": "Principalmente números: poco útiles para conversar."
+        },
+        "court": {
+          "label": "Sentencias judiciales",
+          "note": "Razonamiento formal y argumentos extensos."
+        },
+        "menus": {
+          "label": "Menús de restaurantes",
+          "note": "Lenguaje limitado y repetitivo."
+        },
+        "github": {
+          "label": "GitHub",
+          "note": "Código fuente a escala de Internet."
+        },
+        "reddit": {
+          "label": "Reddit",
+          "note": "Opiniones, debate y lenguaje informal."
+        },
+        "finance": {
+          "label": "Informes financieros",
+          "note": "Prosa profesional densa."
+        },
+        "satellite": {
+          "label": "Imágenes de satélite",
+          "note": "Datos visuales, no texto para ChatGPT."
+        }
+      }
+    },
+    "closing": {
+      "library": {
+        "plaque": "Idea equivocada",
+        "title": "¿El modelo busca en Internet mientras responde?",
+        "notByDefault": "Por defecto, no.",
+        "metaphor": "Internet se parece más a la biblioteca en la que el estudiante preparó el examen.",
+        "exam": "Durante el examen, no vuelve a leer toda la biblioteca. Responde a partir de lo que aprendió.",
+        "searchTool": "Algunos productos pueden añadir una herramienta de búsqueda, como permitir que el estudiante eche un vistazo al móvil para consultar las noticias de hoy. Ese paso de navegación es adicional. El modelo sigue generando la respuesta a partir de los patrones que ya ha aprendido.",
+        "cta": "Una comprobación más →"
+      },
+      "corpus": {
+        "plaque": "Momento sorpresa",
+        "title": "¿Cuál contiene más texto?",
+        "chooseAria": "¿Cuál contiene más texto?",
+        "cta": "Plantear el misterio →",
+        "body": "¿Te sorprende que no sean los datos de entrenamiento (training data)? Incluso los conjuntos de entrenamiento más grandes son solo una parte seleccionada de Internet: los modelos no se entrenan con todo, sino con texto filtrado, permitido y sin duplicados. Por eso Internet es mayor. Y aun así, esa parte es varios órdenes de magnitud superior a lo que cualquier ser humano podría leer en mil vidas.",
+        "options": {
+          "britannica": "Encyclopedia Britannica",
+          "wikipedia": "Wikipedia",
+          "internet": "Internet público",
+          "llm": "Datos de entrenamiento de un LLM moderno"
+        },
+        "chart": {
+          "ariaTitle": "Cantidad relativa de texto en cuatro corpus en una escala logarítmica",
+          "ariaDesc": "Gráfico de barras horizontal en escala logarítmica, donde cada paso representa aproximadamente cien veces más texto. Encyclopedia Britannica es una barra corta, con decenas de millones de palabras. Wikipedia es más larga, con miles de millones de palabras. Los datos de entrenamiento de un LLM moderno son aún más abundantes: una parte seleccionada, filtrada y sin duplicados de Internet. Internet público es la barra más larga, etiquetada como todo lo que está en línea, mucho más de lo que se utiliza para entrenar cualquier modelo. Los datos de entrenamiento quedan por debajo de Internet, no por encima.",
+          "axis": "cantidad relativa de texto: cada paso representa aproximadamente 100× más",
+          "logScale": "escala logarítmica",
+          "britannica": {
+            "label": "Encyclopedia Britannica",
+            "note": "decenas de millones de palabras"
+          },
+          "wikipedia": {
+            "label": "Wikipedia",
+            "note": "miles de millones de palabras"
+          },
+          "llm": {
+            "label": "Datos de entrenamiento de un LLM moderno",
+            "note": "una parte seleccionada, filtrada y sin duplicados de Internet"
+          },
+          "internet": {
+            "label": "Internet público",
+            "inside": "todo lo que está en línea: mucho más de lo que se utiliza para entrenar cualquier modelo"
+          }
+        }
+      },
+      "mystery": {
+        "line1": "Imagina leer todos los artículos de Wikipedia, todas las respuestas de Stack Overflow, millones de libros…",
+        "line2": "Entonces, ¿cómo aprende realmente una máquina de todo eso?",
+        "toLesson4": "Siguiente: Cómo aprenden las máquinas",
+        "backHome": "Volver al inicio",
+        "wallEyebrow": "Centro de entrenamiento · Simulación #01",
+        "status": "Estado",
+        "statusValue": "Modelo creado",
+        "experience": "Experiencia",
+        "experienceValue": "0 ejemplos",
+        "accuracy": "Precisión",
+        "accuracyValue": "– (sin entrenar)"
+      }
+    },
+    "seoSpine": {
+      "h1": "Cómo los datos cambiaron la inteligencia artificial",
+      "lead": "Las máquinas podían aprender a partir de datos mucho antes del auge reciente de la inteligencia artificial. Lo que cambió fue la escala: más ejemplos, mejores formas de aprovecharlos y suficiente capacidad de cálculo para entrenar sistemas de mayor tamaño.",
+      "sections": [
+        {
+          "heading": "Aprender requiere ejemplos",
+          "body": "Un sistema de aprendizaje mejora al analizar muchos casos —textos, imágenes, etiquetas y resultados— y ajustar su forma de responder. Sin suficientes datos útiles, el aprendizaje se estanca."
+        },
+        {
+          "heading": "Por qué la inteligencia artificial avanzó tan rápido en los últimos años",
+          "body": "Los métodos de aprendizaje ya existían, pero la disponibilidad de grandes cantidades de datos y del hardware necesario para procesarlos hizo posibles los avances de la inteligencia artificial moderna. Los datos no inventaron el aprendizaje: permitieron llevarlo mucho más lejos."
+        }
+      ]
+    }
+  },
+  "lesson4": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Cómo funciona el aprendizaje automático",
+      "shortTitle": "Cómo aprende una máquina",
+      "mystery": "¿Cómo aprende una máquina a partir de datos? Descubre cómo funcionan las predicciones, los errores y los ajustes sucesivos. El aprendizaje automático explicado sin tecnicismos innecesarios."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "chooseOne": "Elige una opción",
+      "next": "Siguiente →",
+      "cat": "Gato",
+      "dog": "Perro",
+      "yes": "Sí",
+      "no": "No",
+      "slightly": "Solo ligeramente",
+      "prediction": "{label} · {confidence} %"
+    },
+    "shell": {
+      "eyebrow": "Centro de entrenamiento de IA",
+      "wordmark": "La sala de entrenamiento"
+    },
+    "facility": {
+      "plaque": "Centro de entrenamiento · Simulación #01",
+      "title": "Bienvenido a la sala de entrenamiento.",
+      "subhead": "Un modelo que aún no tiene experiencia. Dale ejemplos y observa qué aprende.",
+      "aCat": "Un gato",
+      "wall": "Pantalla mural",
+      "thinking": "Eh",
+      "guess": "Eh… ¿perro? · 52 %",
+      "waiting": "Modelo completamente nuevo. Aún no ha recibido entrenamiento.",
+      "status": "Estado",
+      "statusCreated": "Modelo creado",
+      "statusGuessed": "Primera predicción realizada",
+      "experience": "Experiencia",
+      "experienceValue": "0 ejemplos",
+      "accuracy": "Precisión",
+      "accuracyUntrained": "– (sin entrenar)",
+      "accuracyCoin": "no mejor que lanzar una moneda",
+      "ask": "Pregunta al modelo nuevo →",
+      "mystery": "No sabe nada. Entonces, ¿cómo se vuelve más inteligente?",
+      "cta": "Descubrirlo →"
+    },
+    "assumption": {
+      "plaque": "Antes de empezar",
+      "title": "Has creado un modelo completamente nuevo.",
+      "subhead": "Estás a punto de verlo aprender. Haz tu apuesta: ¿qué cambia realmente en su interior?",
+      "aria": "¿Qué cambia realmente dentro del modelo?",
+      "note": "Anotado. Veamos si tienes razón.",
+      "cta": "Empezar a entrenar →",
+      "choices": {
+        "rules": {
+          "label": "Alguien añade nuevas reglas",
+          "getsSmarterBy": "que alguien añada nuevas reglas"
+        },
+        "memorize": {
+          "label": "Memoriza cada imagen",
+          "getsSmarterBy": "memorizar cada imagen"
+        },
+        "adjust": {
+          "label": "Cambia por sí mismo después de cometer errores",
+          "getsSmarterBy": "cambiar por sí mismo después de cometer errores"
+        },
+        "unsure": {
+          "label": "No estoy seguro"
+        }
+      }
+    },
+    "firstPrediction": {
+      "plaque": "Ejemplo 1",
+      "title": "Se ha equivocado en la primera. Entonces, ¿qué hacemos con una predicción incorrecta?",
+      "subhead": "Prueba cada opción. Observa qué ocurre.",
+      "tryEach": "Probar cada una",
+      "survived": "Resiste",
+      "broke": "Falla",
+      "sameCat": "El mismo gato · de antes",
+      "was": "Era: Perro · 52 %",
+      "now": "Ahora: {prediction}",
+      "shifted": "La predicción ha cambiado",
+      "counterexample": "Contraejemplo",
+      "idle": "Elige una opción. La predicción se actualizará aquí.",
+      "tryAll": "Prueba las tres opciones para continuar",
+      "cta": "Continuar →",
+      "revealBody": "Una máquina normalmente no añade reglas ni memoriza la foto. Hace un pequeño cambio en sus propios valores internos, para que la próxima vez se incline un poco más hacia la respuesta correcta.",
+      "raise": "Pero eso plantea la verdadera pregunta, de la que trata esta lección:",
+      "question": "¿Qué valores cambia y en qué dirección?",
+      "showMe": "Muéstramelo →",
+      "instincts": {
+        "rule": {
+          "label": "Añadir una regla (si tiene orejas puntiagudas → gato)",
+          "failureCaption": "Orejas puntiagudas, pero es un zorro",
+          "failureLine": "Nueva excepción. ¿Añadir otra regla?"
+        },
+        "memorize": {
+          "label": "Memorizar esta foto",
+          "failureCaption": "El mismo gato · distinta luz / ángulo",
+          "failureLine": "Nunca había visto esta. Memorizarla no ha servido."
+        },
+        "adjust": {
+          "label": "Ajustar un poco el modelo",
+          "successFrom": "Perro · 52 %",
+          "successTo": "Perro · 48 %",
+          "successLine": "Se ha inclinado hacia gato. Eso ha cambiado algo."
+        }
+      }
+    },
+    "whichWay": {
+      "plaqueFirst": "Tu turno",
+      "plaqueN": "Ajuste {index} de {total}",
+      "title": "Tú mueves el control.",
+      "subhead": "Un control. Una predicción incorrecta. ¿Hacia dónde lo mueves?",
+      "modelSaid": "Dijo el modelo",
+      "truth": "Realidad",
+      "towardCat": "‹ hacia gato",
+      "towardDog": "hacia perro ›",
+      "pushCat": "Hacia gato",
+      "pushDog": "Hacia perro",
+      "oops": "{prediction}: ups, más lejos de la realidad",
+      "towardTruth": "{signed} % hacia la realidad",
+      "furtherTruth": "{signed} % más lejos de la realidad",
+      "pushOther": "Muévelo en la otra dirección para corregirlo.",
+      "again": "De nuevo →",
+      "next": "Siguiente →",
+      "whatHappened": "¿Qué acaba de pasar? →",
+      "revealTitle": "No has tenido que adivinar la dirección. Cada error te ha indicado el camino.",
+      "revealBody": "Ahora imagina hacer esto con millones de controles y millones de fotos. Para ti sería demasiado lento. Observa cómo lo hace la máquina.",
+      "cta": "Deja que se ejecute por sí sola →"
+    },
+    "train": {
+      "plaque": "Entrenamiento",
+      "title": "Ahora deja que lo haga, pero rápido.",
+      "predictSub": "Estás a punto de entrenarlo con un millón de fotos. ¿Hasta dónde llegará la precisión?",
+      "emptyChart": "Precisión · gráfico vacío",
+      "ariaEmpty": "Gráfico de precisión vacío de 0 a 100 %",
+      "ariaFilled": "Precisión actual de aproximadamente {accuracy} % después de {examples} ejemplos",
+      "chartMax": "100 %",
+      "chartMin": "0 %",
+      "chartEnd": "1.000.000",
+      "predictAria": "¿Hasta dónde llegará la precisión?",
+      "trainCta": "▶ Entrenar →",
+      "runSub": "Ahora aprende de tus ejemplos, uno tras otro. Tú controlas la velocidad.",
+      "overTime": "Precisión a lo largo del tiempo",
+      "examplesAcc": "{examples} ejemplos · ~{accuracy} %",
+      "drive": "Controla el ritmo",
+      "holdFf": "Mantén pulsado para avanzar rápido → 1.000.000",
+      "paceHint": "Pulsa Entrenar para avanzar un paso o mantén pulsado para llegar rápidamente a un millón de ejemplos.",
+      "plateauReached": "Se ha estancado…",
+      "payoffTitle": "~98 %: nunca el 100 %.",
+      "yourBet": "Tu apuesta",
+      "payoffGuess": "Has respondido: {bet}. Se estabiliza en el 98 %: nunca llega al 100 %.",
+      "payoffBody": "Una foto completamente nueva siempre puede ser un poco distinta de todo lo que ha visto el modelo. 98 % significa «es muy probable que sea un gato», no «está demostrado».",
+      "bets": {
+        "hundred": "Sube hasta ~100 %",
+        "levels": "Se estabiliza por debajo del 100 %",
+        "bounces": "Oscila"
+      },
+      "stages": {
+        "1": {
+          "prediction": "Perro · 52 %",
+          "result": "Incorrecto · ajustar hacia gato"
+        },
+        "2": {
+          "prediction": "Gato · 51 %",
+          "result": "Incorrecto · ajustar hacia perro"
+        },
+        "7": {
+          "prediction": "Gato · 63 %",
+          "result": "Correcto"
+        },
+        "14": {
+          "prediction": "Perro · 55 %",
+          "result": "Incorrecto de nuevo",
+          "dipGloss": "Una respuesta correcta no lo resuelve todo: la siguiente foto es diferente."
+        },
+        "100": {
+          "prediction": "Gato · 71 %",
+          "result": "Correcto"
+        },
+        "1000": {
+          "prediction": "Gato · 84 %",
+          "result": "Correcto"
+        },
+        "10000": {
+          "prediction": "Gato · 91 %",
+          "result": "Correcto"
+        },
+        "100000": {
+          "prediction": "Gato · 95 %",
+          "result": "Correcto"
+        },
+        "1000000": {
+          "prediction": "Gato · 97 %",
+          "result": "Correcto"
+        }
+      }
+    },
+    "loop": {
+      "plaque": "El ciclo",
+      "title": "Ordena el ciclo.",
+      "subhead": "Construye los cinco pasos que repite la máquina; algunas tarjetas no corresponden.",
+      "pickCard": "Elige una tarjeta",
+      "pickHint": "Pulsa para colocarla a continuación o arrástrala hasta un paso.",
+      "poolAria": "Tarjetas para colocar",
+      "allPlaced": "Todas las tarjetas están colocadas.",
+      "build": "Construye el ciclo",
+      "dropHint": "Suelta o pulsa un paso vacío.",
+      "nextOpen": "Siguiente paso disponible: {step}",
+      "completeHint": "Ciclo completo; continúa abajo.",
+      "removeAria": "Eliminar {label} del paso {step}",
+      "dropOrTap": "Suelta o pulsa",
+      "waiting": "Esperando…",
+      "empty": "Vacío",
+      "runLoop": "Ejecutar el ciclo →",
+      "doesntBelong": "No corresponde",
+      "rejectDecoy": "«{label}» no corresponde aquí.",
+      "rejectStep": "«{label}» no es el paso {step}; prueba con otra tarjeta.",
+      "runTitle": "El modelo aprende repitiendo el mismo ciclo.",
+      "runSub": "Pulsa para un ciclo. Mantén pulsado para acelerar.",
+      "ready": "Listo: una pulsación = predecir → error → ajustar",
+      "loopsAcc": "ciclos · ~{accuracy} % de precisión",
+      "runCta": "▶ Ejecutar ciclo →",
+      "holdAcc": "Mantén pulsado para acelerar → 1.000.000",
+      "holdHintEarly": "Pulsa para un ciclo o mantén pulsado para llegar rápidamente a un millón de ciclos.",
+      "holdHintLater": "Mantén pulsado para apreciar la escala o sigue pulsando uno a uno.",
+      "done": "Listo",
+      "doneBody": "Ahora el entrenamiento adicional ya no cambia mucho.",
+      "cards": {
+        "image": {
+          "label": "Imagen",
+          "gloss": "Llega un nuevo ejemplo."
+        },
+        "prediction": {
+          "label": "Predicción",
+          "gloss": "El modelo hace su mejor predicción, con un nivel de confianza."
+        },
+        "error": {
+          "label": "Medir el error",
+          "gloss": "¿Cuánto se alejó y en qué dirección?"
+        },
+        "adjust": {
+          "label": "Ajustar",
+          "gloss": "Ajusta ligeramente los valores internos en esa dirección."
+        },
+        "repeat": {
+          "label": "Repetir",
+          "gloss": "Hazlo de nuevo. Y otra vez. Millones de veces."
+        },
+        "add-rule": {
+          "label": "Añadir una regla"
+        },
+        "memorize": {
+          "label": "Memorizar la imagen"
+        }
+      },
+      "flashes": {
+        "0": {
+          "prediction": "Perro · 61 %",
+          "result": "Incorrecto → ajustar hacia gato"
+        },
+        "1": {
+          "prediction": "Gato · 54 %",
+          "result": "Incorrecto → ajustar hacia perro"
+        },
+        "2": {
+          "prediction": "Gato · 72 %",
+          "result": "Correcto → pequeño ajuste"
+        },
+        "3": {
+          "prediction": "Perro · 48 %",
+          "result": "Incorrecto → ajustar hacia gato"
+        },
+        "4": {
+          "prediction": "Gato · 88 %",
+          "result": "Correcto → ajuste mínimo"
+        }
+      }
+    },
+    "controlPanel": {
+      "plaque": "Bajo el panel",
+      "title": "¿Qué se ajusta realmente?",
+      "subhead": "Hay 16 ajustes dentro del modelo. ¿Cuál crees que le ayuda a reconocer un gato?",
+      "predEyebrow": "Predicción · foto de un gato",
+      "shifted": "Ha cambiado: muchos controles a la vez",
+      "barely": "Apenas se ha movido",
+      "guessHint": "A estas alturas no necesitas entender los números. Intenta adivinar.",
+      "tapFirst": "Pulsa un ajuste",
+      "tapAnother": "Pulsa otro ajuste",
+      "tapMore": "Pulsa más controles o ajústalos juntos →",
+      "testAria": "Probar el ajuste {label}",
+      "off": "desactivado",
+      "notTheOne": "Lo has desactivado por completo y sigue diciendo Gato · {confidence} %. No es ese.",
+      "noCatDial": "No existe un control de «gato». El conocimiento está repartido entre todos ellos: miles de pequeñas aportaciones, no un único interruptor.",
+      "parameters": "Tienen un nombre: parámetros. Un modelo real tiene desde millones hasta miles de millones.",
+      "tryADial": "Prueba un control",
+      "hintFirst": "Pulsa un control de la izquierda para probarlo.",
+      "hintSecond": "Prueba otro; quizá ese no era.",
+      "hintTogether": "Un solo control no basta. Ajústalos juntos.",
+      "nudgeAll": "Ajústalos todos ligeramente →",
+      "seePoint": "Ver la conclusión",
+      "cta": "Continuar →"
+    },
+    "oneMore": {
+      "plaque": "Entrenamiento completado",
+      "title": "Una foto más. Observa la curva.",
+      "subNow": "Vuelves a estar en torno al 98 %, donde el entrenamiento ha dejado de marcar una gran diferencia.",
+      "subEarly": "Has vuelto al ejemplo 1: sin entrenar, ~50 %. La misma foto adicional. Observa cuánto impacto tiene.",
+      "compareAria": "Comparar el entrenamiento inicial con el actual",
+      "nowToggle": "Ahora · 100 M",
+      "rewindToggle": "Volver al ejemplo 1",
+      "chartEarly": "Ejemplo 1 · al principio",
+      "chartNow": "Precisión a lo largo del tiempo",
+      "examplesAcc": "{examples} ejemplos · ~{accuracy} %",
+      "aria": "Precisión de aproximadamente {accuracy} % después de {examples} ejemplos",
+      "twitchEarly": "La misma foto adicional: ha subido {delta}. La experiencia apenas había comenzado.",
+      "twitchNow": "La curva apenas se ha movido {delta}: prácticamente plana.",
+      "reveal": "Al principio, una sola foto lo cambiaba mucho. Ahora, después de cien millones, una más apenas se nota. Por eso se ha estabilizado: el aprendizaje fácil ya está hecho.",
+      "addCue": "Añadir ejemplos",
+      "showOne": "Enséñale un gato más →",
+      "plusOne": "+1 foto →",
+      "alreadyDid": "+1 foto (ya añadida)",
+      "plusMillion": "+1.000.000 de fotos →",
+      "millionDone": "+1.000.000 añadidas",
+      "wait": "Pero espera… →",
+      "watchHint": "Observa la curva de la izquierda y después continúa.",
+      "deltaOne": "+0,001 %",
+      "deltaMillion": "+0,04 %",
+      "deltaEarly": "+18 %"
+    },
+    "labeled": {
+      "catch": {
+        "plaque": "Un problema",
+        "title": "En el caso de los gatos, alguien marcó cada foto como «gato» o «perro».",
+        "subhead": "Pero en la lección anterior aprendiste que ChatGPT aprendió de todo Internet: libros, código y conversaciones. Nadie se sentó a etiquetar Internet.",
+        "question": "Entonces, ¿cómo obtuvo una «respuesta correcta» con la que comparar su error?",
+        "aria": "¿Cómo obtuvo una respuesta correcta?",
+        "noted": "Anotado. No lo compruebes todavía. Vamos a probarlo.",
+        "cta": "Probar una frase →"
+      },
+      "choices": {
+        "humans": "Los humanos etiquetaron cada frase a mano",
+        "text": "El propio texto contiene las soluciones",
+        "none": "No necesitaba medir el error"
+      },
+      "play": {
+        "plaque": "Completar · {index}/{total}",
+        "title": "Adivina la siguiente palabra.",
+        "subhead": "El mismo ciclo que con los gatos, pero la frase contiene las soluciones.",
+        "authorRight": "El autor escribió «{answer}». Has acertado, y esa es la etiqueta. Nadie la añadió.",
+        "authorOff": "El autor escribió «{answer}». Has fallado, y esa es la etiqueta. Nadie la añadió.",
+        "authorAmbiguous": "El autor escribió «{answer}». Has fallado, pero sigue siendo útil, y esa es la etiqueta. Nadie la añadió.",
+        "closeMiss": "Incluso un fallo cercano («{guess}») indica la dirección, igual que una predicción incorrecta entre gato y perro.",
+        "next": "Siguiente frase →",
+        "seePoint": "Ver la conclusión →"
+      },
+      "rounds": {
+        "mat": {
+          "prompt": "El gato se sentó en la ___.",
+          "options": {
+            "mat": "alfombrilla",
+            "moon": "luna",
+            "idea": "idea",
+            "carpet": "alfombra"
+          },
+          "answer": "alfombrilla"
+        },
+        "cup": {
+          "prompt": "Le serví una taza de ___.",
+          "options": {
+            "coffee": "café",
+            "tea": "té",
+            "rain": "lluvia",
+            "code": "código"
+          },
+          "answer": "café"
+        },
+        "door": {
+          "prompt": "Abrió la ___.",
+          "options": {
+            "door": "puerta",
+            "cloud": "nube",
+            "algorithm": "algoritmo",
+            "purple": "morado"
+          },
+          "answer": "puerta"
+        }
+      },
+      "reveal": {
+        "plaque": "Un problema",
+        "title": "El mismo ciclo. Sin etiquetador.",
+        "subhead": "Acabas de hacer lo que hace un modelo del lenguaje: adivinar la siguiente palabra, comprobarla con el texto real y ajustar. Internet no necesitó etiquetadores. Cada frase contiene sus propias soluciones.",
+        "earlierBet": "Tu apuesta anterior",
+        "youSaidHeld": "Has dicho: «{label}». Tu apuesta se ha confirmado.",
+        "youSaidMissed": "Has dicho: «{label}». Lo que acabas de hacer es la respuesta: el propio texto contiene las soluciones.",
+        "cats": "Gatos:",
+        "catsBody": "una persona dice «gato».",
+        "language": "Lenguaje:",
+        "languageBody": "la frase contiene la siguiente palabra.",
+        "sameLoop": "El mismo ciclo; solo ha cambiado de dónde procede la respuesta correcta.",
+        "punchline": "Predecir → comprobar → ajustar → repetir. Lo único que ha cambiado es de dónde procede la «respuesta correcta»."
+      }
+    },
+    "history": {
+      "plaque": "Esto no es nuevo",
+      "title": "Las máquinas llevan mucho tiempo aprendiendo de esta forma.",
+      "close": "La idea de aprender de los errores tiene décadas. Lo que cambió recientemente no fue la idea, sino la llegada conjunta de tres cosas: suficientes datos, ordenadores suficientemente rápidos y mejores métodos de entrenamiento.",
+      "eras": {
+        "perceptron": {
+          "year": "1957–58",
+          "label": "Perceptrón",
+          "blurb": "Frank Rosenblatt construye una máquina que aprende pesos (weights) a partir de ejemplos: el primer modelo entrenable. Su regla es exactamente la idea que acabas de utilizar: cuando se equivoca, refuerza las entradas que apuntaban a la respuesta correcta y debilita las que apuntaban en la dirección equivocada."
+        },
+        "backprop": {
+          "year": "Años 80–90",
+          "label": "Era de la propagación hacia atrás",
+          "blurb": "Un método (la propagación hacia atrás o backpropagation, popularizada en 1986) permite, en la práctica, calcular la dirección correcta para cada valor de una red con muchas capas, pero los ordenadores y los conjuntos de datos (datasets) todavía son pequeños."
+        },
+        "scale": {
+          "year": "Años 2000–2010",
+          "label": "Llega la escala",
+          "blurb": "Los grandes conjuntos de datos, un hardware más rápido y mejores métodos de entrenamiento hacen posible por primera vez entrenar modelos profundos de forma eficaz."
+        }
+      }
+    },
+    "reflection": {
+      "plaque": "Registro de progreso",
+      "titleCheck": "Demuéstratelo a ti mismo.",
+      "titleComplete": "Completa las frases.",
+      "readBet": "Leer · tu apuesta",
+      "youBet": "Tu apuesta: {bet}.",
+      "unsure": "aún no estabas seguro",
+      "watched": "Lo que has visto: cambia un poco sus valores internos, en la dirección que indica cada error.",
+      "matched": "Coincide.",
+      "different": "Es diferente, y no pasa nada.",
+      "gotAnswer": "Ahora ya tienes una respuesta.",
+      "noBet": "No hay ninguna apuesta anterior registrada; continúa con la comprobación de abajo.",
+      "doCheck": "Hacer · una comprobación",
+      "weatherQ": "Un modelo meteorológico se equivoca con el día de hoy. Siguiendo el ciclo, ¿qué ocurre después?",
+      "weatherAria": "¿Qué ocurre después en el ciclo de aprendizaje?",
+      "weatherYes": "Sí: mide el error y ajusta en esa dirección.",
+      "weatherClose": "Casi: el ciclo mide cuánto se ha alejado y después lo ajusta.",
+      "noQuiz": "No hay cuestionario. Solo observa cómo ha cambiado tu idea de «aprender».",
+      "writeLog": "Escribir · tu registro",
+      "beforeLabel": "Antes de hoy, pensaba que una máquina aprendía…",
+      "beforePlaceholder": "mediante magia… memorizando… siguiendo reglas…",
+      "afterLabel": "Ahora pienso que aprende…",
+      "afterPlaceholder": "prediciendo, comprobando, ajustando un poco, repitiendo…",
+      "save": "Guardar mi registro →",
+      "weather": {
+        "rule": "Añade una regla sobre las nubes",
+        "nudge": "Mide cuánto se ha alejado y ajusta sus valores en esa dirección",
+        "delete": "Borra el día de hoy y empieza de nuevo"
+      }
+    },
+    "closing": {
+      "takeaways": {
+        "plaque": "Entrenamiento completado",
+        "title": "Ideas clave",
+        "cta": "Continuar →",
+        "items": {
+          "t1": "Un error no es simplemente «incorrecto»: indica una dirección.",
+          "t2": "El modelo ajusta un poco sus valores en esa dirección, millones de veces.",
+          "t3": "El mismo ciclo aprende lenguaje: el propio texto contiene las soluciones."
+        }
+      },
+      "final": {
+        "title": "Aprender no es magia.",
+        "body": "Es el ciclo repetido de predecir, medir el error y realizar una pequeña mejora dirigida, una y otra vez.",
+        "model": "Tu modelo",
+        "started": "Ha empezado acertando lo mismo que una moneda al aire. Ahora está en el 98 %, después de todo el entrenamiento al que lo has sometido.",
+        "cta": "Continuar →"
+      },
+      "transition": {
+        "line1": "Has visto que la máquina cambia por sí misma y que siempre sabe en qué dirección moverse.",
+        "line2": "Pero ¿qué cambia exactamente en su interior?",
+        "inside": "Dentro de la máquina que aprende.",
+        "toLesson5": "Siguiente: Redes neuronales",
+        "backHome": "Volver al inicio"
+      }
+    },
+    "seoSpine": {
+      "h1": "¿Cómo funciona el aprendizaje automático?",
+      "lead": "El aprendizaje automático es la forma en que un sistema mejora a partir de ejemplos, en lugar de seguir un conjunto fijo de reglas. Una máquina aprende haciendo predicciones, midiendo los errores y realizando ajustes una y otra vez para reconocer mejor los patrones presentes en sus datos.",
+      "sections": [
+        {
+          "heading": "¿Cómo aprende una máquina a partir de datos?",
+          "body": "El modelo analiza ejemplos, genera un resultado y lo compara con un valor objetivo o una señal de referencia. La diferencia entre ambos —el error de predicción— sirve para guiar pequeños ajustes. Tras repetir este proceso muchas veces, el sistema aprende a partir de los datos."
+        },
+        {
+          "heading": "Predicción, error y ajuste",
+          "body": "No ocurre nada misterioso en un solo paso. El aprendizaje consiste en acumular pequeñas correcciones: hacer una predicción, medir cuánto se ha desviado, ajustar ligeramente los parámetros y repetir el proceso. Así funciona el aprendizaje automático, explicado de una forma que permite entender su lógica fundamental."
+        },
+        {
+          "heading": "Entrenamiento frente a casos nuevos",
+          "body": "Obtener buenos resultados con los ejemplos de entrenamiento no es suficiente. La verdadera prueba consiste en responder bien ante datos nuevos que el sistema no ha memorizado. Esto es la generalización: aprender a reconocer patrones que también funcionan en situaciones nuevas, y no limitarse a reproducir lo que ya ha visto."
+        }
+      ]
+    }
+  },
+  "lessonsIndex": {
+    "breadcrumbHome": "Qué es la IA",
+    "breadcrumbCurrent": "Lecciones",
+    "title": "Lecciones interactivas de IA",
+    "lead": "Lecciones interactivas gratuitas sobre cómo funciona la inteligencia artificial: aprendizaje automático, redes neuronales, aprendizaje profundo, Transformers y LLM. Sin necesidad de registrarte.",
+    "preferIntro": "¿Prefieres empezar por la introducción completa?",
+    "startHome": "Ir a la página de inicio",
+    "aboutCourse": "Sobre este curso",
+    "entries": {
+      "lessons/1": {
+        "title": "Qué es la inteligencia artificial: una introducción interactiva",
+        "description": "Descubre qué se considera realmente inteligencia artificial, desde ChatGPT hasta las herramientas que utilizas a diario, y qué no. Una introducción interactiva sin necesidad de registrarte."
+      },
+      "lessons/2": {
+        "title": "Por qué las reglas no son suficientes para la inteligencia artificial",
+        "description": "Descubre qué ocurre cuando intentamos definir la inteligencia mediante reglas: se acumulan las notas, se multiplican las excepciones y el sistema acaba fallando. Una lección interactiva sobre inteligencia artificial."
+      },
+      "lessons/3": {
+        "title": "Cómo los datos cambiaron la inteligencia artificial",
+        "description": "Descubre por qué aprender a partir de datos supuso un cambio decisivo para la inteligencia artificial y por qué los sistemas capaces de aprender desde hacía décadas no despegaron hasta que llegaron los datos y la capacidad de cálculo necesarios."
+      },
+      "lessons/4": {
+        "title": "Cómo funciona el aprendizaje automático",
+        "description": "¿Cómo aprende una máquina a partir de datos? Descubre cómo funcionan las predicciones, los errores y los ajustes sucesivos. El aprendizaje automático explicado sin tecnicismos innecesarios."
+      },
+      "lessons/5": {
+        "title": "Qué es una red neuronal",
+        "description": "¿Qué es una red neuronal y cómo aprende? Explora los pesos, las capas y cómo las redes reconocen patrones, sin necesidad de saber cálculo matemático."
+      },
+      "lessons/6": {
+        "title": "Qué es el aprendizaje profundo",
+        "description": "El aprendizaje profundo explicado: por qué las redes neuronales tienen profundidad, qué aprenden sus capas y qué se hace posible cuando se combinan distintas representaciones."
+      },
+      "lessons/7": {
+        "title": "Qué son las representaciones aprendidas en inteligencia artificial",
+        "description": "Descubre cómo las redes neuronales aprenden características a partir de los datos y en qué se diferencia este proceso de diseñarlas manualmente."
+      },
+      "lessons/8": {
+        "title": "Qué es un Transformer y cómo funciona la atención",
+        "description": "¿Qué es un Transformer y cómo funciona el mecanismo de atención? Descubre la autoatención, por qué surgieron los Transformers y cómo los modelos predicen lo que viene a continuación."
+      },
+      "lessons/working-with-llms": {
+        "title": "Cómo funcionan realmente los grandes modelos de lenguaje (LLM)",
+        "description": "¿Cómo funcionan los LLM? Descubre los tokens, la predicción de la siguiente palabra y cómo un modelo de lenguaje genera texto. Una lección práctica e interactiva. Gratis y sin necesidad de registrarte."
+      },
+      "lessons/delegate-real-work": {
+        "title": "Qué cambia cuando la IA hace el trabajo por ti",
+        "description": "Descubre qué cambia cuando la IA deja de limitarse a responder preguntas y empieza a hacer el trabajo: delegación, criterio y supervisión."
+      },
+      "lessons/just-because-it-can": {
+        "title": "Qué deberíamos permitir que haga la IA",
+        "description": "Descubre cómo funcionan las conexiones y los permisos, y quién decide a qué puede acceder un asistente cuando está conectado a datos y cuentas reales."
+      }
+    },
+    "breadcrumbAria": "Miga de pan"
+  }
+}

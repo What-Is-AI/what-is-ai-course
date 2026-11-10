@@ -1,0 +1,353 @@
+{
+  "lesson7": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Qué son las representaciones aprendidas en inteligencia artificial",
+      "shortTitle": "Representaciones aprendidas",
+      "mystery": "Descubre cómo las redes neuronales aprenden características a partir de los datos y en qué se diferencia este proceso de diseñarlas manualmente."
+    },
+    "shared": {
+      "continue": "Continuar →"
+    },
+    "shell": {
+      "eyebrow": "La sala de escucha",
+      "wordmark": "De las características a las representaciones"
+    },
+    "steps": {
+      "arrive": {
+        "plaque": "El estudio",
+        "title": "¿De dónde salen las características útiles?",
+        "body1": "La lección 6 te dejó con una pregunta. A un modelo se le pueden dar ejemplos y una tarea sin decirle qué características (features) buscar. Entonces, ¿de dónde salen esas características útiles?",
+        "body2": "Para responderla, vamos a trabajar con algo sobre lo que ya tienes opinión: la música. Sin herramientas de producción ni teoría. Solo una cabina para escuchar y un tablero donde las canciones que van bien juntas pueden colocarse una al lado de otra.",
+        "cta": "Empieza con una lista de reproducción"
+      },
+      "predictPick": {
+        "title": "¿Cuáles de estas canciones van en una lista de reproducción para hacer ejercicio?",
+        "subhead": "Escucha unos segundos de cada canción y elige las que te gustaría oír mientras haces ejercicio. Todavía no hay una respuesta correcta: usaremos tus elecciones para explorar qué hace que una canción encaje bien.",
+        "cta": "Continuar →"
+      },
+      "predictName": {
+        "title": "¿Por qué las has elegido?",
+        "subhead": "¿Qué te ha llamado la atención de las canciones que has elegido?",
+        "hold": "Guarda esa lista. A continuación, intentarás convertirla en un sistema que elija por ti canciones para hacer ejercicio.",
+        "options": {
+          "tempo": "Tempo rápido",
+          "beat": "Beat marcado",
+          "loud": "Volumen alto",
+          "bass": "Muchos graves",
+          "rhythm": "Ritmo repetitivo",
+          "vocals": "Voces",
+          "unnamed": "Algo que no sé muy bien cómo llamar"
+        },
+        "cta": "Convierte tu lista en un detector"
+      },
+      "handRules": {
+        "plaque": "Construye un detector",
+        "title": "Convierte tu lista en una regla para «canción para hacer ejercicio»",
+        "body": "Aquí tienes las medidas que has elegido, en forma de controles deslizantes. Fija un umbral (threshold) para cada una: qué tempo, cuánto volumen y cuántos graves necesita una canción para que tu detector la considere una canción para hacer ejercicio.",
+        "cta": "Pruébalo con canciones nuevas"
+      },
+      "handTest": {
+        "subhead": "Suena una tanda nueva. Tú juzgas primero —encaja o no encaja— mientras la predicción del detector permanece oculta. Después mostramos lo que ha dicho tu detector y la respuesta correcta. La puntuación indica cuántas veces ha acertado de verdad el detector.",
+        "promptLine": "Juzga cada canción: encaja o no encaja. El detector permanece oculto hasta que respondas.",
+        "hiddenPrompt": "Tú decides primero; el detector está oculto.",
+        "revealLine": "tu detector ha dicho {det} · respuesta: {truth} · detector {detHit}",
+        "youRight": "has acertado",
+        "youWrong": "has fallado",
+        "detectorTally": "Detector: {hits} aciertos de {n}.",
+        "learnerTally": "Tú: {hits} de {n}.",
+        "adjustReadout": "Con estos umbrales: {hits} aciertos de {n} según las etiquetas reales.",
+        "feedback": "tu detector ha dicho {yes/no} · respuesta: {belongs/doesn't} · detector {hit/miss}",
+        "cta": "Continuar →"
+      },
+      "handWall": {
+        "plaque": "El muro",
+        "title": "Puedes seguir cambiando los umbrales, pero te topas con un problema.",
+        "contrastA": "Una canción puede tener un tempo rápido y un ritmo marcado y, aun así, no encajar en la lista.",
+        "contrastB": "Otra canción puede saltarse las reglas que has elegido y, aun así, encajar a la perfección.",
+        "body2": "Las medidas te dan información útil, pero no te dicen qué combinaciones van a importar.",
+        "body3": "Durante mucho tiempo, una forma de resolver esto era que fueran personas quienes eligieran las características del sistema. Pero con algo tan complicado como la música, puede haber demasiadas posibilidades como para analizarlas a mano.",
+        "pivot": "¿Y si le diéramos ejemplos al sistema y dejáramos que aprendiera qué patrones son útiles?",
+        "cta": "Ver la otra forma →"
+      },
+      "twoPaths": {
+        "plaque": "Dos formas de hacerlo",
+        "title": "Acabas de probar el primer camino. Este es el segundo.",
+        "path1": "Diseñado a mano: tú eliges qué medir → tú fijas las reglas → resultado. (Es lo que hiciste en el paso 3, y durante años fue el único camino.)",
+        "path2": "Aprendido: tú das ejemplos → entrenamiento → una disposición aprendida → resultado.",
+        "body": "En el segundo camino no eliges las medidas en absoluto. Das ejemplos de lo que encaja y lo que no, y dejas que el entrenamiento descubra en qué merece la pena fijarse.",
+        "cta": "Dale ejemplos"
+      },
+      "labelTrain": {
+        "title": "Marca unas cuantas. Después pulsa ENTRENAR.",
+        "status": "Reordenando según lo que tienen en común los ejemplos…",
+        "drawingCaption": "Este tablero es nuestra forma de dibujar lo que ha aprendido el modelo. El modelo no construye un mapa por dentro: lo hacemos nosotros, para que puedas verlo.",
+        "cta": "Ver qué ha pasado"
+      },
+      "repReveal": {
+        "plaque": "Representación",
+        "title": "Nunca le has dicho al modelo qué características usar. Solo le has dado ejemplos.",
+        "tieBack": "El modelo ha cambiado sus pesos (weights) mientras se entrenaba, igual que viste antes. Pero ahora esos cambios hacen algo distinto: ayudan al modelo a encontrar una forma útil de representar las canciones.",
+        "term": "A esto lo llamamos una representación aprendida.",
+        "body2": "No tiene por qué ser algo sencillo como «rápida» o «con mucho volumen». La representación puede incluir una gran cantidad de números, y puede que no seamos capaces de ponerle nombre a cada uno.",
+        "body3": "Lo que importa es que la representación contenga información que ayude con la tarea.",
+        "cta": "Entonces, ¿cómo de bueno es en realidad?"
+      },
+      "headToHead": {
+        "plaque": "Mismas canciones, dos sistemas",
+        "title": "Tus reglas frente a lo que ha aprendido",
+        "body": "Aquí tienes un conjunto nuevo de canciones que ninguno de los dos sistemas ha visto. Tu detector ajustado a mano las puntúa. Y también el modelo que ha aprendido de tus ejemplos. Mismas canciones, mismas respuestas que acertar.",
+        "predict": "Antes de ponerlos a prueba: de {n}, ¿cuántas crees que acertará cada uno?",
+        "after1": "Una lista de medidas elegidas a mano solo te lleva hasta cierto punto. Hay demasiados patrones posibles como para decidir de antemano cuáles van a importar.",
+        "after2": "El modelo, en cambio, puede aprender esos patrones a partir de los ejemplos.",
+        "callback": "¿Recuerdas «algo que no sé muy bien cómo llamar»? Esa es la parte a la que no llegaban tus umbrales, y a la que sí ha llegado la representación aprendida.",
+        "cta": "Entonces, ¿qué ha captado que a ti se te escapaba?"
+      },
+      "hidden": {
+        "plaque": "Lo que ha captado la disposición",
+        "title": "¿Se parecen estas dos?",
+        "body1": "Cosas como el tempo, el volumen y el ritmo nos dicen algo sobre una canción, pero no todo. Dos canciones pueden ser parecidas en esas medidas y, aun así, sonar muy distintas. Otras dos pueden ser bastante diferentes y, aun así, sonar como si fueran de la misma lista.",
+        "body2": "Una representación útil puede captar relaciones que no son evidentes a partir de ninguna medida por separado. Esa es la parte a la que no llega una lista de características escrita a mano, y la que echabas en falta cuando has elegido «algo que no sé muy bien cómo llamar».",
+        "cta": "Pero ¿útil para qué?"
+      },
+      "taskDep": {
+        "plaque": "Dependencia de la tarea",
+        "bridge": "Esa disposición se ha construido para encontrar canciones para hacer ejercicio. Mantén exactamente las mismas canciones, pero cambia la tarea, y observa qué empieza a importar.",
+        "title": "¿Útil para qué?",
+        "helper": "Abre al menos dos. Fíjate en qué información se vuelve importante en cada una.",
+        "revealTitle": "Las mismas canciones. Lo «útil» cambia cada vez.",
+        "revealBody1": "No hay una única representación correcta de estas canciones. Lo que merece la pena conservar depende de la tarea para la que entrenas el modelo.",
+        "revealBody2": "Una representación estupenda para «hazme sudar» puede ser casi inútil para «ordenar por instrumento»: cada tarea se apoya en información distinta.",
+        "clarification": "Al modelo no se le da una lista de lo que debe conservar. Durante el entrenamiento, es la tarea —lo que cuenta como respuesta correcta— la que hace que cierta información importe y otra se pierda.",
+        "foundationNod": "Quizá te preguntes: entonces, ¿cómo es que una sola IA parece hacerlo todo? Algunas representaciones resultan útiles para muchas tareas a la vez, pero eso lo veremos más adelante. Por ahora, la idea se mantiene: lo útil depende de la tarea.",
+        "cta": "Entonces, ¿el modelo lo decide todo?"
+      },
+      "whoDecides": {
+        "plaque": "Quién manda",
+        "title": "Entonces, ¿el modelo lo decide todo? No.",
+        "body": "Ha encontrado una disposición útil sin que tú pusieras nombre a las características. Pero no lo ha decidido todo. Las personas siguen tomando todas las decisiones importantes a su alrededor:",
+        "keyLine": "Lo que ha cambiado no es que las personas hayan dejado de decidir. Es que ya no tenemos que especificar a mano cada característica útil.",
+        "cards": [
+          "Los datos: de qué canciones ha aprendido.",
+          "La tarea: para qué se ha entrenado.",
+          "El objetivo de entrenamiento (training objective): qué cuenta como respuesta correcta.",
+          "El diseño: cómo se construye y se entrena el modelo.",
+          "La comprobación: si el resultado es bueno de verdad."
+        ],
+        "cta": "Una última prueba"
+      },
+      "challenge": {
+        "plaque": "El problema de la lista",
+        "prompt": "A partir de estos ejemplos, ¿puedes describir exactamente qué hace que una canción encaje?",
+        "after": "Seguramente has detectado algunos patrones. Pero ¿podrías escribir todos los útiles, como una lista cerrada y de antemano?",
+        "land": "Ese es el hueco que llenan las representaciones aprendidas. En lugar de obligarte a nombrar de antemano cada patrón útil, el entrenamiento ajusta el modelo —sus pesos, como has visto— hasta que su representación sea útil para la tarea.",
+        "cantPin": "No he podido concretarlo todo",
+        "cta": "Continuar →"
+      },
+      "reflection": {
+        "plaque": "Reflexión",
+        "title": "¿De dónde salen las características útiles?",
+        "beforeLabel": "Antes de esta lección, pensaba que las características útiles salían de…",
+        "beforePlaceholder": "alguien que mide las cosas adecuadas… una lista que escribes…",
+        "afterLabel": "Ahora pienso que…",
+        "afterPlaceholder": "el modelo puede aprenderlas a partir de ejemplos y una tarea, y que lo «útil» depende de para qué se use…",
+        "cta": "Una cosa más"
+      },
+      "closing": {
+        "plaque": "Qué ha cambiado",
+        "before": "Una persona elige las características: tempo, graves, volumen, voces…",
+        "after": "El modelo aprende una representación: patrones extraídos de ejemplos, para una tarea.",
+        "body": "Durante años, las personas diseñaban o elegían las características antes del entrenamiento. El aprendizaje profundo (deep learning) hizo posible que los modelos aprendieran representaciones útiles directamente a partir de los datos. Eso no significa que el modelo oiga la música como tú, sino que el entrenamiento puede producir patrones internos útiles para la tarea con la que se ha entrenado.",
+        "bankLine": "Fui al banco.",
+        "bankAsk": "¿Qué significa «banco»?",
+        "bankRiver": "banco para sentarse",
+        "bankFinance": "banco de dinero",
+        "bankThen": "La palabra por sí sola no basta. Importa lo que la rodea.",
+        "connective": "Acabas de ver que una representación útil depende de la tarea. En el caso de una palabra, la tarea la marcan sus vecinas, así que tampoco se puede fijar de antemano una representación útil de ella. Eso lo veremos en la siguiente lección.",
+        "headline": "Lo que importa puede depender de lo que lo acompaña.",
+        "nextLabel": "Siguiente: Lección 8 · Transformers (El contexto)",
+        "home": "Volver al inicio"
+      },
+      "drawingCaption": "nuestro dibujo, no lo que hay dentro del modelo"
+    },
+    "data": {
+      "sliderLabels": {
+        "tempo": "Tempo",
+        "beat": "Fuerza del beat",
+        "loud": "Volumen",
+        "bass": "Graves",
+        "rhythm": "Ritmo",
+        "vocals": "Voces"
+      },
+      "featureOptions": [
+        "tempo",
+        "beat",
+        "loud",
+        "bass",
+        "rhythm",
+        "vocals",
+        "unnamed"
+      ]
+    },
+    "chrome": {
+      "arrive": {
+        "listeningDesk": "Mesa de escucha",
+        "warmingUp": "Preparando la cabina…",
+        "playHint": "Reproduce unos segundos. Fíjate en la línea de energía junto a cada pista."
+      },
+      "predictPick": {
+        "playlistAudition": "Prueba de la lista",
+        "tapToAdd": "Pulsa una casilla para añadirla a la lista.",
+        "loadingClips": "Cargando fragmentos…"
+      },
+      "predictName": {
+        "featuresYouWereGoingOn": "Características en las que te basabas"
+      },
+      "clipPlayer": {
+        "play": "Reproducir",
+        "pause": "Pausa",
+        "add": "Añadir",
+        "picked": "Elegida",
+        "clipOf": "Fragmento {n} de {total}",
+        "energyTrace": "Traza de energía y ritmo para {title}. Etiqueta: {tag}."
+      },
+      "handRules": {
+        "rule": "Regla: una canción tiene que superar todos los umbrales para contar como canción para hacer ejercicio.",
+        "unnamedHelper": "Has marcado algo a lo que no sabías poner nombre; aquí tienes las medidas habituales para probar de todos modos.",
+        "detectorThresholds": "Umbrales del detector"
+      },
+      "handTest": {
+        "hideThresholds": "Ocultar umbrales",
+        "adjustThresholds": "Ajustar umbrales",
+        "heldOutSongs": "Canciones nuevas",
+        "clearJudgments": "Borrar respuestas y reintentar",
+        "loadingTestSet": "Cargando el conjunto de prueba…",
+        "belongs": "Encaja",
+        "doesnt": "No encaja",
+        "detYes": "sí",
+        "detNo": "no",
+        "truthBelongs": "encaja",
+        "truthDoesnt": "no encaja",
+        "detHit": "acierto",
+        "detMiss": "fallo",
+        "title": "Pruébalo y mira cómo falla"
+      },
+      "labelTrain": {
+        "done": "Hecho. Las canciones que comparten patrones útiles se han acercado; las canciones para hacer ejercicio se han agrupado en su propia zona.",
+        "afterTrain": "Después de ENTRENAR: nuestro dibujo de lo que ha producido el entrenamiento.",
+        "beforeTrainScattered": "Antes de ENTRENAR: canciones dispersas.",
+        "beforeTrainMark": "Antes de ENTRENAR: marca ejemplos y después entrena.",
+        "loadingSongs": "Cargando canciones…",
+        "showBefore": "Ver antes",
+        "showAfter": "Ver después",
+        "belongs": "Encaja",
+        "doesnt": "No encaja",
+        "tagHint": "Marca al menos una canción que encaje y otra que no, y después pulsa ENTRENAR.",
+        "train": "ENTRENAR",
+        "doneReduced": "Hecho. Las canciones para hacer ejercicio, antes dispersas, ahora están juntas (lugar medio {avgX} en nuestro dibujo)."
+      },
+      "twoPaths": {
+        "path1": "Camino 1: diseñado a mano",
+        "path2": "Camino 2: aprendido"
+      },
+      "headToHead": {
+        "sameSongs": "Mismas canciones",
+        "yourRules": "Tus reglas",
+        "theModel": "El modelo",
+        "runBoth": "Probar los dos →",
+        "trainFirst": "Primero entrena un modelo en los pasos anteriores (vuelve atrás si hace falta).",
+        "loading": "Cargando…",
+        "waiting": "esperando…",
+        "guessed": "tu apuesta: {n}",
+        "scoringSong": "Evaluando la canción {n} de {total}…",
+        "resultLine": "reglas {rules} · modelo {model}"
+      },
+      "hidden": {
+        "similarMeasurements": ": ¿medidas parecidas sobre el papel?",
+        "differentMeasurements": ": ¿medidas distintas, pero sensación parecida?",
+        "answerFirst": "Responde primero; después te mostramos dónde quedan, con palabras y en nuestro dibujo.",
+        "pairsMissing": "Faltan los pares ocultos en el paquete de audio.",
+        "similar": "Parecidas",
+        "notSimilar": "No parecidas",
+        "seeWhere": "Ver dónde han quedado →",
+        "nextPair": "Siguiente par →",
+        "farApart": "lejos",
+        "closeTogether": "cerca",
+        "areTheseSimilar": "¿Se parecen?",
+        "youSaidSimilar": "parecidas",
+        "youSaidNotSimilar": "no parecidas",
+        "youSaidPrefix": "Has respondido:",
+        "placedThem": "La representación las ha colocado",
+        "roundOf": "Ronda {n} de 2",
+        "placementSummary": "Colocación: {where}."
+      },
+      "taskDep": {
+        "sweat": "Hazme sudar",
+        "sweatMatters": "Lo que importa: empuje, velocidad, energía.",
+        "sleep": "Ayúdame a dormir",
+        "sleepMatters": "Lo que importa: calma, suavidad, espacio; casi lo contrario de la primera.",
+        "instrument": "Ordenar por instrumento",
+        "instrumentMatters": "Lo que importa: el timbre y la instrumentación; el tempo y la energía apenas cuentan.",
+        "layoutSummary": "Disposición: tarea «{title}» – nuestro dibujo."
+      },
+      "challenge": {
+        "placeholder": "Una canción encaja cuando…",
+        "examples": "Ejemplos",
+        "belongs": "encaja",
+        "doesnt": "no encaja",
+        "belongsMark": "✓ encaja",
+        "doesntMark": "✗ no encaja",
+        "yourRule": "Tu regla",
+        "intro": "Algunas canciones ya están marcadas. Deduce el patrón y después intenta escribir la regla.",
+        "submit": "Enviar"
+      },
+      "songBoard": {
+        "aria": "Nuestro dibujo de la disposición de las canciones",
+        "doesntBelong": "no encaja",
+        "legend": "● encaja · ■ no encaja · ▲ sin marcar",
+        "markedBelongs": "Marcada: encaja",
+        "markedDoesnt": "Marcada: no encaja"
+      },
+      "repReveal": {
+        "trebleClef": "Clave de sol",
+        "weCallThisA": "A esto lo llamamos una",
+        "learnedRepresentation": "representación aprendida"
+      },
+      "stepStub": {
+        "testTitle": "Pruébalo y mira cómo falla",
+        "stubNote": "Paso provisional: la interacción llegará en una fase posterior."
+      },
+      "audio": {
+        "failedToLoad": "No se ha podido cargar el audio"
+      },
+      "handWall": {
+        "sessionNotes": "Notas de la sesión",
+        "finding": "Resultado"
+      },
+      "whoDecides": {
+        "humanChoices": "Decisiones humanas en torno al modelo"
+      },
+      "closing": {
+        "whatChangedTitle": "Qué ha cambiado",
+        "before": "Antes",
+        "after": "Después",
+        "oneMoreThing": "Una cosa más",
+        "continue": "Continuar →"
+      }
+    },
+    "seoSpine": {
+      "h1": "¿Qué son las representaciones aprendidas en inteligencia artificial?",
+      "lead": "Una representación es la forma en que un sistema codifica la información para que pueda utilizarse en etapas posteriores. El aprendizaje de representaciones consiste en descubrir codificaciones útiles a partir de los datos, en lugar de definirlas únicamente de forma manual.",
+      "sections": [
+        {
+          "heading": "Ingeniería de características frente a aprendizaje de representaciones",
+          "body": "La ingeniería de características consiste en que las personas deciden qué medidas o características son importantes. En el aprendizaje de representaciones, en cambio, el propio modelo ajusta la forma en que codifica la información durante el entrenamiento y descubre patrones que serían difíciles de definir de antemano."
+        },
+        {
+          "heading": "Cómo aprenden características las redes neuronales",
+          "body": "A medida que cambian los pesos, las características internas de la red se van ajustando para adaptarse mejor a la tarea. La información relevante puede cambiar según el objetivo: los mismos datos de entrada pueden dar lugar a representaciones útiles diferentes."
+        }
+      ]
+    }
+  }
+}

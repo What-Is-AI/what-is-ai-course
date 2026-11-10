@@ -1,0 +1,11 @@
+# Lesson 7 offline audio pipeline (run once; runtime is static JSON + clips)
+librosa>=0.10.0
+soundfile>=0.12.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+requests>=2.31.0
+miniaudio>=1.59
+# Optional embedders (install one):
+#   pip install torch transformers   # CLAP (preferred)
+#   pip install openl3 tensorflow    # OpenL3 fallback

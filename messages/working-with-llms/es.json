@@ -1,0 +1,348 @@
+{
+  "workingWithLlms": {
+    "meta": {
+      "badge": "Práctica 1",
+      "title": "Cómo funcionan realmente los grandes modelos de lenguaje (LLM)",
+      "shortTitle": "Cómo funcionan los LLM",
+      "mystery": "¿Cómo funcionan los LLM? Descubre los tokens, la predicción de la siguiente palabra y cómo un modelo de lenguaje genera texto. Una lección práctica e interactiva. Gratis y sin necesidad de registrarte."
+    },
+    "shared": {
+      "continue": "Continuar →"
+    },
+    "shell": {
+      "eyebrow": "Taller de IA",
+      "wordmark": "Trabajar con LLM"
+    },
+    "hook": {
+      "arrive": {
+        "plaque": "Taller de IA · 09:00",
+        "title": "Dos diseñadores. Un modelo.",
+        "subhead": "La misma IA. La misma petición. Observa qué ocurre.",
+        "cta": "Conócelos →"
+      },
+      "predict": {
+        "plaque": "Tu tarea",
+        "title": "«Diseña nuestra nueva página de destino».",
+        "subhead": "El diseñador A abre un chat completamente nuevo. El diseñador B abre un proyecto organizado: notas de marca, una muestra de estilo, decisiones anteriores e instrucciones fijadas. Ambos escriben exactamente la misma frase.",
+        "predictionPrompt": "¿Cuánto diferirán los dos resultados?",
+        "cta": "Confirmar tu apuesta →"
+      },
+      "slider": {
+        "identical": "Idénticos",
+        "slightly": "Ligeramente diferentes",
+        "dramatically": "Muy diferentes"
+      },
+      "reveal": {
+        "plaque": "Uno al lado del otro",
+        "title": "Mismo modelo. Misma frase. Distinto resultado.",
+        "designerA": {
+          "eyebrow": "Chat nuevo",
+          "body": "Una página genérica. «Bienvenido a nuestra empresa». Estructura de plantilla. Podría pertenecer a cualquiera."
+        },
+        "designerB": {
+          "eyebrow": "Proyecto organizado",
+          "body": "Una voz coherente con la marca. El público al que va dirigida. Un diseño que refleja decisiones que el equipo ya ha tomado. Parece escrito por un compañero de equipo."
+        },
+        "surpriseLine": "El modelo era idéntico. Solo ha cambiado lo que rodeaba la petición.",
+        "cta": "Entonces, ¿qué ha cambiado? →"
+      }
+    },
+    "diagnose": {
+      "inspect": {
+        "plaque": "Dos espacios de trabajo",
+        "title": "Míralo más de cerca.",
+        "subhead": "El proyecto del diseñador B no utiliza una IA mejor. Es la misma IA, con más contexto a su alrededor.",
+        "workspaceAEyebrow": "Espacio de trabajo A",
+        "workspaceA": "Chat vacío: una frase y nada más.",
+        "workspaceBEyebrow": "Espacio de trabajo B",
+        "workspaceB": "La misma frase + notas de marca, público, una muestra de estilo, decisiones anteriores y pautas fijadas sobre lo que se debe y no se debe hacer.",
+        "cta": "¿Qué ha marcado la diferencia? →"
+      },
+      "pick": {
+        "plaque": "Tu teoría",
+        "title": "¿Qué ha producido realmente la mejor página?",
+        "subhead": "Selecciona todo lo que creas que ha ayudado.",
+        "cta": "Comprobar mi teoría →"
+      },
+      "causes": {
+        "model-smarter": "El modelo se ha vuelto más inteligente",
+        "brand-document": "El documento de marca",
+        "longer-prompt": "El prompt más largo",
+        "luck": "La suerte",
+        "style-sample": "La muestra de estilo",
+        "pinned-instructions": "Las instrucciones fijadas"
+      },
+      "reveal": {
+        "plaque": "El patrón",
+        "title": "No ha sido el modelo. Tampoco una redacción ingeniosa.",
+        "body1": "El modelo no ha cambiado. El diseñador B no ha escrito una frase más larga: ha escrito la misma.",
+        "body2": "Lo que ha cambiado es el contexto: todo lo que el modelo podía ver cuando respondía. Notas de marca, público, ejemplos y decisiones anteriores. Esa es la diferencia entre «la página de cualquiera» y «tu página».",
+        "punchline": "Los principiantes perfeccionan el prompt. Los usuarios experimentados construyen el contexto.",
+        "cta": "Pero ¿por qué funciona? →"
+      }
+    },
+    "whyContext": {
+      "recall": {
+        "plaque": "Volver a la máquina",
+        "title": "Recuerda lo que hace realmente el modelo.",
+        "subhead": "Como viste en la sala de entrenamiento: predice las palabras siguientes, una a una, basándose en todo lo que tiene delante.",
+        "body": "El contexto es ese «todo lo que tiene delante». Cambia lo que puede ver y cambiarás lo que predice. No lo estás haciendo más inteligente. Estás dirigiéndolo.",
+        "cta": "Muéstramelo →"
+      },
+      "toggle": {
+        "plaque": "En directo",
+        "title": "La misma petición. Activa o desactiva una cosa cada vez.",
+        "subhead": "Activa o desactiva cada elemento del contexto y observa cómo cambia la respuesta.",
+        "requestEyebrow": "Petición",
+        "request": "Diseña nuestra nueva página de destino.",
+        "answerEyebrow": "Respuesta",
+        "helperAllOff": "Sin nada que usar como contexto, el modelo recurre al promedio de todo lo que ha aprendido. Por eso suena genérico.",
+        "helperAllOn": "Ahora cada predicción está guiada por tu mundo, no por el promedio de Internet.",
+        "genericAnswer": "Bienvenido a nuestra empresa. Ofrecemos soluciones innovadoras para empresas modernas.",
+        "cta": "Continuar →"
+      },
+      "chips": {
+        "audience": {
+          "label": "Público",
+          "effect": "Habla a las personas que has indicado, no a «todo el mundo»."
+        },
+        "brand-voice": {
+          "label": "Voz de marca",
+          "effect": "Suena como tu marca, no como una plantilla genérica."
+        },
+        "past-decision": {
+          "label": "Decisión anterior",
+          "effect": "Respeta una decisión que el equipo ya ha tomado."
+        },
+        "worked-example": {
+          "label": "Ejemplo de referencia",
+          "effect": "Refleja la estructura de un trabajo que ya ha funcionado."
+        }
+      }
+    },
+    "build": {
+      "scenario": {
+        "plaque": "Tu turno",
+        "title": "Diriges una pequeña panadería.",
+        "subhead": "Usas IA casi todas las semanas: pies de foto, respuestas y textos del menú. Ahora mismo tienes que volver a explicar lo que necesitas cada vez. Vamos a solucionarlo de una vez.",
+        "cta": "Abrir el taller →"
+      },
+      "assemble": {
+        "plaque": "Construye el contexto",
+        "title": "Fija lo que la IA debería saber siempre.",
+        "subhead": "Arrastra cada tarjeta al panel. Esta es la configuración que los usuarios experimentados preparan una vez y reutilizan durante meses.",
+        "boardHeader": "Lo que siempre debe saber",
+        "pinned": "{count} fijadas",
+        "cta": "Ejecutar la misma petición dos veces →"
+      },
+      "cards": {
+        "business": {
+          "label": "Negocio",
+          "body": "Pequeña panadería de barrio, con seis años de historia, conocida por su masa madre."
+        },
+        "audience": {
+          "label": "Público",
+          "body": "Clientes habituales del barrio y visitantes de fin de semana. Cercano, no corporativo."
+        },
+        "tone-sample": {
+          "label": "Muestra de tono",
+          "body": "La mañana está tranquila hasta que cruje la primera hogaza. Pásate a por la masa madre; si podemos, te guardaremos la mesa de la esquina."
+        },
+        "past-decision": {
+          "label": "Decisión anterior",
+          "body": "No hacemos descuentos. En su lugar, aportamos valor."
+        },
+        "do-dont": {
+          "label": "Sí / No",
+          "body": "Menciona las especialidades del día. No abuses de los signos de exclamación."
+        }
+      },
+      "compare": {
+        "plaque": "Sin contexto vs. con contexto",
+        "title": "«Escribe el pie de foto de Instagram de esta semana».",
+        "bare": {
+          "eyebrow": "Sin contexto",
+          "body": "«¡Descubre hoy nuestros productos recién horneados! 🥐 ¡Ven a visitarnos!» — genérico, exagerado y podría ser de cualquier panadería."
+        },
+        "built": {
+          "eyebrow": "Tu contexto fijado",
+          "body": "Nombra la masa madre, se dirige a los clientes habituales, evita el entusiasmo exagerado e incluye la especialidad de hoy, con tu voz."
+        },
+        "surpriseLine": "La misma petición. La diferencia es que no has tenido que volver a explicarte para conseguirlo.",
+        "cta": "Continuar →"
+      }
+    },
+    "oneShot": {
+      "habit": {
+        "plaque": "A la primera y listo",
+        "title": "«Escribe mi correo de lanzamiento». Enviar. Copiar. Pegar. Listo.",
+        "subhead": "La mayoría de la gente se queda con el primer borrador. Los usuarios experimentados casi nunca lo hacen.",
+        "cta": "Prueba las dos formas →"
+      },
+      "choose": {
+        "plaque": "Bifurcación",
+        "title": "Llega el primer borrador. ¿Y ahora qué?",
+        "cta": "Ver la diferencia →"
+      },
+      "approaches": {
+        "accept": "Aceptar el primer borrador",
+        "critique": "Pedirle que se critique a sí mismo: «¿Cuáles son las partes más débiles de esto?»"
+      },
+      "reveal": {
+        "plaque": "Segunda pasada",
+        "title": "La revisión crítica ha cambiado el correo.",
+        "body1": "Al pedirle que identificara sus propios puntos débiles, el modelo ha señalado una llamada a la acción poco visible y un comienzo vago, y después los ha corregido.",
+        "body2": "No ha ocurrido nada misterioso. Tu mensaje de seguimiento se ha convertido en nuevo contexto y ha orientado la siguiente predicción. Cada pasada añade información; cada respuesta se vuelve más precisa.",
+        "punchline": "No estás charlando con un compañero. Estás dirigiendo un motor de predicción, y dirigirlo es mejor que aceptar sin más.",
+        "cta": "Continuar →"
+      }
+    },
+    "transfer": {
+      "plaque": "Decisión · {index}/{total}",
+      "title": "¿Construir contexto o simplemente preguntar?",
+      "nextCta": "Siguiente",
+      "lastCta": "Ver tu puntuación",
+      "choices": {
+        "reusable": "Construir contexto reutilizable",
+        "quick": "Lanzar un prompt rápido"
+      },
+      "feedback": {
+        "match": "Coincide con el patrón",
+        "rethink": "Replantéatelo"
+      },
+      "status": {
+        "matched": "Coincide",
+        "missed": "No coincide"
+      },
+      "resultLine": "Tú: {picked} · Opción habitual: {usual}",
+      "scenarios": {
+        "street-sign": {
+          "scenario": "Traducir un cartel en la calle mientras viajas",
+          "note": "Una sola vez, sin uso futuro. El contexto sería un esfuerzo que nunca reutilizarás."
+        },
+        "company-style": {
+          "scenario": "Mantener el estilo de tu empresa coherente durante un año de publicaciones",
+          "note": "La misma voz, una y otra vez: fíjala una vez."
+        },
+        "movie-year": {
+          "scenario": "Preguntar en qué año se estrenó una película",
+          "note": "Un dato, no una relación. No hay nada que reutilizar."
+        },
+        "weekly-reports": {
+          "scenario": "Redactar informes semanales del mismo proyecto durante meses",
+          "note": "Tarea recurrente, contexto estable: ideal para un proyecto."
+        },
+        "word-meaning": {
+          "scenario": "Resolver rápidamente una discrepancia sobre el significado de una palabra",
+          "note": "Por naturaleza, es algo puntual."
+        },
+        "personal-voice": {
+          "scenario": "Escribir con tu voz personal en todo lo que haces",
+          "note": "Tu voz es un contexto estable que merece la pena guardar una vez."
+        },
+        "random-article": {
+          "scenario": "Resumir un artículo cualquiera al que nunca volverás",
+          "note": "No habrá trabajo posterior; un proyecto añade fricción, no valor."
+        }
+      },
+      "score": {
+        "plaque": "Patrón",
+        "title": "{score} de {total} han coincidido con la opción habitual.",
+        "subhead": "No todo merece un proyecto. La habilidad está en saber qué merece uno y qué no.",
+        "cta": "Continuar →"
+      }
+    },
+    "altitude": {
+      "task": {
+        "plaque": "Nivel de detalle",
+        "title": "¿Cuánto deberías especificar?",
+        "subhead": "La tarea: «Ayúdame a redactar una carta de presentación para un puesto de marketing». Tres personas escriben el prompt de tres formas distintas.",
+        "cta": "Comparar las tres →"
+      },
+      "pick": {
+        "plaque": "Tres prompts",
+        "title": "¿Cuál obtiene el mejor resultado?",
+        "cta": "Revelar →"
+      },
+      "choices": {
+        "vague": {
+          "label": "Demasiado vago",
+          "detail": "«Escríbeme una carta de presentación»."
+        },
+        "sweet-spot": {
+          "label": "Objetivo + restricciones + criterios de éxito",
+          "detail": "«Carta de presentación para un puesto junior de marketing en una agencia pequeña. Cercana pero profesional, menos de 300 palabras, destaca mi experiencia en eventos. Éxito = que puedan imaginarme en el equipo»."
+        },
+        "micromanaged": {
+          "label": "Excesivamente detallado",
+          "detail": "un guion de 20 pasos que dicta cada frase, transición y número de palabras de cada párrafo."
+        }
+      },
+      "reveal": {
+        "plaque": "El punto óptimo",
+        "title": "Los dos extremos pierden. Gana el término medio.",
+        "body1": "Si eres demasiado impreciso, el modelo rellena los huecos con el promedio de Internet: el resultado es genérico. Si lo controlas demasiado, has hecho tú mismo todo el trabajo de pensar y lo has encorsetado: obtienes una versión peor de tu propio esquema.",
+        "body2": "La opción ganadora define el destino y las restricciones —puesto, tono, extensión, qué destacar y cómo es un buen resultado— y deja el cómo al modelo.",
+        "punchline": "Sé específico sobre adónde quieres llegar. No dictes cada paso del camino.",
+        "cta": "Continuar →"
+      }
+    },
+    "reflection": {
+      "plaque": "Diario del taller",
+      "title": "Completa la frase.",
+      "subhead": "No hay cuestionario. Solo observa cómo ha cambiado tu definición de «usar bien la IA».",
+      "beforeLabel": "Antes de hoy pensaba que los mejores resultados se conseguían con…",
+      "beforePlaceholder": "mejores prompts… palabras mágicas… el modelo adecuado…",
+      "afterLabel": "Ahora pienso que los mejores resultados se consiguen con…",
+      "afterPlaceholder": "mejor contexto… iteración… una configuración que reutilizo…",
+      "cta": "Guardar en el diario →"
+    },
+    "closing": {
+      "line": {
+        "plaque": "Pared del taller",
+        "title": "Los principiantes optimizan los prompts. Los expertos optimizan los entornos.",
+        "subhead": "El mismo modelo, en manos de todos. La diferencia está en lo que construyes a su alrededor.",
+        "oldHabit": {
+          "eyebrow": "Hábito anterior",
+          "body": "Perfeccionar la redacción de un solo mensaje."
+        },
+        "newHabit": {
+          "eyebrow": "Nuevo hábito",
+          "body": "Construir el contexto una vez. Reutilizarlo. Iterar sobre la respuesta."
+        },
+        "cta": "Una última cosa →"
+      },
+      "principle": {
+        "plaque": "Lo que perdura",
+        "title": "Los botones seguirán cambiando.",
+        "body": "Proyectos, memoria, espacios de trabajo, lo que se lance el próximo trimestre… son implementaciones. El principio subyacente no cambia: el contexto que construyes junto al modelo supera a la redacción que perfeccionas por tu cuenta. Esto es cierto en ChatGPT, Claude, Gemini y en lo que venga después.",
+        "cta": "Continuar →"
+      },
+      "mystery": {
+        "headline": "Si el contexto es tan potente…",
+        "followUp": "¿qué ocurre cuando hay demasiado? ¿El modelo da el mismo peso a cada palabra?",
+        "toCoworker": "Ir a «El compañero de trabajo»",
+        "comingSoon": "Próximamente: la atención",
+        "backHome": "Volver al inicio"
+      }
+    },
+    "seoSpine": {
+      "h1": "¿Cómo funcionan realmente los grandes modelos de lenguaje?",
+      "lead": "Un gran modelo de lenguaje genera texto prediciendo qué tokens tienen más probabilidades de aparecer a continuación, basándose en el contexto. Este es el mecanismo común que utilizan herramientas como los asistentes basados en ChatGPT, y explica por qué un contexto claro cambia los resultados que obtienes.",
+      "sections": [
+        {
+          "heading": "¿Qué son los tokens en inteligencia artificial?",
+          "body": "Los modelos no siempre procesan palabras completas como hacemos las personas. El texto se divide en tokens, que pueden ser palabras, partes de palabras o caracteres. El modelo trabaja con esa secuencia para predecir qué debería venir a continuación."
+        },
+        {
+          "heading": "¿Cómo genera texto un LLM?",
+          "body": "La generación de texto consiste en repetir el proceso de predicción del siguiente token: a partir de los tokens disponibles hasta ese momento, el modelo elige una continuación probable, la añade a la secuencia y vuelve a empezar. La forma en que planteas la tarea —los objetivos, las restricciones y el contexto— influye en esas predicciones."
+        },
+        {
+          "heading": "El mismo modelo, resultados diferentes",
+          "body": "Los usuarios con más experiencia suelen obtener mejores resultados del mismo LLM cuando explican claramente qué necesitan y van ajustando sus instrucciones a partir de las respuestas, en lugar de dar por hecho que el modelo ya sabe lo que quieren decir."
+        }
+      ]
+    }
+  }
+}

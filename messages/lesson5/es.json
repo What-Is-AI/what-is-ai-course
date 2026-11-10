@@ -1,0 +1,390 @@
+{
+  "lesson5": {
+    "meta": {
+      "badge": "Lección {number}",
+      "title": "Qué es una red neuronal",
+      "shortTitle": "Qué es una red neuronal",
+      "mystery": "¿Qué es una red neuronal y cómo aprende? Explora los pesos, las capas y cómo las redes reconocen patrones, sin necesidad de saber cálculo matemático."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "chooseOne": "Elige una opción",
+      "separated": "Separados",
+      "notSeparated": "Sin separar",
+      "cat": "Gato",
+      "dog": "Perro"
+    },
+    "shell": {
+      "eyebrow": "La red",
+      "wordmark": "Redes neuronales"
+    },
+    "arrive": {
+      "plaque": "Redes neuronales",
+      "title": "¿Qué es una red neuronal?",
+      "body1": "Una red neuronal (neural network) está formada por muchas neuronas artificiales sencillas conectadas entre sí. Cada neurona recibe información, hace un pequeño cálculo y pasa el resultado a otras neuronas.",
+      "body2": "Al conectar muchas de estas neuronas, una red puede aprender a reconocer patrones en cosas como imágenes, sonidos y lenguaje.",
+      "image": "IMAGEN",
+      "cat": "GATO",
+      "visualAria": "Una imagen atraviesa capas de neuronas y se convierte en Gato",
+      "support": "La idea se inspiró en cómo las neuronas del cerebro se conectan y se transmiten información. Pero una red neuronal es un modelo matemático, no un cerebro en miniatura.",
+      "cta": "Echemos un vistazo dentro."
+    },
+    "opening": {
+      "plaque": "Dentro de la máquina",
+      "title": "¿Qué cambia cuando la IA aprende?",
+      "body1": "Una red neuronal aprende ajustando las conexiones entre sus neuronas.",
+      "body2": "Cada conexión tiene un número que controla cuánto influye en el resultado. Cuando la red se equivoca, ajusta un poco esos números. Después de ver muchos ejemplos, la red mejora en su tarea.",
+      "tryChanging": "Prueba a cambiar uno",
+      "tinyExample": "Un ejemplo mínimo",
+      "input": "Entrada",
+      "prediction": "Predicción",
+      "ask": "La red ha predicho perro, pero la respuesta era gato. ¿Qué debería hacer ahora?",
+      "askAria": "La red ha predicho perro, pero la respuesta era gato. ¿Qué debería hacer ahora?",
+      "choices": {
+        "same": "Dejar los números como están",
+        "adjust": "Ajustar algunos de los pesos",
+        "rule": "Añadir una regla nueva"
+      },
+      "exactly": "Exacto. La red ajusta sus pesos (weights) para que, la próxima vez, este ejemplo tenga más probabilidades de dar la respuesta correcta.",
+      "nudgeHint": "Sube o baja un poco el número de una conexión y observa cómo cambia la predicción.",
+      "up": "Aumentar la conexión {n}",
+      "down": "Reducir la conexión {n}",
+      "nameIt": "Estos números se llaman pesos.",
+      "scale": "Una red neuronal real puede tener miles, millones o incluso miles de millones de ellos.",
+      "nextAsk": "Entonces, ¿qué puede hacer realmente una de estas neuronas?",
+      "cta": "Continuar →",
+      "tryAgain": "No del todo: piensa en qué tiene que cambiar para que el siguiente intento salga mejor.",
+      "diagramAria": "Dos entradas conectadas a una predicción; cada conexión muestra un número"
+    },
+    "prediction": {
+      "plaque": "Predicción",
+      "title": "Si quisieras que una máquina supiera si en una foto hay un gato, ¿cómo la construirías?",
+      "aria": "¿Cómo construirías un detector de gatos?",
+      "choices": {
+        "rules": "Escribir una regla para cada gato posible",
+        "memorize": "Guardar todas las fotos de gatos y comparar",
+        "detectors": "Construir muchos detectores diminutos y conectarlos",
+        "giant-rule": "Darle a la máquina una única regla gigante"
+      },
+      "cta": "Continuar →"
+    },
+    "impossibleSplit": {
+      "plaque": "Una neurona",
+      "titleA": "Una neurona. Una línea recta.",
+      "subheadA": "Las fotos se convierten en unas pocas medidas, como lo puntiagudas que parecen las orejas y lo largo que es el hocico. Una sola neurona usa esos números para trazar una línea recta y decidir: gato a un lado, perro al otro.",
+      "feedbackA": "Hecho. Bastaba con una línea.",
+      "solvedNote": "Una neurona puede resolver esta versión sencilla del problema: trazando una línea recta.",
+      "notYetNote": "Todavía no: gira o desplaza la línea para que los gatos y los perros queden en lados distintos.",
+      "footerHint": "Una neurona puede resolver esta versión sencilla del problema trazando una línea recta.",
+      "check": "Comprobar mi respuesta →",
+      "yourTurn": "Te toca",
+      "turnAsk": "¿Puedes trazar una línea que separe los gatos de los perros?",
+      "tip": "Consejo: gira la línea hasta que pase entre los dos grupos y, si hace falta, desplázala.",
+      "photo": "Foto",
+      "findFeatures": "Buscar características",
+      "twoNumbers": "Dos números",
+      "ear": "Orejas puntiagudas",
+      "snout": "Longitud del hocico",
+      "axisEar": "Orejas puntiagudas",
+      "axisSnout": "Longitud del hocico",
+      "high": "Más",
+      "low": "Menos",
+      "short": "Corto",
+      "long": "Largo",
+      "rotateMinus": "Girar −",
+      "rotatePlus": "Girar +",
+      "shiftLeft": "Desplazar −",
+      "shiftRight": "Desplazar +",
+      "titleB": "Una neurona. Una línea recta.",
+      "bodyB1": "Pero los patrones del mundo real casi nunca son tan sencillos.",
+      "bodyB2": "Una sola neurona solo puede trazar una frontera recta. Si los datos no se pueden separar con una línea, una neurona no basta.",
+      "hardSideAsk": "Prueba con este patrón. ¿Puede una línea recta separar los dos grupos?",
+      "frustration": "No hay ninguna línea que lo consiga. Inténtalo todo lo que quieras: este patrón de verdad no se puede dividir en dos con un único corte recto.",
+      "reveal1": "No es que se te escape algo. Es el límite de una sola neurona. Una neurona traza una línea recta, y algunos patrones simplemente no se dividen así.",
+      "titleC": "Añade una segunda neurona",
+      "bodyC1": "Una neurona solo puede trazar una frontera sencilla. Pero algunos patrones son demasiado complejos para una única frontera.",
+      "bodyC2": "En una red neuronal, esto se resuelve conectando varias neuronas. Cada neurona hace su propio cálculo sencillo y, juntas, pueden representar patrones más complejos.",
+      "plaqueC": "De una a muchas",
+      "sideCTitle": "De una neurona a muchas",
+      "sideCBody1": "En términos técnicos, se habla de neuronas artificiales, y también de nodos o unidades. Al diseñar una red neuronal, los ingenieros eligen cuántas neuronas usar y cómo conectarlas.",
+      "sideCBody2": "Más neuronas dan a la red más formas de representar patrones, aunque añadir neuronas sin más no hace que una red sea mejor automáticamente.",
+      "sideCFinal": "Una neurona es sencilla. Las neuronas conectadas pueden hacer mucho más.",
+      "twoLineTip": "Ajusta las dos líneas hasta que todos los gatos y los perros queden en el lado correcto de la frontera combinada.",
+      "cta": "Entonces, ¿qué es exactamente una neurona?",
+      "statusAria": "Estado de la separación",
+      "lineAria": "Frontera de decisión. Las teclas de flecha giran y desplazan la línea.",
+      "fallbackAsk": "¿Puede una línea recta separar estos puntos?",
+      "fallbackYes": "Sí",
+      "fallbackNo": "No, no puede →",
+      "tryAdjusting": "Prueba antes a girar o desplazar la línea un par de veces.",
+      "unlockSecond": "Desbloquear la segunda neurona →",
+      "tryNext": "Probar con el conjunto más difícil →",
+      "counts": "Gatos acertados {redOk}/{redTotal} · Perros acertados {blueOk}/{blueTotal}"
+    },
+    "oneUnit": {
+      "plaque": "Una neurona",
+      "title": "Entonces, ¿qué es una de estas neuronas?",
+      "body1": "Una neurona recibe varias entradas y las combina usando pesos. Los pesos determinan cuánto importa cada entrada.",
+      "body2": "Después, el resultado pasa por una función de activación (activation function), que determina con qué intensidad responde la neurona.",
+      "flowAria": "Las entradas pasan por los pesos, un resultado combinado y la activación, hasta llegar a la salida",
+      "anatomyAria": "Una neurona combina entradas ponderadas y después aplica una función de activación para producir una salida",
+      "flow": {
+        "inputs": "Entradas",
+        "weights": "Pesos",
+        "combined": "Resultado combinado",
+        "activation": "Activación",
+        "output": "Salida"
+      },
+      "anatomySum": "Suma ponderada",
+      "anatomyAct": "Activación f(·)",
+      "anatomyOut": "Salida",
+      "anatomyEq": "z = w₁x₁ + w₂x₂ + w₃x₃",
+      "anatomyEq2": "salida = f(z)",
+      "buildingBlock": "Esta es la pieza básica de una red neuronal. Una sola neurona es sencilla, pero conectar muchas permite a la red representar patrones mucho más complejos.",
+      "terms": "Aquí las llamaremos neuronas. También verás que se llaman unidades o nodos.",
+      "beforeLabel": "Sin activación",
+      "beforeFlow": "solo suma ponderada → respuesta lineal",
+      "afterLabel": "Con activación",
+      "afterFlow": "suma ponderada → f(z) → respuesta no lineal",
+      "activationCaption": "La función de activación añade un paso no lineal. Gracias a él, las neuronas conectadas pueden representar patrones que una sola línea recta no puede.",
+      "cta": "Continuar →"
+    },
+    "tuneWeights": {
+      "plaque": "Fuerza de la conexión",
+      "titleA": "Mueve una conexión",
+      "askA": "Si haces más fuerte esta conexión, ¿qué le pasa a la confianza?",
+      "confidence": "Gato: {value} %",
+      "weightLabel": "Fuerza de la conexión",
+      "nameIt": "Esa fuerza que estabas moviendo tiene nombre: un peso. Fija cuánto cuenta una entrada para la siguiente neurona. Una red está llena de ellos.",
+      "titleB": "Ajusta un pequeño clasificador",
+      "body1": "Una red neuronal hace predicciones combinando muchas entradas, cada una con su propio peso. Un peso mayor da a una entrada más influencia en el resultado; un peso menor le da menos.",
+      "body2": "Aquí hemos dado a las entradas nombres sencillos, como orejas puntiagudas, bigotes y forma de las patas, para que veas qué hace cada una.",
+      "prompt": "Te toca: mueve cada control deslizante para cambiar un peso. Observa cómo se actualizan las puntuaciones de Gato y Perro bajo las fotos.",
+      "features": {
+        "ears": "Orejas puntiagudas",
+        "whiskers": "Bigotes",
+        "legs": "Forma de las patas"
+      },
+      "photoCat": "Foto de gato",
+      "photoDog": "Foto de perro",
+      "debrief": "Acabas de ajustar los pesos a mano. Si al aumentar el peso de las orejas puntiagudas sube la puntuación de gato, has hecho que esa entrada cuente más en la predicción.",
+      "training": "El entrenamiento hace algo parecido de forma automática: ajusta los pesos a partir de ejemplos y errores, y poco a poco encuentra valores que hacen que la red mejore en su tarea.",
+      "clarify": "Este ejemplo está simplificado. Las redes neuronales reales no parten de características (features) etiquetadas por personas, como «bigotes». Aprenden patrones útiles a partir de los propios datos.",
+      "takeaway": "Nadie tiene que escribir una regla que diga «busca bigotes». La red aprende a partir de ejemplos cuánto deben importar los distintos patrones.",
+      "ctaNext": "Continuar →",
+      "ctaToB": "Probar un pequeño clasificador →"
+    },
+    "firstReveal": {
+      "plaque": "Revelación",
+      "title": "Entonces, ¿qué estaba cambiando en realidad?",
+      "body1": "Los números que acabas de ajustar son pesos: parámetros aprendidos de la red neuronal. Cada peso controla con qué intensidad influye una neurona en otra.",
+      "body2": "Durante el entrenamiento, la red hace predicciones sobre ejemplos y las compara con las respuestas correctas. Mide el error y después ajusta sus pesos para reducirlo. Repetir este proceso con muchos ejemplos cambia poco a poco cómo responde la red.",
+      "body3": "Son los números que viste cambiar al final de la lección 4: +0,02, −0,01, etc. Estabas viendo cómo se ajustaban los parámetros de la red mientras aprendía.",
+      "clarify": "En nuestro ejemplo, hemos dado a las entradas nombres como «orejas puntiagudas» y «bigotes» para que el proceso se viera mejor. Las redes neuronales reales pueden aprender representaciones útiles a partir de los propios datos, sin depender de que una persona defina características como «busca bigotes».",
+      "takeaway": "Nadie escribe una regla para cada patrón. La red aprende ajustando sus parámetros a partir de ejemplos.",
+      "cta": "Continuar →"
+    },
+    "overfit": {
+      "plaque": "Sorpresa",
+      "title": "Ha aprendido los ejemplos.",
+      "ask": "Pero ¿ha aprendido el patrón?",
+      "body1": "La red ha ajustado sus pesos con estos 12 ejemplos de entrenamiento y ha acertado los 12.",
+      "body2": "Pero hay una objeción: acertar los ejemplos no nos dice si la red ha aprendido el patrón o si simplemente se ha ceñido demasiado a esos ejemplos.",
+      "visualIntro": "Aquí tienes dos posibles fronteras de decisión (decision boundaries) para los mismos 12 ejemplos.",
+      "boundaryDef": "Una frontera de decisión es la línea que usa el modelo para separar una clase de otra.",
+      "fitsLabel": "Se ajusta a los ejemplos de entrenamiento",
+      "learnsLabel": "Sigue el patrón general",
+      "badgePerfect": "12/12 aciertos",
+      "badgeGeneral": "11/12 aciertos",
+      "prompt": "Ahora pon a prueba las dos. Mueve el ejemplo nuevo y observa cómo lo clasifica cada frontera.",
+      "newTag": "nuevo",
+      "newAria": "Ejemplo nuevo que no se ha visto durante el entrenamiento. Usa las teclas de flecha o arrástralo sobre los gráficos.",
+      "dropHint": "Mueve el ejemplo nuevo sobre el gráfico",
+      "predDog": "Predicción: Perro",
+      "predCat": "Predicción: Gato",
+      "actualCat": "Real: Gato",
+      "flagCorrect": "Correcto",
+      "flagMiss": "Fallo",
+      "debrief1": "La primera frontera se curva y se retuerce para acertar todos los ejemplos de entrenamiento. La segunda es más sencilla: sigue el patrón general de los dos grupos.",
+      "debrief2": "La primera es perfecta con los ejemplos que ya ha visto. La segunda es menos perfecta, pero puede funcionar mejor con ejemplos que no ha visto.",
+      "takeaway": "Esta es la diferencia entre ajustarse a los ejemplos de entrenamiento y aprender un patrón que funcione con ejemplos nuevos.",
+      "cta": "Continuar →"
+    },
+    "layers": {
+      "plaque": "Capas",
+      "title": "Qué hacen las capas",
+      "bridge": "Con una sola neurona, los gatos nos han venido bien. Para ver qué hacen las capas, pasemos a algo con partes más claras: los dígitos escritos a mano.",
+      "layer1": "Capa 1",
+      "layer2": "Capa 2",
+      "layer3": "Capa 3",
+      "layer1Desc": "Partes sencillas: bordes, líneas, curvas.",
+      "layer2Desc": "Esquinas, bucles y uniones.",
+      "layer3Desc": "Formas completas de dígitos.",
+      "layerOn": "Capa {n}: activada",
+      "layerOff": "Capa {n}: desactivada",
+      "togglePrompt": "Pulsa «Capa 1», «Capa 2» o «Capa 3» para activarla o desactivarla.",
+      "stateOn": "Activada",
+      "stateOff": "Desactivada",
+      "guess": "Predicción: {digit}",
+      "guessWeak": "Predicción: no está clara",
+      "hedge": "Las primeras capas suelen responder a patrones más sencillos; las posteriores pueden combinarlos en otros más complejos. A la red no se le dan reglas como «La capa 1 busca bordes». Estos patrones surgen durante el entrenamiento.",
+      "capacity": "Más capas dan a una red más formas de representar patrones complejos, pero más no significa automáticamente mejor.",
+      "cta": "Continuar →",
+      "summaryAll": "Con las tres capas activadas, las características sencillas pueden combinarse en otras más complejas: los bordes y las curvas ayudan a formar bucles, y los bucles ayudan a formar un 8.",
+      "summaryWeak": "Con una capa desactivada, el patrón del dígito más difícil se desmorona."
+    },
+    "vocabulary": {
+      "plaque": "Vocabulario",
+      "title": "Ahora, las palabras sencillas para lo que ya has hecho.",
+      "hint": "Pasa el cursor o pulsa un término para ver cómo ha aparecido antes en esta lección.",
+      "listAria": "Términos del vocabulario",
+      "previews": {
+        "input": "Una señal de imagen que entra en la red",
+        "neuron": "Una neurona que combina varias entradas en una sola salida",
+        "weight": "Una conexión que se hace más fuerte o más débil",
+        "activation": "Una respuesta curva en lugar de una línea recta",
+        "layer": "Grupos apilados de neuronas que se iluminan por etapas",
+        "output": "La red se decide por la predicción «Gato»",
+        "parameters": "Muchos ajustes diminutos de los pesos durante el entrenamiento"
+      },
+      "terms": {
+        "input": {
+          "label": "Entrada",
+          "body": "lo que entra en la red."
+        },
+        "neuron": {
+          "label": "Neurona / unidad",
+          "body": "un pequeño cálculo matemático que pondera sus entradas, las suma y modula el resultado."
+        },
+        "weight": {
+          "label": "Peso",
+          "body": "cuánto cuenta una entrada para una neurona. Es lo principal que ajusta el entrenamiento."
+        },
+        "activation": {
+          "label": "Activación",
+          "body": "la «curvatura» que aplica cada neurona, para que las neuronas conectadas puedan representar algo más que patrones de línea recta."
+        },
+        "layer": {
+          "label": "Capa",
+          "body": "un grupo de neuronas que trabajan en la misma etapa."
+        },
+        "output": {
+          "label": "Salida",
+          "body": "lo que produce la red."
+        },
+        "parameters": {
+          "label": "Parámetros",
+          "body": "todos los valores ajustables que se aprenden durante el entrenamiento: los pesos y también los sesgos (biases)."
+        }
+      },
+      "cta": "Continuar →"
+    },
+    "watchLearning": {
+      "plaque": "El ciclo",
+      "title": "Mira cómo aprende",
+      "loop": "Predicción → Error → Ajuste → Repetir",
+      "train": "ENTRENAR",
+      "pause": "Pausa",
+      "resume": "Reanudar",
+      "body1": "La red hace una predicción.",
+      "body2": "Su error proporciona una señal de aprendizaje (learning signal): indica en qué dirección ajustar los pesos.",
+      "body3": "El entrenamiento ajusta un poco los pesos.",
+      "body4": "Después, lo vuelve a intentar.",
+      "punchline": "Millones de pequeños ajustes, sumados, cambian lo que hace toda la red. Ningún ajuste por sí solo le enseña nada: el aprendizaje está en la acumulación.",
+      "summary": "Tras 1.000 ejemplos, precisión {from} % → {to} %",
+      "cta": "Continuar →"
+    },
+    "scale": {
+      "plaque": "Escala",
+      "title": "¿Hasta dónde puede crecer una red?",
+      "levels": {
+        "10": "10 neuronas",
+        "100": "100",
+        "10000": "10.000",
+        "1000000": "1.000.000",
+        "billion": "1.000.000.000+ parámetros"
+      },
+      "body": "Las redes que hay detrás de la IA moderna contienen cantidades enormes de parámetros ajustables. Y, cuando llegan a ser lo bastante grandes, empieza a ocurrir algo nuevo. La escala empieza a importar: no solo da un poco más de precisión, sino nuevos tipos de habilidades.",
+      "ctaZoom": "Alejar →",
+      "cta": "Continuar →"
+    },
+    "history": {
+      "plaque": "Historia",
+      "title": "Las redes neuronales no son nuevas.",
+      "beats": {
+        "1940s": "Primeros modelos matemáticos de una neurona artificial: una neurona entendida como un pequeño cálculo matemático, no como algo biológico.",
+        "1957": "El perceptrón: una máquina que se ajusta sola para distinguir patrones sencillos. Es el mismo punto de partida que has usado en «La discriminación imposible».",
+        "1969": "Un resultado famoso demuestra que un perceptrón de una sola capa no puede resolver ciertos problemas sencillos, justo el tipo de caso «no se puede dividir con una línea» que acabas de ver. El interés y la financiación se hunden durante años.",
+        "1980s": "Un método de entrenamiento llamado propagación hacia atrás (backpropagation) hace viable entrenar redes de varias capas. Los problemas que una sola neurona no podía abordar pasan a tener solución.",
+        "2000s": "Más datos y ordenadores más rápidos.",
+        "2010s": "Las redes profundas logran grandes avances en el reconocimiento de imágenes, el habla y mucho más.",
+        "2020s": "Las redes muy grandes se convierten en la base de la IA generativa (generative AI) moderna."
+      },
+      "point": "La idea básica es antigua. Dos cosas la hicieron posible: una forma de entrenar muchas capas y la escala (datos y capacidad de cómputo) para ejecutarlas. No hizo falta una idea más inteligente, sino un mundo preparado.",
+      "cta": "Continuar →"
+    },
+    "reflection": {
+      "plaque": "Reflexión",
+      "ask": "Antes de esta lección, ¿qué imaginabas que ocurría dentro de una red neuronal?",
+      "beforePlaceholder": "Lo que imaginabas antes…",
+      "prompt": "Una red neuronal aprende…",
+      "placeholder": "ajustando sus pesos, poco a poco…",
+      "cta": "Continuar →"
+    },
+    "finalChallenge": {
+      "plaque": "Reto final",
+      "title": "¿Cuál es la mejor descripción de una red neuronal?",
+      "aria": "Mejor descripción de una red neuronal",
+      "choices": {
+        "a": "Una copia digital de un cerebro humano.",
+        "b": "Un conjunto de neuronas artificiales conectadas cuyos pesos se ajustan mediante el entrenamiento.",
+        "c": "Un sistema que aprende guardando todos los ejemplos de entrenamiento.",
+        "d": "Un conjunto de neuronas en el que cada una, por sí sola, entiende un concepto completo."
+      },
+      "explain": "Las redes neuronales toman prestadas algunas palabras y cierta inspiración de la biología, pero sus neuronas son cálculos matemáticos, no células cerebrales (se descarta la A). Aprender cambia los pesos en lugar de archivar ejemplos; de hecho, una red puede bordar sus fotos de entrenamiento y aun así fallar con una nueva, algo que memorizar no explicaría (se descarta la C). Y ninguna neurona contiene por sí sola un concepto completo: la capacidad surge de muchas neuronas conectadas entre sí, como ha mostrado «La discriminación imposible» (se descarta la D).",
+      "tryAgain": "Inténtalo de nuevo: busca la descripción que menciona las neuronas y el entrenamiento.",
+      "cta": "Continuar →"
+    },
+    "closing": {
+      "takeawaysPlaque": "Ideas clave",
+      "takeawaysTitle": "Qué conviene recordar",
+      "takeaways": {
+        "1": "Las redes son neuronas artificiales conectadas. Pasan la información a través de etapas conectadas.",
+        "2": "Cada neurona pondera sus entradas y modula el resultado. Esa modulación es lo que permite que las neuronas se combinen en curvas y formas, y no solo en líneas rectas.",
+        "3": "Las conexiones tienen pesos ajustables, y el entrenamiento los cambia. Estos pesos son los controles de la lección 4.",
+        "4": "Las capas aportan complejidad. Las partes sencillas pueden combinarse en otras más ricas.",
+        "5": "Aprender un patrón general no es memorizar los ejemplos. Una red puede ser perfecta con sus fotos de entrenamiento y aun así fallar con algo nuevo.",
+        "6": "Más parámetros y más capas aportan capacidad, pero no garantizan más habilidad. El entrenamiento, los datos y el diseño siguen decidiendo el resultado."
+      },
+      "finalPlaque": "Dentro de la red",
+      "finalTitle": "Acabas de ver por dentro uno de los cimientos de la IA moderna.",
+      "finalBody1": "Pero hay un problema.",
+      "finalBody2": "¿Qué ocurre cuando la red crece hasta millones, miles de millones o incluso billones de parámetros? ¿Y qué ocurre cuando la entrenamos con una cantidad enorme de texto?",
+      "sequence": "El → gato → se → sentó → en → la → …",
+      "nextWorld": "La profundidad",
+      "nextLabel": "Siguiente: Aprendizaje profundo",
+      "nextHint": "Cuando las redes neuronales se vuelven profundas y la escala cambia lo que pueden hacer.",
+      "home": "Volver al inicio →",
+      "ctaTakeaways": "Continuar →",
+      "ctaFinal": "Continuar →"
+    },
+    "seoSpine": {
+      "h1": "¿Qué es una red neuronal?",
+      "lead": "Una red neuronal es un conjunto de unidades de cálculo conectadas entre sí, cuyos parámetros ajustables —los pesos— transforman las entradas en resultados útiles. Esta es la idea fundamental que explica cómo aprenden las redes neuronales.",
+      "sections": [
+        {
+          "heading": "¿Qué son los pesos de una red neuronal?",
+          "body": "Los pesos determinan hasta qué punto una unidad influye en otra. Durante el aprendizaje, la red refuerza algunas conexiones y debilita otras para que las señales que circulan por ella produzcan predicciones cada vez mejores."
+        },
+        {
+          "heading": "¿Para qué sirven las capas?",
+          "body": "Las capas agrupan unidades sencillas y se organizan unas sobre otras. Las primeras pueden responder a patrones más simples, mientras que las combinaciones de las capas más profundas ayudan a la red a reconocer formas y relaciones más complejas de lo que podría reconocer una sola unidad."
+        },
+        {
+          "heading": "Cómo reconocen patrones las redes neuronales",
+          "body": "El reconocimiento de patrones surge del ajuste conjunto de muchas conexiones ponderadas, no de una regla escrita manualmente para cada situación. Puedes entender cómo funciona sin necesidad de cálculo matemático: la lección interactiva te permite ver estos ajustes en acción."
+        }
+      ]
+    }
+  }
+}

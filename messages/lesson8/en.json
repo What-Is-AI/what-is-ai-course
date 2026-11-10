@@ -1,0 +1,654 @@
+{
+  "lesson8": {
+    "meta": {
+      "badge": "Lesson {number}",
+      "title": "Transformers",
+      "shortTitle": "Transformers",
+      "mystery": "What if each word could look directly at the words it needs?"
+    },
+    "shared": {
+      "continue": "Continue →",
+      "tapOne": "Tap one"
+    },
+    "shell": {
+      "eyebrow": "The Reading Room",
+      "wordmark": "Transformers"
+    },
+    "steps": {
+      "opening": {
+        "plaque": "The Reading Room",
+        "title": "What if each word could look directly at the words it needs?",
+        "body2": "Take the word “bank.” Is it beside a river, or somewhere you keep your money?",
+        "leadIn": "Now try a different kind of sentence:",
+        "sentence": "The animal wouldn't cross the road because it was too busy.",
+        "ask": "What does “it” refer to?",
+        "chooseHelper": "Tap one",
+        "options": {
+          "animal": "the animal",
+          "road": "the road",
+          "unsure": "I'm not sure yet"
+        },
+        "body3": "To answer that, you need information from somewhere else in the sentence.",
+        "pivot": "So how does a machine connect one word to the other words it needs?",
+        "cta": "Continue →"
+      },
+      "telephone": {
+        "plaque": "The long way around",
+        "title": "One early approach was to process the words one after another.",
+        "rnn": "This family of models is called a recurrent neural network, or RNN.",
+        "body": "Each new word has to work with what has been carried forward from the words before it.",
+        "prompt": "Use the control to send the reference for “it” through the sentence until it reaches “it.”",
+        "hopCta": "Advance one hop →",
+        "afterShort": "The reference can still arrive on a short path — with only a little wear.",
+        "longerPrompt": "Now make the sentence much longer. Watch what happens as the information has to pass through more steps.",
+        "surprise": "The reference can still arrive — but it has had to travel through every step in between, and the scripted handoffs leave it garbled.",
+        "point": "The point is not that RNNs always lose information. The point is that a relationship between two distant words has to be carried through the steps in between.",
+        "pivot": "What if the model could connect “it” directly to the word it needs?",
+        "staticSummaryLabel": "Message at each step",
+        "cta": "Continue →"
+      },
+      "connections": {
+        "plaque": "Direct connections",
+        "title": "What if words could look at each other?",
+        "tryIt": "Try it.",
+        "instruct": "Tap a word that helps you decide what “it” means. Then tap another word that matters less.",
+        "hint": "“it” is already selected as the source. Tap a target word to draw a connection.",
+        "madeVisible": "You have just made the basic idea of attention visible.",
+        "body": "Attention lets one position in a sequence use information from other positions, with stronger or weaker connections depending on how useful they are.",
+        "history": "Attention itself was not invented in 2017. Earlier work, including Bahdanau and colleagues in 2014, used attention alongside recurrent models. The important move in the 2017 Transformer paper was to make attention the main mechanism for connecting positions, rather than relying on recurrence to carry information step by step.",
+        "strengthLabel": "Connection strength",
+        "needTwo": "Draw at least two connections from “it.”",
+        "cta": "Continue →"
+      },
+      "paper": {
+        "plaque": "2017",
+        "docTitle": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": "2017",
+        "title": "The paper that changed the architecture",
+        "body": "Vaswani and colleagues published a paper with a deliberately bold title. The paper introduced the Transformer.",
+        "idea": "The idea was not simply “add attention.” It was to build sequence processing around attention instead of recurrence or convolution. That meant positions could exchange information directly, and the work could be carried out much more efficiently in parallel during training.",
+        "ask": "Which one gives a position a shorter route to the information it needs?",
+        "optionA": "Step-by-step processing",
+        "optionADetail": "word → word → word → word",
+        "optionB": "Direct connections",
+        "optionBDetail": "positions exchanging information directly",
+        "reveal": "The Transformer.",
+        "revealBody": "Positions could exchange information directly — without sending every relationship through every step in between.",
+        "cta": "Continue →"
+      },
+      "softLookup": {
+        "plaque": "Soft lookup",
+        "title": "Attention is a weighted lookup",
+        "body": "There is a useful way to think about attention: it is a soft lookup.",
+        "drawers": "Suppose you are looking through a set of drawers. Your query is what you are looking for. Each drawer has a key — a label describing what is inside. The value is the information inside the drawer.",
+        "compare": "The model compares the query with the keys, gives each one a score, and pulls more information from the places that match better.",
+        "analogy": "In a Transformer, these are called the query, key, and value. They are learned numerical representations, not literal questions, labels, and drawers. The analogy is there to make the operation easier to picture.",
+        "queryLabel": "What am I looking for?",
+        "drawerCol": "Drawer",
+        "matchCol": "Match",
+        "contentCol": "Content",
+        "stripLabel": "Strip the metaphor",
+        "qLabel": "Query",
+        "kLabel": "Key",
+        "vLabel": "Value",
+        "mixtureLabel": "Weighted mixture",
+        "mixtureHint": "Attention does not simply choose one word. It can take some information from many words, with different weights.",
+        "nudgeHint": "Nudge an illustrative score to see how the mixture changes.",
+        "cta": "Continue →"
+      },
+      "order": {
+        "plaque": "Keeping the order",
+        "title": "Attention does not provide order by itself",
+        "body": "There is one thing attention does not provide by itself: the order of the words.",
+        "sameWords": "“The dog bit the man” and “The man bit the dog” contain the same words. Their order changes the meaning.",
+        "shuffleCta": "Shuffle the words →",
+        "restoreCta": "Restore original order →",
+        "afterShuffle": "Same words. Different order. Different meaning.",
+        "needPositional": "So a Transformer needs positional information as well as the relationships between positions.",
+        "encodings": "The original Transformer added positional encodings so the model could tell where each token occurs in the sequence.",
+        "twoPieces": "That gives us two pieces of the picture: attention tells the model which positions can exchange information, and positional information tells it where those positions are.",
+        "cta": "Continue →"
+      },
+      "stack": {
+        "plaque": "Stack the layers",
+        "title": "One attention operation is not enough",
+        "body": "One attention operation gives each position a way to gather information from the sequence.",
+        "repeatedly": "A Transformer does this repeatedly.",
+        "eachLayer": "Each layer takes the representations from the layer before it, lets positions exchange information, transforms those representations further, and passes them on.",
+        "deepLearning": "This connects back to deep learning: useful representations can be built through a sequence of learned transformations.",
+        "notOnlyAttention": "The original Transformer also includes feed-forward transformations, residual connections, normalization, positional information, and other components. Attention is the central mechanism for exchanging information between positions, not the entire architecture by itself.",
+        "cta": "Continue →"
+      },
+      "hideFuture": {
+        "plaque": "Next-token prediction",
+        "title": "Hide the future",
+        "body": "There is an important detail for language models.",
+        "rule": "When the model is predicting the next word, each position can look at the words that came before it — not words that haven't arrived yet.",
+        "why": "This prevents the model from using the answer it is supposed to predict.",
+        "mask": "So the same attention idea can be used with a restriction on which positions are visible. For next-token prediction, attention is masked so each position can only use the available context.",
+        "prompt": "The animal wouldn't cross the road because ___",
+        "inspectHint": "Inspect which earlier positions receive stronger or weaker attention. Future words stay hidden.",
+        "revealFuture": "Reveal a future word →",
+        "futureWord": "it",
+        "futureNote": "“it” was never available to the model while making this prediction.",
+        "tableLabel": "Allowed context by position",
+        "cta": "Continue →"
+      },
+      "multiHead": {
+        "plaque": "Go deeper",
+        "title": "Multiple attention heads",
+        "body": "A Transformer does not have to use one attention pattern. It can use several attention heads at the same time.",
+        "teaser": "Optional: see how more than one attention pattern can look at the same sentence at once. Skip if you want to stay on the main thread.",
+        "deeperBody": "Each head has its own learned parameters and can learn to focus on different relationships in the sequence.",
+        "headA": "Head A might emphasize a useful syntactic link.",
+        "headB": "Head B might emphasize a different dependency.",
+        "notAssigned": "We do not decide in advance what each head must learn. The important idea is that the model can look at the same sequence in several learned ways at once.",
+        "loadBearing": "Multi-head attention is a useful refinement, but it is not the main idea to remember from this lesson. The load-bearing idea is that a Transformer gives positions direct, weighted ways to exchange information, and it can do this in parallel.",
+        "skipCta": "Continue →",
+        "deeperCta": "Go deeper"
+      },
+      "whyMattered": {
+        "plaque": "Why this mattered",
+        "title": "The Transformer changed how sequence models could be built",
+        "body": "Instead of making every piece of information travel step by step through a chain, the architecture gave positions a direct way to exchange information.",
+        "benefits": "That made long-range relationships easier to model and made much more of the computation parallelizable during training.",
+        "later": "Later models built on the Transformer architecture in different ways.",
+        "bert": "Encoder-style Transformers such as BERT used bidirectional context for understanding tasks.",
+        "decoder": "Decoder-only Transformers used masked, one-directional attention for next-token generation.",
+        "scale": "Large language models grew from this line of work as the architecture, training methods, data, and compute were scaled up.",
+        "cta": "Continue →"
+      },
+      "nextToken": {
+        "plaque": "Final experiment",
+        "title": "Build the next token",
+        "lead": "Start with: “The animal wouldn't cross the road because…”",
+        "body": "At the current position, inspect which earlier positions receive stronger or weaker attention. Then choose from a probability distribution over possible next tokens.",
+        "process": "The model builds a new representation, uses the available context, produces probabilities for what could come next, selects a token, adds it to the sequence, and does the process again.",
+        "clarification": "For this next-token task, the model is not looking into the future. At each step, it only has access to the tokens that have already appeared.",
+        "probsLabel": "Possible next tokens",
+        "pickHint": "Choose a next token (illustrative probabilities).",
+        "historyLabel": "Generated so far",
+        "contextLabel": "Available context",
+        "again": "Generate another →",
+        "cta": "Continue →"
+      },
+      "challenge": {
+        "plaque": "Final challenge",
+        "title": "Check what stuck",
+        "body": "Score: 5 points total. One point per correct answer.",
+        "scoreLabel": "Score",
+        "correctLabel": "Correct.",
+        "wrongLabel": "If you chose a different answer:",
+        "cta": "Continue →"
+      },
+      "reflection": {
+        "plaque": "Reflection",
+        "title": "Before / after",
+        "beforeLabel": "Before this lesson, I thought a language model understood a sentence by",
+        "afterLabel": "Now I think a Transformer",
+        "wantLabel": "One part I want to be able to explain in my own words is",
+        "cta": "Continue →"
+      },
+      "closing": {
+        "plaque": "Final reveal",
+        "headline": "A Transformer gives a neural network a way to move information around a sequence",
+        "body": "Attention decides how much information to draw from other positions. Positional information preserves order. Stacking layers lets those representations be transformed again and again.",
+        "under": "That gives us the architecture underneath modern language models.",
+        "but": "But we still haven't followed the whole path.",
+        "bridge": "What actually happens when you type text into an LLM? What is a token? How does text become numbers? What happens inside the Transformer? And how does the model turn all of that into its next token?",
+        "nextLesson": "That's the next lesson: How Do LLMs Actually Work?",
+        "nextLabel": "Next: Lesson 9 – How Do LLMs Actually Work?",
+        "home": "Back home"
+      }
+    },
+    "data": {
+      "illustrativeNumbersNote": "These numbers are illustrative, chosen to show the idea clearly, not output from a running model.",
+      "canonicalSentence": "The animal wouldn't cross the road because it was too busy.",
+      "telephoneShort": {
+        "id": "short",
+        "label": "Short sentence",
+        "hops": [
+          {
+            "word": "animal",
+            "message": "referent: animal",
+            "kind": "kept",
+            "note": "Message starts at the early noun."
+          },
+          {
+            "word": "wouldn't",
+            "message": "referent: animal",
+            "kind": "kept",
+            "note": "Handoff keeps the important part."
+          },
+          {
+            "word": "cross",
+            "message": "referent: animal",
+            "kind": "kept",
+            "note": "Still intact after a few steps."
+          },
+          {
+            "word": "the",
+            "message": "referent: anim…",
+            "kind": "lost",
+            "note": "A little detail frays."
+          },
+          {
+            "word": "road",
+            "message": "referent: animal?",
+            "kind": "changed",
+            "note": "Slight uncertainty creeps in."
+          },
+          {
+            "word": "because",
+            "message": "referent: animal?",
+            "kind": "kept",
+            "note": "Carried forward as-is."
+          },
+          {
+            "word": "it",
+            "message": "referent: animal?",
+            "kind": "kept",
+            "note": "Arrives — usable, with a little doubt."
+          }
+        ]
+      },
+      "telephoneLong": {
+        "id": "long",
+        "label": "Longer sentence",
+        "hops": [
+          {
+            "word": "animal",
+            "message": "referent: animal",
+            "kind": "kept",
+            "note": "Same starting reference."
+          },
+          {
+            "word": "wouldn't",
+            "message": "referent: animal",
+            "kind": "kept",
+            "note": "Early hops still clean."
+          },
+          {
+            "word": "cross",
+            "message": "referent: animal",
+            "kind": "kept",
+            "note": "Still clear."
+          },
+          {
+            "word": "the",
+            "message": "referent: anim…",
+            "kind": "lost",
+            "note": "Detail starts to thin."
+          },
+          {
+            "word": "busy",
+            "message": "referent: road??",
+            "kind": "changed",
+            "note": "A nearby word contaminates the payload."
+          },
+          {
+            "word": "traffic",
+            "message": "ref: tr… / an…",
+            "kind": "lost",
+            "note": "More steps, more loss."
+          },
+          {
+            "word": "evening",
+            "message": "ref: ???",
+            "kind": "lost",
+            "note": "The referent is nearly gone."
+          },
+          {
+            "word": "commute",
+            "message": "something was… busy?",
+            "kind": "changed",
+            "note": "Message drifts further."
+          },
+          {
+            "word": "because",
+            "message": "busy? road? animal?",
+            "kind": "changed",
+            "note": "Confusion compounds."
+          },
+          {
+            "word": "it",
+            "message": "??? (garbled)",
+            "kind": "lost",
+            "note": "Arrives — but garbled after every step in between."
+          }
+        ]
+      },
+      "lookupQuery": "What helps explain what “it” refers to?",
+      "lookupDrawers": [
+        {
+          "id": "animal",
+          "keyLabel": "animal",
+          "valueLabel": "early noun · possible referent",
+          "match": 0.82
+        },
+        {
+          "id": "road",
+          "keyLabel": "road",
+          "valueLabel": "place being crossed",
+          "match": 0.41
+        },
+        {
+          "id": "busy",
+          "keyLabel": "busy",
+          "valueLabel": "property stated later",
+          "match": 0.09
+        }
+      ],
+      "orderOriginal": "The dog bit the man.",
+      "orderShuffled": "The man bit the dog.",
+      "hideContextSentence": "The animal wouldn't cross the road because",
+      "hideFutureWord": "it",
+      "nextTokenRounds": [
+        {
+          "id": "r1",
+          "context": "The animal wouldn't cross the road because",
+          "candidates": [
+            {
+              "token": "it",
+              "p": 0.34
+            },
+            {
+              "token": "the",
+              "p": 0.18
+            },
+            {
+              "token": "traffic",
+              "p": 0.11
+            },
+            {
+              "token": "he",
+              "p": 0.09
+            },
+            {
+              "token": "they",
+              "p": 0.07
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "context": "The animal wouldn't cross the road because it",
+          "candidates": [
+            {
+              "token": "was",
+              "p": 0.41
+            },
+            {
+              "token": "is",
+              "p": 0.12
+            },
+            {
+              "token": "had",
+              "p": 0.1
+            },
+            {
+              "token": "felt",
+              "p": 0.08
+            },
+            {
+              "token": "saw",
+              "p": 0.06
+            }
+          ]
+        }
+      ],
+      "challengeQuestions": [
+        {
+          "id": "q1",
+          "prompt": "A Transformer differs from a step-by-step recurrent model mainly because:",
+          "options": [
+            {
+              "id": "A",
+              "text": "It stores every sentence it has ever seen."
+            },
+            {
+              "id": "B",
+              "text": "It lets positions exchange information directly through attention."
+            },
+            {
+              "id": "C",
+              "text": "It uses no learned parameters."
+            },
+            {
+              "id": "D",
+              "text": "It reads only one word in a sentence."
+            }
+          ],
+          "correctId": "B",
+          "correctFeedback": "A Transformer lets positions exchange information directly through attention, instead of carrying it step by step through every word in between.",
+          "wrongFeedback": "Not quite. A Transformer’s advantage is connecting positions directly — it doesn’t store every sentence, it does use learned parameters, and it works with the whole sequence, not one word."
+        },
+        {
+          "id": "q2",
+          "prompt": "What does attention do?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Gives every word the same amount of information."
+            },
+            {
+              "id": "B",
+              "text": "Chooses one word and ignores the rest."
+            },
+            {
+              "id": "C",
+              "text": "Weighs information from other positions and combines it."
+            },
+            {
+              "id": "D",
+              "text": "Converts words directly into facts."
+            }
+          ],
+          "correctId": "C",
+          "correctFeedback": "Attention gives different amounts of weight to information from other positions and combines those contributions.",
+          "wrongFeedback": "Not quite. Attention does not simply pick one word. It assigns weights to information from multiple positions and combines them."
+        },
+        {
+          "id": "q3",
+          "prompt": "Why does a Transformer need positional information?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Attention by itself does not tell the model where a position occurs in the sequence."
+            },
+            {
+              "id": "B",
+              "text": "It prevents the model from learning weights."
+            },
+            {
+              "id": "C",
+              "text": "It replaces the need for training data."
+            },
+            {
+              "id": "D",
+              "text": "It makes every token mean the same thing."
+            }
+          ],
+          "correctId": "A",
+          "correctFeedback": "Attention captures relationships between positions but not where each one sits in the sequence — positional information supplies that order.",
+          "wrongFeedback": "Not quite. Positional information exists because attention on its own is order-blind; it doesn’t block learning weights or replace training data."
+        },
+        {
+          "id": "q4",
+          "prompt": "During next-token prediction, what can a position attend to?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Only future tokens."
+            },
+            {
+              "id": "B",
+              "text": "Earlier available tokens, not tokens that have not appeared yet."
+            },
+            {
+              "id": "C",
+              "text": "Every token in the completed answer."
+            },
+            {
+              "id": "D",
+              "text": "Only the immediately previous token."
+            }
+          ],
+          "correctId": "B",
+          "correctFeedback": "For next-token prediction, a position can use earlier available tokens, not tokens that have not appeared yet. The future is masked out so the model cannot use the answer it is supposed to predict.",
+          "wrongFeedback": "Not quite. A next-token model cannot use tokens that have not appeared yet. Its attention is causally masked."
+        },
+        {
+          "id": "q5",
+          "prompt": "What is the main idea behind multi-head attention?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Several learned attention patterns can operate on the same sequence."
+            },
+            {
+              "id": "B",
+              "text": "The model uses several unrelated models with no shared input."
+            },
+            {
+              "id": "C",
+              "text": "Every head is manually assigned a grammar rule."
+            },
+            {
+              "id": "D",
+              "text": "More heads remove the need for positional information."
+            }
+          ],
+          "correctId": "A",
+          "correctFeedback": "Multiple attention heads let the model learn several attention patterns over the same sequence. The heads are learned rather than manually assigned specific jobs.",
+          "wrongFeedback": "Not quite. The heads are not manually assigned jobs. They can learn different relationships from the data."
+        }
+      ]
+    },
+    "chrome": {
+      "connections": {
+        "focusIt": "focus · it",
+        "tapAWord": "Tap a word"
+      },
+      "telephone": {
+        "seeLonger": "See the longer sentence →",
+        "showGarble": "Show the garble →",
+        "tryLonger": "Try a longer sentence →",
+        "seeWhatArrived": "See what arrived →",
+        "pressToAdvance": "Press to advance",
+        "wordChain": "Word chain",
+        "message": "Message",
+        "kept": "kept",
+        "lost": "lost",
+        "changed": "changed",
+        "handoff": "Handoff",
+        "atWord": "At “{word}”: message “{message}”. {note} Handoff: {kind}."
+      },
+      "paper": {
+        "compareRoutes": "Compare the two routes →",
+        "stepSentence": "The animal wouldn't cross the road",
+        "optionAPrefix": "A · {label}",
+        "optionBPrefix": "B · {label}",
+        "chainCaption": "word → word → word → word",
+        "markChain": "chain",
+        "markDirect": "direct"
+      },
+      "softLookup": {
+        "referenceDesk": "reference desk",
+        "inspectOrNudge": "Inspect or nudge a score",
+        "tableCaption": "Query-key matches and drawer contents",
+        "gateHint": "Inspect a drawer or nudge a match score to continue.",
+        "matchScoreFor": "Match score for {label}"
+      },
+      "order": {
+        "shuffledOrder": "shuffled order",
+        "originalOrder": "original order",
+        "shuffleOnce": "Shuffle once to unlock the rest of this beat.",
+        "pressToReorder": "Press to reorder",
+        "positions": "Positions",
+        "linearOrder": "Linear order: {orderText}",
+        "posN": "pos {n}"
+      },
+      "stack": {
+        "layer1": "Layer 1 — gather from the sequence",
+        "layer2": "Layer 2 — exchange again, transform further",
+        "layer3": "Layer 3 — richer representations pass on",
+        "stackedMark": "stacked transformations"
+      },
+      "hideFuture": {
+        "availableContextOnly": "available context only",
+        "shownForTeaching": "Shown for teaching — was not available while predicting",
+        "notAvailable": "Not available while predicting",
+        "pressToReveal": "Press to reveal",
+        "tapContextWord": "Tap a context word",
+        "position": "Position",
+        "mayAttendTo": "May attend to",
+        "futureSuffix": "(future)",
+        "background": "Background",
+        "none": "(none)"
+      },
+      "multiHead": {
+        "attentionHead": "Attention head",
+        "headAPattern": "head A · one pattern",
+        "headBPattern": "head B · another pattern",
+        "tapAHead": "Tap a head",
+        "headA": "Head A",
+        "headB": "Head B"
+      },
+      "whyMattered": {
+        "laterLines": "Later Transformer lines",
+        "encoderStyle": "Encoder-style",
+        "decoderOnly": "Decoder-only",
+        "scale": "Scale"
+      },
+      "nextToken": {
+        "chooseAtLeastOne": "Choose at least one next token to continue.",
+        "tapNextToken": "Tap a next token",
+        "pressToContinueGenerating": "Press to continue generating",
+        "reviewMode": "Review mode: every choice was deliberate — no timed sampling.",
+        "historyStep": "Step {n}: added “{token}” · context was “{context}”",
+        "percentAria": "{token}, {pct} percent"
+      },
+      "challenge": {
+        "pressForNext": "Press for next",
+        "nextQuestion": "Next question →",
+        "progress": "{scoreLabel}: {score} / {total} · Question {n} of {total}",
+        "correctMark": "(correct)"
+      },
+      "closing": {
+        "pressToContinue": "Press to continue",
+        "oneMoreThing": "One more thing →",
+        "comingSoon": "Coming soon"
+      },
+      "attention": {
+        "strong": "strong",
+        "medium": "medium",
+        "weak": "weak",
+        "attendsMostTo": "{label} attends most to: {parts}.",
+        "connections": "Connections: {parts}."
+      },
+      "stepStub": {
+        "stubNote": "Step stub – interaction comes in a later phase."
+      }
+    },
+    "seoSpine": {
+      "h1": "What Is a Transformer? How Attention Works",
+      "lead": "A Transformer is an architecture that lets each position in a sequence draw information directly from other positions — with different strengths — instead of only carrying a message step by step. Attention is the mechanism that makes those direct links.",
+      "sections": [
+        {
+          "heading": "How does attention work?",
+          "body": "Attention lets one position look at others and mix in what it needs. Stronger connections mean more influence; weaker ones matter less. Self-attention is when positions in the same sequence attend to one another."
+        },
+        {
+          "heading": "Why were Transformers invented?",
+          "body": "Earlier models often moved information step by step through a sequence, which made long-range links harder and limited parallelism. Transformers were designed so positions could connect more directly — the idea popularized by the “Attention Is All You Need” paper."
+        },
+        {
+          "heading": "Predicting what comes next",
+          "body": "With attention and information about order in place, the model builds contextual representations and can predict what comes next in the sequence — the same family of ideas behind modern language models."
+        }
+      ]
+    }
+  }
+}

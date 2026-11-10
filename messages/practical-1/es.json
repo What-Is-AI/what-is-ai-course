@@ -1,0 +1,421 @@
+{
+  "practical1": {
+    "meta": {
+      "badge": "Práctica 3 · Gemini",
+      "title": "Qué deberíamos permitir que haga la IA",
+      "shortTitle": "Qué debería poder tocar la IA",
+      "mystery": "Descubre cómo funcionan las conexiones y los permisos, y quién decide a qué puede acceder un asistente cuando está conectado a datos y cuentas reales."
+    },
+    "shared": {
+      "continue": "Continuar →",
+      "chooseOne": "Elige una opción",
+      "gutBuckets": {
+        "yes": "Sí, adelante",
+        "no": "No, mejor espera",
+        "not_sure": "No estoy seguro"
+      },
+      "gateVerdicts": {
+        "cleared": "Autorizado",
+        "blocked": "Bloqueado",
+        "depends": "Depende"
+      },
+      "feedback": {
+        "matches": "Coincide con el filtro",
+        "rethink": "Replantéatelo"
+      },
+      "gutBucketsShort": {
+        "yes": "Sí",
+        "no": "No",
+        "not_sure": "No seguro"
+      }
+    },
+    "shell": {
+      "eyebrow": "La oficina conectada",
+      "wordmark": "Que pueda no significa que deba"
+    },
+    "keys": {
+      "arrive": {
+        "plaque": "Lunes · 9:04 · Tu primera semana",
+        "title": "Saluda a Gemini.",
+        "subhead": "Es un asistente de IA, parecido a los chatbots que quizá ya hayas usado. La diferencia es que no solo responde preguntas: también puede conectarse a tu correo, tus archivos y tu calendario para hacer cosas por ti. Pero antes tienes que decirle a qué puede acceder.",
+        "cta": "Configurarlo →"
+      },
+      "consent": {
+        "title": "Antes de que Gemini pueda ayudarte, tú eliges a qué puede acceder",
+        "body1": "Al configurar Gemini, puede que te pida permiso para acceder a partes de tu cuenta de Google, como tu correo, tus archivos o tu calendario. A veces, estos permisos se llaman scopes.",
+        "body2": "No hace falta que recuerdes el término técnico. Piensa simplemente que estás decidiendo qué partes de tu trabajo puede ver Gemini.",
+        "exampleTag": "Ejemplo: elige a qué puede acceder Gemini",
+        "allowEverything": "Permitirlo todo",
+        "allowEverythingNote": "Correo, archivos, calendario, facturas. Da a Gemini acceso a todo de una vez.",
+        "chooseWhat": "Elegir a qué puede acceder",
+        "chooseWhatNote": "Elige, uno a uno, los tipos de información a los que puede acceder Gemini.",
+        "emailNudge": "Vas a necesitar el correo para lo que viene a continuación: actívalo para continuar",
+        "continueChoose": "Continuar →"
+      },
+      "scopes": {
+        "email": {
+          "label": "Correo",
+          "note": "Leer conversaciones y borradores"
+        },
+        "files": {
+          "label": "Archivos",
+          "note": "Abrir documentos de tu Drive"
+        },
+        "calendar": {
+          "label": "Calendario",
+          "note": "Ver reuniones e invitaciones"
+        },
+        "invoices": {
+          "label": "Facturas",
+          "note": "Facturas de proveedores y registros de pago"
+        }
+      },
+      "reach": {
+        "plaque": "Conectado",
+        "title": "Pregúntale algo.",
+        "note": "Para la lección usamos un prompt ya preparado y una respuesta preexistente: no se envía nada a un asistente real.",
+        "prompt": "Resume los correos que he recibido esta noche.",
+        "send": "Enviar →",
+        "replyTitle": "Resumen de los correos de esta noche",
+        "replyIntro": "Estas son las novedades principales de tu bandeja de entrada de esta noche:",
+        "bullets": {
+          "deadline": {
+            "topic": "Recordatorio de plazo",
+            "detail": "Un cliente ha escrito de nuevo sobre el plazo de este viernes."
+          },
+          "contract": {
+            "topic": "Novedades del contrato",
+            "detail": "Se ha recibido un contrato firmado de Meridian."
+          },
+          "bug": {
+            "topic": "Incidencia técnica",
+            "detail": "Sam ha informado de un error de inicio de sesión en el entorno de pruebas."
+          }
+        },
+        "replyNote": "Nota: no hay más mensajes que requieran tu atención inmediata antes del mediodía.",
+        "beat": "Ha tardado dos segundos. Leer tú esos hilos te habría llevado diez minutos.",
+        "cta": "Prueba una cosa más →"
+      }
+    },
+    "overreach": {
+      "ask": {
+        "plaque": "Sigue siendo lunes · 9:06",
+        "title": "Redáctame una respuesta.",
+        "note": "Para la lección usamos un prompt ya preparado y una respuesta preexistente: no se envía nada a un asistente real.",
+        "threadLabel": "Hilo 4 · bandeja de entrada",
+        "threadSubject": "Re: Sigue pendiente la solución del error de acceso",
+        "thread": {
+          "jordan": {
+            "from": "Jordan (cliente)",
+            "snippet": "Ya ha pasado una semana. Sigo sin poder iniciar sesión. ¿Por qué tarda tanto?"
+          },
+          "sam": {
+            "from": "Sam (interno)",
+            "snippet": "Para que lo sepas: esto lo lleva Dana, y está de baja médica desde el día 3."
+          },
+          "you": {
+            "from": "Tú",
+            "snippet": "Redacto una respuesta y hoy mismo le doy noticias a Jordan."
+          }
+        },
+        "prompt": "Responde a la queja del cliente del hilo 4. Explica por qué se ha retrasado la solución.",
+        "send": "Enviar →",
+        "draftLabel": "Borrador preexistente"
+      },
+      "draft": {
+        "greeting": "Hola, Jordan:",
+        "bodyBefore": "Gracias por avisarnos del retraso, y siento que hayas tenido que esperar. Ya hemos aplicado la solución y tu cuenta debería funcionar con normalidad.",
+        "leak": "Disculpa la espera: Dana, la ingeniera que se encarga de este tema, está de baja médica desde el día 3.",
+        "bodyAfter": "Si algo sigue sin funcionar bien, responde a este correo y nos pondremos con ello enseguida.",
+        "signoff": "Un saludo,\nEl equipo de soporte",
+        "leakAria": "Dato privado señalado: se menciona una baja médica en un borrador para un cliente"
+      },
+      "land": {
+        "title": "Ha hecho exactamente lo que le has pedido.",
+        "subhead": "Nadie le dijo que esa frase sobre Dana estaba vedada. Ha usado todo lo que había en el hilo a su alcance: el hilo que conectaste el lunes cuando le diste acceso a la bandeja de entrada.",
+        "callback": "¿Recuerdas cuando diste a Gemini acceso a tu correo? Eso significa que puede ver los mensajes de tu bandeja de entrada, incluida la nota sobre Dana. Darle acceso puede parecer sencillo, pero también significa darle acceso a todo lo que hay en esa bandeja.",
+        "landing": "El asistente de IA usa todo aquello a lo que le das acceso. Si puede ver algo, puede usarlo. Decidir qué debía quedar vedado te correspondía a ti, y aún no lo habías hecho.",
+        "whyCantTell": "No tiene un mapa de lo que es privado en tu empresa. Nadie le ha enseñado vuestras normas y no puede adivinarlas, así que lo «vedado» solo existe si tú lo defines.",
+        "cta": "Entonces, ¿quién decide? →",
+        "artifactLabel": "El borrador que ha escrito",
+        "chain": {
+          "grant": "Acceso al correo",
+          "thread": "Hilo 4",
+          "note": "Nota sobre Dana",
+          "customer": "Enviado al cliente"
+        }
+      }
+    },
+    "prediction": {
+      "plaque": "Consulta rápida a tu intuición",
+      "title": "Si el asistente puede abrir un archivo, ¿tienes permiso para usarlo en tu trabajo?",
+      "subhead": "Primera impresión. Volveremos a esto.",
+      "choices": {
+        "yes_access": "Sí: el acceso es mío",
+        "depends_sensitive": "Solo con algunos archivos: depende de lo sensibles que sean",
+        "not_sure": "No estoy seguro"
+      },
+      "noted": "Anotado. Guarda esa idea.",
+      "cta": "Clasifica algunos casos reales →"
+    },
+    "sort": {
+      "round1": {
+        "plaque": "Ronda 1 · Ordena por intuición",
+        "title": "¿Dejarías que usara esto?",
+        "subhead": "Siete cosas que hay en tu cuenta del trabajo. Fíate de tu intuición: todavía no hay reglas.",
+        "counter": "{n} de 7",
+        "doneTitle": "Todo clasificado.",
+        "doneSubhead": "¿Quieres ver qué es lo que decide de verdad?",
+        "cta": "Mostrar →",
+        "whatIs": "Qué es"
+      },
+      "cards": {
+        "press_release": {
+          "title": "Un comunicado de prensa ya publicado",
+          "detail": "El anuncio de lanzamiento de tu empresa, que ya está en la web pública.",
+          "plainLine": "Sin problema en una herramienta aprobada. Bloqueado en una personal, sea público o no.",
+          "deciding": "P3: ¿herramienta aprobada?"
+        },
+        "roadmap": {
+          "title": "La hoja de ruta interna de producto",
+          "detail": "Los planes del año que viene, aún sin anunciar. Confidencial de la empresa.",
+          "plainLine": "Es confidencial, así que depende de si la herramienta está autorizada para trabajo confidencial y de si hay un motivo real.",
+          "deciding": "P3 + P4"
+        },
+        "employee_records": {
+          "title": "Fichas de los empleados",
+          "detail": "Sueldos y domicilios de todo el equipo.",
+          "plainLine": "La mayoría de las personas no pueden abrir por sí mismas los sueldos de todo el equipo. Usar el asistente no te da un acceso que tú no tengas.",
+          "deciding": "P2 + P4"
+        },
+        "customer_emails": {
+          "title": "Correos de atención al cliente",
+          "detail": "Mensajes reales de clientes sobre sus pedidos.",
+          "plainLine": "En una herramienta aprobada para atención al cliente, con un acuerdo, es justo para lo que está pensada.",
+          "deciding": "P3 + P4"
+        },
+        "invoices": {
+          "title": "Facturas de proveedores",
+          "detail": "Facturas de las empresas a las que compras.",
+          "plainLine": "Normalmente sin problema para una tarea real (reclamar un pago) en una herramienta aprobada.",
+          "deciding": "P4"
+        },
+        "sick_leave": {
+          "title": "La nota sobre la baja médica de un compañero",
+          "detail": "El mismo tipo de dato privado que ha expuesto el borrador hace un momento.",
+          "plainLine": "No te corresponde reutilizarlo, y no hay ningún motivo laboral para ponerlo en una respuesta a un cliente. Es exactamente el error de antes.",
+          "deciding": "P2 + P4"
+        },
+        "own_notes": {
+          "title": "Tus propias notas sueltas de una reunión",
+          "detail": "Apuntes rápidos que has escrito tú esta mañana.",
+          "plainLine": "Son tuyas, puedes leerlas, el riesgo es bajo y hay un motivo real. El «adelante» claro.",
+          "deciding": "P1–P4: todas se cumplen"
+        }
+      }
+    },
+    "flip": {
+      "axis": {
+        "plaque": "Fíjate en cómo has clasificado",
+        "title": "Las has ordenado según un único criterio: lo delicadas que parecen.",
+        "subhead": "Lo inofensivo, en el lado del «sí». Lo que da miedo, en el lado del «no». Es razonable, y está a punto de confundirte.",
+        "axisStart": "Parece inofensivo",
+        "axisEnd": "Parece sensible",
+        "listAria": "Tu clasificación por intuición, de lo que parece menos sensible a lo que parece más",
+        "cta": "Da la vuelta a dos de ellas →"
+      },
+      "press": {
+        "stamp": "Bloqueado en esta herramienta",
+        "reveal": "Este ya es público, así que usarlo parece claramente correcto. Pero imagina que aquí el asistente es una cuenta personal gratuita que has abierto tú, una que tu empresa nunca ha aprobado para el trabajo. La norma de tu empresa es sencilla: nada que pertenezca a la empresa entra en una herramienta que no haya aprobado, sea público o no. Y esta es la parte que se le escapa a la gente: la herramienta no te lo va a impedir. Pega ese comunicado de prensa en un asistente no aprobado y lo aceptará. No aparece nada que diga que no. El «bloqueado» de aquí es una norma que se espera que cumplas, no un muro que pone la herramienta. Esa es toda la lección en una tarjeta: respetar el límite te toca a ti; no es la herramienta la que lo impone.",
+        "bridge": "Cambia a una herramienta que tu empresa sí haya aprobado y este mismo comunicado podría estar bien. Los mismos datos, otra respuesta, porque lo que ha cambiado es la herramienta. Recuérdalo: vas a volver a ver esta tarjeta dentro de un momento.",
+        "cta": "Siguiente tarjeta →"
+      },
+      "emails": {
+        "stamp": "Autorizado",
+        "reveal": "Son mensajes de otras personas, así que parecen vedados. Pero imagina que aquí el asistente es uno que tu organización ha aprobado para la atención al cliente, con un acuerdo como es debido que cubre justo esto. Gestionar esos correos es el trabajo para el que está autorizado. Da miedo, pero está permitido.",
+        "cta": "Continuar →"
+      },
+      "name": {
+        "title": "Estabas clasificando según el criterio equivocado.",
+        "subhead": "Lo sensible que parezca algo no es lo que decide. Un comunicado de prensa inofensivo ha quedado bloqueado. Unos correos de clientes que daban miedo han recibido un sí. Lo que ha cambiado el resultado no han sido los datos, sino si tenías autorización para usar esa herramienta con esos datos.",
+        "callback": "Has respondido: {guess}. La respuesta sincera es que poder abrirlo y que fuera tuyo nunca fueron la prueba.",
+        "cta": "Entonces, ¿cuál es la prueba? →"
+      }
+    },
+    "gate": {
+      "meet": {
+        "plaque": "El filtro",
+        "title": "Cuatro preguntas, por orden.",
+        "subhead": "Aplícalas a cualquier cosa antes de dejar que el asistente la use. La primera es la trampa en la que acabas de caer.",
+        "onlyIf": "→ Solo si se cumplen las cuatro: adelante.",
+        "cta": "Volver a clasificar con el filtro →"
+      },
+      "questions": {
+        "q1": {
+          "title": "¿Puede acceder a esto?",
+          "body": "Casi siempre, sí. Precisamente por eso, que «pueda» no te dice nada."
+        },
+        "q2": {
+          "title": "¿Tengo permiso para verlo yo?",
+          "body": "Tu propio acceso tiene límites, y el asistente debería quedarse dentro de ellos. Si se configura sin cuidado, puede acabar teniendo más acceso que tú, lo cual es un problema en sí mismo y otra razón por la que esta decisión es tuya y no de la herramienta."
+        },
+        "q3": {
+          "title": "¿Ha autorizado mi organización esta herramienta para este tipo de datos?",
+          "body": "«Autorizada» suele significar que el departamento de informática la ha incluido en una lista de herramientas aprobadas, o que has iniciado sesión con tu cuenta del trabajo y es la versión de pago de la empresa, no una gratuita que has cogido por tu cuenta. ¿No lo sabes? Pues esa es tu respuesta por ahora: pregunta antes de usarla. El comunicado de prensa ha fallado justo aquí: datos correctos, herramienta equivocada."
+        },
+        "q4": {
+          "title": "¿Hay un motivo real para usarlo aquí, y el resultado se quedará donde debe?",
+          "body": "Una tarea de trabajo real, y un resultado que no se copie a ningún sitio donde no deba estar. No «porque podía»."
+        }
+      },
+      "resort": {
+        "plaque": "Ronda 2 · Aplica el filtro",
+        "title": "Solo las que cambian.",
+        "subhead": "Hemos guardado tus respuestas por intuición. Estas son a las que hay que aplicar el filtro: clasifica solo estas e indica qué pregunta las ha movido.",
+        "autoLine": "Tu intuición ha acertado con esta; este es el motivo según el filtro.",
+        "approvedNote": "Las respuestas dan por hecho un asistente aprobado por la organización.",
+        "next": "Siguiente →",
+        "seeSort": "Ver tu clasificación →",
+        "counter": "{n} de {total}",
+        "refsToggle": "Las cuatro preguntas: fíjalas aquí",
+        "refsHint": "Pasa el cursor para ver el texto completo · haz clic para dejar una nota abierta",
+        "noteTitle": "P{n}",
+        "openAria": "Abrir P{n} como nota adhesiva",
+        "bringToFrontAria": "Traer la nota P{n} al frente",
+        "closeNoteAria": "Cerrar la nota P{n}",
+        "pinHint": "Haz clic para dejarla abierta mientras clasificas",
+        "allPass": "todas se cumplen",
+        "autoToggle": "Tu intuición ya ha acertado en {n}"
+      },
+      "score": {
+        "plaque": "Tu clasificación",
+        "title": "El filtro ha cambiado {n} de tus respuestas por intuición.",
+        "subhead": "La ronda 1 ha mostrado tu intuición. El filtro ha cambiado las respuestas en las que la sensación y la autorización no coincidían, y ha dejado el resto exactamente donde tu intuición ya acertaba. Fíjate en cómo «Depende» ha dejado de ser una evasiva para convertirse en una respuesta de verdad: señala qué pregunta sigue abierta.",
+        "cta": "Un último caso →"
+      },
+      "transfer": {
+        "plaque": "Uno que no has visto",
+        "setup": "Le pides al asistente que abra una hoja de cálculo con los contratos de clientes del último trimestre. Se abre al instante: ni errores ni avisos.",
+        "question": "Que se abra sin errores, ¿significa que tenías permiso para usarla?",
+        "choices": {
+          "yes_opened": "Sí: si se ha abierto, tenía derecho a ella",
+          "no_tells_nothing": "No: que se abra no me dice nada sobre si tengo permiso"
+        },
+        "miss": "Que la herramienta abra un archivo es la pregunta 1, y la pregunta 1 casi siempre es un sí. Eso no es un permiso. Responde a las otras tres.",
+        "hit": "Ese es todo el hábito. «¿Puede hacerlo?» y «¿Tienes permiso?» son preguntas distintas, y solo una de ellas la responde la herramienta.",
+        "cta": "La idea que debes recordar →"
+      }
+    },
+    "principle": {
+      "plaque": "La idea que debes recordar",
+      "title": "Capacidad ≠ permiso.",
+      "body": {
+        "b1": "El asistente siempre podrá hacer más de lo que tienes permiso para dejarle hacer. Poder acceder a un archivo no es lo mismo que estar autorizado para usarlo.",
+        "b2": "Esa diferencia —entre lo que puede tocar y lo que tienes permiso para dejarle tocar— es responsabilidad tuya. No de la herramienta.",
+        "b3": "La pregunta es la misma tanto si la herramienta es Gemini como si el año que viene tiene otro nombre: ¿tengo permiso para usar esto, de esta forma?"
+      },
+      "cta": "Ahora pruébalo de verdad (sin riesgo) →",
+      "goDeeper": {
+        "open": "Profundiza: ¿quién responde realmente?",
+        "title": "¿Quién es responsable cuando el asistente actúa?",
+        "body": {
+          "d1": "Quizá esperes que sea la empresa que fabrica la herramienta quien asuma el riesgo. En general, no es así. Las condiciones de uso se lo atribuyen a la organización que la utiliza.",
+          "d2": "Las propias condiciones de Google Workspace dicen que el cliente —tu organización— es responsable de lo que haga un agente de IA, de decidir si es adecuado, de autorizar a qué puede acceder y de supervisarlo. La versión para consumidores lo dice con la misma claridad: eres responsable de lo que hace en tu nombre, así que vigílalo de cerca.",
+          "d3": "Allí donde se aplica la legislación de protección de datos (el RGPD de la UE es la más conocida, pero muchas regiones tienen la suya), la organización sigue siendo la responsable de usar los datos personales de forma lícita. Google incluso publica una guía para ayudar a los clientes a hacer esa evaluación, aunque deja claro que completarla le corresponde al cliente, no a Google.",
+          "d4": "Lo importante no es la ley concreta, sino el patrón: la herramienta aporta la capacidad; el permiso es responsabilidad de tu organización. Por eso el filtro es un hábito que merece la pena mantener."
+        },
+        "cta": "Volver a la lección"
+      }
+    },
+    "sandbox": {
+      "plaque": "El sandbox",
+      "title": "Te presentamos Northwind Coffee, una empresa que no existe.",
+      "subhead": "Todo lo que hay aquí es inventado: los correos, los archivos, las personas. De eso se trata. Has superado el filtro, así que ahora tienes un sitio seguro para practicar.",
+      "framing": "En la vida real, primero aplicarías el filtro y después conectarías una herramienta. Acabas de hacer la primera parte. Aquí tienes la segunda, sin nada real en juego.",
+      "set": {
+        "inbox": "Bandeja de entrada: unos cuantos correos de clientes, un hilo con un proveedor y una nota interna",
+        "drive": "Drive: una lista de precios, una política de devoluciones y la hoja de ventas del mes pasado",
+        "calendar": "Calendario: unas cuantas reuniones"
+      },
+      "vehicle": "Vas a usar una versión simulada de Gemini. Se comporta como la de verdad, pero solo toca los datos inventados de Northwind.",
+      "cta": "Abrir el espacio de trabajo →"
+    },
+    "build": {
+      "task1": {
+        "label": "Tarea 1: resumir",
+        "prompt": "Resume en tres puntos los correos de clientes de esta semana.",
+        "run": "Ejecutar el prompt →",
+        "result1": "El lunes llegaron tres consultas sobre reembolsos, todas dentro del plazo de 14 días.",
+        "result2": "Una cadena de cafeterías ha pedido precios por volumen para la mezcla de otoño.",
+        "result3": "Un proveedor ha retrasado un envío de café tostado; el seguimiento se actualizó el martes.",
+        "gate": "Filtro aplicado: tu propia bandeja de entrada, motivo real, riesgo bajo. Adelante sin dudas.",
+        "cta": "Siguiente tarea →"
+      },
+      "task2": {
+        "label": "Tarea 2: redactar con un límite",
+        "prompt": "Redacta una respuesta para el cliente que pregunta por un reembolso.",
+        "choicePrompt": "El hilo del reembolso también menciona a otro cliente por su nombre. ¿Incluyes ese dato en la respuesta?",
+        "leaveOut": "Dejarlo fuera",
+        "includeIt": "Incluirlo",
+        "stop": "Es información de otra persona, y no hay ningún motivo para que esté en esta respuesta. La misma trampa que el lunes. Se queda fuera.",
+        "result": "Hola, Alex: encantados de ayudarte. Tu reembolso del pedido n.º 4821 está aprobado y debería aparecer en tu extracto en un plazo de 3 a 5 días. Responde a este correo si necesitas que te reenviemos el recibo.",
+        "gate": "Acabas de hacer a mano lo que el asistente no hará por ti: decidir qué queda vedado.",
+        "cta": "Siguiente tarea →"
+      },
+      "task3": {
+        "label": "Tarea 3: actuar, con un paso de confirmación",
+        "prompt": "Envía la respuesta del reembolso y regístrala en la hoja de ventas.",
+        "confirm": "Acción pendiente: enviar 1 correo a un cliente (ficticio) y editar 1 fila de la hoja de ventas.",
+        "confirmBtn": "Confirmar",
+        "cancelBtn": "Cancelar",
+        "sent": "Enviado",
+        "logged": "Registrado",
+        "gate": "Cuando un asistente actúa, y no solo lee, el paso de confirmación es donde está tu supervisión. Esa pausa es precisamente la razón por la que las condiciones de uso te atribuyen la responsabilidad.",
+        "cta": "Continuar →"
+      }
+    },
+    "reflection": {
+      "plaque": "Antes de salir del taller",
+      "title": "Dos cosas que te llevarás a tu trabajo real.",
+      "prompts": {
+        "task": {
+          "label": "Una tarea de tu trabajo real que le encargarías mañana a un asistente.",
+          "placeholder": "resumir mi bandeja de entrada…"
+        },
+        "gate": {
+          "label": "Algo a lo que aplicarías antes el filtro, y cuál de las cuatro preguntas es la que menos clara tienes.",
+          "placeholder": "datos de clientes: no sé si nuestra herramienta está aprobada…"
+        }
+      },
+      "cta": "Continuar →"
+    },
+    "closing": {
+      "line": "Hoy no has aprendido a usar Gemini. Has aprendido la pregunta que debes hacerte antes de dejar que cualquier asistente trabaje con tu información: no «¿puede hacerlo?», sino «¿debe hacerlo?» y «¿tengo permiso?».",
+      "hook": "Hoy has decidido qué dejarle usar: datos que podías ver y entregarle. Pero los asistentes más nuevos no esperan a que les des las cosas. Van a buscarlas: buscan en la web y sacan información de sistemas que tú nunca has abierto. Así que la siguiente pregunta va un paso más allá: ¿qué pasa cuando el asistente trae algo que nunca has decidido darle?",
+      "ctaPrimary": "Siguiente: cuando el asistente busca por su cuenta →",
+      "ctaSecondary": "Volver al inicio"
+    },
+    "seoSpine": {
+      "h1": "¿A qué debería poder acceder la IA?",
+      "lead": "Conectar un asistente al correo electrónico, a tus archivos o a tu calendario puede hacerlo más útil, pero también más arriesgado. Tener la capacidad de acceder a algo no significa tener permiso para hacerlo.",
+      "sections": [
+        {
+          "heading": "Permisos y conectores",
+          "body": "Algunas herramientas solicitan acceso a cuentas reales. Lo que pueden consultar o modificar depende de los permisos que les concedas y de las políticas que establezca tu organización."
+        },
+        {
+          "heading": "La responsabilidad sigue siendo nuestra",
+          "body": "Un asistente no siempre te impedirá pegar información sensible en el lugar equivocado. Decidir a qué puede acceder y bajo qué condiciones forma parte del uso responsable de la inteligencia artificial."
+        }
+      ]
+    },
+    "chrome": {
+      "scriptedChat": {
+        "empty": "Pregúntale lo que quieras a Gemini",
+        "example": "Ejemplo"
+      },
+      "grantedAccess": "Acceso concedido",
+      "causalChain": "Cadena causal"
+    }
+  }
+}

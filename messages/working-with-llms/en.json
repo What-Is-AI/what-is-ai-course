@@ -1,0 +1,348 @@
+{
+  "workingWithLlms": {
+    "meta": {
+      "badge": "Practice 1",
+      "title": "Working With LLMs",
+      "shortTitle": "Working With LLMs",
+      "mystery": "Why do experienced AI users get dramatically better results from the same model?"
+    },
+    "shared": {
+      "continue": "Continue →"
+    },
+    "shell": {
+      "eyebrow": "AI Studio",
+      "wordmark": "Working With LLMs"
+    },
+    "hook": {
+      "arrive": {
+        "plaque": "AI Studio · 09:00",
+        "title": "Two designers. One model.",
+        "subhead": "Same AI. Same request. Watch what happens.",
+        "cta": "Meet them →"
+      },
+      "predict": {
+        "plaque": "The brief",
+        "title": "“Design our new landing page.”",
+        "subhead": "Designer A opens a brand-new chat. Designer B opens one organized project – brand notes, a style sample, past decisions, pinned instructions. Both type the exact same sentence.",
+        "predictionPrompt": "How different will the two results be?",
+        "cta": "Lock in your guess →"
+      },
+      "slider": {
+        "identical": "Identical",
+        "slightly": "Slightly different",
+        "dramatically": "Dramatically different"
+      },
+      "reveal": {
+        "plaque": "Side by side",
+        "title": "Same model. Same sentence. Not the same result.",
+        "designerA": {
+          "eyebrow": "Fresh chat",
+          "body": "A generic page. “Welcome to our company.” Stock structure. Could belong to anyone."
+        },
+        "designerB": {
+          "eyebrow": "Organized project",
+          "body": "On-brand voice. The audience it’s for. A layout that echoes decisions the team already made. Reads like a teammate wrote it."
+        },
+        "surpriseLine": "The model was identical. Only what surrounded the request changed.",
+        "cta": "So what changed? →"
+      }
+    },
+    "diagnose": {
+      "inspect": {
+        "plaque": "Two workspaces",
+        "title": "Look closer.",
+        "subhead": "Designer B’s project isn’t a better AI. It’s the same AI with more around it.",
+        "workspaceAEyebrow": "Workspace A",
+        "workspaceA": "Empty chat – one sentence, nothing else.",
+        "workspaceBEyebrow": "Workspace B",
+        "workspaceB": "Same sentence + brand notes, audience, a style sample, past decisions, pinned do’s and don’ts.",
+        "cta": "What made the difference? →"
+      },
+      "pick": {
+        "plaque": "Your theory",
+        "title": "What actually produced the better page?",
+        "subhead": "Pick everything you think helped.",
+        "cta": "Check my theory →"
+      },
+      "causes": {
+        "model-smarter": "The model got smarter",
+        "brand-document": "The brand document",
+        "longer-prompt": "The longer prompt",
+        "luck": "Luck",
+        "style-sample": "The style sample",
+        "pinned-instructions": "The pinned instructions"
+      },
+      "reveal": {
+        "plaque": "The pattern",
+        "title": "It wasn’t the model. It wasn’t clever wording.",
+        "body1": "The model never changed. Designer B didn’t write a longer sentence – they wrote the same one.",
+        "body2": "What changed was the context: everything the model could see when it answered. Brand notes, audience, examples, past decisions. That’s the difference between “anyone’s page” and “your page.”",
+        "punchline": "Beginners polish the prompt. Experienced users build the context.",
+        "cta": "But why does that work? →"
+      }
+    },
+    "whyContext": {
+      "recall": {
+        "plaque": "Back to the machine",
+        "title": "Remember what the model actually does.",
+        "subhead": "From the training room: it predicts its next words – one at a time – based on everything in front of it.",
+        "body": "Context is that “everything in front of it.” Change what it can see, and you change what it predicts. You’re not making it smarter. You’re aiming it.",
+        "cta": "Show me →"
+      },
+      "toggle": {
+        "plaque": "Live",
+        "title": "Same request. Flip one thing at a time.",
+        "subhead": "Turn each piece of context on or off and watch the answer move.",
+        "requestEyebrow": "Request",
+        "request": "Design our new landing page.",
+        "answerEyebrow": "Answer",
+        "helperAllOff": "With nothing to condition on, the model falls back on the average of everything it ever learned. That’s why it sounds generic.",
+        "helperAllOn": "Now every prediction is steered by your world – not the internet’s average.",
+        "genericAnswer": "Welcome to our company. We offer innovative solutions for modern businesses.",
+        "cta": "Continue →"
+      },
+      "chips": {
+        "audience": {
+          "label": "Audience",
+          "effect": "Speaks to the people you named – not “everyone.”"
+        },
+        "brand-voice": {
+          "label": "Brand voice",
+          "effect": "Sounds like your brand, not a stock template."
+        },
+        "past-decision": {
+          "label": "Past decision",
+          "effect": "Respects a choice the team already made."
+        },
+        "worked-example": {
+          "label": "Worked example",
+          "effect": "Echoes the shape of work that already succeeded."
+        }
+      }
+    },
+    "build": {
+      "scenario": {
+        "plaque": "Your turn",
+        "title": "You run a small bakery.",
+        "subhead": "You use AI most weeks – captions, replies, menu text. Right now you re-explain yourself every time. Let’s fix that once.",
+        "cta": "Open the studio →"
+      },
+      "assemble": {
+        "plaque": "Build the context",
+        "title": "Pin what the AI should always know.",
+        "subhead": "Drag each card onto the board. This is the setup experienced users do once and reuse for months.",
+        "boardHeader": "Always know",
+        "pinned": "{count} pinned",
+        "cta": "Run the same request twice →"
+      },
+      "cards": {
+        "business": {
+          "label": "Business",
+          "body": "Small neighborhood bakery, six years old, known for sourdough."
+        },
+        "audience": {
+          "label": "Audience",
+          "body": "Local regulars and weekend walk-ins. Warm, not corporate."
+        },
+        "tone-sample": {
+          "label": "Tone sample",
+          "body": "Morning’s quiet until the first loaf cracks open. Come by for the sourdough – we’ll save you the corner seat if we can."
+        },
+        "past-decision": {
+          "label": "Past decision",
+          "body": "We don’t discount. We add value instead."
+        },
+        "do-dont": {
+          "label": "Do / Don’t",
+          "body": "Do mention daily specials. Don’t use exclamation-point hype."
+        }
+      },
+      "compare": {
+        "plaque": "Bare vs built",
+        "title": "“Write this week’s Instagram caption.”",
+        "bare": {
+          "eyebrow": "No context",
+          "body": "“Check out our fresh baked goods today! 🥐 Come visit us!” – generic, hype-y, could be any bakery."
+        },
+        "built": {
+          "eyebrow": "Your pinned context",
+          "body": "Names the sourdough, speaks to regulars, skips the hype, mentions today’s special – in your voice."
+        },
+        "surpriseLine": "Same request. You just didn’t have to explain yourself to get there.",
+        "cta": "Continue →"
+      }
+    },
+    "oneShot": {
+      "habit": {
+        "plaque": "One and done",
+        "title": "“Write my launch email.” Send. Copy. Paste. Done.",
+        "subhead": "Most people take the first draft. Experienced users almost never do.",
+        "cta": "Try both ways →"
+      },
+      "choose": {
+        "plaque": "Fork in the road",
+        "title": "The first draft lands. Now what?",
+        "cta": "See the difference →"
+      },
+      "approaches": {
+        "accept": "Accept the first draft",
+        "critique": "Ask it to critique itself – “What are the weakest parts of this?”"
+      },
+      "reveal": {
+        "plaque": "Second pass",
+        "title": "The critique pass changed the email.",
+        "body1": "Asked for its own weak points, the model flagged a buried call-to-action and a vague opening – then fixed them.",
+        "body2": "Nothing mystical happened. Your follow-up became new context, and the next prediction was steered by it. Each pass adds information; each answer gets sharper.",
+        "punchline": "You’re not chatting with a colleague. You’re steering a prediction engine – and steering beats accepting.",
+        "cta": "Continue →"
+      }
+    },
+    "transfer": {
+      "plaque": "Judgment call · {index}/{total}",
+      "title": "Build context, or just ask?",
+      "nextCta": "Next",
+      "lastCta": "See your score",
+      "choices": {
+        "reusable": "Build reusable context",
+        "quick": "Fire a quick prompt"
+      },
+      "feedback": {
+        "match": "Matches the pattern",
+        "rethink": "Rethink"
+      },
+      "status": {
+        "matched": "Matched",
+        "missed": "Missed"
+      },
+      "resultLine": "You: {picked} · Usual call: {usual}",
+      "scenarios": {
+        "street-sign": {
+          "scenario": "Translate one street sign while traveling",
+          "note": "One-off, no future use. Context is overhead you’ll never reuse."
+        },
+        "company-style": {
+          "scenario": "Keep your company’s style consistent across a year of posts",
+          "note": "Same voice, again and again – pin it once."
+        },
+        "movie-year": {
+          "scenario": "Ask what year a movie came out",
+          "note": "A fact, not a relationship. Nothing to reuse."
+        },
+        "weekly-reports": {
+          "scenario": "Draft weekly reports for the same project for months",
+          "note": "Recurring task, stable background – ideal for a project."
+        },
+        "word-meaning": {
+          "scenario": "Settle a quick disagreement about a word’s meaning",
+          "note": "Disposable by nature."
+        },
+        "personal-voice": {
+          "scenario": "Write in your personal voice across everything you do",
+          "note": "Your voice is stable context worth saving once."
+        },
+        "random-article": {
+          "scenario": "Summarize a random article you’ll never revisit",
+          "note": "No follow-on work; a project adds friction, not value."
+        }
+      },
+      "score": {
+        "plaque": "Pattern",
+        "title": "{score} of {total} matched the usual call.",
+        "subhead": "Not everything deserves a project. The skill is knowing which is which.",
+        "cta": "Continue →"
+      }
+    },
+    "altitude": {
+      "task": {
+        "plaque": "Altitude check",
+        "title": "How much should you spell out?",
+        "subhead": "The task: “Help me write a cover letter for a marketing role.” Three people prompt it three ways.",
+        "cta": "Compare the three →"
+      },
+      "pick": {
+        "plaque": "Three prompts",
+        "title": "Which one gets the best result?",
+        "cta": "Reveal →"
+      },
+      "choices": {
+        "vague": {
+          "label": "Too vague",
+          "detail": "“Write me a cover letter.”"
+        },
+        "sweet-spot": {
+          "label": "Goal + constraints + success criteria",
+          "detail": "“Cover letter for a junior marketing role at a small agency. Warm but professional, under 300 words, highlight my events experience. Success = they can picture me on the team.”"
+        },
+        "micromanaged": {
+          "label": "Micromanaged",
+          "detail": "a 20-step script dictating every sentence, transition, and word count per paragraph."
+        }
+      },
+      "reveal": {
+        "plaque": "The sweet spot",
+        "title": "Both extremes lose. The middle wins.",
+        "body1": "Too vague, and the model fills the gaps with the internet’s average – generic. Micromanaged, and you’ve done the thinking yourself and boxed it in – you get a worse version of your own outline.",
+        "body2": "The winner names the destination and the constraints – role, tone, length, what to feature, what “good” looks like – and leaves the how to the model.",
+        "punchline": "Be specific about where you’re going. Don’t script every step of the walk.",
+        "cta": "Continue →"
+      }
+    },
+    "reflection": {
+      "plaque": "Studio journal",
+      "title": "Complete the sentence.",
+      "subhead": "No quiz. Just notice how your definition of “using AI well” shifted.",
+      "beforeLabel": "Before today I thought better results came from…",
+      "beforePlaceholder": "better prompts… magic words… the right model…",
+      "afterLabel": "Now I think better results come from…",
+      "afterPlaceholder": "better context… iteration… setup I reuse…",
+      "cta": "Save to journal →"
+    },
+    "closing": {
+      "line": {
+        "plaque": "Studio wall",
+        "title": "Beginners optimize prompts. Experts optimize environments.",
+        "subhead": "Same model, in everyone’s hands. The difference is what you build around it.",
+        "oldHabit": {
+          "eyebrow": "Old habit",
+          "body": "Perfect the wording of one message."
+        },
+        "newHabit": {
+          "eyebrow": "New habit",
+          "body": "Build context once. Reuse it. Iterate on the answer."
+        },
+        "cta": "One last thing →"
+      },
+      "principle": {
+        "plaque": "What lasts",
+        "title": "The buttons will keep changing.",
+        "body": "Projects, memory, workspaces, whatever ships next quarter – those are implementations. The principle underneath doesn’t move: context you build together beats wording you perfect alone. That’s true in ChatGPT, Claude, Gemini, and whatever comes after them.",
+        "cta": "Continue →"
+      },
+      "mystery": {
+        "headline": "If context is this powerful…",
+        "followUp": "what happens when there’s too much of it – does the model weigh every word equally?",
+        "toCoworker": "Travel to The Coworker",
+        "comingSoon": "Coming soon.. Attention",
+        "backHome": "Back home"
+      }
+    },
+    "seoSpine": {
+      "h1": "How Do Large Language Models Actually Work?",
+      "lead": "A large language model generates text by predicting likely next tokens from context. That is the shared mechanism behind tools people call ChatGPT-style assistants — and why clear context changes what you get.",
+      "sections": [
+        {
+          "heading": "What are tokens in AI?",
+          "body": "Models don’t always read whole words the way people do. Text is split into tokens — pieces of words or characters — and the model works over that sequence when it predicts what should come next."
+        },
+        {
+          "heading": "How does an LLM generate text?",
+          "body": "Generation is repeated next-token prediction: given the tokens so far, choose a likely continuation, append it, and continue. How you frame the task — goals, constraints, and context — shapes those predictions."
+        },
+        {
+          "heading": "Same model, different results",
+          "body": "Experienced users often get better outcomes from the same LLM by specifying the job clearly and iterating — not by assuming the model already knows what they mean."
+        }
+      ]
+    }
+  }
+}
