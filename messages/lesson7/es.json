@@ -333,6 +333,12 @@
         "after": "Después",
         "oneMoreThing": "Una cosa más",
         "continue": "Continuar →"
+      },
+      "musicCredits": {
+        "title": "Créditos de música",
+        "body": "Estos clips cortos son de Kevin MacLeod (incompetech.com), con licencia CC BY 3.0 — no bajo la licencia CC BY-NC-SA 4.0 de las lecciones de este curso.",
+        "artistLine": "Música de Kevin MacLeod (incompetech.com).",
+        "licenseLabel": "Licencia:"
       }
     },
     "seoSpine": {

@@ -97,10 +97,7 @@ export function SiteFooter() {
             {t("common.copyright", { year })}
           </p>
           <p className="site-footer-legal-line site-footer-legal-licenses">
-            <ExtLink
-              href={LICENSE_CODE_URL}
-              title={`AGPL-3.0 — ${warranty}`}
-            >
+            <ExtLink href={LICENSE_CODE_URL}>
               {t("common.footerCodeLicense")}
             </ExtLink>
             <span aria-hidden className="site-footer-legal-sep">
@@ -119,6 +116,9 @@ export function SiteFooter() {
                 </ExtLink>
               </>
             ) : null}
+          </p>
+          <p className="site-footer-legal-line site-footer-warranty">
+            {warranty}
           </p>
         </div>
       </div>

@@ -103,6 +103,12 @@
     "meta": {
       "title": "Acerca de · ¿Qué es la IA?",
       "description": "Entiende la IA experimentando con ella, no solo leyendo sobre ella."
+    },
+    "music": {
+      "title": "Música en la lección 7",
+      "body": "Los clips de audio cortos de la lección 7 (De las características a las representaciones) no están cubiertos por la licencia CC BY-NC-SA 4.0 de las lecciones. Son obras de Kevin MacLeod (incompetech.com), usadas bajo Creative Commons Attribution 3.0.",
+      "artistLine": "Música de Kevin MacLeod (incompetech.com).",
+      "licenseLabel": "Licencia:"
     }
   },
   "home": {

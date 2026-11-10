@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { AboutConstellation } from "@/components/about/AboutConstellation";
+import { MusicCredits } from "@/components/lesson7/MusicCredits";
 import { CourseFrame } from "@/components/lesson/CourseFrame";
 import { RichText } from "@/i18n/RichText";
 import { useT } from "@/i18n/LocaleProvider";
@@ -78,6 +79,17 @@ export function AboutPage() {
               </article>
             ))}
           </section>
+
+          <MusicCredits
+            className="about-music-credits"
+            variant="full"
+            copy={{
+              title: t("about.music.title"),
+              body: t("about.music.body"),
+              artistLine: t("about.music.artistLine"),
+              licenseLabel: t("about.music.licenseLabel"),
+            }}
+          />
         </article>
       </div>
     </CourseFrame>

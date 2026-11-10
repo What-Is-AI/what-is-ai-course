@@ -103,6 +103,12 @@
     "meta": {
       "title": "Apie · What is AI",
       "description": "Supraskite DI jį išbandydami, o ne tik skaitydami apie jį."
+    },
+    "music": {
+      "title": "7 pamokos muzika",
+      "body": "Trumpi 7 pamokos (Nuo požymių iki reprezentacijų) garso įrašai nepatenka į pamokų CC BY-NC-SA 4.0 licenciją. Tai Kevin MacLeod (incompetech.com) kūriniai, naudojami pagal Creative Commons Attribution 3.0.",
+      "artistLine": "Muzika: Kevin MacLeod (incompetech.com).",
+      "licenseLabel": "Licencija:"
     }
   },
   "home": {

@@ -2,3 +2,28 @@ What Is AI? was created by Pro AI Assistant, a brand of Pro Technologies, MB,
 with contributions from Malaga AI and project contributors.
 
 Copyright 2026 Pro Technologies, MB and contributors
+
+Code and interactive demos: AGPL-3.0-only (see LICENSE), except as listed below.
+
+Lessons: CC BY-NC-SA 4.0 (see LICENSE-CONTENT). This covers messages/,
+public/lesson2/, public/lesson3/, public/lessons/ (except public/lessons/7/audio/),
+src/app/presentation2026malaga/what-is-ai-deck.html, and lesson wording in
+src/lib/lesson*-data.ts. The lessons are a separate work loaded by the code as data.
+
+Third-party material keeps its own license:
+- Lesson 7 music (public/lessons/7/audio/): by Kevin MacLeod (incompetech.com),
+  CC BY 3.0, https://creativecommons.org/licenses/by/3.0/, shortened to clips.
+  Individual credits are in public/lessons/7/bundle.json.
+- IBM VGA font (public/fonts/): CC BY-SA 4.0, by VileR
+  (https://int10h.org/oldschool-pc-fonts/).
+- Other fonts in src/fonts/: see src/fonts/README.md and src/fonts/licenses/
+  (mostly SIL OFL 1.1; Roboto is Apache-2.0).
+- npm packages keep their own licenses.
+
+Credit: "Based on What Is AI? by Pro AI Assistant, with contributions from
+Malaga AI (https://whatisai.proaiassistant.com/), CC BY-NC-SA 4.0."
+State if you made changes.
+
+The Pro AI Assistant name and logo are licensed only for this credit.
+The Malaga AI name and logo belong to Malaga AI and are not licensed.
+For paid or commercial use, contact info@proaiassistant.com.
